@@ -1284,6 +1284,386 @@
     ::-webkit-scrollbar-thumb:hover {
       background: var(--border-light);
     }
+
+    /* ===== 导航按钮（上一题/下一题） ===== */
+    .nav-btns {
+      display: flex;
+      gap: 10px;
+      margin-top: 16px;
+      justify-content: space-between;
+    }
+
+    .nav-btn {
+      flex: 1;
+      padding: 12px 20px;
+      border: 1px solid var(--border);
+      background: var(--bg-tertiary);
+      color: var(--text);
+      border-radius: var(--radius-sm);
+      font-size: 0.95rem;
+      font-weight: 600;
+      font-family: inherit;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    .nav-btn:hover:not(:disabled) {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .nav-btn:disabled {
+      opacity: 0.35;
+      cursor: not-allowed;
+    }
+
+    .nav-btn.primary {
+      background: linear-gradient(135deg, var(--accent), #4c8dff);
+      border-color: transparent;
+      color: #fff;
+    }
+
+    .nav-btn.primary:hover:not(:disabled) {
+      color: #fff;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(88, 166, 255, 0.3);
+    }
+
+    /* ===== 题目导航条 ===== */
+    .question-nav-bar {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 14px;
+      padding: 8px 12px;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      overflow-x: auto;
+    }
+
+    .qn-dot {
+      flex-shrink: 0;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: 1px solid var(--border);
+      background: var(--bg-tertiary);
+      color: var(--text-muted);
+      font-size: 0.72rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.15s ease;
+    }
+
+    .qn-dot:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .qn-dot.current {
+      border-color: var(--accent);
+      background: var(--accent-dim);
+      color: var(--accent);
+      box-shadow: 0 0 0 2px rgba(88, 166, 255, 0.2);
+    }
+
+    .qn-dot.correct {
+      border-color: var(--correct);
+      color: var(--correct);
+      background: var(--correct-bg);
+    }
+
+    .qn-dot.wrong {
+      border-color: var(--wrong);
+      color: var(--wrong);
+      background: var(--wrong-bg);
+    }
+
+    /* ===== Tab 栏（首页导航） ===== */
+    .tab-bar {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0;
+    }
+
+    .tab-btn {
+      background: none;
+      border: none;
+      border-bottom: 2px solid transparent;
+      color: var(--text-muted);
+      padding: 10px 18px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      font-family: inherit;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      margin-bottom: -1px;
+    }
+
+    .tab-btn:hover {
+      color: var(--text);
+    }
+
+    .tab-btn.active {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+
+    /* ===== 错题本屏幕 ===== */
+    #review-screen {
+      padding: 28px 24px;
+    }
+
+    .review-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .review-header h2 {
+      font-size: 1.3rem;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .review-header .count-badge {
+      background: var(--wrong-bg);
+      color: var(--wrong);
+      border: 1px solid var(--wrong-border);
+      padding: 2px 12px;
+      border-radius: 14px;
+      font-size: 0.85rem;
+      font-weight: 700;
+    }
+
+    .review-filter {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 16px;
+    }
+
+    .review-filter .filter-btn {
+      background: var(--bg-tertiary);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 5px 14px;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      cursor: pointer;
+      font-family: inherit;
+      transition: all 0.2s ease;
+    }
+
+    .review-filter .filter-btn.active,
+    .review-filter .filter-btn:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: var(--accent-dim);
+    }
+
+    .review-card {
+      background: var(--bg-tertiary);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--wrong);
+      border-radius: var(--radius-sm);
+      padding: 18px 20px;
+      margin-bottom: 14px;
+    }
+
+    .review-card .rc-meta {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+
+    .review-card .rc-question {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+      line-height: 1.6;
+    }
+
+    .review-card .rc-answers {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+      font-size: 0.88rem;
+    }
+
+    .review-card .rc-user-ans {
+      color: var(--wrong);
+    }
+
+    .review-card .rc-correct-ans {
+      color: var(--correct);
+    }
+
+    .review-card .rc-explain {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+      padding-top: 8px;
+      border-top: 1px solid var(--border);
+    }
+
+    .review-card .rc-vocab {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      margin-top: 6px;
+    }
+
+    .review-card .rc-trans {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
+    .review-card .rc-date {
+      font-size: 0.72rem;
+      color: var(--text-dim);
+      margin-top: 8px;
+    }
+
+    .review-empty-state {
+      text-align: center;
+      padding: 48px 20px;
+      color: var(--text-muted);
+    }
+
+    .review-empty-state .icon {
+      font-size: 3rem;
+      margin-bottom: 12px;
+    }
+
+    .clear-btn {
+      background: rgba(248, 81, 73, 0.1);
+      border: 1px solid var(--wrong-border);
+      color: var(--wrong);
+      padding: 8px 16px;
+      border-radius: var(--radius-sm);
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      font-family: inherit;
+      transition: all 0.2s ease;
+    }
+
+    .clear-btn:hover {
+      background: var(--wrong-bg);
+    }
+
+    /* ===== 词汇复习屏幕 ===== */
+    #vocab-screen {
+      padding: 28px 24px;
+    }
+
+    .vocab-search {
+      width: 100%;
+      padding: 10px 16px;
+      background: var(--bg-tertiary);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      color: var(--text);
+      font-size: 0.95rem;
+      font-family: inherit;
+      margin-bottom: 16px;
+    }
+
+    .vocab-search:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+
+    .vocab-level-section {
+      margin-bottom: 24px;
+    }
+
+    .vocab-level-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 12px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .vocab-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 10px;
+    }
+
+    .vocab-card-item {
+      background: var(--bg-tertiary);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 12px 14px;
+      transition: all 0.2s ease;
+    }
+
+    .vocab-card-item:hover {
+      border-color: var(--border-light);
+    }
+
+    .vocab-card-item .vc-word {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .vocab-card-item .vc-pos {
+      font-size: 0.75rem;
+      color: var(--accent);
+      font-style: italic;
+      margin-left: 4px;
+    }
+
+    .vocab-card-item .vc-meaning {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    .vocab-card-item .vc-category {
+      font-size: 0.7rem;
+      color: var(--text-dim);
+      margin-top: 4px;
+    }
+
+    @media (max-width: 600px) {
+      .vocab-grid {
+        grid-template-columns: 1fr;
+      }
+      .nav-btns {
+        flex-direction: column;
+      }
+      .question-nav-bar {
+        padding: 6px 8px;
+      }
+      .qn-dot {
+        width: 26px;
+        height: 26px;
+        font-size: 0.65rem;
+      }
+    }
   </style>
 </head>
 <body>
@@ -1295,6 +1675,13 @@
       </div>
       <div class="subtitle">初中 · 高中 · 四级 · 六级 | 词汇与语法专项训练</div>
     </header>
+
+    <!-- Tab 栏 -->
+    <div class="tab-bar" id="tab-bar">
+      <button class="tab-btn active" data-tab="start">答题练习</button>
+      <button class="tab-btn" data-tab="review">错题本</button>
+      <button class="tab-btn" data-tab="vocab">词汇复习</button>
+    </div>
 
     <!-- 开始屏幕 -->
     <section id="start-screen" class="screen card">
@@ -1335,7 +1722,12 @@
       <div class="progress-bar-wrap">
         <div class="progress-bar" id="progress-bar"></div>
       </div>
+      <div class="question-nav-bar" id="question-nav-bar"><!-- 题目导航圆点 --></div>
       <div id="quiz-body"><!-- 动态生成题目 --></div>
+      <div class="nav-btns" id="quiz-nav-btns" style="display:none;">
+        <button class="nav-btn" id="prev-question-btn">← 上一题</button>
+        <button class="nav-btn primary" id="next-question-btn">下一题 →</button>
+      </div>
     </section>
 
     <!-- 结果屏幕 -->
@@ -1343,9 +1735,19 @@
       <div id="results-body"><!-- 动态生成结果 --></div>
     </section>
 
+    <!-- 错题本屏幕 -->
+    <section id="review-screen" class="screen card hidden">
+      <div id="review-body"><!-- 动态生成错题本 --></div>
+    </section>
+
+    <!-- 词汇复习屏幕 -->
+    <section id="vocab-screen" class="screen card hidden">
+      <div id="vocab-body"><!-- 动态生成词汇复习 --></div>
+    </section>
+
     <!-- 页脚 -->
     <footer class="app-footer">
-      v3.0 题库格式 · 语法/词汇/翻译三卡反馈 · 阅读理解 · 数据本地存储 · 键盘快捷键 A/B/C/D · Enter 提交 · 纯前端实现
+      v3.1 · 上下翻页导航 · 错题本归纳 · 词汇复习 · 语法/词汇/翻译三卡反馈 · 阅读理解 · 数据本地存储 · 键盘快捷键 A/B/C/D · Enter 下一题 · 纯前端实现
     </footer>
   </div>
 
@@ -1355,6 +1757,7 @@
     /* ===== 配置 ===== */
     const QUIZ_BANK_URL = "data/quiz-bank.json";
     const STORAGE_KEY = "eqm_best_scores_v1";
+    const WRONG_BANK_KEY = "eqm_wrong_bank_v1";
 
     const TYPE_LABELS = {
       choice: "选择题",
@@ -1377,6 +1780,8 @@
       userAnswers: [],      // 用户每题的作答记录 {item, userAnswer, correct}
       startTime: 0,         // 开始时间
       bestScores: {},       // 历史最佳成绩
+      wrongBank: [],        // 持久化错题本（跨会话保存）
+      reviewFilter: "all",  // 错题本筛选：all/junior/senior/cet4/cet6
     };
 
     /* ===== DOM 引用 ===== */
@@ -1384,10 +1789,16 @@
     const startScreen = $("start-screen");
     const quizScreen = $("quiz-screen");
     const resultsScreen = $("results-screen");
+    const reviewScreen = $("review-screen");
+    const vocabScreen = $("vocab-screen");
     const levelGrid = $("level-grid");
     const typeGrid = $("type-grid");
     const quizBody = $("quiz-body");
     const resultsBody = $("results-body");
+    const reviewBody = $("review-body");
+    const vocabBody = $("vocab-body");
+    const quizNavBtns = $("quiz-nav-btns");
+    const questionNavBar = $("question-nav-bar");
 
     /* ===== 工具函数 ===== */
     function normalize(str) {
@@ -1591,6 +2002,59 @@
       }
     }
 
+    /* ===== localStorage 错题本 ===== */
+    function loadWrongBank() {
+      try {
+        const raw = localStorage.getItem(WRONG_BANK_KEY);
+        state.wrongBank = raw ? JSON.parse(raw) : [];
+      } catch (e) {
+        state.wrongBank = [];
+      }
+    }
+
+    function saveWrongBank() {
+      try {
+        // 最多保存 500 条，超出则删除最早的
+        if (state.wrongBank.length > 500) {
+          state.wrongBank = state.wrongBank.slice(-500);
+        }
+        localStorage.setItem(WRONG_BANK_KEY, JSON.stringify(state.wrongBank));
+      } catch (e) {
+        // 静默失败
+      }
+    }
+
+    function addWrongAnswer(item, userAnswer, levelKey) {
+      // 去重：同题（相同 question 文本）只保留最近一次
+      const qText = item.question || "";
+      state.wrongBank = state.wrongBank.filter(
+        (w) => w.question !== qText
+      );
+      state.wrongBank.push({
+        level: levelKey,
+        type: item.type,
+        category: item.category || "",
+        question: item.question || "",
+        questionCn: item.questionCn || "",
+        choices: item.choices || null,
+        userAnswer: userAnswer,
+        correctAnswer: item.answer || "",
+        explanation: item.explanation || "",
+        knowledgePoint: item.knowledgePoint || "",
+        vocabulary: item.vocabulary || [],
+        sentenceTranslation: item.sentenceTranslation || "",
+        isPassage: item.isPassage || false,
+        date: new Date().toLocaleDateString("zh-CN"),
+        timestamp: Date.now(),
+      });
+      saveWrongBank();
+    }
+
+    function clearWrongBank() {
+      state.wrongBank = [];
+      saveWrongBank();
+    }
+
     /* ===== 加载题库 ===== */
     async function loadQuizBank() {
       try {
@@ -1707,11 +2171,16 @@
       // 切换屏幕
       startScreen.classList.add("hidden");
       resultsScreen.classList.add("hidden");
+      reviewScreen.classList.add("hidden");
+      vocabScreen.classList.add("hidden");
       quizScreen.classList.remove("hidden");
       // 触发动画
       quizScreen.style.animation = "none";
       void quizScreen.offsetWidth;
       quizScreen.style.animation = "";
+
+      // 隐藏导航按钮（未作答时不显示）
+      quizNavBtns.style.display = "none";
 
       // 顶部标签
       $("quiz-level-tag").textContent =
@@ -1720,6 +2189,7 @@
           : TYPE_LABELS[state.selectedType]);
 
       renderQuestion();
+      renderNavBar();
     }
 
     function shuffle(arr) {
@@ -1801,8 +2271,14 @@
       void quizBody.offsetWidth;
       quizBody.style.animation = "fadeIn 0.3s ease";
 
+      // 隐藏导航按钮（新题未答前不显示）
+      quizNavBtns.style.display = "none";
+
       // 绑定事件
       bindAnswerEvents(item);
+
+      // 更新导航条
+      renderNavBar();
 
       // 阅读理解非首小题：直接定位到题目卡片（文章上文已展示过）
       if (item.isPassage && item.subIndex > 0) {
@@ -2042,8 +2518,14 @@
         userAnswer: userAnswer,
         correct: correct,
       });
-      if (correct) state.score++;
+      if (correct) {
+        state.score++;
+      } else {
+        // 保存到持久化错题本
+        addWrongAnswer(item, userAnswer, state.selectedLevel);
+      }
       updateStats();
+      renderNavBar();
     }
 
     /* ===== 显示反馈（三卡结构） ===== */
@@ -2093,14 +2575,99 @@
 
     function showNextButton() {
       const isLast = state.currentIndex >= state.flatItems.length - 1;
-      const feedbackArea = $("feedback-area");
-      const nextBtn = document.createElement("button");
-      nextBtn.className = "next-btn";
-      nextBtn.id = "next-btn";
-      nextBtn.textContent = isLast ? "查看成绩 →" : "下一题 →";
-      nextBtn.addEventListener("click", nextQuestion);
-      feedbackArea.appendChild(nextBtn);
-      nextBtn.focus();
+      const nextBtn = $("next-question-btn");
+      const prevBtn = $("prev-question-btn");
+      if (nextBtn) {
+        nextBtn.textContent = isLast ? "查看成绩 →" : "下一题 →";
+        nextBtn.style.display = "";
+      }
+      if (prevBtn) {
+        prevBtn.style.display = state.currentIndex > 0 ? "" : "none";
+        prevBtn.disabled = false;
+      }
+      quizNavBtns.style.display = "flex";
+      if (nextBtn) nextBtn.focus();
+    }
+
+    function prevQuestion() {
+      if (state.currentIndex <= 0) return;
+      state.currentIndex--;
+      renderQuestion();
+      // 如果该题已答过，恢复已答状态
+      const prevAnswer = state.userAnswers[state.currentIndex];
+      if (prevAnswer) {
+        restoreAnsweredState(prevAnswer);
+      }
+    }
+
+    function goToQuestion(index) {
+      if (index < 0 || index >= state.flatItems.length) return;
+      state.currentIndex = index;
+      renderQuestion();
+      const prevAnswer = state.userAnswers[index];
+      if (prevAnswer) {
+        restoreAnsweredState(prevAnswer);
+      }
+    }
+
+    // 恢复已答题的作答状态（显示选项高亮 + 反馈）
+    function restoreAnsweredState(ans) {
+      const item = ans.item;
+      state.answered = true;
+
+      if (item.type === "choice") {
+        document.querySelectorAll(".choice").forEach((c) => {
+          c.classList.add("disabled");
+          const letter = c.dataset.letter;
+          if (letter === item.answer) {
+            c.classList.add("correct");
+          } else if (letter === ans.userAnswer && !ans.correct) {
+            c.classList.add("wrong");
+          }
+        });
+      } else if (item.type === "truefalse") {
+        document.querySelectorAll(".tf-btn").forEach((b) => {
+          b.classList.add("disabled");
+          if (normalizeBool(b.dataset.value) === normalizeBool(item.answer)) {
+            b.classList.add("correct");
+          }
+        });
+      }
+
+      // 显示反馈
+      showFeedback(item, ans.userAnswer, ans.correct);
+
+      // 显示导航按钮
+      showNextButton();
+    }
+
+    // 渲染题目导航条（圆点）
+    function renderNavBar() {
+      if (!questionNavBar) return;
+      let html = "";
+      state.flatItems.forEach((_, i) => {
+        let cls = "qn-dot";
+        const ans = state.userAnswers[i];
+        if (ans) {
+          cls += ans.correct ? " correct" : " wrong";
+        }
+        if (i === state.currentIndex) {
+          cls += " current";
+        }
+        html += '<button class="' + cls + '" data-idx="' + i + '">' + (i + 1) + "</button>";
+      });
+      questionNavBar.innerHTML = html;
+      // 绑定点击
+      questionNavBar.querySelectorAll(".qn-dot").forEach((d) => {
+        d.addEventListener("click", () => {
+          const idx = parseInt(d.dataset.idx, 10);
+          // 如果当前题未答，不允许跳转
+          if (idx !== state.currentIndex && !state.answered && state.userAnswers.length === state.currentIndex) {
+            return;
+          }
+          goToQuestion(idx);
+        });
+      });
     }
 
     function nextQuestion() {
@@ -2277,6 +2844,13 @@
       html += '<button class="restart-btn" id="restart-btn">重新开始</button>';
       html += "</div>";
 
+      // 错题本快捷入口
+      if (wrongAnswers.length > 0) {
+        html += '<div style="text-align:center;margin-top:12px;">';
+        html += '<button class="nav-btn" style="max-width:300px;margin:0 auto;border-color:var(--wrong-border);color:var(--wrong);" id="go-review-btn">📋 查看错题本 (' + wrongAnswers.length + " 题)</button>";
+        html += "</div>";
+      }
+
       resultsBody.innerHTML = html;
 
       $("restart-btn").addEventListener("click", () => {
@@ -2296,6 +2870,15 @@
         startScreen.style.animation = "";
         renderStartScreen();
       });
+
+      // 错题本快捷入口
+      const goReviewBtn = $("go-review-btn");
+      if (goReviewBtn) {
+        goReviewBtn.addEventListener("click", () => {
+          resultsScreen.classList.add("hidden");
+          switchTab("review");
+        });
+      }
     }
 
     /* ===== 键盘支持 ===== */
@@ -2304,11 +2887,19 @@
       if (state.answered) {
         // 已作答后按 Enter/空格 进入下一题
         if (e.key === "Enter" || e.key === " ") {
-          const nextBtn = $("next-btn");
+          const nextBtn = $("next-question-btn");
           if (nextBtn && document.activeElement !== nextBtn) {
             e.preventDefault();
             nextBtn.click();
           }
+        }
+        // 已作答后按 Backspace/左箭头 回到上一题
+        if ((e.key === "Backspace" || e.key === "ArrowLeft") &&
+            state.currentIndex > 0 &&
+            document.activeElement.tagName !== "TEXTAREA" &&
+            document.activeElement.tagName !== "INPUT") {
+          e.preventDefault();
+          prevQuestion();
         }
         return;
       }
@@ -2345,12 +2936,324 @@
       }
     });
 
+    /* ===== Tab 切换 ===== */
+    function switchTab(tabName) {
+      // 更新 Tab 按钮样式
+      document.querySelectorAll(".tab-btn").forEach((b) => {
+        b.classList.toggle("active", b.dataset.tab === tabName);
+      });
+      // 隐藏所有屏幕
+      startScreen.classList.add("hidden");
+      quizScreen.classList.add("hidden");
+      resultsScreen.classList.add("hidden");
+      reviewScreen.classList.add("hidden");
+      vocabScreen.classList.add("hidden");
+      // 显示目标屏幕
+      if (tabName === "start") {
+        startScreen.classList.remove("hidden");
+        startScreen.style.animation = "none";
+        void startScreen.offsetWidth;
+        startScreen.style.animation = "";
+        renderStartScreen();
+      } else if (tabName === "review") {
+        reviewScreen.classList.remove("hidden");
+        reviewScreen.style.animation = "none";
+        void reviewScreen.offsetWidth;
+        reviewScreen.style.animation = "";
+        renderReviewScreen();
+      } else if (tabName === "vocab") {
+        vocabScreen.classList.remove("hidden");
+        vocabScreen.style.animation = "none";
+        void vocabScreen.offsetWidth;
+        vocabScreen.style.animation = "";
+        renderVocabScreen();
+      }
+    }
+
+    /* ===== 错题本屏幕 ===== */
+    function renderReviewScreen() {
+      const wrongs = state.wrongBank;
+      let filtered = wrongs;
+      if (state.reviewFilter !== "all") {
+        filtered = wrongs.filter((w) => w.level === state.reviewFilter);
+      }
+
+      let html = '<div class="review-header">';
+      html += '<h2>📋 错题本 <span class="count-badge">' + wrongs.length + " 题</span></h2>';
+      if (wrongs.length > 0) {
+        html += '<button class="clear-btn" id="clear-wrong-btn">清空错题本</button>';
+      }
+      html += "</div>";
+
+      // 等级筛选
+      const levels = [
+        { key: "all", label: "全部" },
+        { key: "junior", label: "初中" },
+        { key: "senior", label: "高中" },
+        { key: "cet4", label: "四级" },
+        { key: "cet6", label: "六级" },
+      ];
+      html += '<div class="review-filter">';
+      levels.forEach((l) => {
+        const cls = state.reviewFilter === l.key ? " active" : "";
+        html += '<button class="filter-btn' + cls + '" data-level="' + l.key + '">' + l.label + "</button>";
+      });
+      html += "</div>";
+
+      if (filtered.length === 0) {
+        html += '<div class="review-empty-state">';
+        html += '<div class="icon">🎉</div>';
+        html += "<p>暂无错题，继续加油！</p>";
+        html += "</div>";
+      } else {
+        filtered.slice().reverse().forEach((w) => {
+          const levelName = state.quizBank && state.quizBank.levels[w.level]
+            ? state.quizBank.levels[w.level].name
+            : w.level || "";
+          const typeLabel = TYPE_LABELS[w.type] || w.type || "";
+
+          html += '<div class="review-card">';
+          html += '<div class="rc-meta">';
+          if (levelName) html += '<span class="meta-tag">' + escapeHtml(levelName) + "</span>";
+          html += '<span class="meta-tag type-' + (w.type || "choice") + '">' + escapeHtml(typeLabel) + "</span>";
+          if (w.category) html += '<span class="meta-tag">' + escapeHtml(w.category) + "</span>";
+          if (w.isPassage) html += '<span class="meta-tag type-passage">阅读理解</span>';
+          html += "</div>";
+
+          html += '<div class="rc-question">' + escapeHtml(w.question || "") + "</div>";
+          if (w.questionCn) {
+            html += '<div class="rc-question" style="font-size:0.85rem;color:var(--text-muted);font-weight:400;">' +
+              escapeHtml(w.questionCn) + "</div>";
+          }
+
+          // 选项（如果有）
+          if (w.choices && w.choices.length > 0) {
+            html += '<div style="margin:8px 0;font-size:0.85rem;color:var(--text-muted);">';
+            w.choices.forEach((c) => {
+              html += '<div>' + escapeHtml(c) + "</div>";
+            });
+            html += "</div>";
+          }
+
+          html += '<div class="rc-answers">';
+          html += '<span class="rc-user-ans">你的答案：' + escapeHtml(w.userAnswer || "（未作答）") + "</span>";
+          html += '<span class="rc-correct-ans">正确答案：' + escapeHtml(w.correctAnswer || "") + "</span>";
+          html += "</div>";
+
+          if (w.explanation) {
+            html += '<div class="rc-explain">' + escapeHtml(w.explanation);
+            if (w.knowledgePoint) {
+              html += " ｜ 知识点：" + escapeHtml(w.knowledgePoint);
+            }
+            html += "</div>";
+          }
+
+          if (w.vocabulary && w.vocabulary.length > 0) {
+            html += '<div class="rc-vocab"><b>📖 词汇：</b> ';
+            w.vocabulary.forEach((v, i) => {
+              const f = vocabFields(v);
+              if (i > 0) html += "；";
+              if (f.word) html += escapeHtml(f.word) + " ";
+              if (f.pos) html += "(" + escapeHtml(f.pos) + ") ";
+              if (f.meaning) html += escapeHtml(f.meaning);
+            });
+            html += "</div>";
+          }
+
+          if (w.sentenceTranslation) {
+            html += '<div class="rc-trans"><b>📝 整句翻译：</b>' +
+              escapeHtml(w.sentenceTranslation) + "</div>";
+          }
+
+          if (w.date) {
+            html += '<div class="rc-date">记录时间：' + escapeHtml(w.date) + "</div>";
+          }
+
+          html += "</div>";
+        });
+      }
+
+      // 返回按钮
+      html += '<div class="result-actions" style="margin-top:20px;">';
+      html += '<button class="home-btn" id="review-home-btn">返回首页</button>';
+      html += "</div>";
+
+      reviewBody.innerHTML = html;
+
+      // 绑定筛选按钮
+      reviewBody.querySelectorAll(".filter-btn").forEach((b) => {
+        b.addEventListener("click", () => {
+          state.reviewFilter = b.dataset.level;
+          renderReviewScreen();
+        });
+      });
+
+      // 清空按钮
+      const clearBtn = $("clear-wrong-btn");
+      if (clearBtn) {
+        clearBtn.addEventListener("click", () => {
+          if (confirm("确定清空所有错题吗？此操作不可撤销。")) {
+            clearWrongBank();
+            renderReviewScreen();
+          }
+        });
+      }
+
+      // 返回首页
+      const homeBtn = $("review-home-btn");
+      if (homeBtn) {
+        homeBtn.addEventListener("click", () => switchTab("start"));
+      }
+    }
+
+    /* ===== 词汇复习屏幕 ===== */
+    function renderVocabScreen() {
+      if (!state.quizBank) {
+        vocabBody.innerHTML = '<div class="review-empty-state"><div class="icon">⏳</div><p>题库加载中…</p></div>';
+        return;
+      }
+
+      const levels = state.quizBank.levels;
+      let html = '<div class="review-header"><h2>📖 词汇复习</h2></div>';
+      html += '<input type="text" class="vocab-search" id="vocab-search" placeholder="搜索单词或中文释义…" autocomplete="off" />';
+
+      // 收集所有词汇
+      const allVocab = {};
+      Object.entries(levels).forEach(([key, level]) => {
+        const questions = level.questions || [];
+        questions.forEach((q) => {
+          // 普通题的词汇
+          if (q.vocabulary) {
+            q.vocabulary.forEach((v) => {
+              const f = vocabFields(v);
+              if (f.word && !allVocab[f.word]) {
+                allVocab[f.word] = {
+                  word: f.word,
+                  pos: f.pos,
+                  meaning: f.meaning,
+                  level: key,
+                  levelName: level.name,
+                  category: q.category || "",
+                };
+              }
+            });
+          }
+          // passage 题的词汇
+          if (q.type === "passage" && q.passageVocab) {
+            q.passageVocab.forEach((v) => {
+              const f = vocabFields(v);
+              if (f.word && !allVocab[f.word]) {
+                allVocab[f.word] = {
+                  word: f.word,
+                  pos: f.pos,
+                  meaning: f.meaning,
+                  level: key,
+                  levelName: level.name,
+                  category: "阅读理解",
+                };
+              }
+            });
+          }
+          // passage 子题的词汇
+          if (q.type === "passage" && q.subQuestions) {
+            q.subQuestions.forEach((sub) => {
+              if (sub.vocabulary) {
+                sub.vocabulary.forEach((v) => {
+                  const f = vocabFields(v);
+                  if (f.word && !allVocab[f.word]) {
+                    allVocab[f.word] = {
+                      word: f.word,
+                      pos: f.pos,
+                      meaning: f.meaning,
+                      level: key,
+                      levelName: level.name,
+                      category: sub.category || "阅读理解",
+                    };
+                  }
+                });
+              }
+            });
+          }
+        });
+      });
+
+      // 按等级分组
+      const byLevel = {};
+      Object.values(allVocab).forEach((v) => {
+        if (!byLevel[v.level]) byLevel[v.level] = [];
+        byLevel[v.level].push(v);
+      });
+
+      // 渲染
+      html += '<div id="vocab-list">';
+      Object.entries(levels).forEach(([key, level]) => {
+        const words = byLevel[key] || [];
+        if (words.length === 0) return;
+        html += '<div class="vocab-level-section" data-level="' + key + '">';
+        html += '<div class="vocab-level-title">' + escapeHtml(level.name) + " · " + words.length + " 词</div>";
+        html += '<div class="vocab-grid">';
+        words.forEach((v) => {
+          html += '<div class="vocab-card-item" data-word="' + escapeHtml(v.word.toLowerCase()) + '" data-meaning="' + escapeHtml(v.meaning.toLowerCase()) + '">';
+          html += '<span class="vc-word">' + escapeHtml(v.word) + "</span>";
+          if (v.pos) html += '<span class="vc-pos">' + escapeHtml(v.pos) + "</span>";
+          if (v.meaning) html += '<div class="vc-meaning">' + escapeHtml(v.meaning) + "</div>";
+          if (v.category) html += '<div class="vc-category">' + escapeHtml(v.category) + "</div>";
+          html += "</div>";
+        });
+        html += "</div>"; // vocab-grid
+        html += "</div>"; // vocab-level-section
+      });
+      html += "</div>";
+
+      // 返回按钮
+      html += '<div class="result-actions" style="margin-top:20px;">';
+      html += '<button class="home-btn" id="vocab-home-btn">返回首页</button>';
+      html += "</div>";
+
+      vocabBody.innerHTML = html;
+
+      // 搜索功能
+      const searchInput = $("vocab-search");
+      if (searchInput) {
+        searchInput.addEventListener("input", () => {
+          const query = searchInput.value.trim().toLowerCase();
+          vocabBody.querySelectorAll(".vocab-card-item").forEach((card) => {
+            const word = card.dataset.word || "";
+            const meaning = card.dataset.meaning || "";
+            const match = !query || word.includes(query) || meaning.includes(query);
+            card.style.display = match ? "" : "none";
+          });
+          // 隐藏空分组
+          vocabBody.querySelectorAll(".vocab-level-section").forEach((sec) => {
+            const visible = sec.querySelectorAll('.vocab-card-item:not([style*="display: none"])');
+            sec.style.display = visible.length > 0 ? "" : "none";
+          });
+        });
+      }
+
+      // 返回首页
+      const homeBtn = $("vocab-home-btn");
+      if (homeBtn) {
+        homeBtn.addEventListener("click", () => switchTab("start"));
+      }
+    }
+
     /* ===== 初始化 ===== */
     loadBestScores();
+    loadWrongBank();
     loadQuizBank();
 
     // 开始按钮事件
     $("start-quiz-btn").addEventListener("click", startQuiz);
+
+    // 导航按钮事件
+    $("prev-question-btn").addEventListener("click", prevQuestion);
+    $("next-question-btn").addEventListener("click", nextQuestion);
+
+    // Tab 切换事件
+    document.querySelectorAll(".tab-btn").forEach((btn) => {
+      btn.addEventListener("click", () => switchTab(btn.dataset.tab));
+    });
   </script>
 </body>
 </html>
