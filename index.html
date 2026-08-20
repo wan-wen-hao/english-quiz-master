@@ -2528,8 +2528,11 @@
       <div class="level-divider"><span>或者</span></div>
       <div class="learn-mode-section">
         <div class="learn-mode-title">📚 学习模式（先学后练）</div>
-        <div class="learn-mode-desc">先在知识图谱中学语法点，学完直接做对应练习。点击下方按钮进入知识图谱</div>
-        <div class="learn-category-grid">
+        <div class="learn-mode-desc">选择语法大类→小类→知识点，学完直接做对应练习。121个语法点，每个3道专属题</div>
+        
+        <!-- 语法大类选择 -->
+        <div style="font-size:0.78rem;font-weight:600;color:var(--text-muted);margin-bottom:6px;margin-top:8px;">选择语法大类</div>
+        <div class="learn-category-grid" id="learn-cat-grid">
           <button class="learn-category-btn" onclick="switchTab('grammar')">🗺️ 进入知识图谱</button>
         </div>
       </div>
@@ -3046,6 +3049,10 @@
         if (!grammarScreen.classList.contains("hidden")) {
           renderGrammarScreen();
         }
+        // 如果在首页，更新语法大类按钮
+        if (!startScreen.classList.contains("hidden")) {
+          renderLearnCategories();
+        }
       } catch (err) {
         state.grammarDB = null;
         if (!grammarScreen.classList.contains("hidden")) {
@@ -3148,6 +3155,39 @@
         btn.textContent = t.label;
         btn.addEventListener("click", () => selectType(t.key));
         typeGrid.appendChild(btn);
+      });
+
+      // 语法大类按钮（学习模式）
+      renderLearnCategories();
+    }
+
+    // 渲染学习模式的语法大类选择
+    function renderLearnCategories() {
+      const grid = $("learn-cat-grid");
+      if (!grid || !state.grammarDB) return;
+
+      const cats = state.grammarDB.categories || {};
+      grid.innerHTML = "";
+
+      Object.keys(cats).forEach((catName) => {
+        const btn = document.createElement("button");
+        btn.className = "learn-category-btn";
+        // 提取大类中文名
+        const shortName = catName.split(' ')[0] || catName;
+        btn.textContent = shortName;
+        btn.addEventListener("click", () => {
+          switchTab('grammar');
+          // 滚动到对应大类（延迟执行确保渲染完成）
+          setTimeout(() => {
+            const branchIndex = Object.keys(cats).indexOf(catName);
+            const branch = document.getElementById('grammar-branch-' + branchIndex);
+            if (branch) {
+              branch.classList.add('expanded');
+              branch.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+          }, 400);
+        });
+        grid.appendChild(btn);
       });
     }
 
