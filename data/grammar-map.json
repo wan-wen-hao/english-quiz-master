@@ -3,7 +3,7 @@
     "title": "英语语法知识图谱",
     "version": "1.0.0",
     "description": "从零基础到六级的英语语法知识体系，树杈式分类。覆盖初中(junior)、高中(senior)、四级(cet4)、六级(cet6)全部核心语法知识点。",
-    "totalPoints": 93,
+    "totalPoints": 121,
     "categories": 9,
     "levels": ["junior", "senior", "cet4", "cet6"],
     "levelDescription": {
@@ -283,6 +283,98 @@
           "tips": "中文'因为...所以...'/'虽然...但是...'在英语中只能保留一个连词！这是最容易犯的中式英语错误。",
           "relatedCategories": ["五大基本句型", "从句体系", "连词"]
         }
+      ],
+      "it的用法 (Usage of it)": [
+        {
+          "id": "gm_094",
+          "name": "it的用法：形式主语、形式宾语与强调用法",
+          "level": "senior",
+          "plainLanguage": "it这个小词特别忙，除了指代事物，还能当'替身'。当真正的主语或宾语太长（比如to do或不定式从句），就请it先顶上做形式主语/形式宾语。它还能用来强调，'就是他打了窗户'就是It was he that broke the window。",
+          "rules": [
+            "形式主语：It is/was + adj/n + to do / that从句（真正主语后移）",
+            "形式宾语：主语 + 谓语 + it + adj/n + to do / that从句（常见于find/make/think/feel后）",
+            "强调句：It is/was + 被强调部分 + that/who + 其他",
+            "指代时间/天气/距离/温度：It is raining. It is 8 o'clock. It is far.",
+            "指代上文提到的事物或婴儿/未知性别的人",
+            "判断强调句：去掉It is/was和that后句子仍完整"
+          ],
+          "examples": [
+            {"en": "It is important to learn English well.", "cn": "学好英语很重要。（it作形式主语，to learn...是真正主语）"},
+            {"en": "It is a pity that you missed the party.", "cn": "真遗憾你错过了聚会。（it作形式主语，that从句是真正主语）"},
+            {"en": "I find it difficult to understand him.", "cn": "我发现理解他很难。（it作形式宾语，to understand...是真正宾语）"},
+            {"en": "He made it clear that he would not come.", "cn": "他明确表示不会来。（it作形式宾语）"},
+            {"en": "It was in the park that I met her.", "cn": "我就是在公园遇到她的。（强调句，强调地点）"},
+            {"en": "It is two miles from here to the station.", "cn": "从这里到车站有两英里。（指代距离）"}
+          ],
+          "commonMistakes": [
+            {"wrong": "That you missed the party is a pity.", "correct": "It is a pity that you missed the party.", "reason": "that从句作主语太头重脚轻，通常用it作形式主语，把that从句后移"},
+            {"wrong": "I find that difficult to understand him.", "correct": "I find it difficult to understand him.", "reason": "宾补结构中要用it作形式宾语，不能用that，真正宾语是to understand him"},
+            {"wrong": "It was yesterday when I met her.", "correct": "It was yesterday that I met her.", "reason": "强调句用that连接，不能用when（when是定语从句/状语从句引导词）"}
+          ],
+          "tips": "形式主语/宾语：真正主语/宾语太长（to do/that从句），用it先顶上。强调句：It is/was + 强调部分 + that + 剩余。去掉It...that句子仍通顺=强调句！",
+          "relatedCategories": ["强调句的结构", "名词性从句", "不定式作主语宾语"]
+        }
+      ],
+      "直接引语与间接引语 (Direct & Indirect Speech)": [
+        {
+          "id": "gm_095",
+          "name": "直接引语与间接引语",
+          "level": "senior",
+          "plainLanguage": "直接引语就是把别人的话原封不动引号引出来；间接引语是用自己的话转述别人的话。转述时要注意：时态往回退一步（现在变过去），人称要跟着变，时间和地点词也要调整。",
+          "rules": [
+            "直接引语：He said, 'I am busy.'（引号内原话）",
+            "间接引语：He said that he was busy.（转述，that可省）",
+            "时态变化：一般现在→一般过去，现在进行→过去进行，现在完成→过去完成，一般过去→过去完成",
+            "人称变化：I→he/she，we→they，my→his/her（按转述者视角调整）",
+            "时间/地点变化：now→then，today→that day，yesterday→the day before，here→there，tomorrow→the next day",
+            "疑问句转述：用if/whether（一般疑问）或保留疑问词（特殊疑问），语序变陈述语序",
+            "祈使句转述：tell/ask sb to do sth"
+          ],
+          "examples": [
+            {"en": "She said, 'I like reading.' → She said (that) she liked reading.", "cn": "她说：'我喜欢阅读。'→她说她喜欢阅读。"},
+            {"en": "He said, 'I will come tomorrow.' → He said he would come the next day.", "cn": "他说：'我明天来。'→他说他第二天来。"},
+            {"en": "She asked me, 'Do you know the answer?' → She asked me if I knew the answer.", "cn": "她问我：'你知道答案吗？'→她问我是不是知道答案。"},
+            {"en": "He asked, 'Where is the station?' → He asked where the station was.", "cn": "他问：'车站在哪？'→他问车站在哪。"},
+            {"en": "'Don't be late,' the teacher said. → The teacher told us not to be late.", "cn": "'别迟到，'老师说。→老师叫我们别迟到。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "He said that he is busy.", "correct": "He said that he was busy.", "reason": "主句said是过去时，从句时态要往回退，is要变成was"},
+            {"wrong": "She asked me if do I know the answer.", "correct": "She asked me if I knew the answer.", "reason": "间接引语中疑问句要变陈述语序（主语在前），且时态退一步knew"},
+            {"wrong": "He said he would come today.", "correct": "He said he would come that day.", "reason": "转述时today要变成that day（如果转述时间和说话时间不同）"}
+          ],
+          "tips": "间接引语三变：时态退一步（is→was, will→would）、人称跟着变（I→he/she）、时间地点词要调（now→then, here→there）。疑问句变陈述语序！",
+          "relatedCategories": ["宾语从句时态一致", "一般过去时", "人称代词"]
+        }
+      ],
+      "祈使句 (Imperative Sentence)": [
+        {
+          "id": "gm_096",
+          "name": "祈使句",
+          "level": "junior",
+          "plainLanguage": "祈使句就是命令、请求或建议的句子，主语you通常省略，直接用动词原形开头。比如'打开门'就是Open the door。否定形式加Don't：Don't open the door。礼貌点就加please。",
+          "rules": [
+            "肯定形式：动词原形开头（主语you省略）",
+            "否定形式：Don't / Never + 动词原形",
+            "Let's + 动词原形：表示建议（Let's go!）",
+            "Please + 动词原形：表礼貌请求（Please sit down.）",
+            "Do/Always + 动词原形：加强语气（Do be careful!）",
+            "No + 动名词/名词：表示禁止（No smoking!）"
+          ],
+          "examples": [
+            {"en": "Open the door, please.", "cn": "请开门。"},
+            {"en": "Don't be late for school.", "cn": "上学别迟到。"},
+            {"en": "Let's go for a walk.", "cn": "我们去散步吧。"},
+            {"en": "Never give up!", "cn": "永远不要放弃！"},
+            {"en": "Be quiet, everyone!", "cn": "大家安静！"}
+          ],
+          "commonMistakes": [
+            {"wrong": "Opens the door.", "correct": "Open the door.", "reason": "祈使句用动词原形Open，不能用第三人称单数Opens"},
+            {"wrong": "Don't to be late.", "correct": "Don't be late.", "reason": "Don't后接动词原形be，不能加to"},
+            {"wrong": "Please you open the door.", "correct": "Please open the door.", "reason": "祈使句主语you通常省略，不说you"}
+          ],
+          "tips": "祈使句=动词原形开头，主语you省掉。否定Don't+原形。礼貌加please，建议用Let's，禁止用No+doing（No smoking!）。",
+          "relatedCategories": ["五大基本句型", "反义疑问句", "直接引语与间接引语"]
+        }
       ]
     },
 
@@ -450,6 +542,32 @@
           ],
           "tips": "时刻表用一般现在时，个人计划用进行时。come/go/leave/arrive/fly这些'位移'动词最常这样用。",
           "relatedCategories": ["will与be going to", "现在进行时", "一般现在时"]
+        },
+        {
+          "id": "gm_100",
+          "name": "一般将来时的其他表达方式",
+          "level": "senior",
+          "plainLanguage": "除了will和be going to，表达将来还有好几种方式。be about to表示'马上就要'；be to表示'计划/命令/注定'；shall用于第一人称正式场合；be due to表示'按时间表预计'。各有各的味道。",
+          "rules": [
+            "be about to + 动词原形：马上就要发生（不接具体时间状语）",
+            "be to + 动词原形：表示计划、命令、注定要发生的事",
+            "shall + 动词原形：第一人称(I/we)的将来，正式用语",
+            "be due to + 动词原形：按时间表预计要发生的事",
+            "be on the point of + 动名词：正要做某事"
+          ],
+          "examples": [
+            {"en": "The plane is about to take off.", "cn": "飞机马上就要起飞了。"},
+            {"en": "The president is to visit Japan next month.", "cn": "总统将于下月访问日本。（计划）"},
+            {"en": "I shall return soon.", "cn": "我很快就会回来。（正式）"},
+            {"en": "The train is due to arrive at 8:00.", "cn": "火车预计八点到。"},
+            {"en": "I was on the point of leaving when the phone rang.", "cn": "我正要离开时电话响了。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "The plane is about to take off in five minutes.", "correct": "The plane is about to take off.", "reason": "be about to表示马上发生，不能和具体时间状语连用"},
+            {"wrong": "He is about to go tomorrow.", "correct": "He is going to go tomorrow.", "reason": "be about to不接将来的时间状语，有tomorrow时用be going to"}
+          ],
+          "tips": "be about to=马上（不带时间状语）；be to=计划/命令/注定；shall=第一人称正式将来；be due to=按时刻表预计。",
+          "relatedCategories": ["will与be going to的区别", "一般现在时和现在进行时表将来", "过去将来时"]
         }
       ],
       "现在进行时 (Present Continuous)": [
@@ -700,6 +818,90 @@
           "tips": "过去将来时=would+原形。看到'said/thought/told'+将来的事，把will变成would！",
           "relatedCategories": ["一般将来时", "一般过去时", "宾语从句时态一致"]
         }
+      ],
+      "过去完成进行时 (Past Perfect Continuous)": [
+        {
+          "id": "gm_097",
+          "name": "过去完成进行时",
+          "level": "cet4",
+          "plainLanguage": "过去完成进行时就是'在过去某个时间点之前，一直在做某事，而且还在做'。结构是had been + 动词ing。比如'我到的时候他已经等了两个小时了（还在等）'。它强调一个动作从过去某时开始一直持续到另一个过去时间。",
+          "rules": [
+            "结构：had been + v-ing",
+            "表示从过去某时开始一直持续到另一个过去时间点的动作（强调持续性）",
+            "常搭配：for + 时间段, since + 时间点",
+            "与过去完成时的区别：过去完成时强调完成，过去完成进行时强调一直在做",
+            "状态动词（know/love等）不用进行时，改用过去完成时"
+          ],
+          "examples": [
+            {"en": "He had been waiting for two hours when I arrived.", "cn": "我到的时候他已经等了两个小时了。"},
+            {"en": "She had been studying English for five years before she went abroad.", "cn": "出国前她已经学了五年英语了。"},
+            {"en": "They had been talking for an hour before the teacher came in.", "cn": "老师进来前他们已经聊了一个小时了。"},
+            {"en": "It had been raining for a week when the sun finally came out.", "cn": "太阳终于出来前已经下了一个星期的雨了。"},
+            {"en": "How long had you been living there before you moved?", "cn": "搬走前你在那里住了多久？"}
+          ],
+          "commonMistakes": [
+            {"wrong": "He had waited for two hours when I arrived.", "correct": "He had been waiting for two hours when I arrived.", "reason": "强调一直在等（可能还在等），用过去完成进行时had been waiting更合适"},
+            {"wrong": "He had been knowing her for years.", "correct": "He had known her for years.", "reason": "know是状态动词，不用进行时，用过去完成时had known"}
+          ],
+          "tips": "过去完成进行时=had been doing，强调'过去某时之前一直在做'。和过去完成时的区别：完成时看结果，完成进行时看过程。",
+          "relatedCategories": ["过去完成时", "现在完成进行时", "过去进行时"]
+        }
+      ],
+      "将来进行时 (Future Continuous)": [
+        {
+          "id": "gm_098",
+          "name": "将来进行时",
+          "level": "cet4",
+          "plainLanguage": "将来进行时就是'将来某个时间点正在做的事'。结构是will be + 动词ing。比如'明天这个时候我正在考试'。它强调将来某时正在进行的动作，比will do更具体、更生动。",
+          "rules": [
+            "结构：will be + v-ing",
+            "表示将来某个具体时间点正在进行的动作",
+            "强调动作的过程，画面感更强",
+            "也可以表示按计划即将发生的事（比will do更委婉自然）",
+            "常搭配：this time tomorrow, at 8 o'clock tomorrow, at that time等将来时间点"
+          ],
+          "examples": [
+            {"en": "This time tomorrow, I will be taking the exam.", "cn": "明天这个时候我正在考试。"},
+            {"en": "At 8 o'clock, she will be having dinner.", "cn": "八点钟她会在吃晚饭。"},
+            {"en": "Don't call me at 10. I'll be having a meeting.", "cn": "十点别给我打电话，我会在开会。"},
+            {"en": "We will be flying to Paris next week.", "cn": "下周我们将飞往巴黎。（按计划）"},
+            {"en": "I will be waiting for you at the gate.", "cn": "我会在门口等你。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "This time tomorrow, I will take the exam.", "correct": "This time tomorrow, I will be taking the exam.", "reason": "强调明天这个时候'正在'考试，用将来进行时will be taking"},
+            {"wrong": "At 8 o'clock, she will have dinner.", "correct": "At 8 o'clock, she will be having dinner.", "reason": "强调八点那个时间点'正在'吃晚饭，用将来进行时更准确"}
+          ],
+          "tips": "将来进行时=will be doing，表示'将来某时正在做'。看到this time tomorrow/at 8 o'clock tomorrow，用将来进行时！",
+          "relatedCategories": ["将来完成时", "现在进行时表将来", "一般将来时"]
+        }
+      ],
+      "将来完成时 (Future Perfect)": [
+        {
+          "id": "gm_099",
+          "name": "将来完成时",
+          "level": "cet4",
+          "plainLanguage": "将来完成时就是'到将来某个时间为止已经做完的事'。结构是will have + 过去分词。比如'到明年年底我就毕业了'。它强调在将来某个截止时间之前已经完成的动作。",
+          "rules": [
+            "结构：will have + 过去分词",
+            "表示在将来某个时间之前已经完成的动作",
+            "常搭配：by + 将来时间，by the end of, by then, before等",
+            "强调在截止时间点之前已经完成",
+            "否定：will not (won't) have + 过去分词"
+          ],
+          "examples": [
+            {"en": "By the end of this year, I will have graduated.", "cn": "到今年年底我就毕业了。"},
+            {"en": "She will have finished the report by 5 p.m.", "cn": "她将在下午五点前完成报告。"},
+            {"en": "By the time you arrive, we will have eaten dinner.", "cn": "等你到的时候，我们已经吃完晚饭了。"},
+            {"en": "They will have built the bridge by next month.", "cn": "他们下个月前就会建好这座桥。"},
+            {"en": "I will have lived here for ten years by 2026.", "cn": "到2026年我在这里就住了十年了。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "By the end of this year, I will graduate.", "correct": "By the end of this year, I will have graduated.", "reason": "强调到年底'已经'毕业，用将来完成时will have graduated"},
+            {"wrong": "By the time you arrive, we will eat dinner.", "correct": "By the time you arrive, we will have eaten dinner.", "reason": "强调等你到的时候'已经'吃完，用将来完成时will have eaten"}
+          ],
+          "tips": "将来完成时=will have done，表示'到将来某时已完成'。看到by + 将来时间，就用将来完成时！",
+          "relatedCategories": ["将来进行时", "过去完成时", "现在完成时"]
+        }
       ]
     },
 
@@ -837,6 +1039,60 @@
           ],
           "tips": "双宾语被动：人提前不用to，物提前人前面要加to/for。使役动词被动要补to！",
           "relatedCategories": ["被动语态基本构成", "双宾语", "使役动词"]
+        },
+        {
+          "id": "gm_101",
+          "name": "被动语态的特殊用法（It is said that等）",
+          "level": "cet4",
+          "plainLanguage": "有些被动结构已经成为固定句式，比如'据说'是It is said that，'据报道'是It is reported that。这些句子的it是形式主语，真正主语是that后面的内容。还有一种简化说法：sb is said to do（据说某人做某事）。",
+          "rules": [
+            "It is said that... = 据说...",
+            "It is reported that... = 据报道...",
+            "It is believed that... = 人们认为...",
+            "It is well known that... = 众所周知...",
+            "It is expected that... = 预计...",
+            "简化形式：sb/sth is said/reported to do/to have done"
+          ],
+          "examples": [
+            {"en": "It is said that he is a billionaire.", "cn": "据说他是亿万富翁。"},
+            {"en": "It is reported that the earthquake caused 100 deaths.", "cn": "据报道地震造成100人死亡。"},
+            {"en": "It is believed that exercise is good for health.", "cn": "人们认为运动对健康有益。"},
+            {"en": "He is said to have written ten books.", "cn": "据说他已经写了十本书。（have written表示已完成）"},
+            {"en": "It is expected that the price will go up.", "cn": "预计价格会上涨。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "It is said he is a billionaire.", "correct": "It is said that he is a billionaire.", "reason": "It is said that结构中that一般不省略（正式语体中）"},
+            {"wrong": "He is said to write ten books.", "correct": "He is said to have written ten books.", "reason": "写书发生在is said之前（已完成），要用to have written"}
+          ],
+          "tips": "记住几个常用被动句式：It is said that=据说，It is reported that=据报道，It is believed that=人们认为。简化版：sb is said to do（同时/将来）/to have done（已完成）。",
+          "relatedCategories": ["被动语态基本构成", "it的用法", "不定式的时态"]
+        },
+        {
+          "id": "gm_102",
+          "name": "不能用被动语态的动词",
+          "level": "cet4",
+          "plainLanguage": "不是所有动词都能变被动！表示'拥有'的have、'适合'的fit、'像'的resemble这些表示状态的及物动词，没有被动形式。'这双鞋适合你'只能说The shoes fit you，不能说You are fitted by the shoes。不及物动词（happen/arrive）本身没有宾语，更不可能有被动。",
+          "rules": [
+            "状态及物动词无被动：have(有), fit, suit, lack, resemble(像), cost(花费), weigh, measure, hold(容纳)",
+            "不及物动词无被动：happen, occur, arrive, appear, exist, belong to",
+            "某些固定搭配无被动：take place(发生), break out(爆发), belong to(属于)",
+            "表示相互关系的动词用主动表被动：meet(见面), shake hands(握手)",
+            "某些动词的特定含义不用被动：sell well(畅销), read(读起来), wash easily(好洗)"
+          ],
+          "examples": [
+            {"en": "He has a new car.（不能说A new car is had by him.）", "cn": "他有一辆新车。"},
+            {"en": "The shoes fit me perfectly.（不能说I am fitted by the shoes.）", "cn": "这双鞋很适合我。"},
+            {"en": "She resembles her mother.（不能说Her mother is resembled by her.）", "cn": "她长得像她妈妈。"},
+            {"en": "The accident happened yesterday.（不能说The accident was happened yesterday.）", "cn": "事故发生在昨天。"},
+            {"en": "This book sells well.（主动表被动，畅销）", "cn": "这本书很畅销。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "A new car is had by him.", "correct": "He has a new car.", "reason": "have表示'拥有'是状态动词，不能变被动语态"},
+            {"wrong": "The accident was happened yesterday.", "correct": "The accident happened yesterday.", "reason": "happen是不及物动词，不能用被动语态"},
+            {"wrong": "I am fitted by the shoes.", "correct": "The shoes fit me.", "reason": "fit表示'适合'是状态动词，不能变被动"}
+          ],
+          "tips": "记住不能变被动的动词：have/fit/suit/lack/resemble/cost/weigh（状态），happen/occur/arrive/belong to（不及物）。'物+sell/read/wash+well/ easily'用主动表被动。",
+          "relatedCategories": ["被动语态基本构成", "主动语态的使用场景", "不及物动词"]
         }
       ]
     },
@@ -973,6 +1229,59 @@
           ],
           "tips": "句首用as不用which（正如...）。固定搭配要背：as we know/as is known to all/as has been said。",
           "relatedCategories": ["限制性与非限制性定语从句", "关系代词"]
+        },
+        {
+          "id": "gm_103",
+          "name": "定语从句中that与which的区别",
+          "level": "senior",
+          "plainLanguage": "that和which都能修饰物，但在某些情况下只能选一个。口诀：限制性可用that或which，非限制性只能用which；介词后面只能用which；先行词是不不定代词、被最高级或序数词修饰时只能用that。",
+          "rules": [
+            "只能用that的情况：①先行词是不定代词（all/everything/nothing/anything等）②先行词被最高级修饰③先行词被序数词修饰④先行词既有人又有物⑤在疑问词which/who之后避免重复",
+            "只能用which的情况：①非限制性定语从句（有逗号）②介词后面（in which, of which）",
+            "限制性定语从句中修饰物时，that和which一般可互换",
+            "that不能引导非限制性定语从句",
+            "which不能紧跟在介词后换成that（介词后只能用which）"
+          ],
+          "examples": [
+            {"en": "This is the best movie that I have ever seen.", "cn": "这是我看过最好的电影。（最高级best修饰，只能用that）"},
+            {"en": "All that glitters is not gold.", "cn": "闪光的未必都是金子。（不定代词all，只能用that）"},
+            {"en": "He bought a new car, which cost a lot of money.", "cn": "他买了辆新车，花了很多钱。（非限制性，只能用which）"},
+            {"en": "This is the house in which Lu Xun once lived.", "cn": "这是鲁迅曾经住过的房子。（介词in后只能用which）"},
+            {"en": "The train and the passengers that were delayed have arrived.", "cn": "被延误的火车和乘客已经到了。（人和物，只能用that）"}
+          ],
+          "commonMistakes": [
+            {"wrong": "This is the best movie which I have ever seen.", "correct": "This is the best movie that I have ever seen.", "reason": "先行词movie被最高级best修饰，只能用that"},
+            {"wrong": "He bought a new car, that cost a lot of money.", "correct": "He bought a new car, which cost a lot of money.", "reason": "非限制性定语从句（有逗号）不能用that，只能用which"},
+            {"wrong": "This is the house in that Lu Xun once lived.", "correct": "This is the house in which Lu Xun once lived.", "reason": "介词in后面只能用which，不能用that"}
+          ],
+          "tips": "只用that五情况：不定代词、最高级、序数词、人加物、疑问词后。只用which两情况：有逗号（非限制）、介词后。",
+          "relatedCategories": ["关系代词that/which/who的用法", "限制性与非限制性定语从句", "关系副词"]
+        },
+        {
+          "id": "gm_104",
+          "name": "关系代词as与which引导非限制性定语从句的区别",
+          "level": "cet4",
+          "plainLanguage": "as和which都能引导非限制性定语从句指代整个主句，但有区别：as有'正如'的意思，可以放在句首、句中或句末；which没有'正如'的意思，只能放在句中或句末，不能放句首。'众所周知'只能用As is known to all，不能用Which is known to all。",
+          "rules": [
+            "as引导非限制性定语从句：意为'正如...'，可放句首、句中、句末",
+            "which引导非限制性定语从句：意为'这一点'，只能放句中或句末，不能放句首",
+            "as常用于固定搭配：as we know, as is known to all, as has been mentioned, as is expected",
+            "as多表示主句内容的'顺承'关系（与预期一致）",
+            "which可表示对主句内容的补充、评价或转折"
+          ],
+          "examples": [
+            {"en": "As we all know, the earth is round.", "cn": "众所周知，地球是圆的。（as在句首=正如）"},
+            {"en": "He is from Australia, as is evident from his accent.", "cn": "他是澳大利亚人，这从他的口音很明显。（as=正如）"},
+            {"en": "He failed the exam, which surprised everyone.", "cn": "他考试不及格，这让所有人吃惊。（which不能换成as，因为是意外转折）"},
+            {"en": "She married him, which was unexpected.", "cn": "她嫁给了他，这出乎意料。（which表转折，不用as）"},
+            {"en": "As has been mentioned above, practice makes perfect.", "cn": "如上所述，熟能生巧。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "Which we all know, the earth is round.", "correct": "As we all know, the earth is round.", "reason": "非限制性定语从句在句首时只能用as，不能用which"},
+            {"wrong": "He failed the exam, as surprised everyone.", "correct": "He failed the exam, which surprised everyone.", "reason": "主句内容是'让人吃惊'的意外结果，不是'正如'的顺承关系，用which不用as"}
+          ],
+          "tips": "句首只能用as（正如）。表'正如/符合预期'用as，表'意外/转折'用which。背固定搭配：as we know/as is known to all/as has been said。",
+          "relatedCategories": ["as引导的定语从句", "限制性与非限制性定语从句", "关系代词"]
         }
       ],
       "名词性从句 (Noun Clause)": [
@@ -1106,6 +1415,34 @@
           ],
           "tips": "同位语从句=解释名词内容。that不省略、不作成分。和定语从句的区别：定语从句的that在从句中作主语或宾语。",
           "relatedCategories": ["that引导的名词性从句", "定语从句", "whether/if"]
+        },
+        {
+          "id": "gm_105",
+          "name": "what引导的名词性从句",
+          "level": "senior",
+          "plainLanguage": "what在名词性从句中既当连接词又当句子成分（主语或宾语），意思是'...的东西/事情'。它可以引导主语从句、宾语从句、表语从句。和that的区别是：that不作成分，what必须作成分且有实际意义。",
+          "rules": [
+            "what = the thing(s) that，在从句中充当主语、宾语、表语等成分",
+            "主语从句：What he said is true.（what作said的宾语）",
+            "宾语从句：I don't understand what you mean.（what作mean的宾语）",
+            "表语从句：This is what I want.（what作want的宾语）",
+            "what与that的区别：that不作成分无实义，what作成分有实义",
+            "what不能引导同位语从句（that才行）"
+          ],
+          "examples": [
+            {"en": "What he said made me angry.", "cn": "他说的话让我生气。（what作said的宾语，引导主语从句）"},
+            {"en": "I don't know what happened.", "cn": "我不知道发生了什么。（what作happened的主语，引导宾语从句）"},
+            {"en": "This is what I need.", "cn": "这就是我需要的。（what作need的宾语，引导表语从句）"},
+            {"en": "What matters most is your attitude.", "cn": "最重要的是你的态度。（what作matters的主语）"},
+            {"en": "Show me what you bought.", "cn": "给我看看你买了什么。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "That he said made me angry.", "correct": "What he said made me angry.", "reason": "这里从句said缺宾语，需要what既连接又作宾语；that不作成分，用that的话从句不完整"},
+            {"wrong": "I don't know that happened.", "correct": "I don't know what happened.", "reason": "happen是不及物动词，从句缺主语，需要what作主语；that不作成分"},
+            {"wrong": "This is that I want.", "correct": "This is what I want.", "reason": "从句want缺宾语，需要what作宾语；that不作成分"}
+          ],
+          "tips": "what=the thing that，既当连接词又作成分（主/宾/表）。从句缺成分用what，不缺成分用that。what不能引导同位语从句！",
+          "relatedCategories": ["that引导的名词性从句", "宾语从句时态一致", "主语从句"]
         }
       ],
       "状语从句 (Adverbial Clause)": [
@@ -1377,6 +1714,35 @@
           ],
           "tips": "to do=同时/之后，to be doing=正在进行，to have done=之前已完成。被动加be/been即可。",
           "relatedCategories": ["不定式作主语宾语", "不定式作定语", "被动语态"]
+        },
+        {
+          "id": "gm_106",
+          "name": "不定式符号to的省略",
+          "level": "senior",
+          "plainLanguage": "有些动词后面跟不定式时，to可以省掉，直接用动词原形。使役动词make/let/have后面跟sb do sth；感官动词see/hear/watch/notice/feel后面也是sb do sth。但变被动语态后，省掉的to要补回来！",
+          "rules": [
+            "使役动词make/let/have + sb + do sth（省to）：He made me cry.",
+            "感官动词see/hear/watch/notice/feel + sb + do sth（省to）：I saw him enter.",
+            "would rather (not) do sth：宁愿（不）做某事",
+            "had better (not) do sth：最好（不）做某事",
+            "Why (not) do sth?：为什么（不）做某事",
+            "help (to) do sth：to可省可不省",
+            "变被动语态时补回to：be made to do, be seen to do"
+          ],
+          "examples": [
+            {"en": "The boss made him work overtime.", "cn": "老板让他加班。（work前省to）"},
+            {"en": "I saw him cross the street.", "cn": "我看见他过了马路。（cross前省to）"},
+            {"en": "He was made to work overtime.", "cn": "他被要求加班。（被动补回to）"},
+            {"en": "You had better not go out alone at night.", "cn": "你晚上最好别单独出门。"},
+            {"en": "Why not ask the teacher for help?", "cn": "为什么不向老师求助呢？"}
+          ],
+          "commonMistakes": [
+            {"wrong": "The boss made him to work overtime.", "correct": "The boss made him work overtime.", "reason": "使役动词make后接不带to的不定式，直接用work"},
+            {"wrong": "He was made work overtime.", "correct": "He was made to work overtime.", "reason": "变被动语态后要补回省略的to，变成be made to do"},
+            {"wrong": "I saw him to cross the street.", "correct": "I saw him cross the street.", "reason": "感官动词see后接不带to的不定式，直接用cross"}
+          ],
+          "tips": "make/let/have + sb do（省to），see/hear/watch/feel + sb do（省to）。但被动语态要补to：be made to do, be seen to do！would rather/had better/why not后也省to。",
+          "relatedCategories": ["不定式作主语宾语", "使役动词", "被动语态基本构成"]
         }
       ],
       "动名词 (Gerund)": [
@@ -1433,6 +1799,32 @@
           ],
           "tips": "to do=还没做/去做；doing=已经做了/正在做。remember/forget/stop/try/mean/regret后接两者意思不同，一定要记住！",
           "relatedCategories": ["动名词的用法", "不定式作主语宾语"]
+        },
+        {
+          "id": "gm_107",
+          "name": "动名词的复合结构",
+          "level": "cet4",
+          "plainLanguage": "动名词前面可以加上自己的逻辑主语，构成复合结构，说明是谁做的事。比如'他迟到让我们担心'是His being late worried us。正式语体用物主代词或名词所有格，口语中也用宾格。",
+          "rules": [
+            "结构：逻辑主语 + 动名词（doing）",
+            "作主语：逻辑主语用物主代词/名词所有格（his/Tom's + doing）",
+            "作宾语：可用宾格/普通格（him/Tom + doing），也可用所有格",
+            "无生命名词用普通格：The rain coming made us stay home.",
+            "时间名词可用所有格：a week's delay, today's meeting"
+          ],
+          "examples": [
+            {"en": "His coming late worried us.", "cn": "他来晚了让我们担心。（his being late作主语）"},
+            {"en": "Do you mind my opening the window?", "cn": "你介意我开窗吗？（my opening作宾语）"},
+            {"en": "I remember Tom's telling me about it.", "cn": "我记得汤姆跟我说过这事。"},
+            {"en": "The baby crying kept me awake all night.", "cn": "婴儿哭闹让我整晚没睡。（无生命名词用普通格）"},
+            {"en": "There is no hope of their winning the game.", "cn": "他们没有赢比赛的希望。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "Him coming late worried us.", "correct": "His coming late worried us.", "reason": "动名词复合结构作主语时，逻辑主语用所有格his，不用宾格him"},
+            {"wrong": "Do you mind me opening the window?", "correct": "Do you mind my opening the window?", "reason": "正式语体中作宾语时也用所有格my，me是口语形式"}
+          ],
+          "tips": "动名词复合结构=逻辑主语+doing。作主语用所有格(his/Tom's)，作宾语可用宾格或所有格。无生命名词用普通格(The rain coming)。",
+          "relatedCategories": ["动名词的用法", "物主代词", "名词所有格"]
         }
       ],
       "分词 (Participle)": [
@@ -1540,6 +1932,32 @@
           ],
           "tips": "独立主格=自己的主语+分词/形容词/副词。和分词作状语的区别：分词作状语和主句共用主语，独立主格有自己的主语。",
           "relatedCategories": ["分词作状语", "现在分词", "过去分词"]
+        },
+        {
+          "id": "gm_108",
+          "name": "过去分词作后置定语",
+          "level": "senior",
+          "plainLanguage": "过去分词可以放在名词后面当定语，相当于一个定语从句的简写版。比如'the book written by him'就是'the book that was written by him'的简写。及物动词的过去分词表被动，不及物动词的过去分词表完成。",
+          "rules": [
+            "及物动词的过去分词作后置定语：表被动（the book written by him）",
+            "不及物动词的过去分词作后置定语：表完成（fallen leaves = 已落下的叶子）",
+            "单个过去分词可前置：a broken window, a retired teacher",
+            "过去分词短语必须后置：the novel written by Lu Xun",
+            "可还原为定语从句：the boy praised by the teacher = the boy who was praised by the teacher"
+          ],
+          "examples": [
+            {"en": "The book written by him is a bestseller.", "cn": "他写的书是畅销书。（written by him = that was written by him）"},
+            {"en": "Fallen leaves covered the ground.", "cn": "落叶铺满了地面。（fallen = 已落下的，不及物动词表完成）"},
+            {"en": "The boy injured in the accident is my classmate.", "cn": "在事故中受伤的男孩是我同学。"},
+            {"en": "This is a broken cup.", "cn": "这是个破损的杯子。（单个过去分词前置）"},
+            {"en": "The language spoken here is English.", "cn": "这里说的语言是英语。（spoken here = that is spoken here）"}
+          ],
+          "commonMistakes": [
+            {"wrong": "The book writing by him is a bestseller.", "correct": "The book written by him is a bestseller.", "reason": "书是'被'写的，用过去分词written表被动，不用现在分词writing"},
+            {"wrong": "The falling leaves covered the ground.", "correct": "The fallen leaves covered the ground.", "reason": "已落下的叶子用fallen（完成），falling表示'正在落下的'"}
+          ],
+          "tips": "过去分词作定语=被动+完成。及物动词的done表被动（written=被写的），不及物动词的done表完成（fallen=已落下的）。单个前置，短语后置！",
+          "relatedCategories": ["过去分词的用法", "现在分词的用法", "定语从句"]
         }
       ]
     },
@@ -1649,6 +2067,33 @@
           ],
           "tips": "混合条件句=从句和主句各用各的虚拟时态！看时间状语判断是过去还是现在。",
           "relatedCategories": ["与现在事实相反的虚拟", "与过去事实相反的虚拟", "与将来事实相反的虚拟"]
+        },
+        {
+          "id": "gm_109",
+          "name": "if省略时的倒装虚拟语气",
+          "level": "cet4",
+          "plainLanguage": "在虚拟语气中，如果if从句里有were、had或should，可以把if省掉，然后把were/had/should提到主语前面，像疑问句一样倒装。比如'如果我知道'Had I known = If I had known。这是比较正式高级的用法，让句子更简洁。",
+          "rules": [
+            "省略if的条件：从句中含有were/had/should",
+            "省略if后将were/had/should提至主语前（部分倒装）",
+            "与现在相反：Were I you, I would not do that.（= If I were you）",
+            "与过去相反：Had I known, I would have helped.（= If I had known）",
+            "与将来相反：Should it rain tomorrow, we would stay home.（= If it should rain）",
+            "主句的虚拟形式不变（would/could/should/might + do/have done）"
+          ],
+          "examples": [
+            {"en": "Were I you, I would accept the offer.", "cn": "如果我是你，我会接受这个提议。（= If I were you）"},
+            {"en": "Had he known the truth, he would have told you.", "cn": "如果他知道真相，他就告诉你了。（= If he had known）"},
+            {"en": "Should it rain tomorrow, the match would be canceled.", "cn": "万一明天下雨，比赛就会取消。（= If it should rain）"},
+            {"en": "Had I had more time, I would have finished it.", "cn": "如果我有更多时间，我就完成了。"},
+            {"en": "Were she here, she would help us.", "cn": "如果她在这，她会帮我们的。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "If had I known the truth, I would have told you.", "correct": "Had I known the truth, I would have told you.", "reason": "省略if后不再保留if，直接Had I known即可"},
+            {"wrong": "Did I know the answer, I would tell you.", "correct": "Were I to know the answer, I would tell you.", "reason": "与现在相反的虚拟倒装用were（be动词），不用did；如用实义动词需Were I to do结构"}
+          ],
+          "tips": "省if倒装：有were提were，有had提had，有should提should。Had I known = If I had known。省了if，倒装更高级！",
+          "relatedCategories": ["与现在事实相反的虚拟", "与过去事实相反的虚拟", "部分倒装"]
         }
       ],
       "其他虚拟 (Other Subjunctive)": [
@@ -1783,6 +2228,33 @@
           ],
           "tips": "It is (high) time + 过去时='该做...了'。也可以用It is time for sb to do sth（更简单）。high=早就该。",
           "relatedCategories": ["would rather的虚拟", "wish后的虚拟语气"]
+        },
+        {
+          "id": "gm_110",
+          "name": "含蓄虚拟语气（without/but for等）",
+          "level": "cet4",
+          "plainLanguage": "有时候不用if也能表达虚拟语气，用without（如果没有）、but for（要不是）、otherwise（否则）等词来暗示。'要不是你的帮助，我就失败了'就是But for your help, I would have failed。主句仍然用虚拟语气。",
+          "rules": [
+            "without + 名词/代词：如果没有...（主句用虚拟语气）",
+            "but for + 名词/代词：要不是...（主句用虚拟语气）",
+            "otherwise：否则（暗示与事实相反，主句用虚拟）",
+            "or / or else：否则（暗示与事实相反，主句用虚拟）",
+            "but that + 从句：若不是...（主句用虚拟）",
+            "主句虚拟形式：would/could/should/might + do（对现在）/ + have done（对过去）"
+          ],
+          "examples": [
+            {"en": "Without your help, I would have failed.", "cn": "没有你的帮助，我就失败了。（对过去）"},
+            {"en": "But for the rain, we would have gone out.", "cn": "要不是下雨，我们就出去了。"},
+            {"en": "I was busy, otherwise I would have gone to the party.", "cn": "我很忙，否则我就去派对了。"},
+            {"en": "Without water, there would be no life.", "cn": "没有水就没有生命。（对现在）"},
+            {"en": "He would have died, but that the doctor arrived in time.", "cn": "要不是医生及时赶到，他就死了。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "Without your help, I will fail.", "correct": "Without your help, I would have failed.", "reason": "与过去事实相反，主句要用虚拟语气would have failed，不用will fail"},
+            {"wrong": "But for your help, I will pass the exam.", "correct": "But for your help, I would pass the exam.", "reason": "but for表示与事实相反的假设，主句用虚拟would pass，不用will pass"}
+          ],
+          "tips": "含蓄虚拟不用if！without/but for/otherwise/or暗示虚拟，主句照常用would do（现在）/would have done（过去）。",
+          "relatedCategories": ["与现在事实相反的虚拟", "与过去事实相反的虚拟", "if条件虚拟"]
         }
       ]
     },
@@ -1842,6 +2314,32 @@
           ],
           "tips": "否定词/only放句首=部分倒装！把助动词/be/情态动词提前。Not only...but also前后要平衡。",
           "relatedCategories": ["完全倒装", "so/neither倒装", "否定句"]
+        },
+        {
+          "id": "gm_111",
+          "name": "not only...but also的倒装用法",
+          "level": "cet4",
+          "plainLanguage": "当not only放在句首时，它后面的句子要部分倒装（把助动词/be/情态动词提到主语前），但but (also)后面的句子不倒装。比如'他不仅聪明而且勤奋'是Not only is he smart, but he is also hardworking。",
+          "rules": [
+            "not only放句首时，not only所在的分句部分倒装",
+            "结构：Not only + 助动词/be/情态 + 主语 + 谓语, but (also) + 主语 + 谓语",
+            "but also后面的分句不倒装（正常语序）",
+            "also可以省略，也可以放在句中或句末",
+            "前后时态和结构要保持平衡"
+          ],
+          "examples": [
+            {"en": "Not only is he smart, but he is also hardworking.", "cn": "他不仅聪明而且勤奋。"},
+            {"en": "Not only did he apologize, but he also paid for the damage.", "cn": "他不仅道了歉，还赔偿了损失。"},
+            {"en": "Not only can she speak English, but she can also speak French.", "cn": "她不仅会说英语，还会说法语。"},
+            {"en": "Not only was he a great writer, but he was also a great thinker.", "cn": "他不仅是伟大的作家，还是伟大的思想家。"},
+            {"en": "Not only have I finished the work, but I have also checked it twice.", "cn": "我不仅完成了工作，还检查了两遍。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "Not only he is smart, but he is also hardworking.", "correct": "Not only is he smart, but he is also hardworking.", "reason": "not only放句首时要部分倒装，is要提到主语he前面"},
+            {"wrong": "Not only is he smart, but also is he hardworking.", "correct": "Not only is he smart, but he is also hardworking.", "reason": "but also后面的分句不倒装，保持正常语序"}
+          ],
+          "tips": "not only在句首→前倒后不倒！Not only + 助动词 + 主语 + 谓语, but 主语 also + 谓语。also可省略或移位。",
+          "relatedCategories": ["部分倒装", "连词", "强调句"]
         }
       ],
       "强调句 (Cleft Sentence)": [
@@ -1984,6 +2482,86 @@
           ],
           "tips": "肯定用So+助动词+主语，否定用Neither/Nor+助动词+主语。So do I=我也这样；So I do=我确实如此（不倒装）。",
           "relatedCategories": ["部分倒装", "助动词"]
+        },
+        {
+          "id": "gm_112",
+          "name": "not...until句型",
+          "level": "senior",
+          "plainLanguage": "not...until表示'直到...才'。比如'直到雨停了我才走'是I didn't leave until the rain stopped。肯定句用until表示'做到...为止'，否定句用not...until表示'直到...才'。",
+          "rules": [
+            "not...until：直到...才（主句否定，until接时间点/从句）",
+            "肯定句：do...until：做到...为止（I worked until midnight.）",
+            "强调句式：It is/was not until...that...（直到...才）",
+            "倒装句式：Not until... + 助动词 + 主语 + 谓语（部分倒装）",
+            "until接时间点，till与其用法相同但更口语化"
+          ],
+          "examples": [
+            {"en": "I didn't go to bed until I finished my homework.", "cn": "直到做完作业我才去睡觉。"},
+            {"en": "He didn't leave until the rain stopped.", "cn": "直到雨停了他才离开。"},
+            {"en": "It was not until yesterday that I knew the truth.", "cn": "直到昨天我才知道真相。（强调句）"},
+            {"en": "Not until the rain stopped did he leave.", "cn": "直到雨停他才离开。（倒装）"},
+            {"en": "She worked until midnight.", "cn": "她工作到午夜。（肯定句=做到...为止）"}
+          ],
+          "commonMistakes": [
+            {"wrong": "I didn't go to bed until I will finish my homework.", "correct": "I didn't go to bed until I finish my homework.", "reason": "until引导的时间状语从句中用一般现在时表将来，不用will finish"},
+            {"wrong": "Not until the rain stopped he left.", "correct": "Not until the rain stopped did he leave.", "reason": "Not until放句首时要部分倒装，用did he leave而不是he left"}
+          ],
+          "tips": "not...until='直到...才'。三种变体：①普通否定 ②It was not until...that...（强调） ③Not until...did...（倒装）。注意主将从现！",
+          "relatedCategories": ["强调句的结构", "部分倒装", "时间状语从句"]
+        },
+        {
+          "id": "gm_113",
+          "name": "too...to与enough to句型",
+          "level": "junior",
+          "plainLanguage": "too...to表示'太...以至于不能'，自带否定意味。比如'他太累了走不动'是He is too tired to walk。enough to表示'足够...可以'，是肯定。比如'他够大了可以上学'是He is old enough to go to school。",
+          "rules": [
+            "too + adj/adv + to do：太...以至于不能",
+            "adj/adv + enough + to do：足够...可以（enough放在形容词/副词后面）",
+            "enough + n + to do：有足够的...可以",
+            "too...to可转换为so...that...can't",
+            "enough to可转换为so...that...can",
+            "too...to中的to是真正的不定式，不是介词"
+          ],
+          "examples": [
+            {"en": "He is too tired to walk.", "cn": "他太累了走不动。（= He is so tired that he cannot walk.）"},
+            {"en": "She is old enough to go to school.", "cn": "她够大了可以上学。"},
+            {"en": "The box is too heavy for me to carry.", "cn": "箱子太重了我搬不动。"},
+            {"en": "I have enough money to buy a car.", "cn": "我有足够的钱买车。"},
+            {"en": "This problem is too difficult for me to solve.", "cn": "这问题对我来说太难了，解决不了。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "He is too tired to walking.", "correct": "He is too tired to walk.", "reason": "too...to中的to是不定式符号，后接动词原形walk，不是walking"},
+            {"wrong": "He is enough old to go to school.", "correct": "He is old enough to go to school.", "reason": "enough修饰形容词时要放在形容词后面，old enough而不是enough old"}
+          ],
+          "tips": "too...to=太...不能（自带否定）。enough to=足够...可以。enough在形容词后（old enough），在名词前（enough money）。两者可互换为so...that句型。",
+          "relatedCategories": ["不定式作主语宾语", "比较级和最高级", "so...that句型"]
+        },
+        {
+          "id": "gm_114",
+          "name": "the more...the more句型",
+          "level": "senior",
+          "plainLanguage": "the more...the more...表示'越...越...'。比如'越多越好'是The more, the better。'你越努力成绩越好'是The harder you work, the better your grades will be。前半句是条件，后半句是结果，两个the都是副词。",
+          "rules": [
+            "结构：The + 比较级..., the + 比较级...（越...越...）",
+            "前半句是条件，后半句是结果",
+            "两个the都是副词，修饰比较级",
+            "可以省略主语和谓语：The more, the better.（越多越好）",
+            "也可带主谓：The harder you work, the more you will earn.",
+            "the + 比较级可修饰形容词、副词或名词"
+          ],
+          "examples": [
+            {"en": "The more, the better.", "cn": "越多越好。"},
+            {"en": "The harder you work, the better results you will get.", "cn": "你越努力，成绩越好。"},
+            {"en": "The more you read, the more you know.", "cn": "你读得越多，知道得越多。"},
+            {"en": "The earlier you start, the sooner you will finish.", "cn": "你越早开始，就越早完成。"},
+            {"en": "The busier he is, the happier he feels.", "cn": "他越忙越开心。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "More you read, more you know.", "correct": "The more you read, the more you know.", "reason": "the more...the more句型中两个比较级前都要有the"},
+            {"wrong": "The hard you work, the good results you get.", "correct": "The harder you work, the better results you get.", "reason": "要用比较级harder和better，不能用原级hard和good"}
+          ],
+          "tips": "the + 比较级..., the + 比较级... = 越...越...。记住：两个比较级前都有the，且都用比较级！前后可省主谓。",
+          "relatedCategories": ["比较级和最高级", "状语从句", "倒装句"]
         }
       ]
     },
@@ -2154,6 +2732,33 @@
           ],
           "tips": "some用于肯定，any用于否定/疑问。不定代词做主语=单数！形容词修饰不定代词要放后面：something important不是important something。",
           "relatedCategories": ["人称代词与物主代词", "可数与不可数名词", "主谓一致"]
+        },
+        {
+          "id": "gm_115",
+          "name": "不定代词的修饰语位置",
+          "level": "senior",
+          "plainLanguage": "修饰不定代词（something/anything/nothing/everything等）的形容词要放在后面，不是前面。比如'重要的事'是something important，不是important something。还有else也放在不定代词后面，如'别的什么'是something else。",
+          "rules": [
+            "形容词修饰不定代词时必须后置：something important, nothing wrong, anything new",
+            "else修饰不定代词/疑问代词时后置：something else, anyone else, what else",
+            "不定式修饰不定代词也后置：something to eat, nothing to do",
+            "否定句中用anything代替something：I don't have anything to say.",
+            "修饰不定代词的形容词可带自己的状语：something very important"
+          ],
+          "examples": [
+            {"en": "I have something important to tell you.", "cn": "我有重要的事要告诉你。"},
+            {"en": "Is there anything wrong with the car?", "cn": "车子有什么问题吗？"},
+            {"en": "There is nothing else I can do.", "cn": "我没有别的办法了。"},
+            {"en": "I don't have anything to eat.", "cn": "我没有东西吃了。"},
+            {"en": "We need someone else to help us.", "cn": "我们需要别的人来帮忙。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "I have important something to tell you.", "correct": "I have something important to tell you.", "reason": "形容词修饰不定代词something时要后置，不能放在前面"},
+            {"wrong": "I don't have something to eat.", "correct": "I don't have anything to eat.", "reason": "否定句中要用anything，不用something"},
+            {"wrong": "Do you have else anything?", "correct": "Do you have anything else?", "reason": "else修饰不定代词时要后置，放在anything后面"}
+          ],
+          "tips": "不定代词+形容词=后置（something important）！不定代词+else=后置（anything else）！否定句用anything不用something。",
+          "relatedCategories": ["不定代词", "形容词与副词的区别", "不定式作定语"]
         }
       ],
       "形容词与副词 (Adjective & Adverb)": [
@@ -2211,6 +2816,62 @@
           ],
           "tips": "形容词修饰名词（a careful driver），副词修饰动词（drives carefully）。good是形容词，well是副词。感官动词（look/sound/taste/smell/feel）后用形容词！",
           "relatedCategories": ["比较级和最高级", "程度副词", "be动词"]
+        },
+        {
+          "id": "gm_116",
+          "name": "副词的位置规则",
+          "level": "senior",
+          "plainLanguage": "副词放在哪里有讲究。频度副词（always/often/never等）放在实义动词前、be动词后；方式副词（quickly/carefully）放在动词或宾语后；程度副词（very/quite）放在形容词或副词前。位置不对意思可能就变了。",
+          "rules": [
+            "频度副词（always/usually/often/sometimes/never）：放在实义动词前，be动词/助动词/情态动词后",
+            "频度副词在多个助动词时放在第一个助动词后：I have always been careful.",
+            "方式副词（quickly/carefully/well）：放在动词后或宾语后（不能放在动词和宾语之间）",
+            "程度副词（very/quite/rather/pretty）：放在形容词或副词前",
+            "时间/地点副词：通常放在句末，强调时可放句首",
+            "enough特殊：放在形容词/副词后（good enough）"
+          ],
+          "examples": [
+            {"en": "He always gets up early.", "cn": "他总是早起。（always在实义动词前）"},
+            {"en": "She is always happy.", "cn": "她总是很开心。（always在be动词后）"},
+            {"en": "He drives carefully.", "cn": "他开车很小心。（carefully在动词后）"},
+            {"en": "She speaks English very well.", "cn": "她英语说得很好。（well在宾语后，very修饰well）"},
+            {"en": "I have never been to Paris.", "cn": "我从没去过巴黎。（never在have后）"}
+          ],
+          "commonMistakes": [
+            {"wrong": "He gets always up early.", "correct": "He always gets up early.", "reason": "频度副词always应放在实义动词gets前面，不能插在gets和up中间"},
+            {"wrong": "He carefully drives.", "correct": "He drives carefully.", "reason": "方式副词carefully应放在动词后面，不能放在动词前面（除非强调）"},
+            {"wrong": "She always is happy.", "correct": "She is always happy.", "reason": "频度副词always应放在be动词is后面，不能放在is前面"}
+          ],
+          "tips": "频度副词：实义动词前，be/助/情态后。方式副词：动词/宾语后。程度副词：形容词/副词前。enough：形容词后。",
+          "relatedCategories": ["形容词与副词的区别", "程度副词", "频度副词"]
+        },
+        {
+          "id": "gm_118",
+          "name": "常见易混淆形容词",
+          "level": "cet4",
+          "plainLanguage": "有些形容词长得像但意思大不同。alone是'独自一人'（客观状态），lonely是'孤独'（主观感受）；interesting是'令人感兴趣的'（修饰物），interested是'感兴趣的'（修饰人）。记住这些区别，用词才准确。",
+          "rules": [
+            "alone（独自，客观状态）vs lonely（孤独，主观感受）",
+            "alive（活着的，多作表语）vs living（活的，可作定语）vs live（活的，修饰物，如live fish）",
+            "asleep（睡着的，表语）vs sleeping（正在睡的，定语）vs sleepy（困倦的）",
+            "-ing结尾形容词修饰物（令人...的）：interesting, exciting, boring",
+            "-ed结尾形容词修饰人（感到...的）：interested, excited, bored",
+            "dead（死的）vs deadly（致命的）vs death（死亡，名词）"
+          ],
+          "examples": [
+            {"en": "He lives alone, but he doesn't feel lonely.", "cn": "他独自居住，但不觉得孤独。"},
+            {"en": "The movie is interesting. I am interested in it.", "cn": "电影很有趣。我对它感兴趣。"},
+            {"en": "The baby is asleep. Don't wake the sleeping baby.", "cn": "婴儿睡着了。别叫醒正在睡觉的婴儿。"},
+            {"en": "The news is exciting. We are all excited.", "cn": "这消息令人兴奋。我们都感到兴奋。"},
+            {"en": "Is that fish still alive? - Yes, it's a live fish.", "cn": "那条鱼还活着吗？——是的，是条活鱼。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "He is lonely living in the house.", "correct": "He is alone living in the house.", "reason": "表示客观独自一人用alone，lonely表示主观孤独感"},
+            {"wrong": "I am interesting in the book.", "correct": "I am interested in the book.", "reason": "人感到感兴趣用interested，interesting修饰物（令人感兴趣的）"},
+            {"wrong": "The baby is sleeping. It is a asleep baby.", "correct": "The baby is asleep. It is a sleeping baby.", "reason": "asleep只能作表语不能作定语，作定语用sleeping"}
+          ],
+          "tips": "alone=独自（客观），lonely=孤独（主观）。-ing修饰物（令人...的），-ed修饰人（感到...的）。asleep作表语，sleeping作定语。",
+          "relatedCategories": ["形容词与副词的区别", "现在分词的用法", "过去分词的用法"]
         }
       ],
       "冠词 (Article)": [
@@ -2381,6 +3042,37 @@
           ],
           "tips": "并列连词=and/but/or/so/for/yet。从属连词=because/when/if/although。中文'因为...所以...'/'虽然...但是...'英语只用一个连词！",
           "relatedCategories": ["状语从句", "主谓一致", "简单句与并列句"]
+        }
+      ],
+      "数词 (Numeral)": [
+        {
+          "id": "gm_117",
+          "name": "数词的表达（分数/小数/倍数）",
+          "level": "senior",
+          "plainLanguage": "英语数词除了基本的one/two/three，还有分数、小数、倍数等。分数用'分子基数词+分母序数词'，如1/3是one third，2/3是two thirds（分子大于1分母加s）。倍数用times，如三倍是three times。'A是B的三倍大'有三种说法。",
+          "rules": [
+            "分数：分子用基数词，分母用序数词；分子大于1时分母加s（1/3 = one third, 2/3 = two thirds）",
+            "特殊分数：1/2 = one half, 1/4 = one quarter/a quarter",
+            "小数：小数点读point（0.5 = zero point five, 2.35 = two point three five）",
+            "倍数：once=一倍/一次, twice=两倍, three times=三倍",
+            "倍数表达法①：倍数 + as + adj/adv + as（A is three times as big as B）",
+            "倍数表达法②：倍数 + 比较级 + than（A is three times bigger than B）",
+            "倍数表达法③：倍数 + the + n + of（A is three times the size of B）",
+            "百分数：数字 + percent（50% = fifty percent）"
+          ],
+          "examples": [
+            {"en": "Two thirds of the students are girls.", "cn": "三分之二的学生是女生。"},
+            {"en": "This room is three times as large as that one.", "cn": "这个房间是那个的三倍大。"},
+            {"en": "0.5 can be read as zero point five.", "cn": "0.5读作zero point five。"},
+            {"en": "The price is twice what it was.", "cn": "价格是原来的两倍。"},
+            {"en": "About 50 percent of the earth's surface is water.", "cn": "地球表面约百分之五十是水。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "Two third of the students are girls.", "correct": "Two thirds of the students are girls.", "reason": "分子2大于1，分母third要加s变成thirds"},
+            {"wrong": "This room is three time as large as that one.", "correct": "This room is three times as large as that one.", "reason": "三倍是three times，times要加s"}
+          ],
+          "tips": "分数：分子基数+分母序数，分子大于1分母加s（two thirds）。倍数三说法：as...as / 比较级than / the+n+of。小数点读point。",
+          "relatedCategories": ["比较级和最高级", "可数与不可数名词", "主谓一致"]
         }
       ]
     },
@@ -2585,6 +3277,98 @@
           ],
           "tips": "look for=找，look after=照顾，look up=查阅，look forward to=期待（接doing），look out=小心，look into=调查。",
           "relatedCategories": ["get短语动词", "take短语动词", "put短语动词", "动名词"]
+        },
+        {
+          "id": "gm_119",
+          "name": "bring/call/carry短语动词",
+          "level": "junior",
+          "plainLanguage": "bring加上不同介词/副词意思不同：bring about=引起，bring up=抚养，bring in=引进。call的搭配也多：call on=拜访，call up=打电话，call for=需要，call off=取消。carry有carry on=继续，carry out=执行。这些都要背！",
+          "rules": [
+            "bring about：引起/导致",
+            "bring up：抚养/养育/提出（话题）",
+            "bring in：引进/赚得（收入）",
+            "call on：拜访（某人）/号召",
+            "call up：打电话/使回忆起",
+            "call for：需要/要求",
+            "call off：取消",
+            "carry on：继续/进行",
+            "carry out：执行/实施"
+          ],
+          "examples": [
+            {"en": "The new policy brought about great changes.", "cn": "新政策引起了巨大变化。"},
+            {"en": "She was brought up by her grandmother.", "cn": "她由奶奶抚养长大。"},
+            {"en": "Let's call on our teacher tomorrow.", "cn": "我们明天去拜访老师吧。"},
+            {"en": "The meeting was called off due to the storm.", "cn": "会议因暴风雨被取消了。"},
+            {"en": "We must carry out the plan immediately.", "cn": "我们必须立即执行计划。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "She was brought up by her grandmother to be polite.", "correct": "She was brought up by her grandmother to be polite.", "reason": "此句正确。bring up=抚养。注意区分：bring up不等于bring（带来）"},
+            {"wrong": "The game was called out due to rain.", "correct": "The game was called off due to rain.", "reason": "取消用call off，不是call out"}
+          ],
+          "tips": "bring about=引起，bring up=抚养，call on=拜访，call up=打电话，call for=需要，call off=取消，carry on=继续，carry out=执行。",
+          "relatedCategories": ["get短语动词", "come/go/turn短语动词", "look短语动词"]
+        },
+        {
+          "id": "gm_120",
+          "name": "come/go/turn短语动词",
+          "level": "junior",
+          "plainLanguage": "come的搭配：come across=偶遇，come up with=想出，come true=实现。go的搭配：go on=继续，go over=复习，go through=经历。turn的搭配：turn on=打开，turn off=关掉，turn out=结果是。这些都是高频短语，必须记住！",
+          "rules": [
+            "come across：偶遇/偶然发现",
+            "come up with：想出/提出（主意）",
+            "come true：实现（梦想）",
+            "go on：继续/发生",
+            "go over：复习/仔细检查",
+            "go through：经历/通过",
+            "turn on：打开（电器）",
+            "turn off：关闭（电器）",
+            "turn out：结果是/证明为",
+            "turn into：变成"
+          ],
+          "examples": [
+            {"en": "I came across an old photo yesterday.", "cn": "我昨天偶然发现了一张老照片。"},
+            {"en": "He came up with a good idea.", "cn": "他想出了一个好主意。"},
+            {"en": "His dream has come true.", "cn": "他的梦想实现了。"},
+            {"en": "Please turn off the lights before you leave.", "cn": "离开前请关灯。"},
+            {"en": "It turned out that he was right.", "cn": "结果证明他是对的。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "His dream came real.", "correct": "His dream came true.", "reason": "梦想实现用come true，是固定搭配，不能用come real"},
+            {"wrong": "He came up a good idea.", "correct": "He came up with a good idea.", "reason": "想出主意是come up with，不能漏掉with"}
+          ],
+          "tips": "come across=偶遇，come up with=想出，come true=实现，go on=继续，go over=复习，turn on/off=开关，turn out=结果是，turn into=变成。",
+          "relatedCategories": ["bring/call/carry短语动词", "get短语动词", "look短语动词"]
+        }
+      ],
+      "固定句式 (Fixed Sentence Patterns)": [
+        {
+          "id": "gm_121",
+          "name": "常见固定句式",
+          "level": "cet4",
+          "plainLanguage": "英语有些句型是固定的模板，往里填词就行。比如'花某人时间做某事'是It takes sb time to do sth；'...的原因是...'是The reason why...is that...；'做某事没用'是It is no use doing sth。记住这些模板，写作文超好用！",
+          "rules": [
+            "It takes sb + 时间 + to do sth：花某人多少时间做某事",
+            "The reason why...is that...：...的原因是...",
+            "It is no use doing sth：做某事是没用的（后接动名词）",
+            "There is no doubt that...：毫无疑问...",
+            "It is no wonder that...：难怪...",
+            "It happens that.../Sb happens to do...：碰巧...",
+            "The + 比较级..., the + 比较级...：越...越..."
+          ],
+          "examples": [
+            {"en": "It takes me two hours to finish my homework every day.", "cn": "我每天花两小时完成作业。"},
+            {"en": "The reason why he was late is that he missed the bus.", "cn": "他迟到的原因是他错过了公交车。"},
+            {"en": "It is no use crying over spilt milk.", "cn": "覆水难收。（做某事是没用的）"},
+            {"en": "There is no doubt that he is the best candidate.", "cn": "毫无疑问他是最佳候选人。"},
+            {"en": "It is no wonder that she passed the exam. She studied hard.", "cn": "难怪她通过了考试。她学习很努力。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "It takes me two hours finishing my homework.", "correct": "It takes me two hours to finish my homework.", "reason": "It takes sb time to do sth中用不定式to finish，不用动名词finishing"},
+            {"wrong": "The reason why he was late is because he missed the bus.", "correct": "The reason why he was late is that he missed the bus.", "reason": "The reason why...is that...句式中用that引导表语从句，不能用because（reason和because语义重复）"},
+            {"wrong": "It is no use to cry over spilt milk.", "correct": "It is no use crying over spilt milk.", "reason": "It is no use后接动名词crying，不接不定式to cry"}
+          ],
+          "tips": "固定句式模板：It takes sb time to do（花时间）/ The reason why...is that（原因是）/ It is no use doing（没用）/ There is no doubt that（毫无疑问）。填词即可用！",
+          "relatedCategories": ["it的用法", "名词性从句", "the more...the more句型"]
         }
       ]
     }

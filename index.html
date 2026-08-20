@@ -2622,7 +2622,7 @@
 
     <!-- 页脚 -->
     <footer class="app-footer">
-      v6.0 · 语法知识图谱(93知识点) · 词汇树杈式分类(1537词) · 400题题库 · 学习模式+按知识点答题 · 错题本 · 术语词典 · 语法/词汇/翻译三卡反馈
+      v6.1 · 语法知识图谱(121知识点) · 语法专属练习(363题) · 词汇树杈式分类(1537词) · 400题题库 · 学习模式+按知识点答题 · 错题本 · 术语词典 · 语法/词汇/翻译三卡反馈
     </footer>
   </div>
 
@@ -2633,6 +2633,7 @@
     const QUIZ_BANK_URL = "data/quiz-bank.json";
     const VOCAB_URL = "data/vocabulary.json";
     const GRAMMAR_MAP_URL = "data/grammar-map.json";
+    const GRAMMAR_QUIZ_URL = "data/grammar-quiz.json";
     const STORAGE_KEY = "eqm_best_scores_v1";
     const WRONG_BANK_KEY = "eqm_wrong_bank_v1";
 
@@ -2669,6 +2670,7 @@
       examTimer: null,      // 计时器
       vocabDB: null,        // 词汇分类数据库
       grammarDB: null,      // 语法知识图谱数据库
+      grammarQuizDB: null,   // 语法专属练习题数据库
       learnCategory: null,  // 学习模式选中的语法分类
     };
 
@@ -3052,6 +3054,19 @@
       }
     }
 
+    /* ===== 加载语法专属练习题 ===== */
+    async function loadGrammarQuizDB() {
+      try {
+        const res = await fetch(GRAMMAR_QUIZ_URL, { cache: "no-cache" });
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        const data = await res.json();
+        state.grammarQuizDB = data;
+      } catch (err) {
+        state.grammarQuizDB = null;
+        console.warn("语法练习题库加载失败:", err.message);
+      }
+    }
+
     async function loadQuizBank() {
       try {
         const res = await fetch(QUIZ_BANK_URL, { cache: "no-cache" });
@@ -3060,9 +3075,10 @@
         if (!data || !data.levels) throw new Error("题库格式错误");
         state.quizBank = data;
         renderStartScreen();
-        // 并行加载词汇库和语法图谱
+        // 并行加载词汇库、语法图谱和语法专属练习题
         loadVocabDB();
         loadGrammarMap();
+        loadGrammarQuizDB();
       } catch (err) {
         levelGrid.innerHTML = "";
         const grid = document.querySelector("#start-screen");
@@ -4564,7 +4580,7 @@
       }
 
       // 练习按钮
-      html += '<button class="grammar-practice-btn" onclick="startPracticeByCategory(\'' + escapeHtml(pt.name) + '\', \'' + escapeHtml(pt.level || 'junior') + '\')">✏️ 做相关练习</button>';
+      html += '<button class="grammar-practice-btn" onclick="startPracticeByCategory(\'' + escapeHtml(pt.name) + '\', \'' + escapeHtml(pt.level || 'junior') + '\', \'' + escapeHtml(pt.id || '') + '\')">✏️ 做相关练习</button>';
 
       html += '</div>';
       return html;
@@ -4581,44 +4597,60 @@
       if (sub) sub.classList.toggle('expanded');
     }
 
-    // 按知识点分类做练习
-    function startPracticeByCategory(categoryName, level) {
+    // 按知识点分类做练习（优先使用专属练习题）
+    function startPracticeByCategory(categoryName, level, grammarId) {
       if (!state.quizBank) return;
 
-      // 搜索匹配该语法分类的题目
-      let pool = [];
-      const levelKey = level && level !== 'all' ? level : null;
+      let selected = [];
+      let sourceLabel = "";
 
-      Object.entries(state.quizBank.levels).forEach(([key, levelData]) => {
-        if (levelKey && key !== levelKey) return;
-        (levelData.questions || []).forEach((q) => {
-          if (q.category && (q.category.includes(categoryName) || categoryName.includes(q.category))) {
-            pool.push({ ...q, _levelKey: key, _levelName: levelData.name });
-          }
-        });
-      });
+      // 优先从专属练习题库加载
+      if (grammarId && state.grammarQuizDB && state.grammarQuizDB.quizzes[grammarId]) {
+        const gq = state.grammarQuizDB.quizzes[grammarId];
+        selected = (gq.questions || []).map((q) => ({
+          ...q,
+          _levelKey: gq.level || level || "junior",
+          _levelName: gq.grammarName || categoryName
+        }));
+        sourceLabel = " (专属练习)";
+      }
 
-      if (pool.length === 0) {
-        // 如果没找到完全匹配的，尝试模糊匹配
+      // 如果专属题库没有，从主题库搜索
+      if (selected.length === 0) {
+        let pool = [];
+        const levelKey = level && level !== 'all' ? level : null;
+
         Object.entries(state.quizBank.levels).forEach(([key, levelData]) => {
           if (levelKey && key !== levelKey) return;
           (levelData.questions || []).forEach((q) => {
-            const cat = (q.category || '').toLowerCase();
-            const name = categoryName.toLowerCase();
-            if (cat.includes(name) || name.includes(cat) || cat.split('').some(c => name.includes(c) && c.length > 2)) {
+            if (q.category && (q.category.includes(categoryName) || categoryName.includes(q.category))) {
               pool.push({ ...q, _levelKey: key, _levelName: levelData.name });
             }
           });
         });
+
+        if (pool.length === 0) {
+          // 模糊匹配
+          Object.entries(state.quizBank.levels).forEach(([key, levelData]) => {
+            if (levelKey && key !== levelKey) return;
+            (levelData.questions || []).forEach((q) => {
+              const cat = (q.category || '').toLowerCase();
+              const name = categoryName.toLowerCase();
+              if (cat.includes(name) || name.includes(cat)) {
+                pool.push({ ...q, _levelKey: key, _levelName: levelData.name });
+              }
+            });
+          });
+        }
+
+        if (pool.length === 0) {
+          alert('暂无"' + categoryName + '"分类的题目，请尝试其他知识点');
+          return;
+        }
+        selected = pool.slice(0, Math.min(20, pool.length));
       }
 
-      if (pool.length === 0) {
-        alert('暂无"' + categoryName + '"分类的题目，请尝试其他知识点');
-        return;
-      }
-
-      const selected = pool.slice(0, Math.min(20, pool.length));
-      state.selectedLevel = levelKey || "random";
+      state.selectedLevel = level || "random";
       state.isRandomMode = false;
       state.isExamMode = false;
       state.questions = selected;
@@ -4641,7 +4673,7 @@
       quizScreen.style.animation = "";
       quizNavBtns.style.display = "none";
 
-      $("quiz-level-tag").textContent = "📚 " + categoryName + " · " + selected.length + " 题";
+      $("quiz-level-tag").textContent = "📚 " + categoryName + sourceLabel + " · " + selected.length + " 题";
       renderQuestion();
       renderNavBar();
     }
