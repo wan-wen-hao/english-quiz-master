@@ -1918,6 +1918,21 @@
         </div>
         <button class="random-start-btn" id="random-start-btn">🎲 随机开始</button>
       </div>
+
+      <!-- 综合测评 -->
+      <div class="level-divider"><span>或者</span></div>
+      <div class="random-mode-section" style="background:linear-gradient(135deg,rgba(63,185,80,0.08),rgba(88,166,255,0.08));border-color:rgba(63,185,80,0.25);">
+        <div class="random-mode-title" style="color:var(--correct);">📊 综合测评</div>
+        <div class="random-mode-desc">选择一个等级，系统随机抽取50题进行限时测评，完成后给出弱点分析报告</div>
+        <div class="random-count-selector" id="exam-level-selector">
+          <button class="random-count-btn" data-exam-level="junior">初中</button>
+          <button class="random-count-btn" data-exam-level="senior">高中</button>
+          <button class="random-count-btn" data-exam-level="cet4">四级</button>
+          <button class="random-count-btn" data-exam-level="cet6">六级</button>
+          <button class="random-count-btn active" data-exam-level="all">混合</button>
+        </div>
+        <button class="random-start-btn" id="exam-start-btn" style="background:linear-gradient(135deg,var(--correct),#2ea043);box-shadow:0 4px 14px rgba(63,185,80,0.25);">📊 开始测评</button>
+      </div>
     </section>
 
     <!-- 答题屏幕 -->
@@ -1967,7 +1982,7 @@
 
     <!-- 页脚 -->
     <footer class="app-footer">
-      v3.1 · 上下翻页导航 · 错题本归纳 · 词汇复习 · 语法/词汇/翻译三卡反馈 · 阅读理解 · 数据本地存储 · 键盘快捷键 A/B/C/D · Enter 下一题 · 纯前端实现
+      v4.0 · 词汇分类数据库(403词) · 320题题库 · 测评模式+弱点分析 · 错题本 · 上下翻页 · 随机抽题 · 语法/词汇/翻译三卡反馈
     </footer>
   </div>
 
@@ -1976,6 +1991,7 @@
 
     /* ===== 配置 ===== */
     const QUIZ_BANK_URL = "data/quiz-bank.json";
+    const VOCAB_URL = "data/vocabulary.json";
     const STORAGE_KEY = "eqm_best_scores_v1";
     const WRONG_BANK_KEY = "eqm_wrong_bank_v1";
 
@@ -2004,6 +2020,12 @@
       reviewFilter: "all",  // 错题本筛选：all/junior/senior/cet4/cet6
       randomCount: 50,      // 随机抽题数量
       isRandomMode: false,  // 是否为随机模式
+      vocabDB: null,        // 词汇分类数据库
+      isExamMode: false,    // 是否为测评模式
+      examLevel: "all",     // 测评等级
+      examTimeLimit: 0,     // 测评时间限制（秒），0=不限时
+      examStartTime: 0,     // 测评开始时间
+      examTimer: null,      // 计时器
     };
 
     /* ===== DOM 引用 ===== */
@@ -2283,6 +2305,18 @@
     }
 
     /* ===== 加载题库 ===== */
+    async function loadVocabDB() {
+      try {
+        const res = await fetch(VOCAB_URL, { cache: "no-cache" });
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        const data = await res.json();
+        state.vocabDB = data;
+      } catch (err) {
+        // 词汇库加载失败不影响主功能
+        state.vocabDB = null;
+      }
+    }
+
     async function loadQuizBank() {
       try {
         const res = await fetch(QUIZ_BANK_URL, { cache: "no-cache" });
@@ -2291,6 +2325,8 @@
         if (!data || !data.levels) throw new Error("题库格式错误");
         state.quizBank = data;
         renderStartScreen();
+        // 并行加载词汇库
+        loadVocabDB();
       } catch (err) {
         levelGrid.innerHTML = "";
         const grid = document.querySelector("#start-screen");
@@ -2393,6 +2429,7 @@
       // 为每道题附加等级信息（用于错题本记录）
       state.selectedLevel = "random";
       state.isRandomMode = true;
+      state.isExamMode = false;
       state.questions = selected;
       state.flatItems = buildFlatList(selected);
       state.currentIndex = 0;
@@ -2419,10 +2456,66 @@
       renderNavBar();
     }
 
-    /* ===== 开始答题 ===== */
+    /* ===== 综合测评模式 ===== */
+    function startExam() {
+      const examLevel = state.examLevel || "all";
+      const examCount = 50;
+
+      // 收集题目
+      let pool = [];
+      if (examLevel === "all") {
+        Object.entries(state.quizBank.levels).forEach(([key, level]) => {
+          (level.questions || []).forEach((q) => {
+            pool.push({ ...q, _levelKey: key, _levelName: level.name });
+          });
+        });
+      } else {
+        const level = state.quizBank.levels[examLevel];
+        if (!level) { alert("等级不存在！"); return; }
+        pool = (level.questions || []).map((q) => ({
+          ...q, _levelKey: examLevel, _levelName: level.name
+        }));
+      }
+
+      if (pool.length === 0) { alert("没有题目！"); return; }
+
+      const shuffled = shuffle(pool);
+      const selected = shuffled.slice(0, Math.min(examCount, shuffled.length));
+
+      state.selectedLevel = examLevel === "all" ? "random" : examLevel;
+      state.isRandomMode = false;
+      state.isExamMode = true;
+      state.questions = selected;
+      state.flatItems = buildFlatList(selected);
+      state.currentIndex = 0;
+      state.score = 0;
+      state.answered = false;
+      state.userAnswers = [];
+      state.startTime = Date.now();
+      state.examStartTime = Date.now();
+
+      // 切换屏幕
+      startScreen.classList.add("hidden");
+      resultsScreen.classList.add("hidden");
+      reviewScreen.classList.add("hidden");
+      vocabScreen.classList.add("hidden");
+      quizScreen.classList.remove("hidden");
+      quizScreen.style.animation = "none";
+      void quizScreen.offsetWidth;
+      quizScreen.style.animation = "";
+      quizNavBtns.style.display = "none";
+
+      // 顶部标签
+      const examLabel = examLevel === "all" ? "综合" : state.quizBank.levels[examLevel].name;
+      $("quiz-level-tag").textContent = "📊 " + examLabel + "测评 · " + selected.length + "题";
+
+      renderQuestion();
+      renderNavBar();
+    }
     function startQuiz() {
       if (!state.selectedLevel) return;
       state.isRandomMode = false;
+      state.isExamMode = false;
       const levelData = state.quizBank.levels[state.selectedLevel];
       let questions = levelData.questions.slice();
 
@@ -2974,6 +3067,109 @@
     }
 
     /* ===== 结果屏幕 ===== */
+    /* ===== 测评报告生成 ===== */
+    function renderExamReport(answers, correct, wrong, total, elapsed) {
+      // 按语法类别统计正确率
+      const catStats = {};
+      // 按题型统计正确率
+      const typeStats = {};
+
+      answers.forEach((a) => {
+        const cat = a.item.category || "其他";
+        const type = a.item.type || "choice";
+        if (!catStats[cat]) catStats[cat] = { correct: 0, total: 0 };
+        if (!typeStats[type]) typeStats[type] = { correct: 0, total: 0 };
+        catStats[cat].total++;
+        typeStats[type].total++;
+        if (a.correct) {
+          catStats[cat].correct++;
+          typeStats[type].correct++;
+        }
+      });
+
+      // 找出薄弱项（正确率低于60%）
+      const weakCats = Object.entries(catStats)
+        .map(([name, s]) => ({
+          name, ...s,
+          rate: s.total > 0 ? Math.round((s.correct / s.total) * 100) : 0,
+        }))
+        .filter((s) => s.rate < 60)
+        .sort((a, b) => a.rate - b.rate);
+
+      const weakTypes = Object.entries(typeStats)
+        .map(([name, s]) => ({
+          name, ...s,
+          label: TYPE_LABELS[name] || name,
+          rate: s.total > 0 ? Math.round((s.correct / s.total) * 100) : 0,
+        }))
+        .filter((s) => s.rate < 60)
+        .sort((a, b) => a.rate - b.rate);
+
+      // 评级
+      let grade = "";
+      let gradeColor = "";
+      let advice = "";
+      if (accuracy >= 90) {
+        grade = "A（优秀）"; gradeColor = "var(--correct)";
+        advice = "你的英语基础非常扎实！可以挑战更高难度的题目，同时注意保持。";
+      } else if (accuracy >= 75) {
+        grade = "B（良好）"; gradeColor = "var(--accent)";
+        advice = "你的基础不错，但还有一些薄弱环节。请重点复习下面标记的弱点领域。";
+      } else if (accuracy >= 60) {
+        grade = "C（及格）"; gradeColor = "var(--warning)";
+        advice = "你的基础尚可，但需要加强练习。建议针对薄弱项反复练习，并查看错题本。";
+      } else {
+        grade = "D（需加强）"; gradeColor = "var(--wrong)";
+        advice = "你的基础比较薄弱，建议从初中题目开始系统学习，重点理解句子结构和语法规则。不要灰心，坚持练习一定会有进步！";
+      }
+
+      let html = '<div class="random-mode-section" style="margin:20px 0;background:linear-gradient(135deg,rgba(88,166,255,0.06),rgba(163,113,247,0.06));">';
+      html += '<div class="random-mode-title">📊 测评报告</div>';
+
+      // 评级
+      html += '<div style="display:flex;align-items:center;gap:16px;margin:12px 0;flex-wrap:wrap;">';
+      html += '<div style="font-size:2rem;font-weight:800;color:' + gradeColor + ';">' + grade + '</div>';
+      html += '<div style="font-size:0.88rem;color:var(--text-muted);">正确率 ' + accuracy + '% · 用时 ' + Math.floor(elapsed / 60) + '分' + Math.round(elapsed % 60) + '秒</div>';
+      html += '</div>';
+
+      // 建议
+      html += '<div style="background:var(--bg-tertiary);border-left:4px solid ' + gradeColor + ';border-radius:0 8px 8px 0;padding:10px 14px;margin:10px 0;font-size:0.88rem;color:var(--text-muted);line-height:1.7;">';
+      html += escapeHtml(advice);
+      html += '</div>';
+
+      // 语法类别正确率
+      html += '<div style="margin-top:16px;">';
+      html += '<div style="font-size:0.92rem;font-weight:700;color:var(--accent);margin-bottom:8px;">📈 各语法类别正确率</div>';
+      Object.entries(catStats).forEach(([cat, s]) => {
+        const rate = s.total > 0 ? Math.round((s.correct / s.total) * 100) : 0;
+        const barColor = rate >= 75 ? "var(--correct)" : (rate >= 60 ? "var(--warning)" : "var(--wrong)");
+        html += '<div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">';
+        html += '<span style="font-size:0.82rem;color:var(--text);min-width:120px;flex-shrink:0;">' + escapeHtml(cat) + '</span>';
+        html += '<div style="flex:1;height:8px;background:var(--bg-secondary);border-radius:4px;overflow:hidden;">';
+        html += '<div style="width:' + rate + '%;height:100%;background:' + barColor + ';border-radius:4px;transition:width 0.5s;"></div>';
+        html += '</div>';
+        html += '<span style="font-size:0.78rem;color:var(--text-muted);min-width:60px;text-align:right;">' + s.correct + '/' + s.total + ' (' + rate + '%)</span>';
+        html += '</div>';
+      });
+      html += '</div>';
+
+      // 薄弱点
+      if (weakCats.length > 0) {
+        html += '<div style="margin-top:16px;padding:12px;background:rgba(248,81,73,0.06);border:1px solid var(--wrong-border);border-radius:8px;">';
+        html += '<div style="font-size:0.88rem;font-weight:700;color:var(--wrong);margin-bottom:6px;">⚠️ 薄弱环节</div>';
+        html += '<div style="font-size:0.82rem;color:var(--text-muted);line-height:1.8;">';
+        weakCats.forEach((w) => {
+          html += '· ' + escapeHtml(w.name) + ' (' + w.rate + '%)<br>';
+        });
+        html += '<br>建议：进入「答题练习」选择对应等级和题型，针对以上薄弱环节反复练习，然后查看「错题本」复习。';
+        html += '</div>';
+        html += '</div>';
+      }
+
+      html += '</div>';
+      return html;
+    }
+
     function showResults() {
       quizScreen.classList.add("hidden");
       resultsScreen.classList.remove("hidden");
@@ -2988,7 +3184,9 @@
       const elapsed = (Date.now() - state.startTime) / 1000;
 
       // 保存最佳成绩
-      const levelKey = state.isRandomMode ? "random_" + total : state.selectedLevel;
+      const levelKey = state.isExamMode
+        ? "exam_" + state.examLevel
+        : (state.isRandomMode ? "random_" + total : state.selectedLevel);
       const prevBest = state.bestScores[levelKey];
       const isNewBest = !prevBest || accuracy > prevBest.accuracy ||
         (accuracy === prevBest.accuracy && elapsed < prevBest.time);
@@ -3116,6 +3314,11 @@
         });
       }
       html += "</div>";
+
+      // 测评模式：弱点分析报告
+      if (state.isExamMode) {
+        html += renderExamReport(state.userAnswers, correct, wrong, total, elapsed);
+      }
 
       // 操作按钮
       html += '<div class="result-actions">';
@@ -3385,172 +3588,111 @@
       }
     }
 
-    /* ===== 词汇复习屏幕（书本式，按语法类别分章） ===== */
+    /* ===== 词汇复习屏幕（从 vocabulary.json 加载，大类→小类书本式） ===== */
     function renderVocabScreen() {
-      if (!state.quizBank) {
-        vocabBody.innerHTML = '<div class="review-empty-state"><div class="icon">⏳</div><p>题库加载中…</p></div>';
+      // 优先使用独立词汇库
+      if (state.vocabDB) {
+        renderVocabFromDB();
         return;
       }
+      // 回退：从题库提取（旧逻辑）
+      if (!state.quizBank) {
+        vocabBody.innerHTML = '<div class="review-empty-state"><div class="icon">⏳</div><p>词汇库加载中…</p></div>';
+        return;
+      }
+      renderVocabFromBank();
+    }
 
-      const levels = state.quizBank.levels;
-      let html = '<div class="review-header"><h2>📖 词汇复习</h2></div>';
-      html += '<input type="text" class="vocab-search" id="vocab-search" placeholder="搜索单词或中文释义…" autocomplete="off" />';
-
-      // 收集所有词汇，按等级→类别分组
-      const levelData = {}; // { levelKey: { categoryName: [words] } }
-
-      Object.entries(levels).forEach(([key, level]) => {
-        levelData[key] = {};
-        const questions = level.questions || [];
-        questions.forEach((q) => {
-          const cat = q.category || "其他";
-          if (!levelData[key][cat]) levelData[key][cat] = {};
-
-          // 普通题的词汇
-          if (q.vocabulary) {
-            q.vocabulary.forEach((v) => {
-              const f = vocabFields(v);
-              if (f.word && !levelData[key][cat][f.word]) {
-                levelData[key][cat][f.word] = {
-                  word: f.word,
-                  pos: f.pos,
-                  meaning: f.meaning,
-                  level: key,
-                  levelName: level.name,
-                  category: cat,
-                  usage: f.usage || v.usage || "",
-                  isSpecial: v.isSpecial || false,
-                };
-              }
-            });
-          }
-          // passage 题的词汇
-          if (q.type === "passage" && q.passageVocab) {
-            const pCat = "阅读理解";
-            if (!levelData[key][pCat]) levelData[key][pCat] = {};
-            q.passageVocab.forEach((v) => {
-              const f = vocabFields(v);
-              if (f.word && !levelData[key][pCat][f.word]) {
-                levelData[key][pCat][f.word] = {
-                  word: f.word,
-                  pos: f.pos,
-                  meaning: f.meaning,
-                  level: key,
-                  levelName: level.name,
-                  category: pCat,
-                  usage: f.usage || v.usage || "",
-                  isSpecial: v.isSpecial || false,
-                };
-              }
-            });
-          }
-          // passage 子题的词汇
-          if (q.type === "passage" && q.subQuestions) {
-            q.subQuestions.forEach((sub) => {
-              const sCat = sub.category || "阅读理解";
-              if (!levelData[key][sCat]) levelData[key][sCat] = {};
-              if (sub.vocabulary) {
-                sub.vocabulary.forEach((v) => {
-                  const f = vocabFields(v);
-                  if (f.word && !levelData[key][sCat][f.word]) {
-                    levelData[key][sCat][f.word] = {
-                      word: f.word,
-                      pos: f.pos,
-                      meaning: f.meaning,
-                      level: key,
-                      levelName: level.name,
-                      category: sCat,
-                      usage: f.usage || v.usage || "",
-                      isSpecial: v.isSpecial || false,
-                    };
-                  }
-                });
-              }
-            });
-          }
-        });
+    // 从独立词汇库加载
+    function renderVocabFromDB() {
+      const cats = state.vocabDB.categories || {};
+      let totalWords = 0;
+      Object.values(cats).forEach((subs) => {
+        Object.values(subs).forEach((words) => totalWords += words.length);
       });
 
-      // 渲染书本式布局
-      html += '<div id="vocab-list">';
+      let html = '<div class="review-header"><h2>📖 词汇复习</h2>';
+      html += '<span class="count-badge" style="background:var(--accent-dim);color:var(--accent);border:1px solid var(--accent);">' + totalWords + ' 词</span>';
+      html += '</div>';
+      html += '<input type="text" class="vocab-search" id="vocab-search" placeholder="搜索单词或中文释义…" autocomplete="off" />';
+
+      // 生成全局目录
+      html += '<div class="vocab-toc">';
+      html += '<div class="vocab-toc-title">📑 目录</div>';
+      html += '<div class="vocab-toc-list">';
       let chapterNum = 0;
+      Object.keys(cats).forEach((catName, ci) => {
+        const anchorId = 'vocab-cat-' + ci;
+        let catTotal = 0;
+        Object.values(cats[catName]).forEach((w) => catTotal += w.length);
+        html += '<a class="vocab-toc-item" href="#' + anchorId + '">' + escapeHtml(catName) + ' (' + catTotal + ')</a>';
+      });
+      html += '</div></div>';
 
-      Object.entries(levels).forEach(([key, level]) => {
-        const cats = levelData[key] || {};
-        const catNames = Object.keys(cats);
-        if (catNames.length === 0) return;
+      // 按大类渲染
+      html += '<div id="vocab-list">';
+      Object.entries(cats).forEach(([catName, subCats], ci) => {
+        const anchorId = 'vocab-cat-' + ci;
+        html += '<div class="vocab-chapter" id="' + anchorId + '">';
+        html += '<div class="vocab-chapter-header">';
+        html += '<span class="vocab-chapter-num">' + (ci + 1) + '</span>';
+        html += '<span class="vocab-chapter-title">' + escapeHtml(catName) + '</span>';
+        let catTotal = 0;
+        Object.values(subCats).forEach((w) => catTotal += w.length);
+        html += '<span class="vocab-chapter-count">' + catTotal + ' 词</span>';
+        html += '</div>';
 
-        // 统计该等级总词数
-        let totalWords = 0;
-        catNames.forEach((c) => totalWords += Object.keys(cats[c]).length);
-
-        html += '<div class="level-divider"><span>' + escapeHtml(level.name) + ' · 共 ' + totalWords + ' 词</span></div>';
-
-        // 目录
-        html += '<div class="vocab-toc">';
-        html += '<div class="vocab-toc-title">📑 目录</div>';
-        html += '<div class="vocab-toc-list">';
-        catNames.forEach((c, ci) => {
-          const wCount = Object.keys(cats[c]).length;
-          const anchorId = 'vocab-ch-' + key + '-' + ci;
-          html += '<a class="vocab-toc-item" href="#' + anchorId + '">' + escapeHtml(c) + ' (' + wCount + ')</a>';
-        });
-        html += '</div></div>';
-
-        // 按类别分章
-        catNames.forEach((cat, ci) => {
+        // 小类
+        Object.entries(subCats).forEach(([subName, words], si) => {
           chapterNum++;
-          const words = Object.values(cats[cat]);
-          const anchorId = 'vocab-ch-' + key + '-' + ci;
-
           // 分离普通词汇和特殊词汇
           const normalWords = words.filter((w) => !w.isSpecial);
           const specialWords = words.filter((w) => w.isSpecial);
 
-          html += '<div class="vocab-chapter" id="' + anchorId + '">';
-          html += '<div class="vocab-chapter-header">';
-          html += '<span class="vocab-chapter-num">' + chapterNum + '</span>';
-          html += '<span class="vocab-chapter-title">' + escapeHtml(cat) + '</span>';
-          html += '<span class="vocab-chapter-count">' + words.length + ' 词</span>';
-          html += '</div>';
+          html += '<div class="vocab-sub-section" style="margin-bottom:20px;">';
+          html += '<div style="font-size:0.92rem;font-weight:600;color:var(--accent2);margin-bottom:8px;padding-left:4px;border-left:3px solid var(--accent2);">';
+          html += escapeHtml(subName) + ' (' + words.length + ')</div>';
 
           // 普通词汇
           if (normalWords.length > 0) {
             html += '<div class="vocab-grid">';
             normalWords.forEach((v) => {
-              html += '<div class="vocab-card-item" data-word="' + escapeHtml(v.word.toLowerCase()) + '" data-meaning="' + escapeHtml((v.meaning || '').toLowerCase()) + '">';
-              html += '<span class="vc-word">' + escapeHtml(v.word) + '</span>';
-              if (v.pos) html += '<span class="vc-pos">' + escapeHtml(v.pos) + '</span>';
-              if (v.meaning) html += '<div class="vc-meaning">' + escapeHtml(v.meaning) + '</div>';
-              if (v.category) html += '<div class="vc-category">' + escapeHtml(v.category) + '</div>';
+              const f = vocabFields(v);
+              html += '<div class="vocab-card-item" data-word="' + escapeHtml((f.word || '').toLowerCase()) + '" data-meaning="' + escapeHtml((f.meaning || '').toLowerCase()) + '">';
+              html += '<span class="vc-word">' + escapeHtml(f.word || '') + '</span>';
+              if (f.pos) html += '<span class="vc-pos">' + escapeHtml(f.pos) + '</span>';
+              if (f.meaning) html += '<div class="vc-meaning">' + escapeHtml(f.meaning) + '</div>';
+              if (v.level) html += '<div class="vc-category">' + escapeHtml(v.level) + '</div>';
               html += '</div>';
             });
             html += '</div>';
           }
 
-          // 特殊词汇（放在章节末尾，标明用法）
+          // 特殊词汇（放小类末尾，标明用法）
           if (specialWords.length > 0) {
             html += '<div class="vocab-special-section">';
-            html += '<div class="vocab-special-label">⚠️ 特殊用法词汇</div>';
+            html += '<div class="vocab-special-label">⚠️ 特殊用法</div>';
             html += '<div class="vocab-grid">';
             specialWords.forEach((v) => {
-              html += '<div class="vocab-card-item" data-word="' + escapeHtml(v.word.toLowerCase()) + '" data-meaning="' + escapeHtml((v.meaning || '').toLowerCase()) + '">';
-              html += '<span class="vc-word">' + escapeHtml(v.word) + '</span>';
-              if (v.pos) html += '<span class="vc-pos">' + escapeHtml(v.pos) + '</span>';
-              if (v.meaning) html += '<div class="vc-meaning">' + escapeHtml(v.meaning) + '</div>';
-              if (v.usage) html += '<div class="vc-usage">用法：' + escapeHtml(v.usage) + '</div>';
-              if (v.category) html += '<div class="vc-category">' + escapeHtml(v.category) + '</div>';
+              const f = vocabFields(v);
+              html += '<div class="vocab-card-item" data-word="' + escapeHtml((f.word || '').toLowerCase()) + '" data-meaning="' + escapeHtml((f.meaning || '').toLowerCase()) + '">';
+              html += '<span class="vc-word">' + escapeHtml(f.word || '') + '</span>';
+              if (f.pos) html += '<span class="vc-pos">' + escapeHtml(f.pos) + '</span>';
+              if (f.meaning) html += '<div class="vc-meaning">' + escapeHtml(f.meaning) + '</div>';
+              if (v.usage) html += '<div class="vc-usage">' + escapeHtml(v.usage) + '</div>';
+              if (v.level) html += '<div class="vc-category">' + escapeHtml(v.level) + '</div>';
               html += '</div>';
             });
             html += '</div>';
             html += '</div>';
           }
 
-          html += '</div>'; // vocab-chapter
+          html += '</div>';
         });
-      });
 
-      html += '</div>'; // vocab-list
+        html += '</div>';
+      });
+      html += '</div>';
 
       // 返回按钮
       html += '<div class="result-actions" style="margin-top:20px;">';
@@ -3558,8 +3700,20 @@
       html += '</div>';
 
       vocabBody.innerHTML = html;
+      bindVocabEvents();
+    }
 
-      // 搜索功能
+    // 回退：从题库提取词汇（旧逻辑简化版）
+    function renderVocabFromBank() {
+      const levels = state.quizBank.levels;
+      let html = '<div class="review-header"><h2>📖 词汇复习（题库提取）</h2></div>';
+      html += '<input type="text" class="vocab-search" id="vocab-search" placeholder="搜索单词或中文释义…" autocomplete="off" />';
+      html += '<div class="review-empty-state"><div class="icon">📝</div><p>词汇数据库加载中，正在从题库提取…</p></div>';
+      vocabBody.innerHTML = html;
+    }
+
+    // 绑定词汇页通用事件
+    function bindVocabEvents() {
       const searchInput = $('vocab-search');
       if (searchInput) {
         searchInput.addEventListener('input', () => {
@@ -3570,37 +3724,26 @@
             const match = !query || word.includes(query) || meaning.includes(query);
             card.style.display = match ? '' : 'none';
           });
-          // 隐藏空分组
+          vocabBody.querySelectorAll('.vocab-sub-section').forEach((sec) => {
+            const visible = sec.querySelectorAll('.vocab-card-item:not([style*="display: none"])');
+            sec.style.display = visible.length > 0 ? '' : (query ? 'none' : '');
+          });
           vocabBody.querySelectorAll('.vocab-chapter').forEach((sec) => {
             const visible = sec.querySelectorAll('.vocab-card-item:not([style*="display: none"])');
-            if (visible.length > 0) {
-              sec.style.display = '';
-            } else if (query) {
-              sec.style.display = 'none';
-            } else {
-              sec.style.display = '';
-            }
-          });
-          vocabBody.querySelectorAll('.vocab-toc').forEach((toc) => {
-            const visible = vocabBody.querySelectorAll('.vocab-chapter:not([style*="display: none"])');
-            toc.style.display = visible.length > 0 ? '' : 'none';
+            sec.style.display = visible.length > 0 ? '' : (query ? 'none' : '');
           });
         });
       }
 
-      // 目录点击平滑滚动
       vocabBody.querySelectorAll('.vocab-toc-item').forEach((link) => {
         link.addEventListener('click', (e) => {
           e.preventDefault();
           const targetId = link.getAttribute('href').replace('#', '');
           const target = document.getElementById(targetId);
-          if (target) {
-            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          }
+          if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
         });
       });
 
-      // 返回首页
       const homeBtn = $('vocab-home-btn');
       if (homeBtn) {
         homeBtn.addEventListener('click', () => switchTab('start'));
@@ -3636,6 +3779,19 @@
 
     // 随机开始按钮
     $("random-start-btn").addEventListener("click", startRandomQuiz);
+
+    // 测评等级选择
+    document.querySelectorAll('[data-exam-level]').forEach((btn) => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll('[data-exam-level]').forEach((b) =>
+          b.classList.toggle("active", b === btn)
+        );
+        state.examLevel = btn.dataset.examLevel;
+      });
+    });
+
+    // 测评开始按钮
+    $("exam-start-btn").addEventListener("click", startExam);
   </script>
 </body>
 </html>

@@ -1,0 +1,2616 @@
+{
+  "meta": {
+    "title": "英语词汇分类数据库",
+    "version": "1.0.0",
+    "totalWords": 403,
+    "description": "按词性大类→小类分类的英语词汇库"
+  },
+  "categories": {
+    "名词 (Nouns)": {
+      "可数名词": [
+        {
+          "word": "apple",
+          "pos": "n.",
+          "meaning": "苹果",
+          "level": "junior"
+        },
+        {
+          "word": "book",
+          "pos": "n.",
+          "meaning": "书",
+          "level": "junior"
+        },
+        {
+          "word": "teacher",
+          "pos": "n.",
+          "meaning": "老师",
+          "level": "junior"
+        },
+        {
+          "word": "student",
+          "pos": "n.",
+          "meaning": "学生",
+          "level": "junior"
+        },
+        {
+          "word": "desk",
+          "pos": "n.",
+          "meaning": "书桌",
+          "level": "junior"
+        },
+        {
+          "word": "chair",
+          "pos": "n.",
+          "meaning": "椅子",
+          "level": "junior"
+        },
+        {
+          "word": "cat",
+          "pos": "n.",
+          "meaning": "猫",
+          "level": "junior"
+        },
+        {
+          "word": "dog",
+          "pos": "n.",
+          "meaning": "狗",
+          "level": "junior"
+        },
+        {
+          "word": "pen",
+          "pos": "n.",
+          "meaning": "钢笔",
+          "level": "junior"
+        },
+        {
+          "word": "pencil",
+          "pos": "n.",
+          "meaning": "铅笔",
+          "level": "junior"
+        },
+        {
+          "word": "car",
+          "pos": "n.",
+          "meaning": "汽车",
+          "level": "junior"
+        },
+        {
+          "word": "phone",
+          "pos": "n.",
+          "meaning": "电话",
+          "level": "junior"
+        },
+        {
+          "word": "computer",
+          "pos": "n.",
+          "meaning": "电脑",
+          "level": "senior"
+        },
+        {
+          "word": "window",
+          "pos": "n.",
+          "meaning": "窗户",
+          "level": "junior"
+        },
+        {
+          "word": "door",
+          "pos": "n.",
+          "meaning": "门",
+          "level": "junior"
+        },
+        {
+          "word": "table",
+          "pos": "n.",
+          "meaning": "桌子",
+          "level": "junior"
+        },
+        {
+          "word": "bag",
+          "pos": "n.",
+          "meaning": "包",
+          "level": "junior"
+        },
+        {
+          "word": "tree",
+          "pos": "n.",
+          "meaning": "树",
+          "level": "junior"
+        }
+      ],
+      "不可数名词": [
+        {
+          "word": "water",
+          "pos": "n.",
+          "meaning": "水",
+          "level": "junior"
+        },
+        {
+          "word": "milk",
+          "pos": "n.",
+          "meaning": "牛奶",
+          "level": "junior"
+        },
+        {
+          "word": "bread",
+          "pos": "n.",
+          "meaning": "面包",
+          "level": "junior"
+        },
+        {
+          "word": "rice",
+          "pos": "n.",
+          "meaning": "米饭",
+          "level": "junior"
+        },
+        {
+          "word": "sugar",
+          "pos": "n.",
+          "meaning": "糖",
+          "level": "junior"
+        },
+        {
+          "word": "tea",
+          "pos": "n.",
+          "meaning": "茶",
+          "level": "junior"
+        },
+        {
+          "word": "coffee",
+          "pos": "n.",
+          "meaning": "咖啡",
+          "level": "junior"
+        },
+        {
+          "word": "meat",
+          "pos": "n.",
+          "meaning": "肉",
+          "level": "junior"
+        },
+        {
+          "word": "music",
+          "pos": "n.",
+          "meaning": "音乐",
+          "level": "junior"
+        },
+        {
+          "word": "homework",
+          "pos": "n.",
+          "meaning": "作业",
+          "level": "junior"
+        },
+        {
+          "word": "news",
+          "pos": "n.",
+          "meaning": "新闻",
+          "level": "senior"
+        },
+        {
+          "word": "advice",
+          "pos": "n.",
+          "meaning": "建议",
+          "level": "senior"
+        },
+        {
+          "word": "information",
+          "pos": "n.",
+          "meaning": "信息",
+          "level": "cet4"
+        },
+        {
+          "word": "knowledge",
+          "pos": "n.",
+          "meaning": "知识",
+          "level": "senior"
+        },
+        {
+          "word": "weather",
+          "pos": "n.",
+          "meaning": "天气",
+          "level": "junior"
+        },
+        {
+          "word": "money",
+          "pos": "n.",
+          "meaning": "钱",
+          "level": "junior"
+        },
+        {
+          "word": "time",
+          "pos": "n.",
+          "meaning": "时间",
+          "level": "junior"
+        },
+        {
+          "word": "fruit",
+          "pos": "n.",
+          "meaning": "水果",
+          "level": "junior"
+        }
+      ],
+      "专有名词": [
+        {
+          "word": "Beijing",
+          "pos": "n.",
+          "meaning": "北京",
+          "level": "junior"
+        },
+        {
+          "word": "Shanghai",
+          "pos": "n.",
+          "meaning": "上海",
+          "level": "junior"
+        },
+        {
+          "word": "China",
+          "pos": "n.",
+          "meaning": "中国",
+          "level": "junior"
+        },
+        {
+          "word": "America",
+          "pos": "n.",
+          "meaning": "美国",
+          "level": "junior"
+        },
+        {
+          "word": "England",
+          "pos": "n.",
+          "meaning": "英格兰",
+          "level": "junior"
+        },
+        {
+          "word": "English",
+          "pos": "n.",
+          "meaning": "英语",
+          "level": "junior"
+        },
+        {
+          "word": "Monday",
+          "pos": "n.",
+          "meaning": "星期一",
+          "level": "junior"
+        },
+        {
+          "word": "January",
+          "pos": "n.",
+          "meaning": "一月",
+          "level": "junior"
+        },
+        {
+          "word": "Tom",
+          "pos": "n.",
+          "meaning": "汤姆（人名）",
+          "level": "junior"
+        },
+        {
+          "word": "Mary",
+          "pos": "n.",
+          "meaning": "玛丽（人名）",
+          "level": "junior"
+        },
+        {
+          "word": "Christmas",
+          "pos": "n.",
+          "meaning": "圣诞节",
+          "level": "senior"
+        },
+        {
+          "word": "the Great Wall",
+          "pos": "n.",
+          "meaning": "长城",
+          "level": "junior"
+        },
+        {
+          "word": "the United States",
+          "pos": "n.",
+          "meaning": "美国",
+          "level": "senior"
+        },
+        {
+          "word": "New York",
+          "pos": "n.",
+          "meaning": "纽约",
+          "level": "senior"
+        }
+      ],
+      "抽象名词": [
+        {
+          "word": "love",
+          "pos": "n.",
+          "meaning": "爱",
+          "level": "junior"
+        },
+        {
+          "word": "happiness",
+          "pos": "n.",
+          "meaning": "幸福",
+          "level": "senior"
+        },
+        {
+          "word": "freedom",
+          "pos": "n.",
+          "meaning": "自由",
+          "level": "senior"
+        },
+        {
+          "word": "beauty",
+          "pos": "n.",
+          "meaning": "美丽",
+          "level": "senior"
+        },
+        {
+          "word": "wisdom",
+          "pos": "n.",
+          "meaning": "智慧",
+          "level": "cet4"
+        },
+        {
+          "word": "courage",
+          "pos": "n.",
+          "meaning": "勇气",
+          "level": "senior"
+        },
+        {
+          "word": "friendship",
+          "pos": "n.",
+          "meaning": "友谊",
+          "level": "senior"
+        },
+        {
+          "word": "honesty",
+          "pos": "n.",
+          "meaning": "诚实",
+          "level": "cet4"
+        },
+        {
+          "word": "life",
+          "pos": "n.",
+          "meaning": "生活/生命",
+          "level": "junior"
+        },
+        {
+          "word": "success",
+          "pos": "n.",
+          "meaning": "成功",
+          "level": "senior"
+        },
+        {
+          "word": "health",
+          "pos": "n.",
+          "meaning": "健康",
+          "level": "junior"
+        },
+        {
+          "word": "hope",
+          "pos": "n.",
+          "meaning": "希望",
+          "level": "junior"
+        },
+        {
+          "word": "danger",
+          "pos": "n.",
+          "meaning": "危险",
+          "level": "senior"
+        },
+        {
+          "word": "luck",
+          "pos": "n.",
+          "meaning": "运气",
+          "level": "junior"
+        }
+      ]
+    },
+    "动词 (Verbs)": {
+      "行为动词": [
+        {
+          "word": "go",
+          "pos": "v.",
+          "meaning": "去",
+          "level": "junior"
+        },
+        {
+          "word": "come",
+          "pos": "v.",
+          "meaning": "来",
+          "level": "junior"
+        },
+        {
+          "word": "eat",
+          "pos": "v.",
+          "meaning": "吃",
+          "level": "junior"
+        },
+        {
+          "word": "drink",
+          "pos": "v.",
+          "meaning": "喝",
+          "level": "junior"
+        },
+        {
+          "word": "read",
+          "pos": "v.",
+          "meaning": "读",
+          "level": "junior"
+        },
+        {
+          "word": "write",
+          "pos": "v.",
+          "meaning": "写",
+          "level": "junior"
+        },
+        {
+          "word": "play",
+          "pos": "v.",
+          "meaning": "玩",
+          "level": "junior"
+        },
+        {
+          "word": "run",
+          "pos": "v.",
+          "meaning": "跑",
+          "level": "junior"
+        },
+        {
+          "word": "walk",
+          "pos": "v.",
+          "meaning": "走",
+          "level": "junior"
+        },
+        {
+          "word": "buy",
+          "pos": "v.",
+          "meaning": "买",
+          "level": "junior"
+        },
+        {
+          "word": "sell",
+          "pos": "v.",
+          "meaning": "卖",
+          "level": "junior"
+        },
+        {
+          "word": "make",
+          "pos": "v.",
+          "meaning": "制作",
+          "level": "junior"
+        },
+        {
+          "word": "take",
+          "pos": "v.",
+          "meaning": "拿/带",
+          "level": "junior"
+        },
+        {
+          "word": "give",
+          "pos": "v.",
+          "meaning": "给",
+          "level": "junior"
+        },
+        {
+          "word": "see",
+          "pos": "v.",
+          "meaning": "看见",
+          "level": "junior"
+        },
+        {
+          "word": "help",
+          "pos": "v.",
+          "meaning": "帮助",
+          "level": "junior"
+        },
+        {
+          "word": "open",
+          "pos": "v.",
+          "meaning": "打开",
+          "level": "junior"
+        },
+        {
+          "word": "close",
+          "pos": "v.",
+          "meaning": "关闭",
+          "level": "junior"
+        }
+      ],
+      "系动词": [
+        {
+          "word": "be",
+          "pos": "v.",
+          "meaning": "是（am/is/are）",
+          "level": "junior"
+        },
+        {
+          "word": "seem",
+          "pos": "v.",
+          "meaning": "似乎",
+          "level": "senior"
+        },
+        {
+          "word": "look",
+          "pos": "v.",
+          "meaning": "看起来",
+          "level": "junior"
+        },
+        {
+          "word": "feel",
+          "pos": "v.",
+          "meaning": "感觉",
+          "level": "junior"
+        },
+        {
+          "word": "sound",
+          "pos": "v.",
+          "meaning": "听起来",
+          "level": "junior"
+        },
+        {
+          "word": "taste",
+          "pos": "v.",
+          "meaning": "尝起来",
+          "level": "junior"
+        },
+        {
+          "word": "smell",
+          "pos": "v.",
+          "meaning": "闻起来",
+          "level": "junior"
+        },
+        {
+          "word": "become",
+          "pos": "v.",
+          "meaning": "变成",
+          "level": "senior"
+        },
+        {
+          "word": "grow",
+          "pos": "v.",
+          "meaning": "变得/生长",
+          "level": "senior"
+        },
+        {
+          "word": "turn",
+          "pos": "v.",
+          "meaning": "变成",
+          "level": "senior"
+        },
+        {
+          "word": "get",
+          "pos": "v.",
+          "meaning": "变得/得到",
+          "level": "junior"
+        },
+        {
+          "word": "appear",
+          "pos": "v.",
+          "meaning": "看起来",
+          "level": "cet4"
+        }
+      ],
+      "助动词": [
+        {
+          "word": "do",
+          "pos": "aux.",
+          "meaning": "助动词（疑问/否定）",
+          "level": "junior"
+        },
+        {
+          "word": "does",
+          "pos": "aux.",
+          "meaning": "助动词（三单疑问/否定）",
+          "level": "junior"
+        },
+        {
+          "word": "did",
+          "pos": "aux.",
+          "meaning": "助动词（过去时）",
+          "level": "junior"
+        },
+        {
+          "word": "have",
+          "pos": "aux.",
+          "meaning": "助动词（完成时）",
+          "level": "senior"
+        },
+        {
+          "word": "has",
+          "pos": "aux.",
+          "meaning": "助动词（三单完成时）",
+          "level": "senior"
+        },
+        {
+          "word": "had",
+          "pos": "aux.",
+          "meaning": "助动词（过去完成时）",
+          "level": "senior"
+        },
+        {
+          "word": "will",
+          "pos": "aux.",
+          "meaning": "助动词（将来时）",
+          "level": "junior"
+        },
+        {
+          "word": "would",
+          "pos": "aux.",
+          "meaning": "助动词（过去将来时）",
+          "level": "senior"
+        },
+        {
+          "word": "shall",
+          "pos": "aux.",
+          "meaning": "助动词（将来时，第一人称）",
+          "level": "senior"
+        },
+        {
+          "word": "be",
+          "pos": "aux.",
+          "meaning": "助动词（进行时/被动）",
+          "level": "junior"
+        }
+      ],
+      "情态动词": [
+        {
+          "word": "can",
+          "pos": "aux.",
+          "meaning": "能/会",
+          "level": "junior"
+        },
+        {
+          "word": "could",
+          "pos": "aux.",
+          "meaning": "能/会（过去/委婉）",
+          "level": "junior"
+        },
+        {
+          "word": "may",
+          "pos": "aux.",
+          "meaning": "可以/可能",
+          "level": "junior"
+        },
+        {
+          "word": "might",
+          "pos": "aux.",
+          "meaning": "可能（更不确定）",
+          "level": "senior"
+        },
+        {
+          "word": "must",
+          "pos": "aux.",
+          "meaning": "必须",
+          "level": "junior"
+        },
+        {
+          "word": "shall",
+          "pos": "aux.",
+          "meaning": "将要/好吗",
+          "level": "senior"
+        },
+        {
+          "word": "should",
+          "pos": "aux.",
+          "meaning": "应该",
+          "level": "junior"
+        },
+        {
+          "word": "will",
+          "pos": "aux.",
+          "meaning": "将/会",
+          "level": "junior"
+        },
+        {
+          "word": "would",
+          "pos": "aux.",
+          "meaning": "将/愿意",
+          "level": "senior"
+        },
+        {
+          "word": "need",
+          "pos": "aux.",
+          "meaning": "需要",
+          "level": "senior"
+        },
+        {
+          "word": "dare",
+          "pos": "aux.",
+          "meaning": "敢",
+          "level": "cet4"
+        },
+        {
+          "word": "ought to",
+          "pos": "aux.",
+          "meaning": "应该",
+          "level": "cet4"
+        }
+      ],
+      "不规则动词": [
+        {
+          "word": "go",
+          "pos": "v.",
+          "meaning": "去（go-went-gone）",
+          "level": "junior"
+        },
+        {
+          "word": "see",
+          "pos": "v.",
+          "meaning": "看见（see-saw-seen）",
+          "level": "junior"
+        },
+        {
+          "word": "take",
+          "pos": "v.",
+          "meaning": "拿（take-took-taken）",
+          "level": "junior"
+        },
+        {
+          "word": "give",
+          "pos": "v.",
+          "meaning": "给（give-gave-given）",
+          "level": "junior"
+        },
+        {
+          "word": "come",
+          "pos": "v.",
+          "meaning": "来（come-came-come）",
+          "level": "junior"
+        },
+        {
+          "word": "run",
+          "pos": "v.",
+          "meaning": "跑（run-ran-run）",
+          "level": "junior"
+        },
+        {
+          "word": "eat",
+          "pos": "v.",
+          "meaning": "吃（eat-ate-eaten）",
+          "level": "junior"
+        },
+        {
+          "word": "drink",
+          "pos": "v.",
+          "meaning": "喝（drink-drank-drunk）",
+          "level": "junior"
+        },
+        {
+          "word": "write",
+          "pos": "v.",
+          "meaning": "写（write-wrote-written）",
+          "level": "junior"
+        },
+        {
+          "word": "speak",
+          "pos": "v.",
+          "meaning": "说（speak-spoke-spoken）",
+          "level": "senior"
+        },
+        {
+          "word": "break",
+          "pos": "v.",
+          "meaning": "打破（break-broke-broken）",
+          "level": "senior"
+        },
+        {
+          "word": "drive",
+          "pos": "v.",
+          "meaning": "驾驶（drive-drove-driven）",
+          "level": "senior"
+        },
+        {
+          "word": "ride",
+          "pos": "v.",
+          "meaning": "骑（ride-rode-ridden）",
+          "level": "senior"
+        },
+        {
+          "word": "sing",
+          "pos": "v.",
+          "meaning": "唱（sing-sang-sung）",
+          "level": "junior"
+        },
+        {
+          "word": "swim",
+          "pos": "v.",
+          "meaning": "游泳（swim-swam-swum）",
+          "level": "junior"
+        }
+      ]
+    },
+    "形容词 (Adjectives)": {
+      "品质形容词": [
+        {
+          "word": "big",
+          "pos": "adj.",
+          "meaning": "大的",
+          "level": "junior"
+        },
+        {
+          "word": "small",
+          "pos": "adj.",
+          "meaning": "小的",
+          "level": "junior"
+        },
+        {
+          "word": "good",
+          "pos": "adj.",
+          "meaning": "好的",
+          "level": "junior"
+        },
+        {
+          "word": "bad",
+          "pos": "adj.",
+          "meaning": "坏的",
+          "level": "junior"
+        },
+        {
+          "word": "beautiful",
+          "pos": "adj.",
+          "meaning": "美丽的",
+          "level": "junior"
+        },
+        {
+          "word": "happy",
+          "pos": "adj.",
+          "meaning": "开心的",
+          "level": "junior"
+        },
+        {
+          "word": "sad",
+          "pos": "adj.",
+          "meaning": "伤心的",
+          "level": "junior"
+        },
+        {
+          "word": "tall",
+          "pos": "adj.",
+          "meaning": "高的",
+          "level": "junior"
+        },
+        {
+          "word": "short",
+          "pos": "adj.",
+          "meaning": "矮的/短的",
+          "level": "junior"
+        },
+        {
+          "word": "long",
+          "pos": "adj.",
+          "meaning": "长的",
+          "level": "junior"
+        },
+        {
+          "word": "hot",
+          "pos": "adj.",
+          "meaning": "热的",
+          "level": "junior"
+        },
+        {
+          "word": "cold",
+          "pos": "adj.",
+          "meaning": "冷的",
+          "level": "junior"
+        },
+        {
+          "word": "new",
+          "pos": "adj.",
+          "meaning": "新的",
+          "level": "junior"
+        },
+        {
+          "word": "old",
+          "pos": "adj.",
+          "meaning": "老的/旧的",
+          "level": "junior"
+        },
+        {
+          "word": "young",
+          "pos": "adj.",
+          "meaning": "年轻的",
+          "level": "junior"
+        },
+        {
+          "word": "clean",
+          "pos": "adj.",
+          "meaning": "干净的",
+          "level": "junior"
+        },
+        {
+          "word": "dirty",
+          "pos": "adj.",
+          "meaning": "脏的",
+          "level": "junior"
+        },
+        {
+          "word": "heavy",
+          "pos": "adj.",
+          "meaning": "重的",
+          "level": "junior"
+        }
+      ],
+      "数量形容词": [
+        {
+          "word": "many",
+          "pos": "adj.",
+          "meaning": "许多（可数）",
+          "level": "junior"
+        },
+        {
+          "word": "much",
+          "pos": "adj.",
+          "meaning": "许多（不可数）",
+          "level": "junior"
+        },
+        {
+          "word": "few",
+          "pos": "adj.",
+          "meaning": "很少（可数，否定）",
+          "level": "junior"
+        },
+        {
+          "word": "little",
+          "pos": "adj.",
+          "meaning": "很少（不可数，否定）",
+          "level": "junior"
+        },
+        {
+          "word": "some",
+          "pos": "adj.",
+          "meaning": "一些",
+          "level": "junior"
+        },
+        {
+          "word": "any",
+          "pos": "adj.",
+          "meaning": "任何/一些",
+          "level": "junior"
+        },
+        {
+          "word": "all",
+          "pos": "adj.",
+          "meaning": "全部的",
+          "level": "junior"
+        },
+        {
+          "word": "both",
+          "pos": "adj.",
+          "meaning": "两者都",
+          "level": "senior"
+        },
+        {
+          "word": "each",
+          "pos": "adj.",
+          "meaning": "每个",
+          "level": "junior"
+        },
+        {
+          "word": "every",
+          "pos": "adj.",
+          "meaning": "每个",
+          "level": "junior"
+        },
+        {
+          "word": "several",
+          "pos": "adj.",
+          "meaning": "几个",
+          "level": "senior"
+        },
+        {
+          "word": "enough",
+          "pos": "adj.",
+          "meaning": "足够的",
+          "level": "junior"
+        }
+      ],
+      "比较级与最高级": [
+        {
+          "word": "bigger",
+          "pos": "adj.",
+          "meaning": "更大的（big的比较级）",
+          "level": "junior"
+        },
+        {
+          "word": "biggest",
+          "pos": "adj.",
+          "meaning": "最大的（big的最高级）",
+          "level": "junior"
+        },
+        {
+          "word": "better",
+          "pos": "adj.",
+          "meaning": "更好的（good的比较级）",
+          "level": "junior"
+        },
+        {
+          "word": "best",
+          "pos": "adj.",
+          "meaning": "最好的（good的最高级）",
+          "level": "junior"
+        },
+        {
+          "word": "more",
+          "pos": "adj.",
+          "meaning": "更多的",
+          "level": "junior"
+        },
+        {
+          "word": "most",
+          "pos": "adj.",
+          "meaning": "最多的",
+          "level": "junior"
+        },
+        {
+          "word": "taller",
+          "pos": "adj.",
+          "meaning": "更高的",
+          "level": "junior"
+        },
+        {
+          "word": "tallest",
+          "pos": "adj.",
+          "meaning": "最高的",
+          "level": "junior"
+        },
+        {
+          "word": "easier",
+          "pos": "adj.",
+          "meaning": "更容易的",
+          "level": "senior"
+        },
+        {
+          "word": "easiest",
+          "pos": "adj.",
+          "meaning": "最容易的",
+          "level": "senior"
+        },
+        {
+          "word": "happier",
+          "pos": "adj.",
+          "meaning": "更开心的",
+          "level": "junior"
+        },
+        {
+          "word": "happiest",
+          "pos": "adj.",
+          "meaning": "最开心的",
+          "level": "junior"
+        },
+        {
+          "word": "worse",
+          "pos": "adj.",
+          "meaning": "更坏的（bad的比较级）",
+          "level": "junior"
+        },
+        {
+          "word": "worst",
+          "pos": "adj.",
+          "meaning": "最坏的（bad的最高级）",
+          "level": "junior"
+        }
+      ]
+    },
+    "副词 (Adverbs)": {
+      "时间副词": [
+        {
+          "word": "now",
+          "pos": "adv.",
+          "meaning": "现在",
+          "level": "junior"
+        },
+        {
+          "word": "today",
+          "pos": "adv.",
+          "meaning": "今天",
+          "level": "junior"
+        },
+        {
+          "word": "yesterday",
+          "pos": "adv.",
+          "meaning": "昨天",
+          "level": "junior"
+        },
+        {
+          "word": "tomorrow",
+          "pos": "adv.",
+          "meaning": "明天",
+          "level": "junior"
+        },
+        {
+          "word": "soon",
+          "pos": "adv.",
+          "meaning": "很快",
+          "level": "junior"
+        },
+        {
+          "word": "late",
+          "pos": "adv.",
+          "meaning": "迟",
+          "level": "junior"
+        },
+        {
+          "word": "early",
+          "pos": "adv.",
+          "meaning": "早",
+          "level": "junior"
+        },
+        {
+          "word": "already",
+          "pos": "adv.",
+          "meaning": "已经",
+          "level": "senior"
+        },
+        {
+          "word": "yet",
+          "pos": "adv.",
+          "meaning": "还（否定/疑问）",
+          "level": "senior"
+        },
+        {
+          "word": "still",
+          "pos": "adv.",
+          "meaning": "仍然",
+          "level": "junior"
+        },
+        {
+          "word": "before",
+          "pos": "adv.",
+          "meaning": "以前",
+          "level": "junior"
+        },
+        {
+          "word": "after",
+          "pos": "adv.",
+          "meaning": "以后",
+          "level": "junior"
+        }
+      ],
+      "地点副词": [
+        {
+          "word": "here",
+          "pos": "adv.",
+          "meaning": "这里",
+          "level": "junior"
+        },
+        {
+          "word": "there",
+          "pos": "adv.",
+          "meaning": "那里",
+          "level": "junior"
+        },
+        {
+          "word": "everywhere",
+          "pos": "adv.",
+          "meaning": "到处",
+          "level": "senior"
+        },
+        {
+          "word": "nowhere",
+          "pos": "adv.",
+          "meaning": "无处",
+          "level": "senior"
+        },
+        {
+          "word": "somewhere",
+          "pos": "adv.",
+          "meaning": "某处",
+          "level": "senior"
+        },
+        {
+          "word": "anywhere",
+          "pos": "adv.",
+          "meaning": "任何地方",
+          "level": "senior"
+        },
+        {
+          "word": "home",
+          "pos": "adv.",
+          "meaning": "回家/在家",
+          "level": "junior"
+        },
+        {
+          "word": "abroad",
+          "pos": "adv.",
+          "meaning": "在国外",
+          "level": "cet4"
+        },
+        {
+          "word": "upstairs",
+          "pos": "adv.",
+          "meaning": "楼上",
+          "level": "junior"
+        },
+        {
+          "word": "downstairs",
+          "pos": "adv.",
+          "meaning": "楼下",
+          "level": "junior"
+        }
+      ],
+      "方式副词": [
+        {
+          "word": "quickly",
+          "pos": "adv.",
+          "meaning": "快地",
+          "level": "junior"
+        },
+        {
+          "word": "slowly",
+          "pos": "adv.",
+          "meaning": "慢地",
+          "level": "junior"
+        },
+        {
+          "word": "carefully",
+          "pos": "adv.",
+          "meaning": "小心地",
+          "level": "senior"
+        },
+        {
+          "word": "happily",
+          "pos": "adv.",
+          "meaning": "开心地",
+          "level": "junior"
+        },
+        {
+          "word": "easily",
+          "pos": "adv.",
+          "meaning": "容易地",
+          "level": "senior"
+        },
+        {
+          "word": "well",
+          "pos": "adv.",
+          "meaning": "好地",
+          "level": "junior"
+        },
+        {
+          "word": "fast",
+          "pos": "adv.",
+          "meaning": "快地",
+          "level": "junior"
+        },
+        {
+          "word": "hard",
+          "pos": "adv.",
+          "meaning": "努力地",
+          "level": "junior"
+        },
+        {
+          "word": "quietly",
+          "pos": "adv.",
+          "meaning": "安静地",
+          "level": "senior"
+        },
+        {
+          "word": "loudly",
+          "pos": "adv.",
+          "meaning": "大声地",
+          "level": "senior"
+        },
+        {
+          "word": "suddenly",
+          "pos": "adv.",
+          "meaning": "突然地",
+          "level": "senior"
+        },
+        {
+          "word": "safely",
+          "pos": "adv.",
+          "meaning": "安全地",
+          "level": "senior"
+        }
+      ],
+      "程度副词": [
+        {
+          "word": "very",
+          "pos": "adv.",
+          "meaning": "非常",
+          "level": "junior"
+        },
+        {
+          "word": "quite",
+          "pos": "adv.",
+          "meaning": "相当",
+          "level": "junior"
+        },
+        {
+          "word": "too",
+          "pos": "adv.",
+          "meaning": "太",
+          "level": "junior"
+        },
+        {
+          "word": "so",
+          "pos": "adv.",
+          "meaning": "如此",
+          "level": "junior"
+        },
+        {
+          "word": "rather",
+          "pos": "adv.",
+          "meaning": "相当",
+          "level": "senior"
+        },
+        {
+          "word": "almost",
+          "pos": "adv.",
+          "meaning": "几乎",
+          "level": "senior"
+        },
+        {
+          "word": "nearly",
+          "pos": "adv.",
+          "meaning": "几乎",
+          "level": "senior"
+        },
+        {
+          "word": "hardly",
+          "pos": "adv.",
+          "meaning": "几乎不",
+          "level": "senior"
+        },
+        {
+          "word": "completely",
+          "pos": "adv.",
+          "meaning": "完全地",
+          "level": "cet4"
+        },
+        {
+          "word": "extremely",
+          "pos": "adv.",
+          "meaning": "极其",
+          "level": "cet4"
+        }
+      ],
+      "频率副词": [
+        {
+          "word": "always",
+          "pos": "adv.",
+          "meaning": "总是",
+          "level": "junior"
+        },
+        {
+          "word": "usually",
+          "pos": "adv.",
+          "meaning": "通常",
+          "level": "junior"
+        },
+        {
+          "word": "often",
+          "pos": "adv.",
+          "meaning": "经常",
+          "level": "junior"
+        },
+        {
+          "word": "sometimes",
+          "pos": "adv.",
+          "meaning": "有时",
+          "level": "junior"
+        },
+        {
+          "word": "never",
+          "pos": "adv.",
+          "meaning": "从不",
+          "level": "junior"
+        },
+        {
+          "word": "seldom",
+          "pos": "adv.",
+          "meaning": "很少",
+          "level": "senior"
+        },
+        {
+          "word": "rarely",
+          "pos": "adv.",
+          "meaning": "罕见地",
+          "level": "senior"
+        },
+        {
+          "word": "frequently",
+          "pos": "adv.",
+          "meaning": "频繁地",
+          "level": "cet4"
+        },
+        {
+          "word": "occasionally",
+          "pos": "adv.",
+          "meaning": "偶尔",
+          "level": "cet4"
+        },
+        {
+          "word": "generally",
+          "pos": "adv.",
+          "meaning": "一般地",
+          "level": "cet4"
+        }
+      ]
+    },
+    "代词 (Pronouns)": {
+      "人称代词": [
+        {
+          "word": "I",
+          "pos": "pron.",
+          "meaning": "我（主格）",
+          "level": "junior"
+        },
+        {
+          "word": "you",
+          "pos": "pron.",
+          "meaning": "你/你们",
+          "level": "junior"
+        },
+        {
+          "word": "he",
+          "pos": "pron.",
+          "meaning": "他（主格）",
+          "level": "junior"
+        },
+        {
+          "word": "she",
+          "pos": "pron.",
+          "meaning": "她（主格）",
+          "level": "junior"
+        },
+        {
+          "word": "it",
+          "pos": "pron.",
+          "meaning": "它（主格）",
+          "level": "junior"
+        },
+        {
+          "word": "we",
+          "pos": "pron.",
+          "meaning": "我们（主格）",
+          "level": "junior"
+        },
+        {
+          "word": "they",
+          "pos": "pron.",
+          "meaning": "他们（主格）",
+          "level": "junior"
+        },
+        {
+          "word": "me",
+          "pos": "pron.",
+          "meaning": "我（宾格）",
+          "level": "junior"
+        },
+        {
+          "word": "him",
+          "pos": "pron.",
+          "meaning": "他（宾格）",
+          "level": "junior"
+        },
+        {
+          "word": "them",
+          "pos": "pron.",
+          "meaning": "他们（宾格）",
+          "level": "junior"
+        }
+      ],
+      "物主代词": [
+        {
+          "word": "my",
+          "pos": "pron.",
+          "meaning": "我的（形容词性）",
+          "level": "junior"
+        },
+        {
+          "word": "your",
+          "pos": "pron.",
+          "meaning": "你的（形容词性）",
+          "level": "junior"
+        },
+        {
+          "word": "his",
+          "pos": "pron.",
+          "meaning": "他的",
+          "level": "junior"
+        },
+        {
+          "word": "her",
+          "pos": "pron.",
+          "meaning": "她的（形容词性）",
+          "level": "junior"
+        },
+        {
+          "word": "its",
+          "pos": "pron.",
+          "meaning": "它的",
+          "level": "junior"
+        },
+        {
+          "word": "our",
+          "pos": "pron.",
+          "meaning": "我们的（形容词性）",
+          "level": "junior"
+        },
+        {
+          "word": "their",
+          "pos": "pron.",
+          "meaning": "他们的（形容词性）",
+          "level": "junior"
+        },
+        {
+          "word": "mine",
+          "pos": "pron.",
+          "meaning": "我的（名词性）",
+          "level": "junior"
+        },
+        {
+          "word": "yours",
+          "pos": "pron.",
+          "meaning": "你的（名词性）",
+          "level": "junior"
+        },
+        {
+          "word": "hers",
+          "pos": "pron.",
+          "meaning": "她的（名词性）",
+          "level": "junior"
+        }
+      ],
+      "指示代词": [
+        {
+          "word": "this",
+          "pos": "pron.",
+          "meaning": "这个",
+          "level": "junior"
+        },
+        {
+          "word": "that",
+          "pos": "pron.",
+          "meaning": "那个",
+          "level": "junior"
+        },
+        {
+          "word": "these",
+          "pos": "pron.",
+          "meaning": "这些",
+          "level": "junior"
+        },
+        {
+          "word": "those",
+          "pos": "pron.",
+          "meaning": "那些",
+          "level": "junior"
+        },
+        {
+          "word": "such",
+          "pos": "pron.",
+          "meaning": "这样的",
+          "level": "senior"
+        },
+        {
+          "word": "same",
+          "pos": "pron.",
+          "meaning": "同样的",
+          "level": "senior"
+        },
+        {
+          "word": "it",
+          "pos": "pron.",
+          "meaning": "它（指代上文）",
+          "level": "junior"
+        },
+        {
+          "word": "this",
+          "pos": "pron.",
+          "meaning": "这（指代下文）",
+          "level": "junior"
+        }
+      ],
+      "不定代词": [
+        {
+          "word": "someone",
+          "pos": "pron.",
+          "meaning": "某人",
+          "level": "senior"
+        },
+        {
+          "word": "anybody",
+          "pos": "pron.",
+          "meaning": "任何人",
+          "level": "senior"
+        },
+        {
+          "word": "everything",
+          "pos": "pron.",
+          "meaning": "一切",
+          "level": "senior"
+        },
+        {
+          "word": "nobody",
+          "pos": "pron.",
+          "meaning": "没有人",
+          "level": "senior"
+        },
+        {
+          "word": "nothing",
+          "pos": "pron.",
+          "meaning": "没有东西",
+          "level": "senior"
+        },
+        {
+          "word": "all",
+          "pos": "pron.",
+          "meaning": "全部",
+          "level": "junior"
+        },
+        {
+          "word": "both",
+          "pos": "pron.",
+          "meaning": "两者都",
+          "level": "senior"
+        },
+        {
+          "word": "each",
+          "pos": "pron.",
+          "meaning": "每个",
+          "level": "junior"
+        },
+        {
+          "word": "either",
+          "pos": "pron.",
+          "meaning": "两者中任一",
+          "level": "senior"
+        },
+        {
+          "word": "neither",
+          "pos": "pron.",
+          "meaning": "两者都不",
+          "level": "senior"
+        }
+      ],
+      "反身代词": [
+        {
+          "word": "myself",
+          "pos": "pron.",
+          "meaning": "我自己",
+          "level": "junior"
+        },
+        {
+          "word": "yourself",
+          "pos": "pron.",
+          "meaning": "你自己",
+          "level": "junior"
+        },
+        {
+          "word": "himself",
+          "pos": "pron.",
+          "meaning": "他自己",
+          "level": "junior"
+        },
+        {
+          "word": "herself",
+          "pos": "pron.",
+          "meaning": "她自己",
+          "level": "junior"
+        },
+        {
+          "word": "itself",
+          "pos": "pron.",
+          "meaning": "它自己",
+          "level": "junior"
+        },
+        {
+          "word": "ourselves",
+          "pos": "pron.",
+          "meaning": "我们自己",
+          "level": "junior"
+        },
+        {
+          "word": "yourselves",
+          "pos": "pron.",
+          "meaning": "你们自己",
+          "level": "junior"
+        },
+        {
+          "word": "themselves",
+          "pos": "pron.",
+          "meaning": "他们自己",
+          "level": "junior"
+        }
+      ]
+    },
+    "介词 (Prepositions)": {
+      "时间介词": [
+        {
+          "word": "at",
+          "pos": "prep.",
+          "meaning": "在（时刻）",
+          "level": "junior"
+        },
+        {
+          "word": "in",
+          "pos": "prep.",
+          "meaning": "在（年/月/季节）",
+          "level": "junior"
+        },
+        {
+          "word": "on",
+          "pos": "prep.",
+          "meaning": "在（具体某天）",
+          "level": "junior"
+        },
+        {
+          "word": "by",
+          "pos": "prep.",
+          "meaning": "在...之前/截至",
+          "level": "senior"
+        },
+        {
+          "word": "before",
+          "pos": "prep.",
+          "meaning": "在...之前",
+          "level": "junior"
+        },
+        {
+          "word": "after",
+          "pos": "prep.",
+          "meaning": "在...之后",
+          "level": "junior"
+        },
+        {
+          "word": "since",
+          "pos": "prep.",
+          "meaning": "自从",
+          "level": "senior"
+        },
+        {
+          "word": "until",
+          "pos": "prep.",
+          "meaning": "直到",
+          "level": "senior"
+        },
+        {
+          "word": "during",
+          "pos": "prep.",
+          "meaning": "在...期间",
+          "level": "senior"
+        },
+        {
+          "word": "for",
+          "pos": "prep.",
+          "meaning": "持续（一段时间）",
+          "level": "junior"
+        }
+      ],
+      "地点介词": [
+        {
+          "word": "in",
+          "pos": "prep.",
+          "meaning": "在...里面",
+          "level": "junior"
+        },
+        {
+          "word": "on",
+          "pos": "prep.",
+          "meaning": "在...上面",
+          "level": "junior"
+        },
+        {
+          "word": "at",
+          "pos": "prep.",
+          "meaning": "在（某地点）",
+          "level": "junior"
+        },
+        {
+          "word": "under",
+          "pos": "prep.",
+          "meaning": "在...下面",
+          "level": "junior"
+        },
+        {
+          "word": "over",
+          "pos": "prep.",
+          "meaning": "在...上方",
+          "level": "junior"
+        },
+        {
+          "word": "above",
+          "pos": "prep.",
+          "meaning": "在...上方",
+          "level": "senior"
+        },
+        {
+          "word": "below",
+          "pos": "prep.",
+          "meaning": "在...下方",
+          "level": "senior"
+        },
+        {
+          "word": "near",
+          "pos": "prep.",
+          "meaning": "在...附近",
+          "level": "junior"
+        },
+        {
+          "word": "between",
+          "pos": "prep.",
+          "meaning": "在...之间（两者）",
+          "level": "junior"
+        },
+        {
+          "word": "behind",
+          "pos": "prep.",
+          "meaning": "在...后面",
+          "level": "junior"
+        }
+      ],
+      "方向介词": [
+        {
+          "word": "to",
+          "pos": "prep.",
+          "meaning": "到/向",
+          "level": "junior"
+        },
+        {
+          "word": "from",
+          "pos": "prep.",
+          "meaning": "从",
+          "level": "junior"
+        },
+        {
+          "word": "into",
+          "pos": "prep.",
+          "meaning": "进入",
+          "level": "junior"
+        },
+        {
+          "word": "out of",
+          "pos": "prep.",
+          "meaning": "从...出来",
+          "level": "junior"
+        },
+        {
+          "word": "onto",
+          "pos": "prep.",
+          "meaning": "到...上面",
+          "level": "senior"
+        },
+        {
+          "word": "through",
+          "pos": "prep.",
+          "meaning": "穿过",
+          "level": "senior"
+        },
+        {
+          "word": "across",
+          "pos": "prep.",
+          "meaning": "横过",
+          "level": "senior"
+        },
+        {
+          "word": "along",
+          "pos": "prep.",
+          "meaning": "沿着",
+          "level": "senior"
+        },
+        {
+          "word": "towards",
+          "pos": "prep.",
+          "meaning": "朝向",
+          "level": "senior"
+        },
+        {
+          "word": "up",
+          "pos": "prep.",
+          "meaning": "向上",
+          "level": "junior"
+        }
+      ]
+    },
+    "连词 (Conjunctions)": {
+      "并列连词": [
+        {
+          "word": "and",
+          "pos": "conj.",
+          "meaning": "和/与",
+          "level": "junior"
+        },
+        {
+          "word": "but",
+          "pos": "conj.",
+          "meaning": "但是",
+          "level": "junior"
+        },
+        {
+          "word": "or",
+          "pos": "conj.",
+          "meaning": "或者",
+          "level": "junior"
+        },
+        {
+          "word": "so",
+          "pos": "conj.",
+          "meaning": "所以",
+          "level": "junior"
+        },
+        {
+          "word": "for",
+          "pos": "conj.",
+          "meaning": "因为",
+          "level": "senior"
+        },
+        {
+          "word": "yet",
+          "pos": "conj.",
+          "meaning": "然而",
+          "level": "senior"
+        },
+        {
+          "word": "nor",
+          "pos": "conj.",
+          "meaning": "也不",
+          "level": "cet4"
+        },
+        {
+          "word": "both...and",
+          "pos": "conj.",
+          "meaning": "既...又",
+          "level": "senior"
+        },
+        {
+          "word": "either...or",
+          "pos": "conj.",
+          "meaning": "要么...要么",
+          "level": "senior"
+        },
+        {
+          "word": "neither...nor",
+          "pos": "conj.",
+          "meaning": "既不...也不",
+          "level": "senior"
+        }
+      ],
+      "从属连词": [
+        {
+          "word": "because",
+          "pos": "conj.",
+          "meaning": "因为",
+          "level": "junior"
+        },
+        {
+          "word": "although",
+          "pos": "conj.",
+          "meaning": "虽然",
+          "level": "senior"
+        },
+        {
+          "word": "if",
+          "pos": "conj.",
+          "meaning": "如果",
+          "level": "junior"
+        },
+        {
+          "word": "when",
+          "pos": "conj.",
+          "meaning": "当...时",
+          "level": "junior"
+        },
+        {
+          "word": "while",
+          "pos": "conj.",
+          "meaning": "当...时/然而",
+          "level": "senior"
+        },
+        {
+          "word": "since",
+          "pos": "conj.",
+          "meaning": "自从/既然",
+          "level": "senior"
+        },
+        {
+          "word": "as",
+          "pos": "conj.",
+          "meaning": "当/因为/作为",
+          "level": "senior"
+        },
+        {
+          "word": "unless",
+          "pos": "conj.",
+          "meaning": "除非",
+          "level": "senior"
+        },
+        {
+          "word": "until",
+          "pos": "conj.",
+          "meaning": "直到",
+          "level": "senior"
+        },
+        {
+          "word": "before",
+          "pos": "conj.",
+          "meaning": "在...之前",
+          "level": "junior"
+        },
+        {
+          "word": "after",
+          "pos": "conj.",
+          "meaning": "在...之后",
+          "level": "junior"
+        },
+        {
+          "word": "whether",
+          "pos": "conj.",
+          "meaning": "是否",
+          "level": "cet4"
+        }
+      ]
+    },
+    "冠词 (Articles)": {
+      "定冠词": [
+        {
+          "word": "the",
+          "pos": "art.",
+          "meaning": "定冠词（特指）",
+          "level": "junior"
+        },
+        {
+          "word": "the sun",
+          "pos": "art.",
+          "meaning": "太阳",
+          "level": "junior",
+          "usage": "世界上独一无二的事物前用the：the sun太阳，the moon月亮，the sky天空，the earth地球",
+          "isSpecial": true
+        },
+        {
+          "word": "the boy",
+          "pos": "art.",
+          "meaning": "那个男孩",
+          "level": "junior",
+          "usage": "特指上文提到或双方都知道的人/物用the：the boy那个男孩",
+          "isSpecial": true
+        },
+        {
+          "word": "the red one",
+          "pos": "art.",
+          "meaning": "那个红色的",
+          "level": "junior",
+          "usage": "后置定语修饰使名词特指，用the：the red one那个红色的",
+          "isSpecial": true
+        },
+        {
+          "word": "the happiest",
+          "pos": "art.",
+          "meaning": "最开心的",
+          "level": "junior",
+          "usage": "形容词最高级前用the：the happiest最开心的",
+          "isSpecial": true
+        }
+      ],
+      "不定冠词": [
+        {
+          "word": "a",
+          "pos": "art.",
+          "meaning": "不定冠词（辅音前）",
+          "level": "junior"
+        },
+        {
+          "word": "an",
+          "pos": "art.",
+          "meaning": "不定冠词（元音前）",
+          "level": "junior"
+        },
+        {
+          "word": "a book",
+          "pos": "art.",
+          "meaning": "一本书",
+          "level": "junior",
+          "usage": "泛指一个可数单数名词用a/an，book以辅音开头用a：a book",
+          "isSpecial": true
+        },
+        {
+          "word": "an apple",
+          "pos": "art.",
+          "meaning": "一个苹果",
+          "level": "junior",
+          "usage": "apple以元音音素开头用an：an apple。注意看发音不看字母，an hour（h不发音）",
+          "isSpecial": true
+        },
+        {
+          "word": "a university",
+          "pos": "art.",
+          "meaning": "一所大学",
+          "level": "senior",
+          "usage": "university虽然以u开头，但发音是辅音/j/，用a：a university",
+          "isSpecial": true
+        }
+      ]
+    },
+    "数词 (Numerals)": {
+      "基数词": [
+        {
+          "word": "one",
+          "pos": "num.",
+          "meaning": "一",
+          "level": "junior"
+        },
+        {
+          "word": "two",
+          "pos": "num.",
+          "meaning": "二",
+          "level": "junior"
+        },
+        {
+          "word": "three",
+          "pos": "num.",
+          "meaning": "三",
+          "level": "junior"
+        },
+        {
+          "word": "four",
+          "pos": "num.",
+          "meaning": "四",
+          "level": "junior"
+        },
+        {
+          "word": "five",
+          "pos": "num.",
+          "meaning": "五",
+          "level": "junior"
+        },
+        {
+          "word": "six",
+          "pos": "num.",
+          "meaning": "六",
+          "level": "junior"
+        },
+        {
+          "word": "seven",
+          "pos": "num.",
+          "meaning": "七",
+          "level": "junior"
+        },
+        {
+          "word": "eight",
+          "pos": "num.",
+          "meaning": "八",
+          "level": "junior"
+        },
+        {
+          "word": "nine",
+          "pos": "num.",
+          "meaning": "九",
+          "level": "junior"
+        },
+        {
+          "word": "ten",
+          "pos": "num.",
+          "meaning": "十",
+          "level": "junior"
+        },
+        {
+          "word": "hundred",
+          "pos": "num.",
+          "meaning": "百",
+          "level": "junior"
+        },
+        {
+          "word": "thousand",
+          "pos": "num.",
+          "meaning": "千",
+          "level": "junior"
+        }
+      ],
+      "序数词": [
+        {
+          "word": "first",
+          "pos": "num.",
+          "meaning": "第一",
+          "level": "junior"
+        },
+        {
+          "word": "second",
+          "pos": "num.",
+          "meaning": "第二",
+          "level": "junior"
+        },
+        {
+          "word": "third",
+          "pos": "num.",
+          "meaning": "第三",
+          "level": "junior"
+        },
+        {
+          "word": "fourth",
+          "pos": "num.",
+          "meaning": "第四",
+          "level": "junior"
+        },
+        {
+          "word": "fifth",
+          "pos": "num.",
+          "meaning": "第五",
+          "level": "junior"
+        },
+        {
+          "word": "sixth",
+          "pos": "num.",
+          "meaning": "第六",
+          "level": "junior"
+        },
+        {
+          "word": "seventh",
+          "pos": "num.",
+          "meaning": "第七",
+          "level": "junior"
+        },
+        {
+          "word": "eighth",
+          "pos": "num.",
+          "meaning": "第八",
+          "level": "junior"
+        },
+        {
+          "word": "ninth",
+          "pos": "num.",
+          "meaning": "第九",
+          "level": "junior"
+        },
+        {
+          "word": "tenth",
+          "pos": "num.",
+          "meaning": "第十",
+          "level": "junior"
+        },
+        {
+          "word": "eleventh",
+          "pos": "num.",
+          "meaning": "第十一",
+          "level": "senior"
+        },
+        {
+          "word": "twelfth",
+          "pos": "num.",
+          "meaning": "第十二",
+          "level": "senior"
+        }
+      ]
+    },
+    "特殊用法 (Special)": {
+      "易混淆词": [
+        {
+          "word": "affect",
+          "pos": "v.",
+          "meaning": "影响",
+          "level": "senior",
+          "usage": "affect sb/sth 影响某人/某事，注意与effect(名词)区分。affect是动词，effect是名词，记法：affect = Action（动作）=动词",
+          "isSpecial": true
+        },
+        {
+          "word": "effect",
+          "pos": "n.",
+          "meaning": "效果/影响",
+          "level": "senior",
+          "usage": "have an effect on 对...有影响。effect是名词，affect是动词，记法：effect = End result（结果）=名词",
+          "isSpecial": true
+        },
+        {
+          "word": "borrow",
+          "pos": "v.",
+          "meaning": "借入",
+          "level": "junior",
+          "usage": "borrow sth from sb 从某人那里借来某物。borrow是借入（向别人借），lend是借出（借给别人）",
+          "isSpecial": true
+        },
+        {
+          "word": "lend",
+          "pos": "v.",
+          "meaning": "借出",
+          "level": "junior",
+          "usage": "lend sth to sb = lend sb sth 把某物借给某人。lend是借出，borrow是借入，方向相反",
+          "isSpecial": true
+        },
+        {
+          "word": "bring",
+          "pos": "v.",
+          "meaning": "带来",
+          "level": "junior",
+          "usage": "bring sth to sb 把某物带来（朝说话人方向）。bring带来，take带走，fetch去取来",
+          "isSpecial": true
+        },
+        {
+          "word": "take",
+          "pos": "v.",
+          "meaning": "带走",
+          "level": "junior",
+          "usage": "take sth to sb 把某物带走（远离说话人方向）。take带走，bring带来，方向相反",
+          "isSpecial": true
+        },
+        {
+          "word": "listen",
+          "pos": "v.",
+          "meaning": "听（动作）",
+          "level": "junior",
+          "usage": "listen to sb/sth 听某人/某物。listen强调听的动作，hear强调听到的结果",
+          "isSpecial": true
+        },
+        {
+          "word": "hear",
+          "pos": "v.",
+          "meaning": "听见（结果）",
+          "level": "junior",
+          "usage": "hear sb/sth 听见某人/某物。hear是听到的结果，listen是听的动作。类比：look看动作vs see看见结果",
+          "isSpecial": true
+        },
+        {
+          "word": "few",
+          "pos": "adj.",
+          "meaning": "很少（可数）",
+          "level": "junior",
+          "usage": "few+可数名词复数，表否定'很少/几乎没有'。a few+可数复数，表肯定'有几个'。对比little/a little用于不可数名词",
+          "isSpecial": true
+        },
+        {
+          "word": "little",
+          "pos": "adj.",
+          "meaning": "很少（不可数）",
+          "level": "junior",
+          "usage": "little+不可数名词，表否定'很少/几乎没有'。a little+不可数名词，表肯定'有一点'。对比few/a few用于可数名词",
+          "isSpecial": true
+        },
+        {
+          "word": "between",
+          "pos": "prep.",
+          "meaning": "在...之间（两者）",
+          "level": "junior",
+          "usage": "between用于两者之间，among用于三者或以上之间。如between you and me在你我之间",
+          "isSpecial": true
+        },
+        {
+          "word": "in time",
+          "pos": "adv.",
+          "meaning": "及时",
+          "level": "junior",
+          "usage": "in time = 及时（来得及），on time = 准时（按时间）。如arrive in time及时赶到，arrive on time准时到达",
+          "isSpecial": true
+        }
+      ],
+      "固定搭配": [
+        {
+          "word": "take part in",
+          "pos": "phr.",
+          "meaning": "参加",
+          "level": "junior",
+          "usage": "take part in + 活动，表示参与。如take part in the meeting参加会议。注意后接活动名词或动名词",
+          "isSpecial": true
+        },
+        {
+          "word": "take care of",
+          "pos": "phr.",
+          "meaning": "照顾",
+          "level": "junior",
+          "usage": "take care of sb/sth 照顾某人/某物。如take care of children照顾孩子。相当于look after",
+          "isSpecial": true
+        },
+        {
+          "word": "make up one's mind",
+          "pos": "phr.",
+          "meaning": "下定决心",
+          "level": "senior",
+          "usage": "make up one's mind to do sth 下定决心做某事。如make up my mind to study hard。注意mind随人称变化",
+          "isSpecial": true
+        },
+        {
+          "word": "pay attention to",
+          "pos": "phr.",
+          "meaning": "注意",
+          "level": "senior",
+          "usage": "pay attention to sth/doing sth 注意某事/做某事。to是介词，后接名词或动名词。如pay attention to listening注意听",
+          "isSpecial": true
+        },
+        {
+          "word": "keep in touch with",
+          "pos": "phr.",
+          "meaning": "与...保持联系",
+          "level": "cet4",
+          "usage": "keep in touch with sb 与某人保持联系。如keep in touch with friends与朋友保持联系",
+          "isSpecial": true
+        },
+        {
+          "word": "get rid of",
+          "pos": "phr.",
+          "meaning": "摆脱/除掉",
+          "level": "cet4",
+          "usage": "get rid of sth 摆脱某物。如get rid of bad habits改掉坏习惯",
+          "isSpecial": true
+        },
+        {
+          "word": "take advantage of",
+          "pos": "phr.",
+          "meaning": "利用",
+          "level": "cet4",
+          "usage": "take advantage of sth 利用某事/某物。如take advantage of the opportunity利用机会",
+          "isSpecial": true
+        },
+        {
+          "word": "put an end to",
+          "pos": "phr.",
+          "meaning": "结束",
+          "level": "cet6",
+          "usage": "put an end to sth 结束某事。如put an end to the war结束战争",
+          "isSpecial": true
+        },
+        {
+          "word": "take pride in",
+          "pos": "phr.",
+          "meaning": "为...感到自豪",
+          "level": "cet6",
+          "usage": "take pride in sth 为某事感到自豪。如take pride in one's work为工作自豪。相当于be proud of",
+          "isSpecial": true
+        },
+        {
+          "word": "lose heart",
+          "pos": "phr.",
+          "meaning": "灰心",
+          "level": "senior",
+          "usage": "lose heart = 灰心丧气。如Don't lose heart不要灰心。反义：take heart振作起来",
+          "isSpecial": true
+        }
+      ],
+      "短语动词": [
+        {
+          "word": "look forward to",
+          "pos": "phr.",
+          "meaning": "期待",
+          "level": "cet4",
+          "usage": "look forward to + doing sth，注意to是介词后接动名词。如look forward to hearing from you期待收到你的来信",
+          "isSpecial": true
+        },
+        {
+          "word": "give up",
+          "pos": "phr.",
+          "meaning": "放弃",
+          "level": "junior",
+          "usage": "give up sth/doing sth 放弃某事。如give up smoking戒烟。give up后可接名词或动名词",
+          "isSpecial": true
+        },
+        {
+          "word": "look after",
+          "pos": "phr.",
+          "meaning": "照顾",
+          "level": "junior",
+          "usage": "look after sb/sth 照顾某人/某物。如look after the baby照顾婴儿。相当于take care of",
+          "isSpecial": true
+        },
+        {
+          "word": "take off",
+          "pos": "phr.",
+          "meaning": "脱下/起飞",
+          "level": "junior",
+          "usage": "take off sth 脱下衣物；take off (飞机)起飞。如take off your coat脱下外套。注意不及物时指飞机起飞",
+          "isSpecial": true
+        },
+        {
+          "word": "turn on",
+          "pos": "phr.",
+          "meaning": "打开（电器）",
+          "level": "junior",
+          "usage": "turn on sth 打开电器/设备。如turn on the light开灯。反义：turn off关掉",
+          "isSpecial": true
+        },
+        {
+          "word": "turn off",
+          "pos": "phr.",
+          "meaning": "关掉（电器）",
+          "level": "junior",
+          "usage": "turn off sth 关掉电器/设备。如turn off the TV关电视。反义：turn on打开",
+          "isSpecial": true
+        },
+        {
+          "word": "put on",
+          "pos": "phr.",
+          "meaning": "穿上",
+          "level": "junior",
+          "usage": "put on sth 穿上衣物。如put on your coat穿上外套。反义：take off脱下",
+          "isSpecial": true
+        },
+        {
+          "word": "look up",
+          "pos": "phr.",
+          "meaning": "查阅/向上看",
+          "level": "senior",
+          "usage": "look up sth in sth 在...中查阅。如look up the word in the dictionary查字典。代词放中间：look it up",
+          "isSpecial": true
+        },
+        {
+          "word": "pick up",
+          "pos": "phr.",
+          "meaning": "捡起/接载",
+          "level": "junior",
+          "usage": "pick up sth 捡起/拿起某物；pick up sb 接某人。如pick up the pen捡起笔。代词放中间：pick it up",
+          "isSpecial": true
+        },
+        {
+          "word": "find out",
+          "pos": "phr.",
+          "meaning": "查明/发现",
+          "level": "junior",
+          "usage": "find out sth 查明/弄清某事。如find out the truth查明真相。强调经过调查后发现，区别于find偶然找到",
+          "isSpecial": true
+        }
+      ],
+      "习惯用语": [
+        {
+          "word": "it's a piece of cake",
+          "pos": "phr.",
+          "meaning": "小菜一碟",
+          "level": "junior",
+          "usage": "表示某事很容易做。如The exam is a piece of cake.考试很简单。字面：一块蛋糕，引申为易如反掌",
+          "isSpecial": true
+        },
+        {
+          "word": "break a leg",
+          "pos": "phr.",
+          "meaning": "祝你好运",
+          "level": "cet4",
+          "usage": "演出前祝好运的用语。字面：断条腿，实际是祝好运。类似中文'反话正说'",
+          "isSpecial": true
+        },
+        {
+          "word": "hit the books",
+          "pos": "phr.",
+          "meaning": "用功读书",
+          "level": "cet4",
+          "usage": "表示努力学习。如I need to hit the books for the exam.我需要为考试刻苦读书。字面：打书本",
+          "isSpecial": true
+        },
+        {
+          "word": "once in a blue moon",
+          "pos": "phr.",
+          "meaning": "极少/难得一次",
+          "level": "cet6",
+          "usage": "表示极罕见。如He visits us once in a blue moon.他极少来看我们。字面：蓝月亮出现一次",
+          "isSpecial": true
+        },
+        {
+          "word": "the early bird catches the worm",
+          "pos": "phr.",
+          "meaning": "早起的鸟儿有虫吃",
+          "level": "cet4",
+          "usage": "表示勤勉者先得利。如Get up early—the early bird catches the worm.早起吧，早起的鸟儿有虫吃",
+          "isSpecial": true
+        },
+        {
+          "word": "actions speak louder than words",
+          "pos": "phr.",
+          "meaning": "行动胜于言辞",
+          "level": "cet4",
+          "usage": "表示做比说重要。如Don't just talk—actions speak louder than words.别光说，行动胜于言辞",
+          "isSpecial": true
+        },
+        {
+          "word": "every cloud has a silver lining",
+          "pos": "phr.",
+          "meaning": "黑暗中总有一线光明",
+          "level": "cet6",
+          "usage": "表示困境中总有希望。如Don't give up—every cloud has a silver lining.别放弃，黑暗中总有一线光明",
+          "isSpecial": true
+        },
+        {
+          "word": "better late than never",
+          "pos": "phr.",
+          "meaning": "迟到总比不到好",
+          "level": "junior",
+          "usage": "表示虽迟但做了总比不做好。如I finally finished it—better late than never.我终于完成了，迟到总比不到好",
+          "isSpecial": true
+        },
+        {
+          "word": "practice makes perfect",
+          "pos": "phr.",
+          "meaning": "熟能生巧",
+          "level": "junior",
+          "usage": "表示反复练习才能完美。如Keep practicing—practice makes perfect.坚持练习，熟能生巧",
+          "isSpecial": true
+        },
+        {
+          "word": "when in Rome, do as the Romans do",
+          "pos": "phr.",
+          "meaning": "入乡随俗",
+          "level": "cet6",
+          "usage": "表示到什么地方就遵从什么风俗。如Try local food—when in Rome, do as the Romans do.尝尝当地菜，入乡随俗",
+          "isSpecial": true
+        }
+      ]
+    }
+  }
+}

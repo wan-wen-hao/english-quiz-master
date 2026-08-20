@@ -1,9 +1,9 @@
 {
   "meta": {
     "title": "英语全能刷题王 - 题库",
-    "version": "3.0.0",
-    "description": "从初中到六级的英语刷题工具题库，按语法结构与句型分类，词汇自然融入语法语境。v3.0.0 新增每题词汇解析（vocabulary）、全句中文翻译（sentenceTranslation）及阅读理解题型（passage），涵盖语法结构、句型运用、阅读理解与特殊用法等题型。",
-    "totalQuestions": 200,
+    "version": "3.1.0",
+    "description": "从初中到六级的英语刷题工具题库，按语法结构与句型分类，词汇自然融入语法语境。v3.0.0 新增每题词汇解析（vocabulary）、全句中文翻译（sentenceTranslation）及阅读理解题型（passage），涵盖语法结构、句型运用、阅读理解与特殊用法等题型。 v3.1.0 新增120题（每等级30题），总数达320题，涵盖语法结构、句型运用、阅读理解与特殊用法等题型。",
+    "totalQuestions": 320,
     "levels": [
       "junior",
       "senior",
@@ -28,13 +28,13 @@
       "nameEn": "Junior High School",
       "idPrefix": "j",
       "description": "零基础起步：从be动词到基本句型，以语法结构为主线，词汇自然融入be动词、一般现在时、there be句型、介词、疑问句等语法语境中。v3.0.0新增词汇解析、全句翻译及阅读理解题型。",
-      "questionCount": 50,
+      "questionCount": 80,
       "distribution": {
-        "choice": 18,
-        "truefalse": 10,
-        "fillblank": 10,
-        "qa": 7,
-        "passage": 5
+        "choice": 30,
+        "truefalse": 16,
+        "fillblank": 16,
+        "qa": 10,
+        "passage": 8
       },
       "categories": [
         "be动词与主谓一致",
@@ -1880,6 +1880,1192 @@
               "sentenceTranslation": "妈妈做了一大锅鱼汤。"
             }
           ]
+        },
+        {
+          "id": "j_051",
+          "type": "choice",
+          "category": "be动词与主谓一致",
+          "question": "Choose the correct form: The girls ___ my classmates.",
+          "questionCn": "选择正确形式：这些女孩是我的同学。",
+          "choices": [
+            "A. am",
+            "B. is",
+            "C. are",
+            "D. be"
+          ],
+          "answer": "C",
+          "explanation": "主语The girls（这些女孩）是复数（girl的复数加s），be动词用are。be动词对应规则：I用am，he/she/it及单数用is，we/you/they及复数用are。girls是多个人，属复数，用are。俄语中动词也随人称变化，但英语只在这一处变化be动词。",
+          "knowledgePoint": "be动词：复数主语girls用are",
+          "vocabulary": [
+            {
+              "word": "girl",
+              "pos": "n.",
+              "meaning": "女孩"
+            },
+            {
+              "word": "classmate",
+              "pos": "n.",
+              "meaning": "同学"
+            }
+          ],
+          "sentenceTranslation": "这些女孩是我的同学。"
+        },
+        {
+          "id": "j_052",
+          "type": "choice",
+          "category": "一般现在时",
+          "question": "Choose the correct form: My mother ___ dinner every evening.",
+          "questionCn": "选择正确形式：我妈妈每天晚上做晚饭。",
+          "choices": [
+            "A. cook",
+            "B. cooks",
+            "C. cooking",
+            "D. cooked"
+          ],
+          "answer": "B",
+          "explanation": "主语my mother（我妈妈）是第三人称单数（她一个人），every evening（每天晚上）表示习惯，用一般现在时。第三人称单数动词加s：cook→cooks。口诀：I/you/we/they用原形，he/she/it加s/es。俄语动词所有人称都变化，英语一般现在时只在第三人称单数变化。",
+          "knowledgePoint": "一般现在时：第三人称单数cook→cooks（加s）",
+          "vocabulary": [
+            {
+              "word": "mother",
+              "pos": "n.",
+              "meaning": "妈妈"
+            },
+            {
+              "word": "dinner",
+              "pos": "n.",
+              "meaning": "晚饭"
+            },
+            {
+              "word": "evening",
+              "pos": "n.",
+              "meaning": "晚上"
+            },
+            {
+              "word": "cook",
+              "pos": "v.",
+              "meaning": "做饭"
+            }
+          ],
+          "sentenceTranslation": "我妈妈每天晚上做晚饭。"
+        },
+        {
+          "id": "j_053",
+          "type": "choice",
+          "category": "现在进行时",
+          "question": "Choose the correct form: Listen! Someone ___ at the door.",
+          "questionCn": "选择正确形式：听！有人在敲门。",
+          "choices": [
+            "A. knocks",
+            "B. knocked",
+            "C. is knocking",
+            "D. are knocking"
+          ],
+          "answer": "C",
+          "explanation": "Listen!提示动作此刻正在发生，用现在进行时。结构：be+动词ing。主语someone（某人）是单数（不定代词作单数），be动词用is，knock→knocking（直接加ing）。现在进行时=be(am/is/are)+v-ing，表示此刻正在进行的动作。俄语没有'be doing'结构，需特别注意。",
+          "knowledgePoint": "现在进行时：is+knocking，Listen!提示动作正在进行",
+          "vocabulary": [
+            {
+              "word": "someone",
+              "pos": "pron.",
+              "meaning": "某人"
+            },
+            {
+              "word": "door",
+              "pos": "n.",
+              "meaning": "门"
+            },
+            {
+              "word": "knock",
+              "pos": "v.",
+              "meaning": "敲"
+            }
+          ],
+          "sentenceTranslation": "听！有人在敲门。"
+        },
+        {
+          "id": "j_054",
+          "type": "choice",
+          "category": "一般过去时",
+          "question": "Choose the correct form: We ___ a movie last night.",
+          "questionCn": "选择正确形式：我们昨晚看了一场电影。",
+          "choices": [
+            "A. watch",
+            "B. watches",
+            "C. watched",
+            "D. watching"
+          ],
+          "answer": "C",
+          "explanation": "last night（昨晚）是过去时间状语，用一般过去时。watch是规则动词，直接加ed变成watched。一般过去时表示过去发生的动作，规则动词加ed，不规则动词需特殊记忆。时间标志词：yesterday, last+时间, ...ago等。",
+          "knowledgePoint": "一般过去时：规则动词watch→watched（加ed）",
+          "vocabulary": [
+            {
+              "word": "movie",
+              "pos": "n.",
+              "meaning": "电影"
+            },
+            {
+              "word": "night",
+              "pos": "n.",
+              "meaning": "夜晚"
+            },
+            {
+              "word": "watch",
+              "pos": "v.",
+              "meaning": "观看"
+            }
+          ],
+          "sentenceTranslation": "我们昨晚看了一场电影。"
+        },
+        {
+          "id": "j_055",
+          "type": "choice",
+          "category": "there be句型",
+          "question": "Choose the correct form: There ___ a lot of people in the park.",
+          "questionCn": "选择正确形式：公园里有很多人。",
+          "choices": [
+            "A. is",
+            "B. are",
+            "C. has",
+            "D. have"
+          ],
+          "answer": "B",
+          "explanation": "there be句型中be动词取决于其后的名词。people（人们）是复数（person的复数，不规则变化），be动词用are。注意：people本身是复数形式，不能加s。there be=存在/有，have=拥有，两者不能混用。",
+          "knowledgePoint": "there be句型：复数名词people用are",
+          "vocabulary": [
+            {
+              "word": "people",
+              "pos": "n.",
+              "meaning": "人们"
+            },
+            {
+              "word": "park",
+              "pos": "n.",
+              "meaning": "公园"
+            },
+            {
+              "word": "a lot of",
+              "pos": "phr.",
+              "meaning": "许多"
+            }
+          ],
+          "sentenceTranslation": "公园里有很多人。"
+        },
+        {
+          "id": "j_056",
+          "type": "choice",
+          "category": "介词运用",
+          "question": "Choose the correct preposition: My birthday is ___ October 1st.",
+          "questionCn": "选择正确介词：我的生日在十月一日。",
+          "choices": [
+            "A. in",
+            "B. on",
+            "C. at",
+            "D. by"
+          ],
+          "answer": "B",
+          "explanation": "具体到某一天（包括日期）用on。时间介词规则：in+年/月/季节（in October在十月）；on+具体某天/日期（on October 1st在十月一日）；at+具体时刻（at six在六点）。October 1st是具体日期，用on。",
+          "knowledgePoint": "介词on：具体日期（某月某日）用on",
+          "vocabulary": [
+            {
+              "word": "birthday",
+              "pos": "n.",
+              "meaning": "生日"
+            },
+            {
+              "word": "October",
+              "pos": "n.",
+              "meaning": "十月"
+            }
+          ],
+          "sentenceTranslation": "我的生日在十月一日。"
+        },
+        {
+          "id": "j_057",
+          "type": "choice",
+          "category": "疑问句结构",
+          "question": "Choose the correct word: ___ you like playing chess?",
+          "questionCn": "选择正确词：你喜欢下棋吗？",
+          "choices": [
+            "A. Do",
+            "B. Does",
+            "C. Is",
+            "D. Are"
+          ],
+          "answer": "A",
+          "explanation": "主语you是第二人称，一般疑问句用Do引导。结构：Do+主语+动词原形+其他? 注意：第三人称单数用Does，I/you/we/they用Do。Do后动词用原形like。be动词疑问句不用Do/Does，直接把be提前。",
+          "knowledgePoint": "疑问句：第二人称you用Do引导一般疑问句",
+          "vocabulary": [
+            {
+              "word": "chess",
+              "pos": "n.",
+              "meaning": "国际象棋"
+            },
+            {
+              "word": "like",
+              "pos": "v.",
+              "meaning": "喜欢"
+            },
+            {
+              "word": "play",
+              "pos": "v.",
+              "meaning": "玩"
+            }
+          ],
+          "sentenceTranslation": "你喜欢下国际象棋吗？"
+        },
+        {
+          "id": "j_058",
+          "type": "choice",
+          "category": "可数与不可数名词",
+          "question": "Choose the correct article: Can I have ___ orange?",
+          "questionCn": "选择正确冠词：我能吃个橙子吗？",
+          "choices": [
+            "A. a",
+            "B. an",
+            "C. the",
+            "D. /"
+          ],
+          "answer": "B",
+          "explanation": "orange（橙子）是可数名词单数，以元音音素开头，用an。a/an选择规则：看单词发音而非字母。以元音音素开头的用an，辅音音素用a。orange发音以元音开头，用an。注意：an hour（h不发音，以元音开头）也用an。",
+          "knowledgePoint": "可数名词：a/an选择看发音（元音音素用an）",
+          "vocabulary": [
+            {
+              "word": "orange",
+              "pos": "n.",
+              "meaning": "橙子"
+            },
+            {
+              "word": "can",
+              "pos": "aux.",
+              "meaning": "能"
+            }
+          ],
+          "sentenceTranslation": "我能吃一个橙子吗？"
+        },
+        {
+          "id": "j_059",
+          "type": "choice",
+          "category": "代词运用",
+          "question": "Choose the correct pronoun: This isn't my pen. ___ is blue.",
+          "questionCn": "选择正确代词：这不是我的笔。我的是蓝色的。",
+          "choices": [
+            "A. My",
+            "B. Mine",
+            "C. I",
+            "D. Me"
+          ],
+          "answer": "B",
+          "explanation": "空处作主语，需用名词性物主代词Mine（=my pen）。物主代词两种形式：形容词性(my/your/his/her/our/their)+名词；名词性(mine/yours/his/hers/ours/theirs)单独使用。Mine=my pen，可独立作主语。形容词性my不能单独用，后必须接名词。",
+          "knowledgePoint": "代词：名词性物主代词Mine单独作主语",
+          "vocabulary": [
+            {
+              "word": "pen",
+              "pos": "n.",
+              "meaning": "钢笔"
+            },
+            {
+              "word": "blue",
+              "pos": "adj.",
+              "meaning": "蓝色的"
+            },
+            {
+              "word": "mine",
+              "pos": "pron.",
+              "meaning": "我的（东西）"
+            }
+          ],
+          "sentenceTranslation": "这不是我的笔。我的是蓝色的。"
+        },
+        {
+          "id": "j_060",
+          "type": "choice",
+          "category": "常用句型与固定搭配",
+          "question": "Choose the correct form: I enjoy ___ music in my free time.",
+          "questionCn": "选择正确形式：我喜欢在空闲时间听音乐。",
+          "choices": [
+            "A. listen to",
+            "B. listening to",
+            "C. to listen to",
+            "D. listened to"
+          ],
+          "answer": "B",
+          "explanation": "enjoy后接动词ing形式，固定搭配enjoy doing sth=喜欢做某事。listen to music=听音乐，变为listening to music。enjoy/finish/practice/mind等动词后接doing，不接to do。这是英语和俄语动词用法的区别——英语某些动词后只能接特定形式。",
+          "knowledgePoint": "固定搭配：enjoy + doing sth（喜欢做某事）",
+          "vocabulary": [
+            {
+              "word": "music",
+              "pos": "n.",
+              "meaning": "音乐"
+            },
+            {
+              "word": "free time",
+              "pos": "phr.",
+              "meaning": "空闲时间"
+            },
+            {
+              "word": "enjoy",
+              "pos": "v.",
+              "meaning": "享受"
+            }
+          ],
+          "sentenceTranslation": "我喜欢在空闲时间听音乐。"
+        },
+        {
+          "id": "j_061",
+          "type": "choice",
+          "category": "一般现在时",
+          "question": "Choose the correct form: The sun ___ in the east.",
+          "questionCn": "选择正确形式：太阳从东方升起。",
+          "choices": [
+            "A. rise",
+            "B. rises",
+            "C. rose",
+            "D. rising"
+          ],
+          "answer": "B",
+          "explanation": "表示自然规律、永恒真理用一般现在时。主语the sun是第三人称单数，动词加s：rise→rises。in the east=在东方。一般现在时除了表习惯，还表客观真理。注意rise（升起）是不及物动词，过去式rose，过去分词risen。",
+          "knowledgePoint": "一般现在时：表自然规律，第三人称单数rise→rises",
+          "vocabulary": [
+            {
+              "word": "sun",
+              "pos": "n.",
+              "meaning": "太阳"
+            },
+            {
+              "word": "east",
+              "pos": "n.",
+              "meaning": "东方"
+            },
+            {
+              "word": "rise",
+              "pos": "v.",
+              "meaning": "升起"
+            }
+          ],
+          "sentenceTranslation": "太阳从东方升起。"
+        },
+        {
+          "id": "j_062",
+          "type": "choice",
+          "category": "be动词与主谓一致",
+          "question": "Choose the correct form: There ___ a book and two pens on the desk.",
+          "questionCn": "选择正确形式：桌子上有一本书和两支笔。",
+          "choices": [
+            "A. is",
+            "B. are",
+            "C. have",
+            "D. has"
+          ],
+          "answer": "A",
+          "explanation": "there be句型遵循就近原则：be动词与最近的名词保持一致。离be动词最近的是a book（单数），所以用is。即使后面有two pens（复数），be也只看最近的名词。there be=存在/有，不能用have替换。",
+          "knowledgePoint": "there be句型：就近原则，最近名词a book是单数用is",
+          "vocabulary": [
+            {
+              "word": "book",
+              "pos": "n.",
+              "meaning": "书"
+            },
+            {
+              "word": "pen",
+              "pos": "n.",
+              "meaning": "笔"
+            },
+            {
+              "word": "desk",
+              "pos": "n.",
+              "meaning": "桌子"
+            }
+          ],
+          "sentenceTranslation": "桌子上有一本书和两支笔。"
+        },
+        {
+          "id": "j_063",
+          "type": "truefalse",
+          "category": "一般现在时",
+          "question": "Judge true or false: He go to school by bike every day.",
+          "questionCn": "判断对错：他每天骑自行车去上学。",
+          "answer": "false",
+          "explanation": "错误。主语he是第三人称单数，动词go应加es变goes。正确：He goes to school by bike every day. 第三人称单数（he/she/it/单个人或物）作主语时，一般现在时动词必须加s/es。这是英语特有的规则，俄语动词所有人称都变化。",
+          "knowledgePoint": "一般现在时：第三人称单数go→goes（加es）",
+          "vocabulary": [
+            {
+              "word": "school",
+              "pos": "n.",
+              "meaning": "学校"
+            },
+            {
+              "word": "bike",
+              "pos": "n.",
+              "meaning": "自行车"
+            },
+            {
+              "word": "every day",
+              "pos": "adv.",
+              "meaning": "每天"
+            }
+          ],
+          "sentenceTranslation": "他每天骑自行车去上学。"
+        },
+        {
+          "id": "j_064",
+          "type": "truefalse",
+          "category": "现在进行时",
+          "question": "Judge true or false: They is playing football on the playground.",
+          "questionCn": "判断对错：他们正在操场上踢足球。",
+          "answer": "false",
+          "explanation": "错误。主语they是复数，be动词应用are而不是is。正确：They are playing football on the playground. 现在进行时结构be+doing，be随主语变化：I用am，he/she/it用is，we/you/they用are。",
+          "knowledgePoint": "现在进行时：复数主语they用are",
+          "vocabulary": [
+            {
+              "word": "football",
+              "pos": "n.",
+              "meaning": "足球"
+            },
+            {
+              "word": "playground",
+              "pos": "n.",
+              "meaning": "操场"
+            },
+            {
+              "word": "play",
+              "pos": "v.",
+              "meaning": "踢（球）"
+            }
+          ],
+          "sentenceTranslation": "他们正在操场上踢足球。"
+        },
+        {
+          "id": "j_065",
+          "type": "truefalse",
+          "category": "一般过去时",
+          "question": "Judge true or false: She didn't went to the party last night.",
+          "questionCn": "判断对错：她昨晚没去参加聚会。",
+          "answer": "false",
+          "explanation": "错误。一般过去时否定用didn't+动词原形，went要恢复原形go。正确：She didn't go to the party last night. didn't=do not的过去式，后接动词原形。规则：否定句用didn't+原形，肯定句用过去式。不能同时用didn't和过去式。",
+          "knowledgePoint": "一般过去时：否定形式didn't+动词原形",
+          "vocabulary": [
+            {
+              "word": "party",
+              "pos": "n.",
+              "meaning": "聚会"
+            },
+            {
+              "word": "night",
+              "pos": "n.",
+              "meaning": "夜晚"
+            },
+            {
+              "word": "go",
+              "pos": "v.",
+              "meaning": "去（过去式went）"
+            }
+          ],
+          "sentenceTranslation": "她昨晚没去参加聚会。"
+        },
+        {
+          "id": "j_066",
+          "type": "truefalse",
+          "category": "介词运用",
+          "question": "Judge true or false: We will meet ___ Monday. (The correct preposition is 'in'.)",
+          "questionCn": "判断对错：我们星期一见面。（正确介词是'in'。）",
+          "answer": "false",
+          "explanation": "错误。星期几前用介词on，不是in。正确：We will meet on Monday. 时间介词规律：in+年/月/季节；on+星期/具体日期；at+具体时刻。Monday是星期几，用on。",
+          "knowledgePoint": "介词on：星期几前用on",
+          "vocabulary": [
+            {
+              "word": "meet",
+              "pos": "v.",
+              "meaning": "见面"
+            },
+            {
+              "word": "Monday",
+              "pos": "n.",
+              "meaning": "星期一"
+            }
+          ],
+          "sentenceTranslation": "我们星期一见面。"
+        },
+        {
+          "id": "j_067",
+          "type": "truefalse",
+          "category": "可数与不可数名词",
+          "question": "Judge true or false: There is much apples in the basket.",
+          "questionCn": "判断对错：篮子里有很多苹果。",
+          "answer": "false",
+          "explanation": "错误。apples是可数名词复数，不能用much修饰，be动词用are。正确：There are many apples in the basket. much修饰不可数名词，many修饰可数名词复数。apple可数，复数用many，be动词用are。",
+          "knowledgePoint": "可数名词：many+可数复数，much+不可数",
+          "vocabulary": [
+            {
+              "word": "apple",
+              "pos": "n.",
+              "meaning": "苹果"
+            },
+            {
+              "word": "basket",
+              "pos": "n.",
+              "meaning": "篮子"
+            },
+            {
+              "word": "many",
+              "pos": "adj.",
+              "meaning": "许多（可数）"
+            }
+          ],
+          "sentenceTranslation": "篮子里有很多苹果。"
+        },
+        {
+          "id": "j_068",
+          "type": "truefalse",
+          "category": "常用句型与固定搭配",
+          "question": "Judge true or false: I want going to the zoo tomorrow.",
+          "questionCn": "判断对错：我明天想去动物园。",
+          "answer": "false",
+          "explanation": "错误。want后接不定式to do，不接doing。正确：I want to go to the zoo tomorrow. 固定搭配want to do sth=想要做某事。类似搭配：hope to do, decide to do, would like to do。这些动词后只能接to do。",
+          "knowledgePoint": "固定搭配：want to do sth（想要做某事）",
+          "vocabulary": [
+            {
+              "word": "zoo",
+              "pos": "n.",
+              "meaning": "动物园"
+            },
+            {
+              "word": "tomorrow",
+              "pos": "adv.",
+              "meaning": "明天"
+            },
+            {
+              "word": "want",
+              "pos": "v.",
+              "meaning": "想要"
+            }
+          ],
+          "sentenceTranslation": "我明天想去动物园。"
+        },
+        {
+          "id": "j_069",
+          "type": "fillblank",
+          "category": "be动词与主谓一致",
+          "question": "Fill in the blank: My brother and I ___ good friends.",
+          "questionCn": "填空：我哥哥和我是好朋友。",
+          "answer": "are",
+          "explanation": "主语My brother and I（我哥哥和我）是两个人，属复数，be动词用are。My brother and I=A and B结构，表示两个人，用复数。be动词规则：I用am，但A and I（我和某人）整体看是复数，用are。",
+          "knowledgePoint": "be动词：A and B结构为复数，用are",
+          "vocabulary": [
+            {
+              "word": "brother",
+              "pos": "n.",
+              "meaning": "哥哥/弟弟"
+            },
+            {
+              "word": "friend",
+              "pos": "n.",
+              "meaning": "朋友"
+            }
+          ],
+          "sentenceTranslation": "我哥哥和我是好朋友。"
+        },
+        {
+          "id": "j_070",
+          "type": "fillblank",
+          "category": "一般现在时",
+          "question": "Fill in the blank: She usually ___ (get) up at six in the morning.",
+          "questionCn": "填空：她通常早上六点起床。",
+          "answer": "gets",
+          "explanation": "主语she是第三人称单数，usually表示习惯，用一般现在时。动词get加s变gets。结构：主语+动词第三人称单数形式+时间状语。usually是频率副词，放在实义动词前。第三人称单数加s规则：一般加s。",
+          "knowledgePoint": "一般现在时：第三人称单数get→gets（加s）",
+          "vocabulary": [
+            {
+              "word": "get up",
+              "pos": "phr.",
+              "meaning": "起床"
+            },
+            {
+              "word": "morning",
+              "pos": "n.",
+              "meaning": "早上"
+            },
+            {
+              "word": "usually",
+              "pos": "adv.",
+              "meaning": "通常"
+            }
+          ],
+          "sentenceTranslation": "她通常早上六点起床。"
+        },
+        {
+          "id": "j_071",
+          "type": "fillblank",
+          "category": "现在进行时",
+          "question": "Fill in the blank: Don't talk! The teacher ___ (write) on the blackboard.",
+          "questionCn": "填空：别说话！老师正在黑板上写字。",
+          "answer": "is writing",
+          "explanation": "Don't talk!提示此刻不能说话，说明动作正在进行，用现在进行时。主语the teacher是第三人称单数，be动词用is，write→writing（去e加ing）。结构：is+writing。现在进行时表示此刻正在进行的动作。",
+          "knowledgePoint": "现在进行时：is+writing，Don't talk!提示动作正在进行",
+          "vocabulary": [
+            {
+              "word": "teacher",
+              "pos": "n.",
+              "meaning": "老师"
+            },
+            {
+              "word": "blackboard",
+              "pos": "n.",
+              "meaning": "黑板"
+            },
+            {
+              "word": "write",
+              "pos": "v.",
+              "meaning": "写"
+            }
+          ],
+          "sentenceTranslation": "别说话！老师正在黑板上写字。"
+        },
+        {
+          "id": "j_072",
+          "type": "fillblank",
+          "category": "一般过去时",
+          "question": "Fill in the blank: They ___ (have) a great time at the beach yesterday.",
+          "questionCn": "填空：他们昨天在海滩玩得很开心。",
+          "answer": "had",
+          "explanation": "yesterday是过去时间状语，用一般过去时。have是不规则动词，过去式为had。have a great time=玩得开心，是固定搭配。have→had→had，需特殊记忆。一般过去时只需把动词变成过去式。",
+          "knowledgePoint": "一般过去时：不规则动词have→had",
+          "vocabulary": [
+            {
+              "word": "beach",
+              "pos": "n.",
+              "meaning": "海滩"
+            },
+            {
+              "word": "yesterday",
+              "pos": "adv.",
+              "meaning": "昨天"
+            },
+            {
+              "word": "have a great time",
+              "pos": "phr.",
+              "meaning": "玩得开心"
+            }
+          ],
+          "sentenceTranslation": "他们昨天在海滩玩得很开心。"
+        },
+        {
+          "id": "j_073",
+          "type": "fillblank",
+          "category": "疑问句结构",
+          "question": "Fill in the blank: ___ does your father do? — He is a doctor.",
+          "questionCn": "填空：你父亲做什么工作？——他是医生。",
+          "answer": "What",
+          "explanation": "答语He is a doctor说明职业，问职业用What+do/does+sb+do。主语your father是第三人称单数，用does。结构：What+does+主语+do? 注意do出现两次：第一个does是助动词，第二个do是实义动词（干/做），does后实义动词恢复原形。",
+          "knowledgePoint": "疑问句：What+does+主语+do? 问职业",
+          "vocabulary": [
+            {
+              "word": "father",
+              "pos": "n.",
+              "meaning": "父亲"
+            },
+            {
+              "word": "doctor",
+              "pos": "n.",
+              "meaning": "医生"
+            },
+            {
+              "word": "what",
+              "pos": "pron.",
+              "meaning": "什么"
+            }
+          ],
+          "sentenceTranslation": "你父亲做什么工作？——他是医生。"
+        },
+        {
+          "id": "j_074",
+          "type": "fillblank",
+          "category": "代词运用",
+          "question": "Fill in the blank: Help ___ to some fish, children. (reflexive pronoun)",
+          "questionCn": "填空：孩子们，随便吃点鱼吧。（用反身代词）",
+          "answer": "yourselves",
+          "explanation": "主语children是复数（孩子们的复数），help oneself to=请随便吃，反身代词与主语一致。children→yourselves（你们自己）。反身代词规则：I→myself, you(单)→yourself, you(复)→yourselves, he→himself, she→herself, they→themselves。",
+          "knowledgePoint": "代词：反身代词yourselves与复数主语children一致",
+          "vocabulary": [
+            {
+              "word": "fish",
+              "pos": "n.",
+              "meaning": "鱼"
+            },
+            {
+              "word": "children",
+              "pos": "n.",
+              "meaning": "孩子们"
+            },
+            {
+              "word": "yourselves",
+              "pos": "pron.",
+              "meaning": "你们自己"
+            }
+          ],
+          "sentenceTranslation": "孩子们，请随便吃点鱼吧。"
+        },
+        {
+          "id": "j_075",
+          "type": "qa",
+          "category": "一般过去时",
+          "question": "Translate into English: 上周日我和朋友们去了公园。",
+          "questionCn": "将中文翻译成英文。",
+          "answer": "My friends and I went to the park last Sunday.",
+          "explanation": "last Sunday是过去时间，用一般过去时。go是不规则动词，过去式went。主语My friends and I（我和朋友们）是复数。结构：主语+went to+地点+时间状语。注意：go的过去式went需特殊记忆，不能加ed。",
+          "knowledgePoint": "一般过去时：不规则动词go→went + last Sunday标志过去时",
+          "vocabulary": [
+            {
+              "word": "friend",
+              "pos": "n.",
+              "meaning": "朋友"
+            },
+            {
+              "word": "park",
+              "pos": "n.",
+              "meaning": "公园"
+            },
+            {
+              "word": "Sunday",
+              "pos": "n.",
+              "meaning": "星期日"
+            },
+            {
+              "word": "go",
+              "pos": "v.",
+              "meaning": "去（过去式went）"
+            }
+          ],
+          "sentenceTranslation": "上周日我和朋友们去了公园。"
+        },
+        {
+          "id": "j_076",
+          "type": "qa",
+          "category": "介词运用",
+          "question": "Answer the question: When is your birthday? (Use 'on' + date)",
+          "questionCn": "回答问题：你的生日是什么时候？（用'on'+日期）",
+          "answer": "My birthday is on March 5th.",
+          "explanation": "问When用具体日期回答，日期前用介词on。时间介词规律：in+年/月/季节，on+具体日期/星期，at+时刻。March 5th是具体日期，用on。结构：My birthday is on+月份+日期。注意序数词5th=fifth。",
+          "knowledgePoint": "介词on：具体日期前用on",
+          "vocabulary": [
+            {
+              "word": "birthday",
+              "pos": "n.",
+              "meaning": "生日"
+            },
+            {
+              "word": "March",
+              "pos": "n.",
+              "meaning": "三月"
+            },
+            {
+              "word": "on",
+              "pos": "prep.",
+              "meaning": "在（具体日期）"
+            }
+          ],
+          "sentenceTranslation": "我的生日在三月五日。"
+        },
+        {
+          "id": "j_077",
+          "type": "qa",
+          "category": "疑问句结构",
+          "question": "Form a question for the underlined part: Tom goes to school by bus. (Ask about 'by bus')",
+          "questionCn": "就by bus部分提问，将句子改为疑问句。",
+          "answer": "How does Tom go to school?",
+          "explanation": "对交通方式(by bus)提问用疑问词How。主语Tom是第三人称单数，借助助动词does，动词恢复原形go。结构：How+does+主语+动词原形+其他? does是助动词，后接动词原形，不接第三人称单数形式。",
+          "knowledgePoint": "疑问句：How引导特殊疑问句+第三人称单数助动词does",
+          "vocabulary": [
+            {
+              "word": "school",
+              "pos": "n.",
+              "meaning": "学校"
+            },
+            {
+              "word": "bus",
+              "pos": "n.",
+              "meaning": "公交车"
+            },
+            {
+              "word": "how",
+              "pos": "adv.",
+              "meaning": "怎么/如何"
+            }
+          ],
+          "sentenceTranslation": "汤姆怎么去上学？——他坐公交车去。"
+        },
+        {
+          "id": "j_078",
+          "type": "passage",
+          "category": "现在进行时",
+          "passage": "It is Saturday morning. The sun is shining and the birds are singing. My family are all at home. My father is reading a newspaper in the living room. My mother is cooking lunch in the kitchen. My little sister is drawing a picture. I am doing my homework. We are all having a good time.",
+          "passageCn": "这是星期六的早上。阳光明媚，鸟儿在唱歌。我们全家都在家。爸爸在客厅看报纸。妈妈在厨房做午饭。小妹妹在画画。我在做作业。我们都过得很愉快。",
+          "vocabulary": [
+            {
+              "word": "sun",
+              "pos": "n.",
+              "meaning": "太阳"
+            },
+            {
+              "word": "bird",
+              "pos": "n.",
+              "meaning": "鸟"
+            },
+            {
+              "word": "shine",
+              "pos": "v.",
+              "meaning": "照耀"
+            },
+            {
+              "word": "newspaper",
+              "pos": "n.",
+              "meaning": "报纸"
+            },
+            {
+              "word": "kitchen",
+              "pos": "n.",
+              "meaning": "厨房"
+            },
+            {
+              "word": "draw",
+              "pos": "v.",
+              "meaning": "画画"
+            },
+            {
+              "word": "homework",
+              "pos": "n.",
+              "meaning": "作业"
+            }
+          ],
+          "subQuestions": [
+            {
+              "subType": "choice",
+              "question": "What is the father doing?",
+              "questionCn": "爸爸在做什么？",
+              "choices": [
+                "A. Cooking lunch",
+                "B. Reading a newspaper",
+                "C. Drawing a picture",
+                "D. Doing homework"
+              ],
+              "answer": "B",
+              "explanation": "原文：'My father is reading a newspaper in the living room.'。is reading是现在进行时（be+doing），表示此刻正在读。in the living room=在客厅。现在进行时结构：is+reading。",
+              "knowledgePoint": "现在进行时：is+reading，此刻正在进行的动作",
+              "vocabulary": [
+                {
+                  "word": "newspaper",
+                  "pos": "n.",
+                  "meaning": "报纸"
+                },
+                {
+                  "word": "living room",
+                  "pos": "n.",
+                  "meaning": "客厅"
+                }
+              ],
+              "sentenceTranslation": "爸爸在客厅看报纸。"
+            },
+            {
+              "subType": "truefalse",
+              "question": "True or False: The mother is cooking dinner.",
+              "questionCn": "判断：妈妈在做晚饭。",
+              "answer": "false",
+              "explanation": "错误。原文说'mother is cooking lunch'（妈妈在做午饭），不是晚饭(dinner)。is cooking是现在进行时。lunch=午饭，dinner=晚饭，注意区分。",
+              "knowledgePoint": "现在进行时：is cooking + 细节理解（lunch vs dinner）",
+              "vocabulary": [
+                {
+                  "word": "cook",
+                  "pos": "v.",
+                  "meaning": "做饭"
+                },
+                {
+                  "word": "lunch",
+                  "pos": "n.",
+                  "meaning": "午饭"
+                }
+              ],
+              "sentenceTranslation": "妈妈在厨房做午饭。"
+            },
+            {
+              "subType": "choice",
+              "question": "Who is doing homework?",
+              "questionCn": "谁在做作业？",
+              "choices": [
+                "A. The father",
+                "B. The mother",
+                "C. The sister",
+                "D. I (the writer)"
+              ],
+              "answer": "D",
+              "explanation": "原文：'I am doing my homework.'。am doing是现在进行时，主语I用am。be动词随主语变化：I→am, he/she/it→is, we/you/they→are。这里第一人称用am。",
+              "knowledgePoint": "现在进行时：am+doing，第一人称I用am",
+              "vocabulary": [
+                {
+                  "word": "homework",
+                  "pos": "n.",
+                  "meaning": "作业"
+                }
+              ],
+              "sentenceTranslation": "我在做作业。"
+            }
+          ]
+        },
+        {
+          "id": "j_079",
+          "type": "passage",
+          "category": "一般过去时",
+          "passage": "Last weekend, Tom went camping with his classmates. They went to a beautiful lake by bus. They put up their tents near the water. In the afternoon, they went fishing and caught some fish. Tom's friend Mike fell into the water, but he was fine because he could swim. In the evening, they made a fire and cooked the fish. They sang songs and told stories. Everyone had a wonderful time.",
+          "passageCn": "上周末，汤姆和同学们去露营。他们坐公交车去了一个美丽的湖。他们在水边搭起了帐篷。下午，他们去钓鱼，钓到了一些鱼。汤姆的朋友迈克掉进了水里，但他没事，因为他会游泳。晚上，他们生了火，烤了鱼。他们唱歌、讲故事。每个人都度过了美好的时光。",
+          "vocabulary": [
+            {
+              "word": "camping",
+              "pos": "n.",
+              "meaning": "露营"
+            },
+            {
+              "word": "lake",
+              "pos": "n.",
+              "meaning": "湖"
+            },
+            {
+              "word": "tent",
+              "pos": "n.",
+              "meaning": "帐篷"
+            },
+            {
+              "word": "fish",
+              "pos": "n./v.",
+              "meaning": "鱼/钓鱼"
+            },
+            {
+              "word": "fire",
+              "pos": "n.",
+              "meaning": "火"
+            },
+            {
+              "word": "sing",
+              "pos": "v.",
+              "meaning": "唱（过去式sang）"
+            },
+            {
+              "word": "wonderful",
+              "pos": "adj.",
+              "meaning": "美好的"
+            }
+          ],
+          "subQuestions": [
+            {
+              "subType": "choice",
+              "question": "How did they go to the lake?",
+              "questionCn": "他们怎么去的湖边？",
+              "choices": [
+                "A. On foot",
+                "B. By bike",
+                "C. By bus",
+                "D. By car"
+              ],
+              "answer": "C",
+              "explanation": "原文：'They went to a beautiful lake by bus.'。went是go的过去式（不规则动词），by bus=乘公交车。一般过去时用过去式went。by+交通工具表交通方式。",
+              "knowledgePoint": "一般过去时：go→went + by bus表交通方式",
+              "vocabulary": [
+                {
+                  "word": "by bus",
+                  "pos": "phr.",
+                  "meaning": "乘公交车"
+                },
+                {
+                  "word": "go",
+                  "pos": "v.",
+                  "meaning": "去（过去式went）"
+                }
+              ],
+              "sentenceTranslation": "他们坐公交车去了一个美丽的湖。"
+            },
+            {
+              "subType": "truefalse",
+              "question": "True or False: Mike was hurt when he fell into the water.",
+              "questionCn": "判断：迈克掉进水里时受伤了。",
+              "answer": "false",
+              "explanation": "错误。原文说'he was fine because he could swim'（他没事，因为他会游泳）。fell是fall的过去式（不规则动词），was是be的过去式。could是can的过去式。注意：fall→fell, is→was, can→could。",
+              "knowledgePoint": "一般过去时：fall→fell, be→was, can→could + 细节理解",
+              "vocabulary": [
+                {
+                  "word": "fall",
+                  "pos": "v.",
+                  "meaning": "掉落（过去式fell）"
+                },
+                {
+                  "word": "swim",
+                  "pos": "v.",
+                  "meaning": "游泳"
+                },
+                {
+                  "word": "fine",
+                  "pos": "adj.",
+                  "meaning": "没事的"
+                }
+              ],
+              "sentenceTranslation": "他没事，因为他会游泳。"
+            },
+            {
+              "subType": "choice",
+              "question": "What did they do in the evening?",
+              "questionCn": "他们晚上做了什么？",
+              "choices": [
+                "A. They went swimming",
+                "B. They made a fire and cooked fish",
+                "C. They went fishing",
+                "D. They went home"
+              ],
+              "answer": "B",
+              "explanation": "原文：'they made a fire and cooked the fish.'。made是make的过去式（不规则），cooked是cook的过去式（规则，加ed）。and连接两个并列动作。一般过去时用过去式动词。",
+              "knowledgePoint": "一般过去时：make→made（不规则）+ cook→cooked（规则加ed）",
+              "vocabulary": [
+                {
+                  "word": "fire",
+                  "pos": "n.",
+                  "meaning": "火"
+                },
+                {
+                  "word": "cook",
+                  "pos": "v.",
+                  "meaning": "烹饪（过去式cooked）"
+                },
+                {
+                  "word": "make",
+                  "pos": "v.",
+                  "meaning": "制作（过去式made）"
+                }
+              ],
+              "sentenceTranslation": "晚上他们生了火，烤了鱼。"
+            }
+          ]
+        },
+        {
+          "id": "j_080",
+          "type": "passage",
+          "category": "常用句型与固定搭配",
+          "passage": "Lily is a helpful girl. She always helps her mother with housework. On weekends, she goes shopping with her mother. She is good at cooking. She can make delicious cakes and cookies. She also takes care of her little brother when her parents are busy. Her teachers say she is a good student because she pays attention to her studies. Lily is popular among her friends. They all like her because she is kind and helpful.",
+          "passageCn": "莉莉是个乐于助人的女孩。她总是帮妈妈做家务。周末，她和妈妈去购物。她擅长做饭。她会做美味的蛋糕和饼干。父母忙的时候，她还照顾弟弟。老师说她是好学生，因为她学习很专心。莉莉在朋友中很受欢迎。大家都喜欢她，因为她善良又乐于助人。",
+          "vocabulary": [
+            {
+              "word": "helpful",
+              "pos": "adj.",
+              "meaning": "乐于助人的"
+            },
+            {
+              "word": "housework",
+              "pos": "n.",
+              "meaning": "家务"
+            },
+            {
+              "word": "shopping",
+              "pos": "n.",
+              "meaning": "购物"
+            },
+            {
+              "word": "cookie",
+              "pos": "n.",
+              "meaning": "饼干"
+            },
+            {
+              "word": "popular",
+              "pos": "adj.",
+              "meaning": "受欢迎的"
+            },
+            {
+              "word": "kind",
+              "pos": "adj.",
+              "meaning": "善良的"
+            }
+          ],
+          "subQuestions": [
+            {
+              "subType": "choice",
+              "question": "What is Lily good at?",
+              "questionCn": "莉莉擅长什么？",
+              "choices": [
+                "A. Singing",
+                "B. Cooking",
+                "C. Dancing",
+                "D. Swimming"
+              ],
+              "answer": "B",
+              "explanation": "原文：'She is good at cooking.'。be good at+doing sth=擅长做某事，固定搭配，at是介词后接动名词。cooking是cook的动名词形式。主语she是第三人称单数，be动词用is。",
+              "knowledgePoint": "固定搭配：be good at + doing sth（擅长做某事）",
+              "vocabulary": [
+                {
+                  "word": "good at",
+                  "pos": "phr.",
+                  "meaning": "擅长"
+                },
+                {
+                  "word": "cook",
+                  "pos": "v.",
+                  "meaning": "做饭"
+                }
+              ],
+              "sentenceTranslation": "她擅长做饭。"
+            },
+            {
+              "subType": "truefalse",
+              "question": "True or False: Lily takes care of her little brother when her parents are free.",
+              "questionCn": "判断：莉莉在父母有空的时候照顾弟弟。",
+              "answer": "false",
+              "explanation": "错误。原文说'when her parents are busy'（父母忙的时候），不是free（空闲的时候）。take care of=照顾，固定搭配。busy=忙碌的，free=空闲的，意思相反。注意上下文理解。",
+              "knowledgePoint": "固定搭配：take care of（照顾）+ 细节理解（busy vs free）",
+              "vocabulary": [
+                {
+                  "word": "take care of",
+                  "pos": "phr.",
+                  "meaning": "照顾"
+                },
+                {
+                  "word": "busy",
+                  "pos": "adj.",
+                  "meaning": "忙碌的"
+                },
+                {
+                  "word": "free",
+                  "pos": "adj.",
+                  "meaning": "空闲的"
+                }
+              ],
+              "sentenceTranslation": "父母忙的时候，她照顾弟弟。"
+            },
+            {
+              "subType": "choice",
+              "question": "Why do her friends like her?",
+              "questionCn": "为什么她的朋友们喜欢她？",
+              "choices": [
+                "A. Because she is rich",
+                "B. Because she is beautiful",
+                "C. Because she is kind and helpful",
+                "D. Because she is smart"
+              ],
+              "answer": "C",
+              "explanation": "原文：'because she is kind and helpful'。because引导原因状语从句，解释原因。kind=善良的，helpful=乐于助人的。and连接两个并列形容词。because+从句，表示因为...。",
+              "knowledgePoint": "固定搭配：because引导原因从句 + 并列形容词",
+              "vocabulary": [
+                {
+                  "word": "kind",
+                  "pos": "adj.",
+                  "meaning": "善良的"
+                },
+                {
+                  "word": "helpful",
+                  "pos": "adj.",
+                  "meaning": "乐于助人的"
+                },
+                {
+                  "word": "because",
+                  "pos": "conj.",
+                  "meaning": "因为"
+                }
+              ],
+              "sentenceTranslation": "大家都喜欢她，因为她善良又乐于助人。"
+            }
+          ]
         }
       ]
     },
@@ -1888,13 +3074,13 @@
       "nameEn": "Senior High School",
       "idPrefix": "s",
       "description": "高中进阶：以复杂句法和动词形态为主线，涵盖定语从句、名词性从句、非谓语动词、虚拟语气、倒装与强调等核心语法结构。v3.0.0新增词汇解析、全句翻译及阅读理解题型。",
-      "questionCount": 50,
+      "questionCount": 80,
       "distribution": {
-        "choice": 18,
-        "truefalse": 10,
-        "fillblank": 10,
-        "qa": 7,
-        "passage": 5
+        "choice": 30,
+        "truefalse": 16,
+        "fillblank": 16,
+        "qa": 10,
+        "passage": 8
       },
       "categories": [
         "定语从句",
@@ -3661,6 +4847,1207 @@
               "sentenceTranslation": "我们一早在酒店被接走。"
             }
           ]
+        },
+        {
+          "id": "s_051",
+          "type": "choice",
+          "category": "定语从句",
+          "question": "Choose the correct relative pronoun: The book ___ I bought yesterday is very interesting.",
+          "questionCn": "选择正确关系代词：我昨天买的那本书很有趣。",
+          "choices": [
+            "A. who",
+            "B. which",
+            "C. what",
+            "D. whose"
+          ],
+          "answer": "B",
+          "explanation": "先行词The book指物，在定语从句中作bought的宾语，用which或that。who指人，whose表所属，what不能引导定语从句。关系代词作宾语时可省略，即The book I bought。指物用which/that，指人用who/that。",
+          "knowledgePoint": "定语从句：先行词指物作宾语用which",
+          "vocabulary": [
+            {
+              "word": "book",
+              "pos": "n.",
+              "meaning": "书"
+            },
+            {
+              "word": "interesting",
+              "pos": "adj.",
+              "meaning": "有趣的"
+            },
+            {
+              "word": "buy",
+              "pos": "v.",
+              "meaning": "买"
+            }
+          ],
+          "sentenceTranslation": "我昨天买的那本书很有趣。"
+        },
+        {
+          "id": "s_052",
+          "type": "choice",
+          "category": "名词性从句",
+          "question": "Choose the correct word: I don't know ___ he will come or not.",
+          "questionCn": "选择正确词：我不知道他是否会来。",
+          "choices": [
+            "A. that",
+            "B. what",
+            "C. whether",
+            "D. which"
+          ],
+          "answer": "C",
+          "explanation": "whether...or not=是否，引导宾语从句表'是否'。that在宾语从句中无词义且不作成分，what须作成分。whether和if都可表'是否'，但whether后可接or not，if通常不能接or not。whether更正式。",
+          "knowledgePoint": "名词性从句：whether...or not引导宾语从句表'是否'",
+          "vocabulary": [
+            {
+              "word": "come",
+              "pos": "v.",
+              "meaning": "来"
+            },
+            {
+              "word": "whether",
+              "pos": "conj.",
+              "meaning": "是否"
+            }
+          ],
+          "sentenceTranslation": "我不知道他是否会来。"
+        },
+        {
+          "id": "s_053",
+          "type": "choice",
+          "category": "非谓语动词",
+          "question": "Choose the correct form: ___ the homework, he went out to play.",
+          "questionCn": "选择正确形式：做完作业后，他出去玩了。",
+          "choices": [
+            "A. Finishing",
+            "B. Having finished",
+            "C. To finish",
+            "D. Finished"
+          ],
+          "answer": "B",
+          "explanation": "Having finished是现在分词的完成式，表动作先于主句动词发生（先完成作业，再出去玩）。结构：Having+过去分词，表先于主句的动作。Finishing表与主句同时，To finish表目的。先做完再出去，所以用Having finished。",
+          "knowledgePoint": "非谓语动词：Having done表先于主句发生的动作",
+          "vocabulary": [
+            {
+              "word": "homework",
+              "pos": "n.",
+              "meaning": "作业"
+            },
+            {
+              "word": "finish",
+              "pos": "v.",
+              "meaning": "完成"
+            },
+            {
+              "word": "play",
+              "pos": "v.",
+              "meaning": "玩"
+            }
+          ],
+          "sentenceTranslation": "做完作业后，他出去玩了。"
+        },
+        {
+          "id": "s_054",
+          "type": "choice",
+          "category": "时态综合",
+          "question": "Choose the correct form: By the time he arrived, the train ___.",
+          "questionCn": "选择正确形式：等他到达时，火车已经开走了。",
+          "choices": [
+            "A. left",
+            "B. has left",
+            "C. had left",
+            "D. was leaving"
+          ],
+          "answer": "C",
+          "explanation": "By the time+过去时（arrived），主句用过去完成时had left，表示在过去某时间点之前已完成的动作。过去完成时结构：had+过去分词。leave→left（不规则）。'到达时火车已走'=走的动作先于到达。",
+          "knowledgePoint": "时态综合：By the time+过去时→主句过去完成时had done",
+          "vocabulary": [
+            {
+              "word": "train",
+              "pos": "n.",
+              "meaning": "火车"
+            },
+            {
+              "word": "arrive",
+              "pos": "v.",
+              "meaning": "到达"
+            },
+            {
+              "word": "leave",
+              "pos": "v.",
+              "meaning": "离开（过去分词left）"
+            }
+          ],
+          "sentenceTranslation": "等他到达时，火车已经开走了。"
+        },
+        {
+          "id": "s_055",
+          "type": "choice",
+          "category": "被动语态",
+          "question": "Choose the correct form: The bridge ___ last year.",
+          "questionCn": "选择正确形式：这座桥是去年建成的。",
+          "choices": [
+            "A. built",
+            "B. was built",
+            "C. is built",
+            "D. builds"
+          ],
+          "answer": "B",
+          "explanation": "桥是被建的，主语bridge与build是被动关系，用被动语态。last year是过去时，一般过去时被动：was/were+过去分词。bridge单数用was，build→built。被动语态结构：be+过去分词，be随时态变化。",
+          "knowledgePoint": "被动语态：一般过去时被动was+built",
+          "vocabulary": [
+            {
+              "word": "bridge",
+              "pos": "n.",
+              "meaning": "桥"
+            },
+            {
+              "word": "build",
+              "pos": "v.",
+              "meaning": "建造（过去分词built）"
+            },
+            {
+              "word": "last year",
+              "pos": "phr.",
+              "meaning": "去年"
+            }
+          ],
+          "sentenceTranslation": "这座桥是去年建成的。"
+        },
+        {
+          "id": "s_056",
+          "type": "choice",
+          "category": "虚拟语气",
+          "question": "Choose the correct form: If I ___ you, I would tell him the truth.",
+          "questionCn": "选择正确形式：如果我是你，我就会告诉他真相。",
+          "choices": [
+            "A. am",
+            "B. was",
+            "C. were",
+            "D. be"
+          ],
+          "answer": "C",
+          "explanation": "与现在事实相反的虚拟条件句：if从句用一般过去时（be动词一律用were），主句用would+动词原形。'如果我是你'与现在事实相反（我不是你），if从句be用were（虚拟语气中be动词不分人称，统一用were）。",
+          "knowledgePoint": "虚拟语气：与现在事实相反，if从句用were",
+          "vocabulary": [
+            {
+              "word": "truth",
+              "pos": "n.",
+              "meaning": "真相"
+            },
+            {
+              "word": "tell",
+              "pos": "v.",
+              "meaning": "告诉"
+            }
+          ],
+          "sentenceTranslation": "如果我是你，我就会告诉他真相。"
+        },
+        {
+          "id": "s_057",
+          "type": "choice",
+          "category": "倒装与强调",
+          "question": "Choose the correct form: Not until he came home ___ that his dog was missing.",
+          "questionCn": "选择正确形式：直到回家他才发现狗丢了。",
+          "choices": [
+            "A. he found",
+            "B. did he find",
+            "C. he did find",
+            "D. found he"
+          ],
+          "answer": "B",
+          "explanation": "Not until放句首时，主句部分倒装（助动词提前）。结构：Not until+时间状语+助动词+主语+动词原形。主句he found变为did he find（一般过去时助动词did提前）。not until=直到...才，否定词放句首引起部分倒装。",
+          "knowledgePoint": "倒装句：Not until放句首，主句部分倒装did+主语+原形",
+          "vocabulary": [
+            {
+              "word": "home",
+              "pos": "adv.",
+              "meaning": "回家"
+            },
+            {
+              "word": "find",
+              "pos": "v.",
+              "meaning": "发现"
+            },
+            {
+              "word": "missing",
+              "pos": "adj.",
+              "meaning": "丢失的"
+            }
+          ],
+          "sentenceTranslation": "直到回家他才发现狗丢了。"
+        },
+        {
+          "id": "s_058",
+          "type": "choice",
+          "category": "情态动词",
+          "question": "Choose the correct modal verb: You ___ smoke here. It's dangerous.",
+          "questionCn": "选择正确情态动词：你不能在这里抽烟。很危险。",
+          "choices": [
+            "A. needn't",
+            "B. shouldn't",
+            "C. mustn't",
+            "D. can't"
+          ],
+          "answer": "C",
+          "explanation": "mustn't=禁止/绝对不能，表强烈禁止。needn't=不必，shouldn't=不应该，can't=不能/不可能。在禁止吸烟的语境中，mustn't表示'禁止'，语气最强。must表必须，mustn't表禁止。",
+          "knowledgePoint": "情态动词：mustn't表禁止",
+          "vocabulary": [
+            {
+              "word": "smoke",
+              "pos": "v.",
+              "meaning": "抽烟"
+            },
+            {
+              "word": "dangerous",
+              "pos": "adj.",
+              "meaning": "危险的"
+            }
+          ],
+          "sentenceTranslation": "你不能在这里抽烟。很危险。"
+        },
+        {
+          "id": "s_059",
+          "type": "choice",
+          "category": "定语从句",
+          "question": "Choose the correct relative adverb: This is the school ___ I studied for three years.",
+          "questionCn": "选择正确关系副词：这是我学习了三年的学校。",
+          "choices": [
+            "A. which",
+            "B. where",
+            "C. that",
+            "D. what"
+          ],
+          "answer": "B",
+          "explanation": "先行词the school表地点，在从句中作地点状语（studied at the school），用关系副词where。where=at/in which。which/that在定语从句中须作主语或宾语，不作状语。where表地点，when表时间，why表原因。",
+          "knowledgePoint": "定语从句：先行词表地点，从句中作状语用where",
+          "vocabulary": [
+            {
+              "word": "school",
+              "pos": "n.",
+              "meaning": "学校"
+            },
+            {
+              "word": "study",
+              "pos": "v.",
+              "meaning": "学习"
+            },
+            {
+              "word": "where",
+              "pos": "adv.",
+              "meaning": "在那里"
+            }
+          ],
+          "sentenceTranslation": "这是我学习了三年的学校。"
+        },
+        {
+          "id": "s_060",
+          "type": "choice",
+          "category": "非谓语动词",
+          "question": "Choose the correct form: The teacher asked us ___ so much noise.",
+          "questionCn": "选择正确形式：老师叫我们不要发出那么大的噪音。",
+          "choices": [
+            "A. don't make",
+            "B. not make",
+            "C. not to make",
+            "D. to not make"
+          ],
+          "answer": "C",
+          "explanation": "ask sb to do sth=叫某人做某事，否定形式ask sb not to do sth。not放在to do之间：not to make。不定式的否定在to前加not。结构：ask sb not to do sth。注意not位置：not to do（不是to not do）。",
+          "knowledgePoint": "非谓语动词：不定式否定not to do（ask sb not to do sth）",
+          "vocabulary": [
+            {
+              "word": "noise",
+              "pos": "n.",
+              "meaning": "噪音"
+            },
+            {
+              "word": "teacher",
+              "pos": "n.",
+              "meaning": "老师"
+            },
+            {
+              "word": "make noise",
+              "pos": "phr.",
+              "meaning": "发出噪音"
+            }
+          ],
+          "sentenceTranslation": "老师叫我们不要发出那么大的噪音。"
+        },
+        {
+          "id": "s_061",
+          "type": "choice",
+          "category": "时态综合",
+          "question": "Choose the correct form: I ___ my keys. I can't open the door.",
+          "questionCn": "选择正确形式：我把钥匙弄丢了。我打不开门。",
+          "choices": [
+            "A. lost",
+            "B. have lost",
+            "C. had lost",
+            "D. lose"
+          ],
+          "answer": "B",
+          "explanation": "现在完成时have lost表示过去发生的动作对现在造成的影响（现在打不开门）。结构：have/has+过去分词。lose→lost→lost（不规则）。现在完成时连接过去和现在：过去丢了钥匙→现在打不开门。强调对现在的影响。",
+          "knowledgePoint": "时态综合：现在完成时have lost表对现在的影响",
+          "vocabulary": [
+            {
+              "word": "key",
+              "pos": "n.",
+              "meaning": "钥匙"
+            },
+            {
+              "word": "door",
+              "pos": "n.",
+              "meaning": "门"
+            },
+            {
+              "word": "lose",
+              "pos": "v.",
+              "meaning": "丢失（过去分词lost）"
+            }
+          ],
+          "sentenceTranslation": "我把钥匙弄丢了。我打不开门。"
+        },
+        {
+          "id": "s_062",
+          "type": "choice",
+          "category": "被动语态",
+          "question": "Choose the correct form: A new hospital ___ in our town next year.",
+          "questionCn": "选择正确形式：明年我们镇上将建一座新医院。",
+          "choices": [
+            "A. will build",
+            "B. will be built",
+            "C. is built",
+            "D. was built"
+          ],
+          "answer": "B",
+          "explanation": "医院是被建的，用被动语态。next year表将来，一般将来时被动：will be+过去分词。build→built。被动语态结构：be+过去分词，be随时态变化：will be built（将来被动），was built（过去被动）。",
+          "knowledgePoint": "被动语态：一般将来时被动will be+built",
+          "vocabulary": [
+            {
+              "word": "hospital",
+              "pos": "n.",
+              "meaning": "医院"
+            },
+            {
+              "word": "town",
+              "pos": "n.",
+              "meaning": "镇"
+            },
+            {
+              "word": "build",
+              "pos": "v.",
+              "meaning": "建造（过去分词built）"
+            }
+          ],
+          "sentenceTranslation": "明年我们镇上将建一座新医院。"
+        },
+        {
+          "id": "s_063",
+          "type": "truefalse",
+          "category": "定语从句",
+          "question": "Judge true or false: The man which is talking to our teacher is my uncle.",
+          "questionCn": "判断对错：和我们老师说话的那个人是我叔叔。",
+          "answer": "false",
+          "explanation": "错误。先行词The man指人，关系代词应用who而不是which。正确：The man who is talking to our teacher is my uncle. who指人，which指物，that可指人或物。指人用who/that，指物用which/that。",
+          "knowledgePoint": "定语从句：先行词指人用who不用which",
+          "vocabulary": [
+            {
+              "word": "man",
+              "pos": "n.",
+              "meaning": "男人"
+            },
+            {
+              "word": "uncle",
+              "pos": "n.",
+              "meaning": "叔叔"
+            },
+            {
+              "word": "talk",
+              "pos": "v.",
+              "meaning": "说话"
+            }
+          ],
+          "sentenceTranslation": "和我们老师说话的那个人是我叔叔。"
+        },
+        {
+          "id": "s_064",
+          "type": "truefalse",
+          "category": "名词性从句",
+          "question": "Judge true or false: That he said at the meeting surprised everyone.",
+          "questionCn": "判断对错：他在会上说的话让所有人惊讶。",
+          "answer": "false",
+          "explanation": "错误。从句he said缺宾语（说了什么），需用what引导，that不能作成分。正确：What he said at the meeting surprised everyone. what=the thing that，在从句中作said的宾语。that只起连接作用不作成分，what须作成分。",
+          "knowledgePoint": "名词性从句：从句缺宾语用what不用that",
+          "vocabulary": [
+            {
+              "word": "meeting",
+              "pos": "n.",
+              "meaning": "会议"
+            },
+            {
+              "word": "surprise",
+              "pos": "v.",
+              "meaning": "使惊讶"
+            },
+            {
+              "word": "everyone",
+              "pos": "pron.",
+              "meaning": "每个人"
+            }
+          ],
+          "sentenceTranslation": "他在会上说的话让所有人惊讶。"
+        },
+        {
+          "id": "s_065",
+          "type": "truefalse",
+          "category": "非谓语动词",
+          "question": "Judge true or false: I look forward to see you again.",
+          "questionCn": "判断对错：我期待再次见到你。",
+          "answer": "false",
+          "explanation": "错误。look forward to中to是介词，后接动名词doing，不是不定式。正确：I look forward to seeing you again. look forward to+doing sth=期待做某事。类似结构：be used to, pay attention to, stick to后都接doing。",
+          "knowledgePoint": "非谓语动词：look forward to + doing（to是介词）",
+          "vocabulary": [
+            {
+              "word": "look forward to",
+              "pos": "phr.",
+              "meaning": "期待"
+            },
+            {
+              "word": "see",
+              "pos": "v.",
+              "meaning": "看见"
+            },
+            {
+              "word": "again",
+              "pos": "adv.",
+              "meaning": "再次"
+            }
+          ],
+          "sentenceTranslation": "我期待再次见到你。"
+        },
+        {
+          "id": "s_066",
+          "type": "truefalse",
+          "category": "被动语态",
+          "question": "Judge true or false: The window was broken by a boy yesterday.",
+          "questionCn": "判断对错：窗户昨天被一个男孩打破了。",
+          "answer": "true",
+          "explanation": "正确。主语window与break是被动关系（窗户被打破），yesterday表过去时。was broken是一般过去时被动语态（was+过去分词）。by a boy引出动作执行者。被动语态：be+过去分词，by引出执行者。break→broke→broken。",
+          "knowledgePoint": "被动语态：一般过去时被动was broken + by引出执行者",
+          "vocabulary": [
+            {
+              "word": "window",
+              "pos": "n.",
+              "meaning": "窗户"
+            },
+            {
+              "word": "break",
+              "pos": "v.",
+              "meaning": "打破（过去分词broken）"
+            },
+            {
+              "word": "boy",
+              "pos": "n.",
+              "meaning": "男孩"
+            }
+          ],
+          "sentenceTranslation": "窗户昨天被一个男孩打破了。"
+        },
+        {
+          "id": "s_067",
+          "type": "truefalse",
+          "category": "虚拟语气",
+          "question": "Judge true or false: If I was a bird, I would fly to you.",
+          "questionCn": "判断对错：如果我是一只鸟，我就会飞向你。",
+          "answer": "false",
+          "explanation": "错误。与现在事实相反的虚拟语气，if从句be动词应用were而不是was。正确：If I were a bird, I would fly to you. 虚拟语气中be动词不分人称，统一用were。'如果我是鸟'与事实相反，用虚拟语气，be→were。",
+          "knowledgePoint": "虚拟语气：与现在事实相反，if从句be用were不用was",
+          "vocabulary": [
+            {
+              "word": "bird",
+              "pos": "n.",
+              "meaning": "鸟"
+            },
+            {
+              "word": "fly",
+              "pos": "v.",
+              "meaning": "飞"
+            }
+          ],
+          "sentenceTranslation": "如果我是一只鸟，我就会飞向你。"
+        },
+        {
+          "id": "s_068",
+          "type": "truefalse",
+          "category": "倒装与强调",
+          "question": "Judge true or false: Only then he realized his mistake.",
+          "questionCn": "判断对错：直到那时他才意识到自己的错误。",
+          "answer": "false",
+          "explanation": "错误。Only+状语放句首时，主句部分倒装（助动词提前）。正确：Only then did he realize his mistake. 一般过去时用did提前，动词恢复原形realize。部分倒装=助动词/情态动词/be动词提前，实义动词不提前。",
+          "knowledgePoint": "倒装句：Only+状语放句首，主句部分倒装did+主语+原形",
+          "vocabulary": [
+            {
+              "word": "then",
+              "pos": "adv.",
+              "meaning": "那时"
+            },
+            {
+              "word": "realize",
+              "pos": "v.",
+              "meaning": "意识到"
+            },
+            {
+              "word": "mistake",
+              "pos": "n.",
+              "meaning": "错误"
+            }
+          ],
+          "sentenceTranslation": "直到那时他才意识到自己的错误。"
+        },
+        {
+          "id": "s_069",
+          "type": "fillblank",
+          "category": "定语从句",
+          "question": "Fill in the blank: The girl ___ mother is a doctor is my best friend.",
+          "questionCn": "填空：妈妈是医生的那个女孩是我最好的朋友。",
+          "answer": "whose",
+          "explanation": "先行词The girl，从句缺定语（girl的mother），表所属关系用whose。whose=of whom，引导定语从句表所属。whose可指人指物：whose mother=the mother of the girl。whose在从句中作定语修饰mother。",
+          "knowledgePoint": "定语从句：whose表所属关系（先行词的mother）",
+          "vocabulary": [
+            {
+              "word": "girl",
+              "pos": "n.",
+              "meaning": "女孩"
+            },
+            {
+              "word": "doctor",
+              "pos": "n.",
+              "meaning": "医生"
+            },
+            {
+              "word": "friend",
+              "pos": "n.",
+              "meaning": "朋友"
+            }
+          ],
+          "sentenceTranslation": "妈妈是医生的那个女孩是我最好的朋友。"
+        },
+        {
+          "id": "s_070",
+          "type": "fillblank",
+          "category": "名词性从句",
+          "question": "Fill in the blank: The question is ___ we should do next.",
+          "questionCn": "填空：问题是我们下一步该做什么。",
+          "answer": "what",
+          "explanation": "表语从句缺宾语（做什么），用what引导。what=the thing that，在从句中作do的宾语。that在从句中不作成分，从句缺宾语时不能用that。what引导名词性从句时须在从句中作成分（主语/宾语/表语）。",
+          "knowledgePoint": "名词性从句：表语从句缺宾语用what",
+          "vocabulary": [
+            {
+              "word": "question",
+              "pos": "n.",
+              "meaning": "问题"
+            },
+            {
+              "word": "next",
+              "pos": "adv.",
+              "meaning": "接下来"
+            }
+          ],
+          "sentenceTranslation": "问题是我们下一步该做什么。"
+        },
+        {
+          "id": "s_071",
+          "type": "fillblank",
+          "category": "非谓语动词",
+          "question": "Fill in the blank: ___ (live) in the city for ten years, he knows it well.",
+          "questionCn": "填空：在城市住了十年，他对那里很熟悉。",
+          "answer": "Having lived",
+          "explanation": "Having lived是现在分词完成式，表动作先于主句动词。住了十年（先）→很熟悉（后），先于主句用Having done。结构：Having+过去分词。live→lived。分词完成式表先于主句发生的动作，作状语表原因。",
+          "knowledgePoint": "非谓语动词：Having done表先于主句的动作（作原因状语）",
+          "vocabulary": [
+            {
+              "word": "city",
+              "pos": "n.",
+              "meaning": "城市"
+            },
+            {
+              "word": "live",
+              "pos": "v.",
+              "meaning": "居住"
+            },
+            {
+              "word": "well",
+              "pos": "adv.",
+              "meaning": "熟悉地"
+            }
+          ],
+          "sentenceTranslation": "在城市住了十年，他对那里很熟悉。"
+        },
+        {
+          "id": "s_072",
+          "type": "fillblank",
+          "category": "时态综合",
+          "question": "Fill in the blank: By the end of last term, we ___ (learn) 2,000 English words.",
+          "questionCn": "填空：到上学期末，我们已经学了2000个英语单词。",
+          "answer": "had learned",
+          "explanation": "By the end of last term是过去时间点，主句用过去完成时had learned，表示在过去某时间点之前已完成的动作。结构：had+过去分词。learn→learned（规则动词加ed）。过去完成时表'过去的过去'：在上学期末之前已学会。",
+          "knowledgePoint": "时态综合：By the end of+过去时间→过去完成时had done",
+          "vocabulary": [
+            {
+              "word": "term",
+              "pos": "n.",
+              "meaning": "学期"
+            },
+            {
+              "word": "learn",
+              "pos": "v.",
+              "meaning": "学习"
+            },
+            {
+              "word": "word",
+              "pos": "n.",
+              "meaning": "单词"
+            }
+          ],
+          "sentenceTranslation": "到上学期末，我们已经学了2000个英语单词。"
+        },
+        {
+          "id": "s_073",
+          "type": "fillblank",
+          "category": "被动语态",
+          "question": "Fill in the blank: The letter ___ (write) in English yesterday.",
+          "questionCn": "填空：这封信昨天是用英语写的。",
+          "answer": "was written",
+          "explanation": "信是被写的，主语letter与write是被动关系。yesterday表过去时，一般过去时被动：was/were+过去分词。letter单数用was，write→written（不规则）。被动语态：be+过去分词，be随时态变化。",
+          "knowledgePoint": "被动语态：一般过去时被动was+written",
+          "vocabulary": [
+            {
+              "word": "letter",
+              "pos": "n.",
+              "meaning": "信"
+            },
+            {
+              "word": "write",
+              "pos": "v.",
+              "meaning": "写（过去分词written）"
+            },
+            {
+              "word": "English",
+              "pos": "n.",
+              "meaning": "英语"
+            }
+          ],
+          "sentenceTranslation": "这封信昨天是用英语写的。"
+        },
+        {
+          "id": "s_074",
+          "type": "fillblank",
+          "category": "虚拟语气",
+          "question": "Fill in the blank: I wish I ___ (be) taller.",
+          "questionCn": "填空：我希望我能再高一些。",
+          "answer": "were",
+          "explanation": "wish后宾语从句用虚拟语气。与现在事实相反（我现在不高），be动词用were。wish+从句表愿望：与现在相反用过去时（be用were），与过去相反用had done，与将来相反用would do。'希望更高'与现在相反，be→were。",
+          "knowledgePoint": "虚拟语气：wish后与现在相反，be用were",
+          "vocabulary": [
+            {
+              "word": "wish",
+              "pos": "v.",
+              "meaning": "希望"
+            },
+            {
+              "word": "tall",
+              "pos": "adj.",
+              "meaning": "高的"
+            }
+          ],
+          "sentenceTranslation": "我希望我能再高一些。"
+        },
+        {
+          "id": "s_075",
+          "type": "qa",
+          "category": "定语从句",
+          "question": "Combine the sentences using a relative clause: The man is my uncle. He is wearing a blue suit.",
+          "questionCn": "用定语从句合并句子：那个穿蓝色西装的男人是我叔叔。",
+          "answer": "The man who is wearing a blue suit is my uncle.",
+          "explanation": "两个句子有共同主语The man/He，用who合并。先行词The man指人，在从句中作主语（is wearing的主语），用who。结构：先行词+who+从句+主句谓语。who is wearing a blue suit修饰The man。指人作主语用who。",
+          "knowledgePoint": "定语从句：先行词指人作主语用who合并句子",
+          "vocabulary": [
+            {
+              "word": "uncle",
+              "pos": "n.",
+              "meaning": "叔叔"
+            },
+            {
+              "word": "wear",
+              "pos": "v.",
+              "meaning": "穿"
+            },
+            {
+              "word": "suit",
+              "pos": "n.",
+              "meaning": "西装"
+            },
+            {
+              "word": "blue",
+              "pos": "adj.",
+              "meaning": "蓝色的"
+            }
+          ],
+          "sentenceTranslation": "那个穿蓝色西装的男人是我叔叔。"
+        },
+        {
+          "id": "s_076",
+          "type": "qa",
+          "category": "非谓语动词",
+          "question": "Rewrite the sentence using a participle: Because he was tired, he went to bed early.",
+          "questionCn": "用分词改写句子：因为累了，他早早就上床了。",
+          "answer": "Tired, he went to bed early.",
+          "explanation": "过去分词tired作原因状语，相当于Because he was tired。主语he与tire是被动关系（被疲劳），用过去分词。分词状语=省略主语和be动词的状语从句。Tired=Being tired=Because he was tired。过去分词表被动/完成。",
+          "knowledgePoint": "非谓语动词：过去分词作原因状语（表被动）",
+          "vocabulary": [
+            {
+              "word": "tired",
+              "pos": "adj.",
+              "meaning": "疲惫的"
+            },
+            {
+              "word": "bed",
+              "pos": "n.",
+              "meaning": "床"
+            },
+            {
+              "word": "early",
+              "pos": "adv.",
+              "meaning": "早"
+            }
+          ],
+          "sentenceTranslation": "因为累了，他早早就上床了。"
+        },
+        {
+          "id": "s_077",
+          "type": "qa",
+          "category": "倒装与强调",
+          "question": "Rewrite using inversion: I have never seen such a beautiful place.",
+          "questionCn": "用倒装改写：我从未见过这么美的地方。",
+          "answer": "Never have I seen such a beautiful place.",
+          "explanation": "否定词Never放句首时，主句部分倒装（助动词have提前）。结构：Never+have/has/had+主语+过去分词。部分倒装=助动词/情态动词/be动词提前。seen是see的过去分词。Never=从未，否定词放句首表强调。",
+          "knowledgePoint": "倒装句：否定词Never放句首，部分倒装have+主语+过去分词",
+          "vocabulary": [
+            {
+              "word": "never",
+              "pos": "adv.",
+              "meaning": "从未"
+            },
+            {
+              "word": "see",
+              "pos": "v.",
+              "meaning": "看见（过去分词seen）"
+            },
+            {
+              "word": "beautiful",
+              "pos": "adj.",
+              "meaning": "美丽的"
+            },
+            {
+              "word": "place",
+              "pos": "n.",
+              "meaning": "地方"
+            }
+          ],
+          "sentenceTranslation": "我从未见过这么美的地方。"
+        },
+        {
+          "id": "s_078",
+          "type": "passage",
+          "category": "定语从句",
+          "passage": "The old man who lives next door is a retired teacher. He has a beautiful garden where he grows all kinds of flowers. The flowers which bloom in spring attract many butterflies. His grandson, who visits him every weekend, helps him water the plants. The old man says that the garden is a place where he can find peace and happiness.",
+          "passageCn": "住在隔壁的老人是一位退休教师。他有一个美丽的花园，里面种着各种各样的花。春天盛开的花吸引了许多蝴蝶。他的孙子每周末来看他，帮他浇花。老人说花园是一个他能找到宁静和幸福的地方。",
+          "vocabulary": [
+            {
+              "word": "retired",
+              "pos": "adj.",
+              "meaning": "退休的"
+            },
+            {
+              "word": "garden",
+              "pos": "n.",
+              "meaning": "花园"
+            },
+            {
+              "word": "bloom",
+              "pos": "v.",
+              "meaning": "盛开"
+            },
+            {
+              "word": "butterfly",
+              "pos": "n.",
+              "meaning": "蝴蝶"
+            },
+            {
+              "word": "grandson",
+              "pos": "n.",
+              "meaning": "孙子"
+            },
+            {
+              "word": "peace",
+              "pos": "n.",
+              "meaning": "宁静"
+            }
+          ],
+          "subQuestions": [
+            {
+              "subType": "choice",
+              "question": "Who lives next door?",
+              "questionCn": "谁住在隔壁？",
+              "choices": [
+                "A. A retired teacher",
+                "B. A young man",
+                "C. A doctor",
+                "D. A student"
+              ],
+              "answer": "A",
+              "explanation": "原文：'The old man who lives next door is a retired teacher.'。who引导定语从句修饰The old man，在从句中作主语。who lives next door=住在隔壁的（老人）。retired teacher=退休教师。",
+              "knowledgePoint": "定语从句：who引导限制性定语从句修饰人",
+              "vocabulary": [
+                {
+                  "word": "retired",
+                  "pos": "adj.",
+                  "meaning": "退休的"
+                },
+                {
+                  "word": "next door",
+                  "pos": "phr.",
+                  "meaning": "隔壁"
+                }
+              ],
+              "sentenceTranslation": "住在隔壁的老人是一位退休教师。"
+            },
+            {
+              "subType": "truefalse",
+              "question": "True or False: The garden is a place where the old man can find peace.",
+              "questionCn": "判断：花园是老人能找到宁静的地方。",
+              "answer": "true",
+              "explanation": "正确。原文：'the garden is a place where he can find peace and happiness.'。where引导定语从句修饰a place，在从句中作地点状语。where=in which。定语从句修饰地点名词，从句中作状语用where。",
+              "knowledgePoint": "定语从句：where引导定语从句修饰地点名词",
+              "vocabulary": [
+                {
+                  "word": "peace",
+                  "pos": "n.",
+                  "meaning": "宁静"
+                },
+                {
+                  "word": "happiness",
+                  "pos": "n.",
+                  "meaning": "幸福"
+                },
+                {
+                  "word": "where",
+                  "pos": "adv.",
+                  "meaning": "在那里"
+                }
+              ],
+              "sentenceTranslation": "花园是他能找到宁静和幸福的地方。"
+            },
+            {
+              "subType": "choice",
+              "question": "What attracts many butterflies?",
+              "questionCn": "什么吸引了许多蝴蝶？",
+              "choices": [
+                "A. The garden",
+                "B. The flowers in spring",
+                "C. The grandson",
+                "D. The plants"
+              ],
+              "answer": "B",
+              "explanation": "原文：'The flowers which bloom in spring attract many butterflies.'。which引导定语从句修饰The flowers，在从句中作主语。which bloom in spring=春天开的花。which指物作主语。attract=吸引。",
+              "knowledgePoint": "定语从句：which引导定语从句修饰物（flowers）",
+              "vocabulary": [
+                {
+                  "word": "flower",
+                  "pos": "n.",
+                  "meaning": "花"
+                },
+                {
+                  "word": "bloom",
+                  "pos": "v.",
+                  "meaning": "盛开"
+                },
+                {
+                  "word": "attract",
+                  "pos": "v.",
+                  "meaning": "吸引"
+                },
+                {
+                  "word": "butterfly",
+                  "pos": "n.",
+                  "meaning": "蝴蝶"
+                }
+              ],
+              "sentenceTranslation": "春天盛开的花吸引了许多蝴蝶。"
+            }
+          ]
+        },
+        {
+          "id": "s_079",
+          "type": "passage",
+          "category": "被动语态",
+          "passage": "Yesterday, a famous painting was stolen from the city museum. The theft was discovered by a security guard at midnight. The police were called immediately. The area was sealed off and all visitors were questioned. It is believed that the painting was taken out through a back window. A reward has been offered for any information about the painting. The museum director said that the painting was bought for two million dollars.",
+          "passageCn": "昨天，一幅名画从城市博物馆被盗。盗窃案是在午夜被一名保安发现的。警察被立即召唤。该区域被封锁，所有游客被盘问。据信这幅画是从后窗被带走的。已经悬赏征集关于这幅画的任何信息。博物馆馆长说这幅画是以两百万美元买来的。",
+          "vocabulary": [
+            {
+              "word": "painting",
+              "pos": "n.",
+              "meaning": "画作"
+            },
+            {
+              "word": "theft",
+              "pos": "n.",
+              "meaning": "盗窃"
+            },
+            {
+              "word": "discover",
+              "pos": "v.",
+              "meaning": "发现"
+            },
+            {
+              "word": "security",
+              "pos": "n.",
+              "meaning": "保安"
+            },
+            {
+              "word": "seal off",
+              "pos": "phr.",
+              "meaning": "封锁"
+            },
+            {
+              "word": "reward",
+              "pos": "n.",
+              "meaning": "悬赏"
+            }
+          ],
+          "subQuestions": [
+            {
+              "subType": "choice",
+              "question": "Who discovered the theft?",
+              "questionCn": "谁发现了盗窃案？",
+              "choices": [
+                "A. A visitor",
+                "B. A security guard",
+                "C. The director",
+                "D. The police"
+              ],
+              "answer": "B",
+              "explanation": "原文：'The theft was discovered by a security guard at midnight.'。was discovered是一般过去时被动语态。by a security guard引出动作执行者。被动语态：be+过去分词+by+执行者。",
+              "knowledgePoint": "被动语态：一般过去时被动was discovered + by引出执行者",
+              "vocabulary": [
+                {
+                  "word": "theft",
+                  "pos": "n.",
+                  "meaning": "盗窃"
+                },
+                {
+                  "word": "discover",
+                  "pos": "v.",
+                  "meaning": "发现"
+                },
+                {
+                  "word": "security guard",
+                  "pos": "n.",
+                  "meaning": "保安"
+                }
+              ],
+              "sentenceTranslation": "盗窃案是在午夜被一名保安发现的。"
+            },
+            {
+              "subType": "truefalse",
+              "question": "True or False: All visitors were allowed to leave immediately.",
+              "questionCn": "判断：所有游客被允许立即离开。",
+              "answer": "false",
+              "explanation": "错误。原文说'all visitors were questioned'（所有游客被盘问），不是允许离开。were questioned是一般过去时被动。被动语态be+过去分词。question此处指盘问。",
+              "knowledgePoint": "被动语态：were questioned + 细节理解",
+              "vocabulary": [
+                {
+                  "word": "visitor",
+                  "pos": "n.",
+                  "meaning": "游客"
+                },
+                {
+                  "word": "question",
+                  "pos": "v.",
+                  "meaning": "盘问"
+                },
+                {
+                  "word": "leave",
+                  "pos": "v.",
+                  "meaning": "离开"
+                }
+              ],
+              "sentenceTranslation": "所有游客被盘问。"
+            },
+            {
+              "subType": "choice",
+              "question": "How much was the painting bought for?",
+              "questionCn": "这幅画是花多少钱买来的？",
+              "choices": [
+                "A. One million dollars",
+                "B. Two million dollars",
+                "C. Three million dollars",
+                "D. Free"
+              ],
+              "answer": "B",
+              "explanation": "原文：'the painting was bought for two million dollars.'。was bought是一般过去时被动语态（was+过去分词bought）。buy→bought→bought（不规则）。被动语态be+过去分词。",
+              "knowledgePoint": "被动语态：一般过去时被动was bought",
+              "vocabulary": [
+                {
+                  "word": "painting",
+                  "pos": "n.",
+                  "meaning": "画作"
+                },
+                {
+                  "word": "buy",
+                  "pos": "v.",
+                  "meaning": "买（过去分词bought）"
+                },
+                {
+                  "word": "dollar",
+                  "pos": "n.",
+                  "meaning": "美元"
+                }
+              ],
+              "sentenceTranslation": "这幅画是以两百万美元买来的。"
+            }
+          ]
+        },
+        {
+          "id": "s_080",
+          "type": "passage",
+          "category": "虚拟语气",
+          "passage": "If I were a bird, I would fly to every corner of the world. If I had wings, I would travel above the clouds. If I had known the truth earlier, I would have helped him. I wish I had studied harder when I was young. If only I could turn back time, I would make different choices. But life doesn't give us second chances. We should cherish what we have now and not wait until it is too late.",
+          "passageCn": "如果我是一只鸟，我就会飞到世界的每个角落。如果我有翅膀，我就会在云层上方旅行。如果我早点知道真相，我就会帮助他了。我希望我年轻时更努力学习。要是能时光倒流，我就会做出不同的选择。但生活不会给我们第二次机会。我们应该珍惜现在拥有的，不要等到太迟了。",
+          "vocabulary": [
+            {
+              "word": "bird",
+              "pos": "n.",
+              "meaning": "鸟"
+            },
+            {
+              "word": "wing",
+              "pos": "n.",
+              "meaning": "翅膀"
+            },
+            {
+              "word": "cloud",
+              "pos": "n.",
+              "meaning": "云"
+            },
+            {
+              "word": "truth",
+              "pos": "n.",
+              "meaning": "真相"
+            },
+            {
+              "word": "cherish",
+              "pos": "v.",
+              "meaning": "珍惜"
+            },
+            {
+              "word": "choice",
+              "pos": "n.",
+              "meaning": "选择"
+            }
+          ],
+          "subQuestions": [
+            {
+              "subType": "choice",
+              "question": "What would the writer do if he had wings?",
+              "questionCn": "如果作者有翅膀，他会做什么？",
+              "choices": [
+                "A. Fly to every corner",
+                "B. Travel above the clouds",
+                "C. Help others",
+                "D. Turn back time"
+              ],
+              "answer": "B",
+              "explanation": "原文：'If I had wings, I would travel above the clouds.'。与现在事实相反的虚拟：if从句用过去时had，主句用would+动词原形travel。'如果有翅膀'与现在事实相反（没有翅膀），用虚拟语气。",
+              "knowledgePoint": "虚拟语气：与现在相反，if+过去时，主句would+原形",
+              "vocabulary": [
+                {
+                  "word": "wing",
+                  "pos": "n.",
+                  "meaning": "翅膀"
+                },
+                {
+                  "word": "travel",
+                  "pos": "v.",
+                  "meaning": "旅行"
+                },
+                {
+                  "word": "cloud",
+                  "pos": "n.",
+                  "meaning": "云"
+                }
+              ],
+              "sentenceTranslation": "如果我有翅膀，我就会在云层上方旅行。"
+            },
+            {
+              "subType": "truefalse",
+              "question": "True or False: The writer helped him because he knew the truth early.",
+              "questionCn": "判断：作者因为早点知道真相所以帮助了他。",
+              "answer": "false",
+              "explanation": "错误。原文说'If I had known the truth earlier, I would have helped him'，这是与过去事实相反的虚拟语气（实际上没有早点知道，也没有帮助他）。If+had done，主句would have done，表过去未实现的假设。",
+              "knowledgePoint": "虚拟语气：与过去相反，if+had done，主句would have done",
+              "vocabulary": [
+                {
+                  "word": "truth",
+                  "pos": "n.",
+                  "meaning": "真相"
+                },
+                {
+                  "word": "help",
+                  "pos": "v.",
+                  "meaning": "帮助"
+                },
+                {
+                  "word": "early",
+                  "pos": "adv.",
+                  "meaning": "早地"
+                }
+              ],
+              "sentenceTranslation": "如果我早点知道真相，我就会帮助他了。"
+            },
+            {
+              "subType": "choice",
+              "question": "What does the writer wish about his youth?",
+              "questionCn": "作者对自己的年轻时有什么愿望？",
+              "choices": [
+                "A. He wishes he had studied harder",
+                "B. He wishes he had more money",
+                "C. He wishes he had traveled more",
+                "D. He wishes he had a bird"
+              ],
+              "answer": "A",
+              "explanation": "原文：'I wish I had studied harder when I was young.'。wish后用虚拟语气，与过去事实相反用had done（had studied）。wish+从句：与过去相反用had done。表示后悔过去没有做某事。",
+              "knowledgePoint": "虚拟语气：wish+从句，与过去相反用had done",
+              "vocabulary": [
+                {
+                  "word": "study",
+                  "pos": "v.",
+                  "meaning": "学习"
+                },
+                {
+                  "word": "young",
+                  "pos": "adj.",
+                  "meaning": "年轻的"
+                },
+                {
+                  "word": "wish",
+                  "pos": "v.",
+                  "meaning": "希望"
+                }
+              ],
+              "sentenceTranslation": "我希望我年轻时更努力学习。"
+            }
+          ]
         }
       ]
     },
@@ -3669,13 +6056,13 @@
       "nameEn": "CET-4",
       "idPrefix": "c4",
       "description": "四级综合运用：从句嵌套、非谓语进阶、虚拟进阶、倒装综合、固定搭配与长难句结构分析，以句法结构为主线提升应试能力。v3.0.0新增词汇解析、全句翻译及阅读理解题型。",
-      "questionCount": 50,
+      "questionCount": 80,
       "distribution": {
-        "choice": 18,
-        "truefalse": 10,
-        "fillblank": 10,
-        "qa": 7,
-        "passage": 5
+        "choice": 30,
+        "truefalse": 16,
+        "fillblank": 16,
+        "qa": 10,
+        "passage": 8
       },
       "categories": [
         "从句综合运用",
@@ -5370,6 +7757,1227 @@
               "sentenceTranslation": "晚饭后，我们期待一起看电影。"
             }
           ]
+        },
+        {
+          "id": "c4_051",
+          "type": "choice",
+          "category": "从句综合运用",
+          "question": "Choose the correct word: The fact ___ she survived the accident is a miracle.",
+          "questionCn": "选择正确词：她在事故中幸存下来这个事实是个奇迹。",
+          "choices": [
+            "A. that",
+            "B. which",
+            "C. what",
+            "D. whose"
+          ],
+          "answer": "A",
+          "explanation": "同位语从句，that解释fact的内容（她幸存了），that只起连接作用不作成分且不可省。同位语从句vs定语从句：同位语从句that不作成分不可省；定语从句that作主/宾语可省。that解释名词内容=同位语从句。",
+          "knowledgePoint": "从句综合：同位语从句that解释名词内容（不作成分不可省）",
+          "vocabulary": [
+            {
+              "word": "fact",
+              "pos": "n.",
+              "meaning": "事实"
+            },
+            {
+              "word": "survive",
+              "pos": "v.",
+              "meaning": "幸存"
+            },
+            {
+              "word": "accident",
+              "pos": "n.",
+              "meaning": "事故"
+            },
+            {
+              "word": "miracle",
+              "pos": "n.",
+              "meaning": "奇迹"
+            }
+          ],
+          "sentenceTranslation": "她在事故中幸存下来这个事实是个奇迹。"
+        },
+        {
+          "id": "c4_052",
+          "type": "choice",
+          "category": "非谓语动词进阶",
+          "question": "Choose the correct form: With the problem ___, we felt relieved.",
+          "questionCn": "选择正确形式：问题解决了，我们松了口气。",
+          "choices": [
+            "A. solving",
+            "B. solved",
+            "C. to solve",
+            "D. being solved"
+          ],
+          "answer": "B",
+          "explanation": "独立主格结构With+n.+过去分词，problem与solve是被动关系（问题被解决），用过去分词solved。With+n.+done表被动/已完成；With+n.+doing表主动/正在进行；With+n.+to do表将来。问题已解决（被动+完成）→solved。",
+          "knowledgePoint": "非谓语动词：独立主格With+n.+done表被动完成",
+          "vocabulary": [
+            {
+              "word": "problem",
+              "pos": "n.",
+              "meaning": "问题"
+            },
+            {
+              "word": "solve",
+              "pos": "v.",
+              "meaning": "解决"
+            },
+            {
+              "word": "relieved",
+              "pos": "adj.",
+              "meaning": "松了口气的"
+            }
+          ],
+          "sentenceTranslation": "问题解决了，我们松了口气。"
+        },
+        {
+          "id": "c4_053",
+          "type": "choice",
+          "category": "虚拟语气进阶",
+          "question": "Choose the correct form: It is high time we ___ home.",
+          "questionCn": "选择正确形式：我们该回家了。",
+          "choices": [
+            "A. go",
+            "B. went",
+            "C. will go",
+            "D. to go"
+          ],
+          "answer": "B",
+          "explanation": "It is (high/about) time that+从句用虚拟语气，动词用过去式。It is high time we went home=我们该回家了。固定结构It is time+主语+过去式，表'该做某事了'。用过去式表虚拟（实际上还没做），暗示应立即行动。",
+          "knowledgePoint": "虚拟语气：It is (high) time + 从句用过去式",
+          "vocabulary": [
+            {
+              "word": "home",
+              "pos": "adv.",
+              "meaning": "回家"
+            },
+            {
+              "word": "high time",
+              "pos": "phr.",
+              "meaning": "该...的时候了"
+            }
+          ],
+          "sentenceTranslation": "我们该回家了。"
+        },
+        {
+          "id": "c4_054",
+          "type": "choice",
+          "category": "倒装句综合",
+          "question": "Choose the correct form: Only by working hard ___ your goals.",
+          "questionCn": "选择正确形式：只有努力工作你才能实现目标。",
+          "choices": [
+            "A. you can achieve",
+            "B. can you achieve",
+            "C. you achieve",
+            "D. achieve you"
+          ],
+          "answer": "B",
+          "explanation": "Only+状语（by working hard）放句首时，主句部分倒装（情态动词can提前）。结构：Only+状语+助/情/be+主语+动词原形。can you achieve=你能实现。部分倒装=助动词/情态动词/be动词提前。Only表'只有...才'。",
+          "knowledgePoint": "倒装句：Only+状语放句首，部分倒装can+主语+原形",
+          "vocabulary": [
+            {
+              "word": "goal",
+              "pos": "n.",
+              "meaning": "目标"
+            },
+            {
+              "word": "achieve",
+              "pos": "v.",
+              "meaning": "实现"
+            },
+            {
+              "word": "hard",
+              "pos": "adv.",
+              "meaning": "努力地"
+            }
+          ],
+          "sentenceTranslation": "只有努力工作你才能实现目标。"
+        },
+        {
+          "id": "c4_055",
+          "type": "choice",
+          "category": "固定搭配与介词",
+          "question": "Choose the correct preposition: She is very good ___ math but weak ___ English.",
+          "questionCn": "选择正确介词：她数学很好但英语不好。",
+          "choices": [
+            "A. at, at",
+            "B. in, in",
+            "C. at, in",
+            "D. in, at"
+          ],
+          "answer": "A",
+          "explanation": "be good at=擅长，be weak in/at=不擅长。两处都用at。good at+doing=擅长做某事。at是固定介词搭配。注意：be good at=擅长，be bad/poor at=不擅长，后都接at。",
+          "knowledgePoint": "固定搭配：be good at / be weak at（介词at）",
+          "vocabulary": [
+            {
+              "word": "math",
+              "pos": "n.",
+              "meaning": "数学"
+            },
+            {
+              "word": "English",
+              "pos": "n.",
+              "meaning": "英语"
+            },
+            {
+              "word": "weak",
+              "pos": "adj.",
+              "meaning": "弱的"
+            }
+          ],
+          "sentenceTranslation": "她数学很好但英语不好。"
+        },
+        {
+          "id": "c4_056",
+          "type": "choice",
+          "category": "长难句结构分析",
+          "question": "Choose the correct word: The professor, along with his assistants, ___ working on a new project.",
+          "questionCn": "选择正确词：教授和他的助手们正在做一个新项目。",
+          "choices": [
+            "A. is",
+            "B. are",
+            "C. have been",
+            "D. were"
+          ],
+          "answer": "A",
+          "explanation": "主语是The professor（单数），along with his assistants是插入语，不影响主谓一致，be动词用is。along with/together with/with/as well as等插入语不影响主语单复数。主语是professor（单数），用is。",
+          "knowledgePoint": "长难句：along with插入语不影响主谓一致",
+          "vocabulary": [
+            {
+              "word": "professor",
+              "pos": "n.",
+              "meaning": "教授"
+            },
+            {
+              "word": "assistant",
+              "pos": "n.",
+              "meaning": "助手"
+            },
+            {
+              "word": "project",
+              "pos": "n.",
+              "meaning": "项目"
+            }
+          ],
+          "sentenceTranslation": "教授和他的助手们正在做一个新项目。"
+        },
+        {
+          "id": "c4_057",
+          "type": "choice",
+          "category": "时态与语态综合",
+          "question": "Choose the correct form: The project ___ by the end of next month.",
+          "questionCn": "选择正确形式：项目将在下月底前完成。",
+          "choices": [
+            "A. will complete",
+            "B. will be completed",
+            "C. will have been completed",
+            "D. is completed"
+          ],
+          "answer": "C",
+          "explanation": "by the end of next month是将来的时间点，主句用将来完成时被动：will have been+过去分词。project与complete是被动关系（项目被完成）。将来完成时被动=will have been+过去分词，表将来某时间前完成。",
+          "knowledgePoint": "时态与语态：将来完成时被动will have been+done",
+          "vocabulary": [
+            {
+              "word": "project",
+              "pos": "n.",
+              "meaning": "项目"
+            },
+            {
+              "word": "complete",
+              "pos": "v.",
+              "meaning": "完成"
+            },
+            {
+              "word": "month",
+              "pos": "n.",
+              "meaning": "月"
+            }
+          ],
+          "sentenceTranslation": "项目将在下月底前完成。"
+        },
+        {
+          "id": "c4_058",
+          "type": "choice",
+          "category": "特殊句式",
+          "question": "Choose the correct form: It was in 2003 ___ he graduated from college.",
+          "questionCn": "选择正确形式：正是在2003年他从大学毕业的。",
+          "choices": [
+            "A. that",
+            "B. which",
+            "C. when",
+            "D. who"
+          ],
+          "answer": "A",
+          "explanation": "强调句结构：It is/was+被强调部分+that+其他。强调in 2003（时间状语），用that。判断强调句：去掉It is/was和that后句子仍完整（He graduated from college in 2003）。强调句中that不变who/which/when，一律用that。",
+          "knowledgePoint": "特殊句式：强调句It is/was...that...",
+          "vocabulary": [
+            {
+              "word": "graduate",
+              "pos": "v.",
+              "meaning": "毕业"
+            },
+            {
+              "word": "college",
+              "pos": "n.",
+              "meaning": "大学"
+            }
+          ],
+          "sentenceTranslation": "正是在2003年他从大学毕业的。"
+        },
+        {
+          "id": "c4_059",
+          "type": "choice",
+          "category": "从句综合运用",
+          "question": "Choose the correct word: ___ surprised us most was that he passed the exam.",
+          "questionCn": "选择正确词：最让我们惊讶的是他通过了考试。",
+          "choices": [
+            "A. That",
+            "B. What",
+            "C. Which",
+            "D. It"
+          ],
+          "answer": "B",
+          "explanation": "主语从句缺主语（什么让我们惊讶），用what引导。what=the thing that，在从句中作surprised的主语。that在从句中不作成分，从句缺主语时不能用that。What surprised us=让我们惊讶的事。",
+          "knowledgePoint": "从句综合：主语从句缺主语用what",
+          "vocabulary": [
+            {
+              "word": "surprise",
+              "pos": "v.",
+              "meaning": "使惊讶"
+            },
+            {
+              "word": "pass",
+              "pos": "v.",
+              "meaning": "通过"
+            },
+            {
+              "word": "exam",
+              "pos": "n.",
+              "meaning": "考试"
+            }
+          ],
+          "sentenceTranslation": "最让我们惊讶的是他通过了考试。"
+        },
+        {
+          "id": "c4_060",
+          "type": "choice",
+          "category": "非谓语动词进阶",
+          "question": "Choose the correct form: ___ from the top of the hill, the city looks beautiful.",
+          "questionCn": "选择正确形式：从山顶看下去，城市很美。",
+          "choices": [
+            "A. Seeing",
+            "B. Seen",
+            "C. To see",
+            "D. Having seen"
+          ],
+          "answer": "B",
+          "explanation": "分词状语，主语the city与see是被动关系（城市被看），用过去分词Seen。Seen from the top=When the city is seen from the top。过去分词表被动。主语是city（被看）不是人（看），所以用seen不用seeing。",
+          "knowledgePoint": "非谓语动词：过去分词作状语表被动（城市被看）",
+          "vocabulary": [
+            {
+              "word": "hill",
+              "pos": "n.",
+              "meaning": "山"
+            },
+            {
+              "word": "city",
+              "pos": "n.",
+              "meaning": "城市"
+            },
+            {
+              "word": "beautiful",
+              "pos": "adj.",
+              "meaning": "美丽的"
+            }
+          ],
+          "sentenceTranslation": "从山顶看下去，城市很美。"
+        },
+        {
+          "id": "c4_061",
+          "type": "choice",
+          "category": "倒装句综合",
+          "question": "Choose the correct form: So fast ___ that we could hardly catch up with him.",
+          "questionCn": "选择正确形式：他跑得太快了，我们几乎追不上他。",
+          "choices": [
+            "A. he ran",
+            "B. did he run",
+            "C. ran he",
+            "D. he did run"
+          ],
+          "answer": "B",
+          "explanation": "So+副词/形容词放句首时，主句部分倒装（助动词did提前）。结构：So+adv/adj+助/情/be+主语+动词。did he run=他跑。一般过去时用did提前，动词恢复原形run。So...that=如此...以至于。",
+          "knowledgePoint": "倒装句：So+adv放句首，部分倒装did+主语+原形",
+          "vocabulary": [
+            {
+              "word": "fast",
+              "pos": "adv.",
+              "meaning": "快地"
+            },
+            {
+              "word": "catch up with",
+              "pos": "phr.",
+              "meaning": "追上"
+            },
+            {
+              "word": "run",
+              "pos": "v.",
+              "meaning": "跑"
+            }
+          ],
+          "sentenceTranslation": "他跑得太快了，我们几乎追不上他。"
+        },
+        {
+          "id": "c4_062",
+          "type": "choice",
+          "category": "固定搭配与介词",
+          "question": "Choose the correct form: She is looking forward to ___ from you soon.",
+          "questionCn": "选择正确形式：她期待很快收到你的来信。",
+          "choices": [
+            "A. hear",
+            "B. hearing",
+            "C. be heard",
+            "D. have heard"
+          ],
+          "answer": "B",
+          "explanation": "look forward to中to是介词，后接动名词hearing。look forward to+doing sth=期待做某事。hear from sb=收到某人来信。to是介词不是不定式符号，后接名词/动名词。类似：be used to, pay attention to, object to后都接doing。",
+          "knowledgePoint": "固定搭配：look forward to + doing（to是介词）",
+          "vocabulary": [
+            {
+              "word": "look forward to",
+              "pos": "phr.",
+              "meaning": "期待"
+            },
+            {
+              "word": "hear from",
+              "pos": "phr.",
+              "meaning": "收到来信"
+            },
+            {
+              "word": "soon",
+              "pos": "adv.",
+              "meaning": "很快"
+            }
+          ],
+          "sentenceTranslation": "她期待很快收到你的来信。"
+        },
+        {
+          "id": "c4_063",
+          "type": "truefalse",
+          "category": "从句综合运用",
+          "question": "Judge true or false: The news which our team won the game excited everyone.",
+          "questionCn": "判断对错：我们队赢了比赛的消息让所有人兴奋。",
+          "answer": "false",
+          "explanation": "错误。解释news内容的同位语从句用that不用which。正确：The news that our team won the game excited everyone. that在同位语从句中不作成分不可省，which在从句中须作主/宾语。同位语从句用that，不用which。",
+          "knowledgePoint": "从句综合：同位语从句用that不用which",
+          "vocabulary": [
+            {
+              "word": "news",
+              "pos": "n.",
+              "meaning": "消息"
+            },
+            {
+              "word": "team",
+              "pos": "n.",
+              "meaning": "队"
+            },
+            {
+              "word": "game",
+              "pos": "n.",
+              "meaning": "比赛"
+            },
+            {
+              "word": "excite",
+              "pos": "v.",
+              "meaning": "使兴奋"
+            }
+          ],
+          "sentenceTranslation": "我们队赢了比赛的消息让所有人兴奋。"
+        },
+        {
+          "id": "c4_064",
+          "type": "truefalse",
+          "category": "非谓语动词进阶",
+          "question": "Judge true or false: The boy was seen enter the building at 9 PM.",
+          "questionCn": "判断对错：有人看见那个男孩晚上9点进入了大楼。",
+          "answer": "false",
+          "explanation": "错误。感官动词see的被动语态后接不定式to do。正确：The boy was seen to enter the building at 9 PM. 主动语态see sb do sth中省to，但被动语态be seen to do要还原to。see sb do→sb be seen to do。",
+          "knowledgePoint": "非谓语动词：感官动词被动语态还原to（be seen to do）",
+          "vocabulary": [
+            {
+              "word": "boy",
+              "pos": "n.",
+              "meaning": "男孩"
+            },
+            {
+              "word": "enter",
+              "pos": "v.",
+              "meaning": "进入"
+            },
+            {
+              "word": "building",
+              "pos": "n.",
+              "meaning": "大楼"
+            }
+          ],
+          "sentenceTranslation": "有人看见那个男孩晚上9点进入了大楼。"
+        },
+        {
+          "id": "c4_065",
+          "type": "truefalse",
+          "category": "虚拟语气进阶",
+          "question": "Judge true or false: The teacher suggested that the student studies harder.",
+          "questionCn": "判断对错：老师建议那个学生更努力学习。",
+          "answer": "false",
+          "explanation": "错误。suggest后的宾语从句用虚拟语气should+动词原形，should可省。正确：The teacher suggested that the student (should) study harder. suggest/recommend/demand/insist等后的从句用(should)+动词原形。study用原形不加s。",
+          "knowledgePoint": "虚拟语气：suggest后从句用(should)+动词原形",
+          "vocabulary": [
+            {
+              "word": "teacher",
+              "pos": "n.",
+              "meaning": "老师"
+            },
+            {
+              "word": "suggest",
+              "pos": "v.",
+              "meaning": "建议"
+            },
+            {
+              "word": "student",
+              "pos": "n.",
+              "meaning": "学生"
+            },
+            {
+              "word": "study",
+              "pos": "v.",
+              "meaning": "学习"
+            }
+          ],
+          "sentenceTranslation": "老师建议那个学生更努力学习。"
+        },
+        {
+          "id": "c4_066",
+          "type": "truefalse",
+          "category": "倒装句综合",
+          "question": "Judge true or false: Not only he is a good student, but also a talented musician.",
+          "questionCn": "判断对错：他不仅是个好学生，还是个有天赋的音乐家。",
+          "answer": "false",
+          "explanation": "错误。Not only放句首时部分倒装（be动词is提前）。正确：Not only is he a good student, but also a talented musician. Not only+助/情/be+主语。is提前→is he。Not only...but also=不仅...而且。",
+          "knowledgePoint": "倒装句：Not only放句首，部分倒装is+主语",
+          "vocabulary": [
+            {
+              "word": "student",
+              "pos": "n.",
+              "meaning": "学生"
+            },
+            {
+              "word": "talented",
+              "pos": "adj.",
+              "meaning": "有天赋的"
+            },
+            {
+              "word": "musician",
+              "pos": "n.",
+              "meaning": "音乐家"
+            }
+          ],
+          "sentenceTranslation": "他不仅是个好学生，还是个有天赋的音乐家。"
+        },
+        {
+          "id": "c4_067",
+          "type": "truefalse",
+          "category": "时态与语态综合",
+          "question": "Judge true or false: The car has been repairing by the mechanic for two hours.",
+          "questionCn": "判断对错：这辆车已经被机修工修了两个小时了。",
+          "answer": "false",
+          "explanation": "错误。车是被修的，应用现在完成时被动has been repaired，而不是现在分词repairing。正确：The car has been repaired by the mechanic for two hours. 现在完成时被动=have/has been+过去分词。be+done=被动。",
+          "knowledgePoint": "时态与语态：现在完成时被动has been+过去分词",
+          "vocabulary": [
+            {
+              "word": "car",
+              "pos": "n.",
+              "meaning": "汽车"
+            },
+            {
+              "word": "repair",
+              "pos": "v.",
+              "meaning": "修理"
+            },
+            {
+              "word": "mechanic",
+              "pos": "n.",
+              "meaning": "机修工"
+            }
+          ],
+          "sentenceTranslation": "这辆车已经被机修工修了两个小时了。"
+        },
+        {
+          "id": "c4_068",
+          "type": "truefalse",
+          "category": "特殊句式",
+          "question": "Judge true or false: It was not until he told me that I knew the truth.",
+          "questionCn": "判断对错：直到他告诉我，我才知道真相。",
+          "answer": "true",
+          "explanation": "正确。It was not until...that...=直到...才...，强调句结构。强调not until部分。去掉It was和that后仍完整：Not until he told me did I know the truth（倒装）。not until=直到...才，强调时用It is/was not until...that...",
+          "knowledgePoint": "特殊句式：强调句It was not until...that...（直到...才）",
+          "vocabulary": [
+            {
+              "word": "truth",
+              "pos": "n.",
+              "meaning": "真相"
+            },
+            {
+              "word": "tell",
+              "pos": "v.",
+              "meaning": "告诉"
+            },
+            {
+              "word": "until",
+              "pos": "prep.",
+              "meaning": "直到"
+            }
+          ],
+          "sentenceTranslation": "直到他告诉我，我才知道真相。"
+        },
+        {
+          "id": "c4_069",
+          "type": "fillblank",
+          "category": "从句综合运用",
+          "question": "Fill in the blank: The question ___ we should accept the offer needs discussion.",
+          "questionCn": "填空：我们是否应该接受这个提议需要讨论。",
+          "answer": "whether",
+          "explanation": "同位语从句解释question的内容，表'是否'用whether。whether可接or not，that不表'是否'。whether...or not=是否。that在同位语从句中不作成分不表'是否'。whether引导同位语从句表选择。",
+          "knowledgePoint": "从句综合：同位语从句表'是否'用whether",
+          "vocabulary": [
+            {
+              "word": "question",
+              "pos": "n.",
+              "meaning": "问题"
+            },
+            {
+              "word": "offer",
+              "pos": "n.",
+              "meaning": "提议"
+            },
+            {
+              "word": "discussion",
+              "pos": "n.",
+              "meaning": "讨论"
+            }
+          ],
+          "sentenceTranslation": "我们是否应该接受这个提议需要讨论。"
+        },
+        {
+          "id": "c4_070",
+          "type": "fillblank",
+          "category": "非谓语动词进阶",
+          "question": "Fill in the blank: ___ (not know) the answer, he remained silent.",
+          "questionCn": "填空：因为不知道答案，他保持沉默。",
+          "answer": "Not knowing",
+          "explanation": "现在分词作原因状语，主语he与know是主动关系（他知道/不知道），用现在分词knowing。否定形式在分词前加Not：Not knowing=Because he didn't know。现在分词表主动/与主句同时。主语he主动不知道→Not knowing。",
+          "knowledgePoint": "非谓语动词：现在分词否定Not doing作原因状语",
+          "vocabulary": [
+            {
+              "word": "answer",
+              "pos": "n.",
+              "meaning": "答案"
+            },
+            {
+              "word": "remain",
+              "pos": "v.",
+              "meaning": "保持"
+            },
+            {
+              "word": "silent",
+              "pos": "adj.",
+              "meaning": "沉默的"
+            }
+          ],
+          "sentenceTranslation": "因为不知道答案，他保持沉默。"
+        },
+        {
+          "id": "c4_071",
+          "type": "fillblank",
+          "category": "虚拟语气进阶",
+          "question": "Fill in the blank: I would rather you ___ (not tell) him the truth.",
+          "questionCn": "填空：我宁愿你没告诉他真相。",
+          "answer": "didn't tell",
+          "explanation": "would rather+从句用虚拟语气，与现在/将来相反用过去时，与过去相反用过去完成时。此处tell是现在/将来语境（没告诉他），用过去时didn't tell。would rather sb did sth=宁愿某人做某事。用过去式表虚拟。",
+          "knowledgePoint": "虚拟语气：would rather+从句用过去时",
+          "vocabulary": [
+            {
+              "word": "would rather",
+              "pos": "phr.",
+              "meaning": "宁愿"
+            },
+            {
+              "word": "tell",
+              "pos": "v.",
+              "meaning": "告诉"
+            },
+            {
+              "word": "truth",
+              "pos": "n.",
+              "meaning": "真相"
+            }
+          ],
+          "sentenceTranslation": "我宁愿你没告诉他真相。"
+        },
+        {
+          "id": "c4_072",
+          "type": "fillblank",
+          "category": "倒装句综合",
+          "question": "Fill in the blank: Rarely ___ (we see) such a beautiful sunset.",
+          "questionCn": "填空：我们很少看到如此美丽的日落。",
+          "answer": "do we see",
+          "explanation": "否定副词Rarely放句首时部分倒装（助动词do提前）。结构：Rarely+助/情/be+主语+动词原形。一般现在时用do提前，we see→do we see。Rarely=很少=seldom，否定词放句首引起倒装。",
+          "knowledgePoint": "倒装句：否定副词Rarely放句首，部分倒装do+主语+原形",
+          "vocabulary": [
+            {
+              "word": "rarely",
+              "pos": "adv.",
+              "meaning": "很少"
+            },
+            {
+              "word": "beautiful",
+              "pos": "adj.",
+              "meaning": "美丽的"
+            },
+            {
+              "word": "sunset",
+              "pos": "n.",
+              "meaning": "日落"
+            }
+          ],
+          "sentenceTranslation": "我们很少看到如此美丽的日落。"
+        },
+        {
+          "id": "c4_073",
+          "type": "fillblank",
+          "category": "固定搭配与介词",
+          "question": "Fill in the blank: She paid no attention ___ the warnings and continued driving.",
+          "questionCn": "填空：她没理会警告，继续开车。",
+          "answer": "to",
+          "explanation": "pay attention to sth=注意某事，固定搭配，to是介词。pay no attention to=不理会。to后接名词warnings。pay attention to中to是介词不是不定式。固定介词搭配需整体记忆。",
+          "knowledgePoint": "固定搭配：pay attention to（介词to）",
+          "vocabulary": [
+            {
+              "word": "warning",
+              "pos": "n.",
+              "meaning": "警告"
+            },
+            {
+              "word": "continue",
+              "pos": "v.",
+              "meaning": "继续"
+            },
+            {
+              "word": "drive",
+              "pos": "v.",
+              "meaning": "开车"
+            }
+          ],
+          "sentenceTranslation": "她没理会警告，继续开车。"
+        },
+        {
+          "id": "c4_074",
+          "type": "fillblank",
+          "category": "特殊句式",
+          "question": "Fill in the blank: It was Tom ___ broke the window yesterday.",
+          "questionCn": "填空：昨天是汤姆打破了窗户。",
+          "answer": "who",
+          "explanation": "强调句It was+被强调人+who/that+其他。强调Tom（人），用who或that。It was Tom who broke the window=Tom broke the window（强调Tom）。强调人用who/that，强调物用that。去掉It was和who/that后句子仍完整。",
+          "knowledgePoint": "特殊句式：强调句It was+人+who/that",
+          "vocabulary": [
+            {
+              "word": "break",
+              "pos": "v.",
+              "meaning": "打破"
+            },
+            {
+              "word": "window",
+              "pos": "n.",
+              "meaning": "窗户"
+            },
+            {
+              "word": "yesterday",
+              "pos": "adv.",
+              "meaning": "昨天"
+            }
+          ],
+          "sentenceTranslation": "昨天是汤姆打破了窗户。"
+        },
+        {
+          "id": "c4_075",
+          "type": "qa",
+          "category": "从句综合运用",
+          "question": "Combine into one sentence using an appositive clause: The news is exciting. Our team won the championship.",
+          "questionCn": "用同位语从句合并：我们的队赢得了冠军，这个消息很令人兴奋。",
+          "answer": "The news that our team won the championship is exciting.",
+          "explanation": "用that引导同位语从句解释news的内容。that只起连接作用不作成分不可省。结构：名词+that+从句（解释名词内容）。同位语从句vs定语从句：同位语从句that不作成分不可省；定语从句that作成分可省。",
+          "knowledgePoint": "从句综合：同位语从句that解释news内容",
+          "vocabulary": [
+            {
+              "word": "news",
+              "pos": "n.",
+              "meaning": "消息"
+            },
+            {
+              "word": "team",
+              "pos": "n.",
+              "meaning": "队"
+            },
+            {
+              "word": "championship",
+              "pos": "n.",
+              "meaning": "冠军"
+            },
+            {
+              "word": "exciting",
+              "pos": "adj.",
+              "meaning": "令人兴奋的"
+            }
+          ],
+          "sentenceTranslation": "我们的队赢得了冠军，这个消息很令人兴奋。"
+        },
+        {
+          "id": "c4_076",
+          "type": "qa",
+          "category": "非谓语动词进阶",
+          "question": "Rewrite using an absolute structure: As the weather was fine, we went for a picnic.",
+          "questionCn": "用独立主格改写：天气很好，我们去野餐了。",
+          "answer": "The weather being fine, we went for a picnic.",
+          "explanation": "独立主格结构：名词+分词（自带主语，与主句主语不同）。The weather being fine=As the weather was fine。weather与主句主语we不同，需自带主语。being fine=现在分词表主动/同时。独立主格=自带主语的分词状语。",
+          "knowledgePoint": "非谓语动词：独立主格名词+doing（自带主语的分词状语）",
+          "vocabulary": [
+            {
+              "word": "weather",
+              "pos": "n.",
+              "meaning": "天气"
+            },
+            {
+              "word": "fine",
+              "pos": "adj.",
+              "meaning": "好的"
+            },
+            {
+              "word": "picnic",
+              "pos": "n.",
+              "meaning": "野餐"
+            }
+          ],
+          "sentenceTranslation": "天气很好，我们去野餐了。"
+        },
+        {
+          "id": "c4_077",
+          "type": "qa",
+          "category": "倒装句综合",
+          "question": "Rewrite using inversion with 'No sooner': As soon as he arrived, the meeting began.",
+          "questionCn": "用No sooner倒装改写：他一到，会议就开始了。",
+          "answer": "No sooner had he arrived than the meeting began.",
+          "explanation": "No sooner...than...=一...就...，No sooner放句首时部分倒装（had提前）。结构：No sooner+had+主语+过去分词+than+从句。had he arrived=他到了。No sooner放句首倒装。had arrived=过去完成时。",
+          "knowledgePoint": "倒装句：No sooner+had+主语+过去分词+than",
+          "vocabulary": [
+            {
+              "word": "arrive",
+              "pos": "v.",
+              "meaning": "到达"
+            },
+            {
+              "word": "meeting",
+              "pos": "n.",
+              "meaning": "会议"
+            },
+            {
+              "word": "begin",
+              "pos": "v.",
+              "meaning": "开始"
+            }
+          ],
+          "sentenceTranslation": "他一到，会议就开始了。"
+        },
+        {
+          "id": "c4_078",
+          "type": "passage",
+          "category": "时态与语态综合",
+          "passage": "The new museum, which was completed last year, has attracted thousands of visitors. It was designed by a famous architect who has won many awards. The building is being renovated now because some problems were found in the roof. When the renovation is finished, an opening ceremony will be held. It is expected that the museum will have been visited by over a million people by the end of this year.",
+          "passageCn": "去年完工的新博物馆已经吸引了成千上万的游客。它由一位获得过许多奖项的著名建筑师设计。由于屋顶发现了一些问题，这座建筑目前正在修缮。修缮完成后将举行开幕式。预计到今年年底，参观博物馆的人数将超过一百万。",
+          "vocabulary": [
+            {
+              "word": "museum",
+              "pos": "n.",
+              "meaning": "博物馆"
+            },
+            {
+              "word": "complete",
+              "pos": "v.",
+              "meaning": "完工"
+            },
+            {
+              "word": "attract",
+              "pos": "v.",
+              "meaning": "吸引"
+            },
+            {
+              "word": "architect",
+              "pos": "n.",
+              "meaning": "建筑师"
+            },
+            {
+              "word": "renovate",
+              "pos": "v.",
+              "meaning": "修缮"
+            },
+            {
+              "word": "ceremony",
+              "pos": "n.",
+              "meaning": "仪式"
+            }
+          ],
+          "subQuestions": [
+            {
+              "subType": "choice",
+              "question": "What is happening to the building now?",
+              "questionCn": "现在建筑正在发生什么？",
+              "choices": [
+                "A. It is being renovated",
+                "B. It is being built",
+                "C. It is being sold",
+                "D. It is being destroyed"
+              ],
+              "answer": "A",
+              "explanation": "原文：'The building is being renovated now.'。is being renovated是现在进行时被动语态（is being+过去分词），表示此刻正在被修缮。现在进行时被动=be being+done。主语building与renovate是被动关系。",
+              "knowledgePoint": "时态与语态：现在进行时被动is being+过去分词",
+              "vocabulary": [
+                {
+                  "word": "renovate",
+                  "pos": "v.",
+                  "meaning": "修缮"
+                },
+                {
+                  "word": "building",
+                  "pos": "n.",
+                  "meaning": "建筑"
+                }
+              ],
+              "sentenceTranslation": "这座建筑目前正在修缮。"
+            },
+            {
+              "subType": "truefalse",
+              "question": "True or False: The museum was designed by an unknown architect.",
+              "questionCn": "判断：博物馆由一位不知名的建筑师设计。",
+              "answer": "false",
+              "explanation": "错误。原文说'a famous architect who has won many awards'（一位获得过许多奖项的著名建筑师），不是不知名的。was designed是一般过去时被动。has won是现在完成时。famous=著名的。",
+              "knowledgePoint": "时态与语态：一般过去时被动was designed + 现在完成时has won",
+              "vocabulary": [
+                {
+                  "word": "design",
+                  "pos": "v.",
+                  "meaning": "设计"
+                },
+                {
+                  "word": "architect",
+                  "pos": "n.",
+                  "meaning": "建筑师"
+                },
+                {
+                  "word": "famous",
+                  "pos": "adj.",
+                  "meaning": "著名的"
+                },
+                {
+                  "word": "award",
+                  "pos": "n.",
+                  "meaning": "奖项"
+                }
+              ],
+              "sentenceTranslation": "它由一位著名的建筑师设计。"
+            },
+            {
+              "subType": "choice",
+              "question": "What is expected by the end of this year?",
+              "questionCn": "到今年年底预计会怎样？",
+              "choices": [
+                "A. Over a million visitors",
+                "B. The museum will close",
+                "C. A new building will be built",
+                "D. The architect will retire"
+              ],
+              "answer": "A",
+              "explanation": "原文：'the museum will have been visited by over a million people by the end of this year.'。will have been visited是将来完成时被动（will have been+过去分词），表将来某时间前被动完成的动作。by the end of this year=到今年底。",
+              "knowledgePoint": "时态与语态：将来完成时被动will have been+过去分词",
+              "vocabulary": [
+                {
+                  "word": "visit",
+                  "pos": "v.",
+                  "meaning": "参观"
+                },
+                {
+                  "word": "million",
+                  "pos": "num.",
+                  "meaning": "百万"
+                },
+                {
+                  "word": "expect",
+                  "pos": "v.",
+                  "meaning": "预计"
+                }
+              ],
+              "sentenceTranslation": "到今年年底，参观人数将超过一百万。"
+            }
+          ]
+        },
+        {
+          "id": "c4_079",
+          "type": "passage",
+          "category": "从句综合运用",
+          "passage": "The reason why he failed the exam was that he had not prepared well. What surprised everyone was that he had always been a top student before. The teacher said that it was because he had spent too much time playing games. His parents, who were very worried, decided to have a talk with him. They hoped that he would realize the importance of studying and that he would catch up with his classmates soon.",
+          "passageCn": "他考试不及格的原因是他没有好好准备。让大家惊讶的是他以前一直是优等生。老师说这是因为他花了太多时间玩游戏。他的父母非常担心，决定和他谈一谈。他们希望他能认识到学习的重要性，尽快赶上同学们。",
+          "vocabulary": [
+            {
+              "word": "fail",
+              "pos": "v.",
+              "meaning": "不及格"
+            },
+            {
+              "word": "exam",
+              "pos": "n.",
+              "meaning": "考试"
+            },
+            {
+              "word": "prepare",
+              "pos": "v.",
+              "meaning": "准备"
+            },
+            {
+              "word": "top student",
+              "pos": "n.",
+              "meaning": "优等生"
+            },
+            {
+              "word": "worry",
+              "pos": "v.",
+              "meaning": "担心"
+            },
+            {
+              "word": "importance",
+              "pos": "n.",
+              "meaning": "重要性"
+            }
+          ],
+          "subQuestions": [
+            {
+              "subType": "choice",
+              "question": "Why did he fail the exam?",
+              "questionCn": "他为什么考试不及格？",
+              "choices": [
+                "A. Because he was sick",
+                "B. Because he had not prepared well",
+                "C. Because the exam was too hard",
+                "D. Because he was late"
+              ],
+              "answer": "B",
+              "explanation": "原文：'The reason why he failed the exam was that he had not prepared well.'。why引导定语从句修饰reason。that引导表语从句解释reason的内容。had not prepared是过去完成时（先于failed），表在考试前就没有好好准备。",
+              "knowledgePoint": "从句综合：why定语从句+that表语从句+过去完成时",
+              "vocabulary": [
+                {
+                  "word": "prepare",
+                  "pos": "v.",
+                  "meaning": "准备"
+                },
+                {
+                  "word": "reason",
+                  "pos": "n.",
+                  "meaning": "原因"
+                },
+                {
+                  "word": "why",
+                  "pos": "adv.",
+                  "meaning": "为什么"
+                }
+              ],
+              "sentenceTranslation": "他考试不及格的原因是他没有好好准备。"
+            },
+            {
+              "subType": "truefalse",
+              "question": "True or False: He had always been a poor student before.",
+              "questionCn": "判断：他以前一直是个差生。",
+              "answer": "false",
+              "explanation": "错误。原文说'he had always been a top student before'（以前一直是优等生），不是差生。had been是过去完成时（先于现在之前的状态）。top student=优等生，poor student=差生，意思相反。",
+              "knowledgePoint": "从句综合：宾语从句+过去完成时had been + 细节理解",
+              "vocabulary": [
+                {
+                  "word": "top student",
+                  "pos": "n.",
+                  "meaning": "优等生"
+                },
+                {
+                  "word": "before",
+                  "pos": "adv.",
+                  "meaning": "以前"
+                }
+              ],
+              "sentenceTranslation": "让大家惊讶的是他以前一直是优等生。"
+            },
+            {
+              "subType": "choice",
+              "question": "What did his parents hope?",
+              "questionCn": "他的父母希望什么？",
+              "choices": [
+                "A. That he would drop out of school",
+                "B. That he would realize the importance of studying",
+                "C. That he would change schools",
+                "D. That he would become a gamer"
+              ],
+              "answer": "B",
+              "explanation": "原文：'They hoped that he would realize the importance of studying.'。that引导宾语从句，would realize是过去将来时（从过去看将来）。would+动词原形=过去将来时。importance of studying=学习的重要性。",
+              "knowledgePoint": "从句综合：宾语从句that+过去将来时would+原形",
+              "vocabulary": [
+                {
+                  "word": "hope",
+                  "pos": "v.",
+                  "meaning": "希望"
+                },
+                {
+                  "word": "realize",
+                  "pos": "v.",
+                  "meaning": "认识到"
+                },
+                {
+                  "word": "importance",
+                  "pos": "n.",
+                  "meaning": "重要性"
+                },
+                {
+                  "word": "study",
+                  "pos": "v.",
+                  "meaning": "学习"
+                }
+              ],
+              "sentenceTranslation": "他们希望他能认识到学习的重要性。"
+            }
+          ]
+        },
+        {
+          "id": "c4_080",
+          "type": "passage",
+          "category": "特殊句式",
+          "passage": "It was not until he received the letter that he knew the truth. It was the letter that changed his life. Never before had he been so shocked. Not only did he read it again and again, but he also shared it with his best friend. Only after careful consideration did he decide to take action. So moved was he that he could not sleep that night. It was this experience that made him a stronger person.",
+          "passageCn": "直到收到那封信他才知道真相。正是那封信改变了他的一生。他以前从未如此震惊过。他不仅反复阅读，还分享给了最好的朋友。只有经过深思熟虑他才决定采取行动。他感动得那晚都睡不着。正是这段经历让他成了一个更坚强的人。",
+          "vocabulary": [
+            {
+              "word": "letter",
+              "pos": "n.",
+              "meaning": "信"
+            },
+            {
+              "word": "truth",
+              "pos": "n.",
+              "meaning": "真相"
+            },
+            {
+              "word": "shocked",
+              "pos": "adj.",
+              "meaning": "震惊的"
+            },
+            {
+              "word": "consideration",
+              "pos": "n.",
+              "meaning": "考虑"
+            },
+            {
+              "word": "action",
+              "pos": "n.",
+              "meaning": "行动"
+            },
+            {
+              "word": "experience",
+              "pos": "n.",
+              "meaning": "经历"
+            }
+          ],
+          "subQuestions": [
+            {
+              "subType": "choice",
+              "question": "What structure is used in 'It was not until he received the letter that he knew the truth'?",
+              "questionCn": "'It was not until he received the letter that he knew the truth'使用了什么结构？",
+              "choices": [
+                "A. Inversion",
+                "B. Emphasis (cleft sentence)",
+                "C. Passive voice",
+                "D. Subjunctive mood"
+              ],
+              "answer": "B",
+              "explanation": "It was not until...that...是强调句（分裂句），强调not until部分。结构：It is/was+被强调部分+that+其他。强调'直到收到信'这个时间状语。去掉It was和that后仍完整：Not until he received the letter did he know the truth（倒装形式）。",
+              "knowledgePoint": "特殊句式：强调句It was not until...that...",
+              "vocabulary": [
+                {
+                  "word": "receive",
+                  "pos": "v.",
+                  "meaning": "收到"
+                },
+                {
+                  "word": "letter",
+                  "pos": "n.",
+                  "meaning": "信"
+                },
+                {
+                  "word": "truth",
+                  "pos": "n.",
+                  "meaning": "真相"
+                }
+              ],
+              "sentenceTranslation": "直到收到那封信他才知道真相。"
+            },
+            {
+              "subType": "truefalse",
+              "question": "True or False: 'Never before had he been so shocked' uses normal word order.",
+              "questionCn": "判断：'Never before had he been so shocked'使用了正常语序。",
+              "answer": "false",
+              "explanation": "错误。Never before放句首时部分倒装（had提前）。正常语序是He had never been so shocked before。否定词Never放句首→部分倒装had+主语+been。部分倒装=助动词/情态动词/be动词提前。",
+              "knowledgePoint": "特殊句式：否定词Never放句首引起部分倒装had+主语",
+              "vocabulary": [
+                {
+                  "word": "never before",
+                  "pos": "phr.",
+                  "meaning": "以前从未"
+                },
+                {
+                  "word": "shocked",
+                  "pos": "adj.",
+                  "meaning": "震惊的"
+                }
+              ],
+              "sentenceTranslation": "他以前从未如此震惊过。"
+            },
+            {
+              "subType": "choice",
+              "question": "What structure is used in 'So moved was he that he could not sleep'?",
+              "questionCn": "'So moved was he that he could not sleep'使用了什么结构？",
+              "choices": [
+                "A. Emphasis",
+                "B. Inversion with So...that",
+                "C. Passive voice",
+                "D. Conditional"
+              ],
+              "answer": "B",
+              "explanation": "So+形容词放句首时部分倒装（be动词was提前）。结构：So+adj/adv+be/助/情+主语+that+从句。So moved was he=He was so moved that...。So...that=如此...以至于，So放句首倒装。",
+              "knowledgePoint": "特殊句式：So+adj放句首引起倒装+that从句",
+              "vocabulary": [
+                {
+                  "word": "moved",
+                  "pos": "adj.",
+                  "meaning": "感动的"
+                },
+                {
+                  "word": "sleep",
+                  "pos": "v.",
+                  "meaning": "睡觉"
+                }
+              ],
+              "sentenceTranslation": "他感动得那晚都睡不着。"
+            }
+          ]
         }
       ]
     },
@@ -5378,13 +8986,13 @@
       "nameEn": "CET-6",
       "idPrefix": "c6",
       "description": "六级高阶突破：复杂从句、非谓语高级用法、虚拟高阶、倒装省略综合、学术写作句式、语法歧义辨析与高级固定结构，侧重长难句与学术表达。v3.0.0新增词汇解析、全句翻译及阅读理解题型。",
-      "questionCount": 50,
+      "questionCount": 80,
       "distribution": {
-        "choice": 18,
-        "truefalse": 10,
-        "fillblank": 10,
-        "qa": 7,
-        "passage": 5
+        "choice": 30,
+        "truefalse": 16,
+        "fillblank": 16,
+        "qa": 10,
+        "passage": 8
       },
       "categories": [
         "复杂从句结构",
@@ -7169,6 +10777,1202 @@
                 }
               ],
               "sentenceTranslation": "尽管我们努力按照行程走，还是不断迷路。"
+            }
+          ]
+        },
+        {
+          "id": "c6_051",
+          "type": "choice",
+          "category": "复杂从句结构",
+          "question": "Choose the correct word: The day will come ___ people can travel to Mars.",
+          "questionCn": "选择正确词：人类能去火星旅行的那一天终将到来。",
+          "choices": [
+            "A. when",
+            "B. which",
+            "C. that",
+            "D. where"
+          ],
+          "answer": "A",
+          "explanation": "先行词The day表时间，在从句中作时间状语，用关系副词when。when=on which。that/which在定语从句中须作主/宾语不作状语。先行词表时间，从句缺时间状语用when。分隔定语从句：先行词与定语从句被will come隔开。",
+          "knowledgePoint": "复杂从句：分隔定语从句，先行词表时间用when",
+          "vocabulary": [
+            {
+              "word": "Mars",
+              "pos": "n.",
+              "meaning": "火星"
+            },
+            {
+              "word": "travel",
+              "pos": "v.",
+              "meaning": "旅行"
+            },
+            {
+              "word": "come",
+              "pos": "v.",
+              "meaning": "到来"
+            }
+          ],
+          "sentenceTranslation": "人类能去火星旅行的那一天终将到来。"
+        },
+        {
+          "id": "c6_052",
+          "type": "choice",
+          "category": "非谓语高级用法",
+          "question": "Choose the correct form: ___ from space, the earth looks like a blue ball.",
+          "questionCn": "选择正确形式：从太空看，地球像一个蓝色的球。",
+          "choices": [
+            "A. Seeing",
+            "B. Seen",
+            "C. To see",
+            "D. Having seen"
+          ],
+          "answer": "B",
+          "explanation": "过去分词作状语，主语the earth与see是被动关系（地球被看），用过去分词Seen。Seen from space=When the earth is seen from space。过去分词表被动。注意：逻辑主语是earth（被看）不是人（看），所以用seen不用seeing。",
+          "knowledgePoint": "非谓语高级：过去分词作状语表被动（逻辑主语earth被看）",
+          "vocabulary": [
+            {
+              "word": "space",
+              "pos": "n.",
+              "meaning": "太空"
+            },
+            {
+              "word": "earth",
+              "pos": "n.",
+              "meaning": "地球"
+            },
+            {
+              "word": "blue",
+              "pos": "adj.",
+              "meaning": "蓝色的"
+            }
+          ],
+          "sentenceTranslation": "从太空看，地球像一个蓝色的球。"
+        },
+        {
+          "id": "c6_053",
+          "type": "choice",
+          "category": "虚拟语气高阶",
+          "question": "Choose the correct form: If he ___ harder last year, he would have passed the exam.",
+          "questionCn": "选择正确形式：如果他去年更努力，他就能通过考试了。",
+          "choices": [
+            "A. studied",
+            "B. had studied",
+            "C. studies",
+            "D. would study"
+          ],
+          "answer": "B",
+          "explanation": "与过去事实相反的虚拟条件句：if从句用过去完成时had studied，主句用would have+过去分词。last year表过去，'如果去年更努力'与过去事实相反。结构：if+had done，主句would have done。表过去未实现的假设。",
+          "knowledgePoint": "虚拟语气：与过去相反，if+had done，主句would have done",
+          "vocabulary": [
+            {
+              "word": "hard",
+              "pos": "adv.",
+              "meaning": "努力地"
+            },
+            {
+              "word": "pass",
+              "pos": "v.",
+              "meaning": "通过"
+            },
+            {
+              "word": "exam",
+              "pos": "n.",
+              "meaning": "考试"
+            }
+          ],
+          "sentenceTranslation": "如果他去年更努力，他就能通过考试了。"
+        },
+        {
+          "id": "c6_054",
+          "type": "choice",
+          "category": "倒装与省略综合",
+          "question": "Choose the correct form: ___ , he would have succeeded.",
+          "questionCn": "选择正确形式：如果他再努力一些，他就能成功了。",
+          "choices": [
+            "A. If he worked harder",
+            "B. Had he worked harder",
+            "C. Did he work harder",
+            "D. Were he work harder"
+          ],
+          "answer": "B",
+          "explanation": "虚拟条件句省略if的倒装：Had+主语+过去分词=If+主语+had done。Had he worked harder=If he had worked harder。与过去相反的虚拟条件句省略if时，had提前倒装。省略if+had提前=虚拟倒装。主句would have succeeded。",
+          "knowledgePoint": "倒装与省略：虚拟条件句省略if，had提前倒装",
+          "vocabulary": [
+            {
+              "word": "work",
+              "pos": "v.",
+              "meaning": "工作/努力"
+            },
+            {
+              "word": "succeed",
+              "pos": "v.",
+              "meaning": "成功"
+            }
+          ],
+          "sentenceTranslation": "如果他再努力一些，他就能成功了。"
+        },
+        {
+          "id": "c6_055",
+          "type": "choice",
+          "category": "学术写作句式",
+          "question": "Choose the correct form: It is generally accepted ___ exercise is beneficial to health.",
+          "questionCn": "选择正确形式：人们普遍认为运动有益健康。",
+          "choices": [
+            "A. that",
+            "B. what",
+            "C. which",
+            "D. whether"
+          ],
+          "answer": "A",
+          "explanation": "It is accepted that...=人们认为...，that引导主语从句（it是形式主语）。从句成分完整（exercise is beneficial），不缺成分，用that。that只起连接作用不作成分。学术写作常用It is+过去分词+that从句（被动句式表客观）。",
+          "knowledgePoint": "学术写作：It is accepted that...（被动表客观）",
+          "vocabulary": [
+            {
+              "word": "accepted",
+              "pos": "adj.",
+              "meaning": "普遍接受的"
+            },
+            {
+              "word": "exercise",
+              "pos": "n.",
+              "meaning": "运动"
+            },
+            {
+              "word": "beneficial",
+              "pos": "adj.",
+              "meaning": "有益的"
+            },
+            {
+              "word": "health",
+              "pos": "n.",
+              "meaning": "健康"
+            }
+          ],
+          "sentenceTranslation": "人们普遍认为运动有益健康。"
+        },
+        {
+          "id": "c6_056",
+          "type": "choice",
+          "category": "语法歧义与辨析",
+          "question": "Choose the correct word: I will remember the day ___ we spent together forever.",
+          "questionCn": "选择正确词：我会永远记住我们一起度过的那一天。",
+          "choices": [
+            "A. when",
+            "B. which",
+            "C. what",
+            "D. in which"
+          ],
+          "answer": "B",
+          "explanation": "先行词the day，在从句中作spent的宾语（度过了那一天），用which/that。when=in/on which作时间状语不作宾语。区分：the day which we spent（which作宾语，spent the day）vs the day when we met（when作状语，met on the day）。判断关系词是否作成分。",
+          "knowledgePoint": "语法辨析：定语从句which作宾语vs when作状语",
+          "vocabulary": [
+            {
+              "word": "day",
+              "pos": "n.",
+              "meaning": "天"
+            },
+            {
+              "word": "spend",
+              "pos": "v.",
+              "meaning": "度过"
+            },
+            {
+              "word": "together",
+              "pos": "adv.",
+              "meaning": "一起"
+            },
+            {
+              "word": "forever",
+              "pos": "adv.",
+              "meaning": "永远"
+            }
+          ],
+          "sentenceTranslation": "我会永远记住我们一起度过的那一天。"
+        },
+        {
+          "id": "c6_057",
+          "type": "choice",
+          "category": "高级固定结构",
+          "question": "Choose the correct form: ___ had I sat down when the phone rang.",
+          "questionCn": "选择正确形式：我刚坐下电话就响了。",
+          "choices": [
+            "A. No sooner",
+            "B. Hardly",
+            "C. Scarcely",
+            "D. Barely"
+          ],
+          "answer": "A",
+          "explanation": "No sooner...than...=一...就...。No sooner had I sat down than the phone rang。No sooner放句首倒装（had提前）。Hardly...when...和Scarcely...when...也表'一...就'，但搭配不同：No sooner+than，Hardly/Scarcely+when。注意搭配不可混用。",
+          "knowledgePoint": "高级固定结构：No sooner...than...（一...就...，倒装）",
+          "vocabulary": [
+            {
+              "word": "sit down",
+              "pos": "phr.",
+              "meaning": "坐下"
+            },
+            {
+              "word": "phone",
+              "pos": "n.",
+              "meaning": "电话"
+            },
+            {
+              "word": "ring",
+              "pos": "v.",
+              "meaning": "响"
+            }
+          ],
+          "sentenceTranslation": "我刚坐下电话就响了。"
+        },
+        {
+          "id": "c6_058",
+          "type": "choice",
+          "category": "翻译与句型转换",
+          "question": "Choose the best translation: 直到老师解释了第二遍，学生们才理解这个概念。",
+          "questionCn": "选择最佳翻译：直到老师解释了第二遍，学生们才理解这个概念。",
+          "choices": [
+            "A. Not until the teacher explained it a second time did the students understand the concept.",
+            "B. The students didn't understand until the teacher explained it a second time.",
+            "C. Both A and B are correct",
+            "D. Neither is correct"
+          ],
+          "answer": "C",
+          "explanation": "两种翻译都正确：A用倒装（Not until放句首→did提前倒装），B用正常语序（not...until=直到...才）。Not until+状语放句首时倒装，放句中时不倒装。两种结构表达同一意思：直到...才。倒装和正常语序都可正确表达。",
+          "knowledgePoint": "翻译转换：Not until放句首倒装 vs 句中不倒装（两种都对）",
+          "vocabulary": [
+            {
+              "word": "explain",
+              "pos": "v.",
+              "meaning": "解释"
+            },
+            {
+              "word": "concept",
+              "pos": "n.",
+              "meaning": "概念"
+            },
+            {
+              "word": "understand",
+              "pos": "v.",
+              "meaning": "理解"
+            }
+          ],
+          "sentenceTranslation": "直到老师解释了第二遍，学生们才理解这个概念。"
+        },
+        {
+          "id": "c6_059",
+          "type": "choice",
+          "category": "复杂从句结构",
+          "question": "Choose the correct word: This is the most interesting book ___ I have ever read.",
+          "questionCn": "选择正确词：这是我读过的最有趣的书。",
+          "choices": [
+            "A. that",
+            "B. which",
+            "C. what",
+            "D. who"
+          ],
+          "answer": "A",
+          "explanation": "先行词有最高级most interesting修饰时，关系代词只能用that不能用which。规则：先行词有最高级/序数词/the only/the very修饰，或先行词既有人又有物时，用that不用which。what不能引导定语从句。",
+          "knowledgePoint": "复杂从句：先行词有最高级修饰用that不用which",
+          "vocabulary": [
+            {
+              "word": "interesting",
+              "pos": "adj.",
+              "meaning": "有趣的"
+            },
+            {
+              "word": "book",
+              "pos": "n.",
+              "meaning": "书"
+            },
+            {
+              "word": "read",
+              "pos": "v.",
+              "meaning": "读"
+            }
+          ],
+          "sentenceTranslation": "这是我读过的最有趣的书。"
+        },
+        {
+          "id": "c6_060",
+          "type": "choice",
+          "category": "非谓语高级用法",
+          "question": "Choose the correct form: Weather ___, we will go hiking tomorrow.",
+          "questionCn": "选择正确形式：天气允许的话，我们明天去远足。",
+          "choices": [
+            "A. permitting",
+            "B. permitted",
+            "C. to permit",
+            "D. being permitted"
+          ],
+          "answer": "A",
+          "explanation": "独立主格结构名词+现在分词，weather与permit是主动关系（天气允许），用现在分词permitting。Weather permitting=If weather permits。独立主格自带主语weather（与主句we不同）。现在分词表主动，过去分词表被动。天气主动允许→permitting。",
+          "knowledgePoint": "非谓语高级：独立主格名词+doing表主动（weather permitting）",
+          "vocabulary": [
+            {
+              "word": "weather",
+              "pos": "n.",
+              "meaning": "天气"
+            },
+            {
+              "word": "permit",
+              "pos": "v.",
+              "meaning": "允许"
+            },
+            {
+              "word": "hiking",
+              "pos": "n.",
+              "meaning": "远足"
+            }
+          ],
+          "sentenceTranslation": "天气允许的话，我们明天去远足。"
+        },
+        {
+          "id": "c6_061",
+          "type": "choice",
+          "category": "虚拟语气高阶",
+          "question": "Choose the correct form: Without your help, I ___ the task on time.",
+          "questionCn": "选择正确形式：没有你的帮助，我不可能按时完成任务。",
+          "choices": [
+            "A. wouldn't complete",
+            "B. wouldn't have completed",
+            "C. didn't complete",
+            "D. hadn't completed"
+          ],
+          "answer": "B",
+          "explanation": "含蓄虚拟语气，Without=If it had not been for（如果没有），表与过去事实相反。主句用would have+过去分词。Without your help=If you had not helped me。'没有帮助→不可能完成'是过去的假设，用would have completed。",
+          "knowledgePoint": "虚拟语气：含蓄虚拟Without=If it had not been for，主句would have done",
+          "vocabulary": [
+            {
+              "word": "help",
+              "pos": "n.",
+              "meaning": "帮助"
+            },
+            {
+              "word": "task",
+              "pos": "n.",
+              "meaning": "任务"
+            },
+            {
+              "word": "on time",
+              "pos": "phr.",
+              "meaning": "按时"
+            }
+          ],
+          "sentenceTranslation": "没有你的帮助，我不可能按时完成任务。"
+        },
+        {
+          "id": "c6_062",
+          "type": "choice",
+          "category": "倒装与省略综合",
+          "question": "Choose the correct form: Child ___, he knows a lot about science.",
+          "questionCn": "选择正确形式：虽然他是个孩子，但他懂很多科学知识。",
+          "choices": [
+            "A. as he is",
+            "B. as is he",
+            "C. he is as",
+            "D. is he as"
+          ],
+          "answer": "A",
+          "explanation": "as引导让步状语从句时用倒装：名词/形容词/动词原形+as+主语+be/助动词。Child as he is=Although he is a child。as=although/though但语序特殊。注意：名词放as前时不加冠词（Child不用A child）。表'虽然...但是'。",
+          "knowledgePoint": "倒装与省略：as让步倒装名词+as+主语+be=although",
+          "vocabulary": [
+            {
+              "word": "child",
+              "pos": "n.",
+              "meaning": "孩子"
+            },
+            {
+              "word": "science",
+              "pos": "n.",
+              "meaning": "科学"
+            },
+            {
+              "word": "as",
+              "pos": "conj.",
+              "meaning": "虽然"
+            }
+          ],
+          "sentenceTranslation": "虽然他是个孩子，但他懂很多科学知识。"
+        },
+        {
+          "id": "c6_063",
+          "type": "truefalse",
+          "category": "复杂从句结构",
+          "question": "Judge true or false: The reason why he was late was because he missed the bus.",
+          "questionCn": "判断对错：他迟到的原因是因为他没赶上公交车。",
+          "answer": "false",
+          "explanation": "错误。The reason...is/was that...中用that不用because，避免reason和because语义重复。正确：The reason why he was late was that he missed the bus. why引导定语从句修饰reason，that引导表语从句。reason和because不能同时用。",
+          "knowledgePoint": "复杂从句：The reason...that...不用because（避免语义重复）",
+          "vocabulary": [
+            {
+              "word": "reason",
+              "pos": "n.",
+              "meaning": "原因"
+            },
+            {
+              "word": "late",
+              "pos": "adj.",
+              "meaning": "迟的"
+            },
+            {
+              "word": "miss",
+              "pos": "v.",
+              "meaning": "错过"
+            },
+            {
+              "word": "bus",
+              "pos": "n.",
+              "meaning": "公交车"
+            }
+          ],
+          "sentenceTranslation": "他迟到的原因是他没赶上公交车。"
+        },
+        {
+          "id": "c6_064",
+          "type": "truefalse",
+          "category": "非谓语高级用法",
+          "question": "Judge true or false: The problem having been solved, we went home happily.",
+          "questionCn": "判断对错：问题解决后，我们高兴地回家了。",
+          "answer": "true",
+          "explanation": "正确。独立主格结构名词+分词完成式被动：The problem having been solved=After the problem had been solved。problem与solve是被动关系（问题被解决）且先于主句动作，用having been done（完成式被动）。自带主语problem（与主句we不同）。",
+          "knowledgePoint": "非谓语高级：独立主格名词+having been done表被动完成",
+          "vocabulary": [
+            {
+              "word": "problem",
+              "pos": "n.",
+              "meaning": "问题"
+            },
+            {
+              "word": "solve",
+              "pos": "v.",
+              "meaning": "解决"
+            },
+            {
+              "word": "happily",
+              "pos": "adv.",
+              "meaning": "高兴地"
+            }
+          ],
+          "sentenceTranslation": "问题解决后，我们高兴地回家了。"
+        },
+        {
+          "id": "c6_065",
+          "type": "truefalse",
+          "category": "虚拟语气高阶",
+          "question": "Judge true or false: If I would have known, I would have told you.",
+          "questionCn": "判断对错：如果我知道的话，我就告诉你了。",
+          "answer": "false",
+          "explanation": "错误。与过去相反的虚拟条件句if从句应用过去完成时had known，不能用would have known。正确：If I had known, I would have told you. if从句用had done，主句用would have done。would只在主句用，if从句不能用would。",
+          "knowledgePoint": "虚拟语气：if从句用had done不用would have done",
+          "vocabulary": [
+            {
+              "word": "know",
+              "pos": "v.",
+              "meaning": "知道"
+            },
+            {
+              "word": "tell",
+              "pos": "v.",
+              "meaning": "告诉"
+            }
+          ],
+          "sentenceTranslation": "如果我知道的话，我就告诉你了。"
+        },
+        {
+          "id": "c6_066",
+          "type": "truefalse",
+          "category": "倒装与省略综合",
+          "question": "Judge true or false: Were it not for your help, I would have failed.",
+          "questionCn": "判断对错：要不是你的帮助，我就失败了。",
+          "answer": "true",
+          "explanation": "正确。虚拟条件句省略if的倒装：Were it not for=If it were not for（要不是因为）。与现在/将来相反用were，were提前省if。Were it not for your help=If it were not for your help。省略if+were提前=虚拟倒装。",
+          "knowledgePoint": "倒装与省略：虚拟条件句省略if，were提前倒装",
+          "vocabulary": [
+            {
+              "word": "help",
+              "pos": "n.",
+              "meaning": "帮助"
+            },
+            {
+              "word": "fail",
+              "pos": "v.",
+              "meaning": "失败"
+            }
+          ],
+          "sentenceTranslation": "要不是你的帮助，我就失败了。"
+        },
+        {
+          "id": "c6_067",
+          "type": "truefalse",
+          "category": "语法歧义与辨析",
+          "question": "Judge true or false: 'The shooting of the hunters was terrible' is a sentence with no ambiguity.",
+          "questionCn": "判断对错：'猎人的射击很可怕'这句话没有歧义。",
+          "answer": "false",
+          "explanation": "错误。The shooting of the hunters有歧义：①猎人射击（shooting=射击，hunters是执行者）；②射击猎人（shooting=射击，hunters是承受者）。of可表动宾关系（射击猎人）或主谓关系（猎人射击）。这是名词化结构的典型歧义。",
+          "knowledgePoint": "语法辨析：名词化结构of表动宾/主谓关系的歧义",
+          "vocabulary": [
+            {
+              "word": "shooting",
+              "pos": "n.",
+              "meaning": "射击"
+            },
+            {
+              "word": "hunter",
+              "pos": "n.",
+              "meaning": "猎人"
+            },
+            {
+              "word": "terrible",
+              "pos": "adj.",
+              "meaning": "可怕的"
+            },
+            {
+              "word": "ambiguity",
+              "pos": "n.",
+              "meaning": "歧义"
+            }
+          ],
+          "sentenceTranslation": "猎人的射击很可怕。（或：射击猎人很可怕。）"
+        },
+        {
+          "id": "c6_068",
+          "type": "truefalse",
+          "category": "高级固定结构",
+          "question": "Judge true or false: The more you practice, the better you will become.",
+          "questionCn": "判断对错：你练习得越多，就会变得越好。",
+          "answer": "true",
+          "explanation": "正确。The+比较级..., the+比较级...=越...越...。The more you practice=你练习越多，the better you will become=你变得越好。两个the+比较级对应，表两个事物同向变化。固定结构：The+比较级..., the+比较级...",
+          "knowledgePoint": "高级固定结构：The+比较级..., the+比较级...（越...越...）",
+          "vocabulary": [
+            {
+              "word": "practice",
+              "pos": "v.",
+              "meaning": "练习"
+            },
+            {
+              "word": "better",
+              "pos": "adj.",
+              "meaning": "更好的"
+            },
+            {
+              "word": "become",
+              "pos": "v.",
+              "meaning": "变成"
+            }
+          ],
+          "sentenceTranslation": "你练习得越多，就会变得越好。"
+        },
+        {
+          "id": "c6_069",
+          "type": "fillblank",
+          "category": "复杂从句结构",
+          "question": "Fill in the blank: He is the only one of the students who ___ passed the exam.",
+          "questionCn": "填空：他是唯一通过考试的学生。",
+          "answer": "has",
+          "explanation": "在the only one of+n.+复数+定语从句中，定语从句修饰the only one（单数），谓语用单数has。one of+n.+复数+从句时从句修饰复数用复数；the only one of+n.+复数+从句时从句修饰the only one用单数。关键看the only one。",
+          "knowledgePoint": "复杂从句：the only one of+复数，从句修饰the only one用单数",
+          "vocabulary": [
+            {
+              "word": "student",
+              "pos": "n.",
+              "meaning": "学生"
+            },
+            {
+              "word": "pass",
+              "pos": "v.",
+              "meaning": "通过"
+            },
+            {
+              "word": "exam",
+              "pos": "n.",
+              "meaning": "考试"
+            }
+          ],
+          "sentenceTranslation": "他是唯一通过考试的学生。"
+        },
+        {
+          "id": "c6_070",
+          "type": "fillblank",
+          "category": "非谓语高级用法",
+          "question": "Fill in the blank: ___ (not finish) his homework, he was not allowed to watch TV.",
+          "questionCn": "填空：因为没完成作业，他不许看电视。",
+          "answer": "Not having finished",
+          "explanation": "现在分词完成式的否定形式作原因状语。Not having finished=Because he had not finished。先没完成作业（先于主句）→不许看TV（后），用Having done的完成式表先于主句，否定加Not在前。主语he主动没完成→Not having finished。",
+          "knowledgePoint": "非谓语高级：Not having done作原因状语（否定完成式，先于主句）",
+          "vocabulary": [
+            {
+              "word": "homework",
+              "pos": "n.",
+              "meaning": "作业"
+            },
+            {
+              "word": "finish",
+              "pos": "v.",
+              "meaning": "完成"
+            },
+            {
+              "word": "allow",
+              "pos": "v.",
+              "meaning": "允许"
+            },
+            {
+              "word": "watch",
+              "pos": "v.",
+              "meaning": "观看"
+            }
+          ],
+          "sentenceTranslation": "因为没完成作业，他不许看电视。"
+        },
+        {
+          "id": "c6_071",
+          "type": "fillblank",
+          "category": "虚拟语气高阶",
+          "question": "Fill in the blank: It is essential that every student ___ (wear) a uniform.",
+          "questionCn": "填空：每个学生都必须穿校服。",
+          "answer": "wear",
+          "explanation": "It is essential that+从句用虚拟语气should+动词原形，should可省。essential/important/necessary/urgent等形容词后的主语从句用(should)+动词原形。wear用原形不加s。这类表'必须/重要'的形容词后从句用虚拟语气。",
+          "knowledgePoint": "虚拟语气：It is essential that+(should)+动词原形",
+          "vocabulary": [
+            {
+              "word": "essential",
+              "pos": "adj.",
+              "meaning": "必须的"
+            },
+            {
+              "word": "student",
+              "pos": "n.",
+              "meaning": "学生"
+            },
+            {
+              "word": "wear",
+              "pos": "v.",
+              "meaning": "穿"
+            },
+            {
+              "word": "uniform",
+              "pos": "n.",
+              "meaning": "校服"
+            }
+          ],
+          "sentenceTranslation": "每个学生都必须穿校服。"
+        },
+        {
+          "id": "c6_072",
+          "type": "fillblank",
+          "category": "倒装与省略综合",
+          "question": "Fill in the blank: ___ it not for the rain, we would have a picnic.",
+          "questionCn": "填空：要不是下雨，我们就去野餐了。",
+          "answer": "Were",
+          "explanation": "虚拟条件句省略if的倒装：Were it not for=If it were not for（要不是因为）。与现在事实相反用were，were提前省if。Were it not for the rain=If it were not for the rain。省略if+were提前=虚拟倒装。",
+          "knowledgePoint": "倒装与省略：虚拟条件句省略if，were提前倒装",
+          "vocabulary": [
+            {
+              "word": "rain",
+              "pos": "n.",
+              "meaning": "雨"
+            },
+            {
+              "word": "picnic",
+              "pos": "n.",
+              "meaning": "野餐"
+            }
+          ],
+          "sentenceTranslation": "要不是下雨，我们就去野餐了。"
+        },
+        {
+          "id": "c6_073",
+          "type": "fillblank",
+          "category": "语法歧义与辨析",
+          "question": "Fill in the blank: I have no doubt ___ he will succeed.",
+          "questionCn": "填空：我毫不怀疑他会成功。",
+          "answer": "that",
+          "explanation": "同位语从句，that解释doubt的内容（他会成功）。that只起连接作用不作成分。have no doubt that=毫不怀疑。doubt的肯定句用whether/if（怀疑是否），否定句/疑问句用that（不怀疑）。no doubt→that。",
+          "knowledgePoint": "语法辨析：have no doubt that vs doubt whether（肯定vs否定）",
+          "vocabulary": [
+            {
+              "word": "doubt",
+              "pos": "n.",
+              "meaning": "怀疑"
+            },
+            {
+              "word": "succeed",
+              "pos": "v.",
+              "meaning": "成功"
+            }
+          ],
+          "sentenceTranslation": "我毫不怀疑他会成功。"
+        },
+        {
+          "id": "c6_074",
+          "type": "fillblank",
+          "category": "高级固定结构",
+          "question": "Fill in the blank: I would rather read a book ___ watch TV.",
+          "questionCn": "填空：我宁愿看书也不看电视。",
+          "answer": "than",
+          "explanation": "would rather...than...=宁愿...也不...。固定结构，rather和than搭配。would rather do A than do B=宁愿做A不做B。read a book=看书，watch TV=看电视。rather在前than在后，连接两个并列动词。",
+          "knowledgePoint": "高级固定结构：would rather...than...（宁愿...也不...）",
+          "vocabulary": [
+            {
+              "word": "rather",
+              "pos": "adv.",
+              "meaning": "宁愿"
+            },
+            {
+              "word": "read",
+              "pos": "v.",
+              "meaning": "读"
+            },
+            {
+              "word": "watch",
+              "pos": "v.",
+              "meaning": "观看"
+            },
+            {
+              "word": "TV",
+              "pos": "n.",
+              "meaning": "电视"
+            }
+          ],
+          "sentenceTranslation": "我宁愿看书也不看电视。"
+        },
+        {
+          "id": "c6_075",
+          "type": "qa",
+          "category": "复杂从句结构",
+          "question": "Combine using a non-restrictive relative clause: Einstein developed the theory of relativity. He was a great scientist.",
+          "questionCn": "用非限制性定语从句合并：爱因斯坦提出了相对论。他是一位伟大的科学家。",
+          "answer": "Einstein, who was a great scientist, developed the theory of relativity.",
+          "explanation": "用who引导非限制性定语从句，逗号隔开补充说明Einstein。who was a great scientist=他是一位伟大的科学家。非限制性定语从句用逗号隔开，补充说明先行词，不能用that。who指人，逗号隔开=非限制性。",
+          "knowledgePoint": "复杂从句：非限制性定语从句who（逗号隔开，不能用that）",
+          "vocabulary": [
+            {
+              "word": "develop",
+              "pos": "v.",
+              "meaning": "提出"
+            },
+            {
+              "word": "theory",
+              "pos": "n.",
+              "meaning": "理论"
+            },
+            {
+              "word": "relativity",
+              "pos": "n.",
+              "meaning": "相对论"
+            },
+            {
+              "word": "scientist",
+              "pos": "n.",
+              "meaning": "科学家"
+            }
+          ],
+          "sentenceTranslation": "爱因斯坦是一位伟大的科学家，他提出了相对论。"
+        },
+        {
+          "id": "c6_076",
+          "type": "qa",
+          "category": "虚拟语气高阶",
+          "question": "Rewrite using mixed conditional (错综时间虚拟): If I had studied medicine, I would be a doctor now.",
+          "questionCn": "用错综时间虚拟改写：如果我当初学医了，我现在就是一名医生了。",
+          "answer": "If I had studied medicine, I would be a doctor now.",
+          "explanation": "错综时间虚拟条件句：if从句与过去相反（had studied），主句与现在相反（would be）。条件发生在过去（当初学医），结果发生在现在（现在是医生）。从句用had done（过去），主句用would+原形（现在）。两半时态不同=错综虚拟。",
+          "knowledgePoint": "虚拟语气：错综时间条件句（if+had done，主句would+原形）",
+          "vocabulary": [
+            {
+              "word": "medicine",
+              "pos": "n.",
+              "meaning": "医学"
+            },
+            {
+              "word": "doctor",
+              "pos": "n.",
+              "meaning": "医生"
+            },
+            {
+              "word": "study",
+              "pos": "v.",
+              "meaning": "学习"
+            }
+          ],
+          "sentenceTranslation": "如果我当初学医了，我现在就是一名医生了。"
+        },
+        {
+          "id": "c6_077",
+          "type": "qa",
+          "category": "翻译与句型转换",
+          "question": "Translate using inversion with 'Under no circumstances': 你绝不能向任何人透露这个秘密。",
+          "questionCn": "用Under no circumstances倒装翻译：你绝不能向任何人透露这个秘密。",
+          "answer": "Under no circumstances should you reveal the secret to anyone.",
+          "explanation": "Under no circumstances=绝不能，否定短语放句首时部分倒装（情态动词should提前）。结构：Under no circumstances+助/情/be+主语+动词原形。should you reveal=你应该透露（倒装）。否定短语放句首→部分倒装。reveal sth to sb=向某人透露某事。",
+          "knowledgePoint": "翻译转换：否定短语Under no circumstances放句首倒装",
+          "vocabulary": [
+            {
+              "word": "circumstance",
+              "pos": "n.",
+              "meaning": "情况"
+            },
+            {
+              "word": "reveal",
+              "pos": "v.",
+              "meaning": "透露"
+            },
+            {
+              "word": "secret",
+              "pos": "n.",
+              "meaning": "秘密"
+            }
+          ],
+          "sentenceTranslation": "你绝不能向任何人透露这个秘密。"
+        },
+        {
+          "id": "c6_078",
+          "type": "passage",
+          "category": "非谓语高级用法",
+          "passage": "Having been informed of the delay, the passengers waited patiently. The flight, scheduled for 9 AM, was delayed due to bad weather. Frustrated by the long wait, some passengers complained to the staff. The airline, having apologized for the inconvenience, offered free meals. With the weather improving, the flight was expected to take off soon. The passengers, encouraged by the news, felt much better. By the time the plane finally departed, everyone had been waiting for over three hours.",
+          "passageCn": "得知延误后，乘客们耐心等待。原定上午9点的航班因恶劣天气延误。长时间等待让一些乘客向工作人员投诉。航空公司为不便道了歉并提供了免费餐食。随着天气好转，航班预计很快起飞。乘客们受到这个消息的鼓舞，感觉好多了。等飞机最终起飞时，大家已经等了三个多小时。",
+          "vocabulary": [
+            {
+              "word": "inform",
+              "pos": "v.",
+              "meaning": "通知"
+            },
+            {
+              "word": "delay",
+              "pos": "n./v.",
+              "meaning": "延误"
+            },
+            {
+              "word": "passenger",
+              "pos": "n.",
+              "meaning": "乘客"
+            },
+            {
+              "word": "frustrate",
+              "pos": "v.",
+              "meaning": "使沮丧"
+            },
+            {
+              "word": "inconvenience",
+              "pos": "n.",
+              "meaning": "不便"
+            },
+            {
+              "word": "depart",
+              "pos": "v.",
+              "meaning": "起飞/出发"
+            }
+          ],
+          "subQuestions": [
+            {
+              "subType": "choice",
+              "question": "What structure is used in 'Having been informed of the delay'?",
+              "questionCn": "'Having been informed of the delay'使用了什么结构？",
+              "choices": [
+                "A. Present participle (active)",
+                "B. Perfect participle passive (having been done)",
+                "C. Past participle",
+                "D. Infinitive"
+              ],
+              "answer": "B",
+              "explanation": "Having been informed是现在分词完成式被动（having been+过去分词），表先于主句的被动动作。passengers与inform是被动关系（乘客被通知），且先于waited（先通知再等待）。having been done=完成式被动，表先于主句的被动动作。",
+              "knowledgePoint": "非谓语高级：having been done完成式被动（先于主句的被动动作）",
+              "vocabulary": [
+                {
+                  "word": "inform",
+                  "pos": "v.",
+                  "meaning": "通知"
+                },
+                {
+                  "word": "delay",
+                  "pos": "n.",
+                  "meaning": "延误"
+                }
+              ],
+              "sentenceTranslation": "得知延误后，乘客们耐心等待。"
+            },
+            {
+              "subType": "truefalse",
+              "question": "True or False: 'Frustrated by the long wait' is an active participle phrase.",
+              "questionCn": "判断：'Frustrated by the long wait'是主动分词短语。",
+              "answer": "false",
+              "explanation": "错误。Frustrated是过去分词，表被动（乘客被沮丧），不是主动。主语passengers与frustrate是被动关系（被等待搞得沮丧）。过去分词表被动/完成，现在分词表主动/进行。Frustrated by=被...沮丧。",
+              "knowledgePoint": "非谓语高级：过去分词Frustrated表被动（被沮丧）",
+              "vocabulary": [
+                {
+                  "word": "frustrate",
+                  "pos": "v.",
+                  "meaning": "使沮丧"
+                },
+                {
+                  "word": "wait",
+                  "pos": "n.",
+                  "meaning": "等待"
+                }
+              ],
+              "sentenceTranslation": "长时间等待让一些乘客向工作人员投诉。"
+            },
+            {
+              "subType": "choice",
+              "question": "What does 'With the weather improving' express?",
+              "questionCn": "'With the weather improving'表达了什么？",
+              "choices": [
+                "A. A completed action",
+                "B. An independent structure with active meaning",
+                "C. A passive action",
+                "D. A future action"
+              ],
+              "answer": "B",
+              "explanation": "With+n.+现在分词=独立主格结构表主动正在进行。weather与improve是主动关系（天气好转），用现在分词improving。With+n.+doing表主动/进行；With+n.+done表被动/完成；With+n.+to do表将来。天气主动好转→improving。",
+              "knowledgePoint": "非谓语高级：With+n.+doing独立主格表主动进行",
+              "vocabulary": [
+                {
+                  "word": "weather",
+                  "pos": "n.",
+                  "meaning": "天气"
+                },
+                {
+                  "word": "improve",
+                  "pos": "v.",
+                  "meaning": "好转"
+                }
+              ],
+              "sentenceTranslation": "随着天气好转，航班预计很快起飞。"
+            }
+          ]
+        },
+        {
+          "id": "c6_079",
+          "type": "passage",
+          "category": "虚拟语气高阶",
+          "passage": "If the scientist had published his findings earlier, many lives would have been saved. Had he not been so modest, he would have received the Nobel Prize sooner. It is high time that the scientific community recognized his contribution. The committee insists that he be awarded a special honor. Without his discovery, thousands of patients would still be suffering today. He wishes he had made the discovery even earlier, for more lives could have been saved.",
+          "passageCn": "如果这位科学家早些发表他的发现，许多生命就会被拯救。要不是他那么谦虚，他早就能获得诺贝尔奖了。科学界早该认识到他的贡献了。委员会坚持授予他特别荣誉。要没有他的发现，今天成千上万的病人仍将受苦。他希望自己能更早做出这个发现，因为更多生命就能被拯救。",
+          "vocabulary": [
+            {
+              "word": "publish",
+              "pos": "v.",
+              "meaning": "发表"
+            },
+            {
+              "word": "finding",
+              "pos": "n.",
+              "meaning": "发现"
+            },
+            {
+              "word": "modest",
+              "pos": "adj.",
+              "meaning": "谦虚的"
+            },
+            {
+              "word": "Nobel Prize",
+              "pos": "n.",
+              "meaning": "诺贝尔奖"
+            },
+            {
+              "word": "contribution",
+              "pos": "n.",
+              "meaning": "贡献"
+            },
+            {
+              "word": "discovery",
+              "pos": "n.",
+              "meaning": "发现"
+            }
+          ],
+          "subQuestions": [
+            {
+              "subType": "choice",
+              "question": "What type of conditional is used in 'If the scientist had published...many lives would have been saved'?",
+              "questionCn": "'If the scientist had published...many lives would have been saved'使用了什么条件句？",
+              "choices": [
+                "A. Mixed conditional (present result)",
+                "B. Past unreal conditional (both past)",
+                "C. Real conditional",
+                "D. Future conditional"
+              ],
+              "answer": "B",
+              "explanation": "与过去事实相反的虚拟条件句：if从句had done（had published），主句would have done（would have been saved）。两半都与过去相反。past unreal conditional=与过去相反的虚拟。结构：if+had done，主句would have done。",
+              "knowledgePoint": "虚拟语气：与过去相反的条件句if+had done，主句would have done",
+              "vocabulary": [
+                {
+                  "word": "publish",
+                  "pos": "v.",
+                  "meaning": "发表"
+                },
+                {
+                  "word": "save",
+                  "pos": "v.",
+                  "meaning": "拯救"
+                }
+              ],
+              "sentenceTranslation": "如果这位科学家早些发表他的发现，许多生命就会被拯救。"
+            },
+            {
+              "subType": "truefalse",
+              "question": "True or False: 'Had he not been so modest' is an inverted conditional without 'if'.",
+              "questionCn": "判断：'Had he not been so modest'是省略if的倒装条件句。",
+              "answer": "true",
+              "explanation": "正确。Had he not been so modest=If he had not been so modest，省略if后had提前倒装。与过去相反的虚拟条件句省if时had提前。否定形式Had he not been=If he had not been。省略if+had提前=虚拟倒装。",
+              "knowledgePoint": "虚拟语气：条件句省略if，had提前倒装（否定形式）",
+              "vocabulary": [
+                {
+                  "word": "modest",
+                  "pos": "adj.",
+                  "meaning": "谦虚的"
+                }
+              ],
+              "sentenceTranslation": "要不是他那么谦虚，他早就能获得诺贝尔奖了。"
+            },
+            {
+              "subType": "choice",
+              "question": "What mood is used in 'the committee insists that he be awarded'?",
+              "questionCn": "'the committee insists that he be awarded'使用了什么语气？",
+              "choices": [
+                "A. Indicative",
+                "B. Subjunctive (should+base form)",
+                "C. Imperative",
+                "D. Conditional"
+              ],
+              "answer": "B",
+              "explanation": "insist后的宾语从句用虚拟语气should+动词原形，should可省。be awarded是be的原形被动（be+过去分词awarded）。insist/suggest/demand/recommend等动词后从句用(should)+动词原形。be用原形不用is/was。",
+              "knowledgePoint": "虚拟语气：insist后从句用(should)+动词原形被动",
+              "vocabulary": [
+                {
+                  "word": "committee",
+                  "pos": "n.",
+                  "meaning": "委员会"
+                },
+                {
+                  "word": "insist",
+                  "pos": "v.",
+                  "meaning": "坚持"
+                },
+                {
+                  "word": "award",
+                  "pos": "v.",
+                  "meaning": "授予"
+                }
+              ],
+              "sentenceTranslation": "委员会坚持授予他特别荣誉。"
+            }
+          ]
+        },
+        {
+          "id": "c6_080",
+          "type": "passage",
+          "category": "高级固定结构",
+          "passage": "The harder you work, the luckier you get. No sooner had the researcher published his paper than it was cited by hundreds of scholars. Scarcely had the news spread when invitations poured in from around the world. The more he was recognized, the more humble he became. He would rather spend time in the lab than attend social events. Try as he might to explain his theory, few people understood it at first. It was not until years later that his work was fully appreciated.",
+          "passageCn": "你越努力，就越幸运。这位研究者刚发表论文，就被数百位学者引用。消息刚传开，世界各地的邀请就蜂拥而至。他越受认可，就越谦虚。他宁愿在实验室度过时光也不愿参加社交活动。尽管他努力解释自己的理论，起初很少有人理解。直到多年以后，他的工作才被充分认可。",
+          "vocabulary": [
+            {
+              "word": "lucky",
+              "pos": "adj.",
+              "meaning": "幸运的"
+            },
+            {
+              "word": "researcher",
+              "pos": "n.",
+              "meaning": "研究者"
+            },
+            {
+              "word": "cite",
+              "pos": "v.",
+              "meaning": "引用"
+            },
+            {
+              "word": "humble",
+              "pos": "adj.",
+              "meaning": "谦虚的"
+            },
+            {
+              "word": "appreciate",
+              "pos": "v.",
+              "meaning": "认可/欣赏"
+            }
+          ],
+          "subQuestions": [
+            {
+              "subType": "choice",
+              "question": "What structure is used in 'The harder you work, the luckier you get'?",
+              "questionCn": "'The harder you work, the luckier you get'使用了什么结构？",
+              "choices": [
+                "A. No sooner...than",
+                "B. The+比较级..., the+比较级...",
+                "C. Would rather...than",
+                "D. Try as"
+              ],
+              "answer": "B",
+              "explanation": "The+比较级..., the+比较级...=越...越...。The harder you work=你越努力，the luckier you get=你越幸运。两个the+比较级对应，表两事物同向变化。hard→harder（比较级），lucky→luckier（比较级）。固定结构。",
+              "knowledgePoint": "高级固定结构：The+比较级..., the+比较级...（越...越...）",
+              "vocabulary": [
+                {
+                  "word": "hard",
+                  "pos": "adv.",
+                  "meaning": "努力地"
+                },
+                {
+                  "word": "lucky",
+                  "pos": "adj.",
+                  "meaning": "幸运的"
+                }
+              ],
+              "sentenceTranslation": "你越努力，就越幸运。"
+            },
+            {
+              "subType": "truefalse",
+              "question": "True or False: 'No sooner had the researcher published his paper than it was cited' uses correct structure.",
+              "questionCn": "判断：'No sooner had the researcher published his paper than it was cited'使用了正确结构。",
+              "answer": "true",
+              "explanation": "正确。No sooner...than...=一...就...，No sooner放句首时部分倒装（had提前）。had the researcher published=研究者发表了。than引出后句。注意搭配：No sooner+than（不用when），Hardly/Scarcely+when（不用than）。",
+              "knowledgePoint": "高级固定结构：No sooner...than...（一...就...，倒装）",
+              "vocabulary": [
+                {
+                  "word": "researcher",
+                  "pos": "n.",
+                  "meaning": "研究者"
+                },
+                {
+                  "word": "publish",
+                  "pos": "v.",
+                  "meaning": "发表"
+                },
+                {
+                  "word": "cite",
+                  "pos": "v.",
+                  "meaning": "引用"
+                }
+              ],
+              "sentenceTranslation": "这位研究者刚发表论文，就被数百位学者引用。"
+            },
+            {
+              "subType": "choice",
+              "question": "What does 'Try as he might to explain' mean?",
+              "questionCn": "'Try as he might to explain'是什么意思？",
+              "choices": [
+                "A. Because he tried",
+                "B. Although he tried hard",
+                "C. If he tries",
+                "D. When he tried"
+              ],
+              "answer": "B",
+              "explanation": "Try as he might=Although he might try，as引导让步状语从句用倒装：动词原形+as+主语+助动词。Try as he might to explain=尽管他努力解释。as=although/though但语序特殊。动词原形Try放as前表让步。",
+              "knowledgePoint": "高级固定结构：as让步倒装Try as we might=although",
+              "vocabulary": [
+                {
+                  "word": "try",
+                  "pos": "v.",
+                  "meaning": "尝试"
+                },
+                {
+                  "word": "explain",
+                  "pos": "v.",
+                  "meaning": "解释"
+                },
+                {
+                  "word": "theory",
+                  "pos": "n.",
+                  "meaning": "理论"
+                }
+              ],
+              "sentenceTranslation": "尽管他努力解释自己的理论，起初很少有人理解。"
             }
           ]
         }
