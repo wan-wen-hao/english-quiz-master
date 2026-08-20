@@ -2311,9 +2311,16 @@
         if (!res.ok) throw new Error("HTTP " + res.status);
         const data = await res.json();
         state.vocabDB = data;
+        // 如果用户已经在词汇复习页，重新渲染
+        if (!vocabScreen.classList.contains("hidden")) {
+          renderVocabScreen();
+        }
       } catch (err) {
-        // 词汇库加载失败不影响主功能
         state.vocabDB = null;
+        // 显示错误信息而不是无限加载
+        if (!vocabScreen.classList.contains("hidden")) {
+          vocabBody.innerHTML = '<div class="review-empty-state"><div class="icon">⚠️</div><p>词汇库加载失败</p><p style="font-size:0.8rem;color:var(--text-dim);margin-top:8px;">' + escapeHtml(err.message) + '</p><button class="home-btn" onclick="loadVocabDB()" style="margin-top:12px;">重试</button></div>';
+        }
       }
     }
 
@@ -3705,11 +3712,13 @@
 
     // 回退：从题库提取词汇（旧逻辑简化版）
     function renderVocabFromBank() {
-      const levels = state.quizBank.levels;
-      let html = '<div class="review-header"><h2>📖 词汇复习（题库提取）</h2></div>';
-      html += '<input type="text" class="vocab-search" id="vocab-search" placeholder="搜索单词或中文释义…" autocomplete="off" />';
-      html += '<div class="review-empty-state"><div class="icon">📝</div><p>词汇数据库加载中，正在从题库提取…</p></div>';
+      let html = '<div class="review-header"><h2>📖 词汇复习</h2></div>';
+      html += '<div class="review-empty-state"><div class="icon">⏳</div><p>词汇数据库加载中…</p><p style="font-size:0.8rem;color:var(--text-dim);margin-top:8px;">正在从服务器获取词汇数据</p></div>';
       vocabBody.innerHTML = html;
+      // 自动重试加载
+      if (!state.vocabDB) {
+        loadVocabDB();
+      }
     }
 
     // 绑定词汇页通用事件
