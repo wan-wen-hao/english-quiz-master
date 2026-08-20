@@ -1648,6 +1648,212 @@
       margin-top: 4px;
     }
 
+    /* ===== 词汇书本式布局 ===== */
+    .vocab-toc {
+      background: var(--bg-tertiary);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 16px 18px;
+      margin-bottom: 20px;
+    }
+
+    .vocab-toc-title {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+
+    .vocab-toc-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .vocab-toc-item {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 3px 10px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      text-decoration: none;
+    }
+
+    .vocab-toc-item:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .vocab-chapter {
+      margin-bottom: 28px;
+      scroll-margin-top: 20px;
+    }
+
+    .vocab-chapter-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--border);
+    }
+
+    .vocab-chapter-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      background: var(--accent-dim);
+      color: var(--accent);
+      border-radius: 50%;
+      font-size: 0.8rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .vocab-chapter-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .vocab-chapter-count {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      margin-left: auto;
+    }
+
+    .vocab-special-section {
+      border: 1px dashed var(--warning);
+      border-radius: var(--radius-sm);
+      padding: 16px;
+      margin-top: 8px;
+      background: rgba(210, 153, 34, 0.05);
+    }
+
+    .vocab-special-label {
+      font-size: 0.82rem;
+      color: var(--warning);
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .vc-usage {
+      font-size: 0.75rem;
+      color: var(--accent2);
+      margin-top: 4px;
+      line-height: 1.5;
+      padding: 4px 8px;
+      background: rgba(163, 113, 247, 0.08);
+      border-radius: 4px;
+      border-left: 2px solid var(--accent2);
+    }
+
+    /* ===== 随机抽题模式 ===== */
+    .random-mode-section {
+      background: linear-gradient(135deg, rgba(88, 166, 255, 0.08), rgba(163, 113, 247, 0.08));
+      border: 1px solid rgba(88, 166, 255, 0.25);
+      border-radius: var(--radius-sm);
+      padding: 18px 20px;
+      margin-bottom: 20px;
+    }
+
+    .random-mode-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .random-mode-desc {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+
+    .random-count-selector {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+    }
+
+    .random-count-btn {
+      background: var(--bg-tertiary);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 6px 16px;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      cursor: pointer;
+      font-family: inherit;
+      transition: all 0.2s ease;
+    }
+
+    .random-count-btn:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .random-count-btn.active {
+      border-color: var(--accent);
+      background: var(--accent-dim);
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    .random-start-btn {
+      width: 100%;
+      background: linear-gradient(135deg, var(--accent2), #6f7bff);
+      color: #fff;
+      border: none;
+      border-radius: var(--radius-sm);
+      padding: 14px;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      font-family: inherit;
+      transition: all 0.25s ease;
+      box-shadow: 0 4px 14px rgba(163, 113, 247, 0.25);
+    }
+
+    .random-start-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(163, 113, 247, 0.35);
+    }
+
+    .level-divider {
+      text-align: center;
+      margin: 24px 0 16px;
+      position: relative;
+    }
+
+    .level-divider::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: var(--border);
+    }
+
+    .level-divider span {
+      position: relative;
+      background: var(--bg);
+      padding: 0 16px;
+      font-size: 0.85rem;
+      color: var(--text-dim);
+      font-weight: 600;
+    }
+
     @media (max-width: 600px) {
       .vocab-grid {
         grid-template-columns: 1fr;
@@ -1698,6 +1904,20 @@
       <div class="type-grid" id="type-grid"><!-- 动态生成 --></div>
 
       <button class="start-btn" id="start-quiz-btn">开始答题</button>
+
+      <!-- 随机抽题模式 -->
+      <div class="level-divider"><span>或者</span></div>
+      <div class="random-mode-section">
+        <div class="random-mode-title">🎲 随机抽题挑战</div>
+        <div class="random-mode-desc">从所有等级混合随机抽取题目，测试综合水平</div>
+        <div class="random-count-selector" id="random-count-selector">
+          <button class="random-count-btn" data-count="20">20 题</button>
+          <button class="random-count-btn active" data-count="50">50 题</button>
+          <button class="random-count-btn" data-count="100">100 题</button>
+          <button class="random-count-btn" data-count="0">全部</button>
+        </div>
+        <button class="random-start-btn" id="random-start-btn">🎲 随机开始</button>
+      </div>
     </section>
 
     <!-- 答题屏幕 -->
@@ -1782,6 +2002,8 @@
       bestScores: {},       // 历史最佳成绩
       wrongBank: [],        // 持久化错题本（跨会话保存）
       reviewFilter: "all",  // 错题本筛选：all/junior/senior/cet4/cet6
+      randomCount: 50,      // 随机抽题数量
+      isRandomMode: false,  // 是否为随机模式
     };
 
     /* ===== DOM 引用 ===== */
@@ -2025,13 +2247,18 @@
     }
 
     function addWrongAnswer(item, userAnswer, levelKey) {
+      // 随机模式下，从题目附加信息中获取真实等级
+      let actualLevel = levelKey;
+      if (levelKey === "random" && item.sourceQuestion) {
+        actualLevel = item.sourceQuestion._levelKey || "random";
+      }
       // 去重：同题（相同 question 文本）只保留最近一次
       const qText = item.question || "";
       state.wrongBank = state.wrongBank.filter(
         (w) => w.question !== qText
       );
       state.wrongBank.push({
-        level: levelKey,
+        level: actualLevel,
         type: item.type,
         category: item.category || "",
         question: item.question || "",
@@ -2141,9 +2368,61 @@
       });
     }
 
+    /* ===== 随机抽题模式 ===== */
+    function startRandomQuiz() {
+      // 收集所有等级的所有题目
+      const allQuestions = [];
+      const allLevels = [];
+      Object.entries(state.quizBank.levels).forEach(([key, level]) => {
+        (level.questions || []).forEach((q) => {
+          allQuestions.push({ ...q, _levelKey: key, _levelName: level.name });
+          if (!allLevels.includes(key)) allLevels.push(key);
+        });
+      });
+
+      if (allQuestions.length === 0) {
+        alert("题库中没有题目！");
+        return;
+      }
+
+      // 打乱并截取指定数量
+      const shuffled = shuffle(allQuestions);
+      const count = state.randomCount > 0 ? Math.min(state.randomCount, shuffled.length) : shuffled.length;
+      const selected = shuffled.slice(0, count);
+
+      // 为每道题附加等级信息（用于错题本记录）
+      state.selectedLevel = "random";
+      state.isRandomMode = true;
+      state.questions = selected;
+      state.flatItems = buildFlatList(selected);
+      state.currentIndex = 0;
+      state.score = 0;
+      state.answered = false;
+      state.userAnswers = [];
+      state.startTime = Date.now();
+
+      // 切换屏幕
+      startScreen.classList.add("hidden");
+      resultsScreen.classList.add("hidden");
+      reviewScreen.classList.add("hidden");
+      vocabScreen.classList.add("hidden");
+      quizScreen.classList.remove("hidden");
+      quizScreen.style.animation = "none";
+      void quizScreen.offsetWidth;
+      quizScreen.style.animation = "";
+      quizNavBtns.style.display = "none";
+
+      // 顶部标签
+      $("quiz-level-tag").textContent = "🎲 随机挑战 · " + count + " 题";
+
+      renderQuestion();
+      renderNavBar();
+    }
+
     /* ===== 开始答题 ===== */
     function startQuiz() {
       if (!state.selectedLevel) return;
+      state.isRandomMode = false;
       const levelData = state.quizBank.levels[state.selectedLevel];
       let questions = levelData.questions.slice();
 
@@ -2709,7 +2988,7 @@
       const elapsed = (Date.now() - state.startTime) / 1000;
 
       // 保存最佳成绩
-      const levelKey = state.selectedLevel;
+      const levelKey = state.isRandomMode ? "random_" + total : state.selectedLevel;
       const prevBest = state.bestScores[levelKey];
       const isNewBest = !prevBest || accuracy > prevBest.accuracy ||
         (accuracy === prevBest.accuracy && elapsed < prevBest.time);
@@ -2733,8 +3012,8 @@
         '<div class="result-emoji">' + emoji + "</div>" +
         '<div class="result-title">' + titleText + "</div>" +
         '<div class="result-subtitle">' +
-        escapeHtml(state.quizBank.levels[levelKey].name) + " · " +
-        (state.selectedType === "all" ? "全部题型" : TYPE_LABELS[state.selectedType]) +
+        escapeHtml(state.isRandomMode ? "🎲 随机挑战" : state.quizBank.levels[state.selectedLevel === "random" ? Object.keys(state.quizBank.levels)[0] : state.selectedLevel].name) + " · " +
+        (state.isRandomMode ? total + " 题" : (state.selectedType === "all" ? "全部题型" : TYPE_LABELS[state.selectedType])) +
         "</div>";
 
       if (isNewBest && prevBest) {
@@ -3106,7 +3385,7 @@
       }
     }
 
-    /* ===== 词汇复习屏幕 ===== */
+    /* ===== 词汇复习屏幕（书本式，按语法类别分章） ===== */
     function renderVocabScreen() {
       if (!state.quizBank) {
         vocabBody.innerHTML = '<div class="review-empty-state"><div class="icon">⏳</div><p>题库加载中…</p></div>';
@@ -3117,39 +3396,50 @@
       let html = '<div class="review-header"><h2>📖 词汇复习</h2></div>';
       html += '<input type="text" class="vocab-search" id="vocab-search" placeholder="搜索单词或中文释义…" autocomplete="off" />';
 
-      // 收集所有词汇
-      const allVocab = {};
+      // 收集所有词汇，按等级→类别分组
+      const levelData = {}; // { levelKey: { categoryName: [words] } }
+
       Object.entries(levels).forEach(([key, level]) => {
+        levelData[key] = {};
         const questions = level.questions || [];
         questions.forEach((q) => {
+          const cat = q.category || "其他";
+          if (!levelData[key][cat]) levelData[key][cat] = {};
+
           // 普通题的词汇
           if (q.vocabulary) {
             q.vocabulary.forEach((v) => {
               const f = vocabFields(v);
-              if (f.word && !allVocab[f.word]) {
-                allVocab[f.word] = {
+              if (f.word && !levelData[key][cat][f.word]) {
+                levelData[key][cat][f.word] = {
                   word: f.word,
                   pos: f.pos,
                   meaning: f.meaning,
                   level: key,
                   levelName: level.name,
-                  category: q.category || "",
+                  category: cat,
+                  usage: f.usage || v.usage || "",
+                  isSpecial: v.isSpecial || false,
                 };
               }
             });
           }
           // passage 题的词汇
           if (q.type === "passage" && q.passageVocab) {
+            const pCat = "阅读理解";
+            if (!levelData[key][pCat]) levelData[key][pCat] = {};
             q.passageVocab.forEach((v) => {
               const f = vocabFields(v);
-              if (f.word && !allVocab[f.word]) {
-                allVocab[f.word] = {
+              if (f.word && !levelData[key][pCat][f.word]) {
+                levelData[key][pCat][f.word] = {
                   word: f.word,
                   pos: f.pos,
                   meaning: f.meaning,
                   level: key,
                   levelName: level.name,
-                  category: "阅读理解",
+                  category: pCat,
+                  usage: f.usage || v.usage || "",
+                  isSpecial: v.isSpecial || false,
                 };
               }
             });
@@ -3157,17 +3447,21 @@
           // passage 子题的词汇
           if (q.type === "passage" && q.subQuestions) {
             q.subQuestions.forEach((sub) => {
+              const sCat = sub.category || "阅读理解";
+              if (!levelData[key][sCat]) levelData[key][sCat] = {};
               if (sub.vocabulary) {
                 sub.vocabulary.forEach((v) => {
                   const f = vocabFields(v);
-                  if (f.word && !allVocab[f.word]) {
-                    allVocab[f.word] = {
+                  if (f.word && !levelData[key][sCat][f.word]) {
+                    levelData[key][sCat][f.word] = {
                       word: f.word,
                       pos: f.pos,
                       meaning: f.meaning,
                       level: key,
                       levelName: level.name,
-                      category: sub.category || "阅读理解",
+                      category: sCat,
+                      usage: f.usage || v.usage || "",
+                      isSpecial: v.isSpecial || false,
                     };
                   }
                 });
@@ -3177,64 +3471,139 @@
         });
       });
 
-      // 按等级分组
-      const byLevel = {};
-      Object.values(allVocab).forEach((v) => {
-        if (!byLevel[v.level]) byLevel[v.level] = [];
-        byLevel[v.level].push(v);
+      // 渲染书本式布局
+      html += '<div id="vocab-list">';
+      let chapterNum = 0;
+
+      Object.entries(levels).forEach(([key, level]) => {
+        const cats = levelData[key] || {};
+        const catNames = Object.keys(cats);
+        if (catNames.length === 0) return;
+
+        // 统计该等级总词数
+        let totalWords = 0;
+        catNames.forEach((c) => totalWords += Object.keys(cats[c]).length);
+
+        html += '<div class="level-divider"><span>' + escapeHtml(level.name) + ' · 共 ' + totalWords + ' 词</span></div>';
+
+        // 目录
+        html += '<div class="vocab-toc">';
+        html += '<div class="vocab-toc-title">📑 目录</div>';
+        html += '<div class="vocab-toc-list">';
+        catNames.forEach((c, ci) => {
+          const wCount = Object.keys(cats[c]).length;
+          const anchorId = 'vocab-ch-' + key + '-' + ci;
+          html += '<a class="vocab-toc-item" href="#' + anchorId + '">' + escapeHtml(c) + ' (' + wCount + ')</a>';
+        });
+        html += '</div></div>';
+
+        // 按类别分章
+        catNames.forEach((cat, ci) => {
+          chapterNum++;
+          const words = Object.values(cats[cat]);
+          const anchorId = 'vocab-ch-' + key + '-' + ci;
+
+          // 分离普通词汇和特殊词汇
+          const normalWords = words.filter((w) => !w.isSpecial);
+          const specialWords = words.filter((w) => w.isSpecial);
+
+          html += '<div class="vocab-chapter" id="' + anchorId + '">';
+          html += '<div class="vocab-chapter-header">';
+          html += '<span class="vocab-chapter-num">' + chapterNum + '</span>';
+          html += '<span class="vocab-chapter-title">' + escapeHtml(cat) + '</span>';
+          html += '<span class="vocab-chapter-count">' + words.length + ' 词</span>';
+          html += '</div>';
+
+          // 普通词汇
+          if (normalWords.length > 0) {
+            html += '<div class="vocab-grid">';
+            normalWords.forEach((v) => {
+              html += '<div class="vocab-card-item" data-word="' + escapeHtml(v.word.toLowerCase()) + '" data-meaning="' + escapeHtml((v.meaning || '').toLowerCase()) + '">';
+              html += '<span class="vc-word">' + escapeHtml(v.word) + '</span>';
+              if (v.pos) html += '<span class="vc-pos">' + escapeHtml(v.pos) + '</span>';
+              if (v.meaning) html += '<div class="vc-meaning">' + escapeHtml(v.meaning) + '</div>';
+              if (v.category) html += '<div class="vc-category">' + escapeHtml(v.category) + '</div>';
+              html += '</div>';
+            });
+            html += '</div>';
+          }
+
+          // 特殊词汇（放在章节末尾，标明用法）
+          if (specialWords.length > 0) {
+            html += '<div class="vocab-special-section">';
+            html += '<div class="vocab-special-label">⚠️ 特殊用法词汇</div>';
+            html += '<div class="vocab-grid">';
+            specialWords.forEach((v) => {
+              html += '<div class="vocab-card-item" data-word="' + escapeHtml(v.word.toLowerCase()) + '" data-meaning="' + escapeHtml((v.meaning || '').toLowerCase()) + '">';
+              html += '<span class="vc-word">' + escapeHtml(v.word) + '</span>';
+              if (v.pos) html += '<span class="vc-pos">' + escapeHtml(v.pos) + '</span>';
+              if (v.meaning) html += '<div class="vc-meaning">' + escapeHtml(v.meaning) + '</div>';
+              if (v.usage) html += '<div class="vc-usage">用法：' + escapeHtml(v.usage) + '</div>';
+              if (v.category) html += '<div class="vc-category">' + escapeHtml(v.category) + '</div>';
+              html += '</div>';
+            });
+            html += '</div>';
+            html += '</div>';
+          }
+
+          html += '</div>'; // vocab-chapter
+        });
       });
 
-      // 渲染
-      html += '<div id="vocab-list">';
-      Object.entries(levels).forEach(([key, level]) => {
-        const words = byLevel[key] || [];
-        if (words.length === 0) return;
-        html += '<div class="vocab-level-section" data-level="' + key + '">';
-        html += '<div class="vocab-level-title">' + escapeHtml(level.name) + " · " + words.length + " 词</div>";
-        html += '<div class="vocab-grid">';
-        words.forEach((v) => {
-          html += '<div class="vocab-card-item" data-word="' + escapeHtml(v.word.toLowerCase()) + '" data-meaning="' + escapeHtml(v.meaning.toLowerCase()) + '">';
-          html += '<span class="vc-word">' + escapeHtml(v.word) + "</span>";
-          if (v.pos) html += '<span class="vc-pos">' + escapeHtml(v.pos) + "</span>";
-          if (v.meaning) html += '<div class="vc-meaning">' + escapeHtml(v.meaning) + "</div>";
-          if (v.category) html += '<div class="vc-category">' + escapeHtml(v.category) + "</div>";
-          html += "</div>";
-        });
-        html += "</div>"; // vocab-grid
-        html += "</div>"; // vocab-level-section
-      });
-      html += "</div>";
+      html += '</div>'; // vocab-list
 
       // 返回按钮
       html += '<div class="result-actions" style="margin-top:20px;">';
       html += '<button class="home-btn" id="vocab-home-btn">返回首页</button>';
-      html += "</div>";
+      html += '</div>';
 
       vocabBody.innerHTML = html;
 
       // 搜索功能
-      const searchInput = $("vocab-search");
+      const searchInput = $('vocab-search');
       if (searchInput) {
-        searchInput.addEventListener("input", () => {
+        searchInput.addEventListener('input', () => {
           const query = searchInput.value.trim().toLowerCase();
-          vocabBody.querySelectorAll(".vocab-card-item").forEach((card) => {
-            const word = card.dataset.word || "";
-            const meaning = card.dataset.meaning || "";
+          vocabBody.querySelectorAll('.vocab-card-item').forEach((card) => {
+            const word = card.dataset.word || '';
+            const meaning = card.dataset.meaning || '';
             const match = !query || word.includes(query) || meaning.includes(query);
-            card.style.display = match ? "" : "none";
+            card.style.display = match ? '' : 'none';
           });
           // 隐藏空分组
-          vocabBody.querySelectorAll(".vocab-level-section").forEach((sec) => {
+          vocabBody.querySelectorAll('.vocab-chapter').forEach((sec) => {
             const visible = sec.querySelectorAll('.vocab-card-item:not([style*="display: none"])');
-            sec.style.display = visible.length > 0 ? "" : "none";
+            if (visible.length > 0) {
+              sec.style.display = '';
+            } else if (query) {
+              sec.style.display = 'none';
+            } else {
+              sec.style.display = '';
+            }
+          });
+          vocabBody.querySelectorAll('.vocab-toc').forEach((toc) => {
+            const visible = vocabBody.querySelectorAll('.vocab-chapter:not([style*="display: none"])');
+            toc.style.display = visible.length > 0 ? '' : 'none';
           });
         });
       }
 
+      // 目录点击平滑滚动
+      vocabBody.querySelectorAll('.vocab-toc-item').forEach((link) => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          const targetId = link.getAttribute('href').replace('#', '');
+          const target = document.getElementById(targetId);
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
+      });
+
       // 返回首页
-      const homeBtn = $("vocab-home-btn");
+      const homeBtn = $('vocab-home-btn');
       if (homeBtn) {
-        homeBtn.addEventListener("click", () => switchTab("start"));
+        homeBtn.addEventListener('click', () => switchTab('start'));
       }
     }
 
@@ -3254,6 +3623,19 @@
     document.querySelectorAll(".tab-btn").forEach((btn) => {
       btn.addEventListener("click", () => switchTab(btn.dataset.tab));
     });
+
+    // 随机抽题数量选择
+    document.querySelectorAll(".random-count-btn").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll(".random-count-btn").forEach((b) =>
+          b.classList.toggle("active", b === btn)
+        );
+        state.randomCount = parseInt(btn.dataset.count, 10);
+      });
+    });
+
+    // 随机开始按钮
+    $("random-start-btn").addEventListener("click", startRandomQuiz);
   </script>
 </body>
 </html>
