@@ -1,0 +1,2592 @@
+{
+  "meta": {
+    "title": "英语语法知识图谱",
+    "version": "1.0.0",
+    "description": "从零基础到六级的英语语法知识体系，树杈式分类。覆盖初中(junior)、高中(senior)、四级(cet4)、六级(cet6)全部核心语法知识点。",
+    "totalPoints": 93,
+    "categories": 9,
+    "levels": ["junior", "senior", "cet4", "cet6"],
+    "levelDescription": {
+      "junior": "初中水平：be动词、基本时态、基本句型、词法基础",
+      "senior": "高中水平：从句体系、非谓语动词、虚拟语气、特殊句式",
+      "cet4": "四级水平：高频搭配、长难句结构、进阶从句",
+      "cet6": "六级水平：高级虚拟、独立主格、复杂句式分析"
+    },
+    "generatedAt": "2026-08-20",
+    "license": "MIT"
+  },
+  "categories": {
+    "基础句法 (Basic Sentence Structure)": {
+      "be动词 (be verb)": [
+        {
+          "id": "gm_001",
+          "name": "be动词的三种形式：am/is/are",
+          "level": "junior",
+          "plainLanguage": "be动词就是英语里的'是'，它有三种形式：I搭配am，他/她/它搭配is，你/我们/他们搭配are。口诀：I用am，you用are，is跟着他她它，复数全用are。",
+          "rules": [
+            "I + am（第一人称单数）",
+            "You + are（第二人称单复数）",
+            "He/She/It + is（第三人称单数）",
+            "We/They + are（复数）"
+          ],
+          "examples": [
+            {"en": "I am a student.", "cn": "我是一名学生。"},
+            {"en": "She is a teacher.", "cn": "她是一名老师。"},
+            {"en": "They are my friends.", "cn": "他们是我的朋友。"},
+            {"en": "You are very kind.", "cn": "你真好。"},
+            {"en": "It is a beautiful day.", "cn": "今天天气真好。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "He are a student.", "correct": "He is a student.", "reason": "he是第三人称单数，be动词用is不能用are"},
+            {"wrong": "I is happy.", "correct": "I am happy.", "reason": "第一人称I只能搭配am，不能用is"},
+            {"wrong": "They is my classmates.", "correct": "They are my classmates.", "reason": "they是复数，be动词要用are"}
+          ],
+          "tips": "记住口诀：I用am，you用are，is跟着他她它，单数is复数are",
+          "relatedCategories": ["一般现在时", "主谓一致", "there be句型"]
+        },
+        {
+          "id": "gm_002",
+          "name": "be动词的否定和疑问形式",
+          "level": "junior",
+          "plainLanguage": "be动词变否定就是在它后面加not，而且not可以缩写成n't（比如is not = isn't）。变疑问句就把be动词提到主语前面，就像把'他是学生'变成'他是学生吗'一样。",
+          "rules": [
+            "否定句：主语 + be + not + ...（not可缩写为n't）",
+            "一般疑问句：Be + 主语 + ...？（用Yes/No回答）",
+            "特殊疑问句：疑问词 + be + 主语 + ...？",
+            "肯定回答：Yes, 主语 + be. 否定回答：No, 主语 + be + not."
+          ],
+          "examples": [
+            {"en": "She is not (isn't) at home.", "cn": "她不在家。"},
+            {"en": "Are you a doctor? - Yes, I am.", "cn": "你是医生吗？——是的，我是。"},
+            {"en": "Is he your brother? - No, he isn't.", "cn": "他是你兄弟吗？——不，他不是。"},
+            {"en": "Where are they now?", "cn": "他们现在在哪里？"},
+            {"en": "What is this?", "cn": "这是什么？"}
+          ],
+          "commonMistakes": [
+            {"wrong": "Is she a nurse? - Yes, she's.", "correct": "Is she a nurse? - Yes, she is.", "reason": "肯定回答不能用缩写she's，必须用完整形式she is"},
+            {"wrong": "Are they happy? - No, they don't.", "correct": "Are they happy? - No, they aren't.", "reason": "be动词的疑问句回答要用be动词，不能用do/don't"},
+            {"wrong": "She isn't not at home.", "correct": "She isn't at home.", "reason": "双重否定错误，isn't已经包含了not，不能再加not"}
+          ],
+          "tips": "be动词变否定加not，变疑问提句首。回答时be动词要跟主语走，肯定不缩写，否定可缩写。",
+          "relatedCategories": ["be动词三种形式", "疑问句结构"]
+        },
+        {
+          "id": "gm_003",
+          "name": "be动词的缩写形式",
+          "level": "junior",
+          "plainLanguage": "英语说话时常把be动词缩短来念，就像中文口语里'不要'说成'别'。I am缩成I'm，you are缩成you're，he is缩成he's，they are缩成they're。注意：肯定回答不能缩写！",
+          "rules": [
+            "I am → I'm",
+            "you are → you're",
+            "he/she/it is → he's/she's/it's",
+            "we/they are → we're/they're",
+            "is not → isn't, are not → aren't",
+            "注意：肯定简短回答不能用缩写（如Yes, I am. 不能写Yes, I'm.）"
+          ],
+          "examples": [
+            {"en": "I'm twelve years old.", "cn": "我十二岁了。"},
+            {"en": "She's from Beijing.", "cn": "她来自北京。"},
+            {"en": "They're playing soccer.", "cn": "他们正在踢足球。"},
+            {"en": "It's a rainy day.", "cn": "今天下雨。"},
+            {"en": "We aren't ready yet.", "cn": "我们还没准备好。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "Yes, I'm.", "correct": "Yes, I am.", "reason": "肯定简短回答不能缩写，必须用完整形式"},
+            {"wrong": "Where's you from?", "correct": "Where are you from?", "reason": "you搭配are，不能用is的缩写's"},
+            {"wrong": "It's a cat. It's tail is long.", "correct": "It's a cat. Its tail is long.", "reason": "it's = it is，而its是'它的'，两者含义不同"}
+          ],
+          "tips": "缩写口诀：I'm, you're, he's, she's, it's, we're, they're。但记住：肯定回答别缩写！it's和its别搞混！",
+          "relatedCategories": ["be动词三种形式", "be动词否定疑问", "物主代词"]
+        }
+      ],
+      "there be句型 (there be structure)": [
+        {
+          "id": "gm_004",
+          "name": "there be句型的基本用法",
+          "level": "junior",
+          "plainLanguage": "there be句型就是'某地有某物'。比如'桌上有本书'就是There is a book on the desk。它和have不同：there be表示'存在'（那里有什么），have表示'拥有'（我有什么）。",
+          "rules": [
+            "结构：There + be + 主语 + 地点/时间状语",
+            "含义：表示'某地/某时有某物/人'",
+            "be动词单复数取决于后面的主语（第一个主语）",
+            "there be与have的区别：there be表'存在'，have表'拥有'",
+            "否定：There isn't/aren't...；疑问：Is/Are there...?"
+          ],
+          "examples": [
+            {"en": "There is a book on the desk.", "cn": "桌上有本书。"},
+            {"en": "There are many students in the classroom.", "cn": "教室里有很多学生。"},
+            {"en": "There isn't any milk in the fridge.", "cn": "冰箱里没有牛奶了。"},
+            {"en": "Are there any apples on the tree?", "cn": "树上有苹果吗？"},
+            {"en": "There was a meeting yesterday.", "cn": "昨天有个会议。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "There have a book on the desk.", "correct": "There is a book on the desk.", "reason": "表示'存在'要用there be，不能用there have"},
+            {"wrong": "There is two cats in the room.", "correct": "There are two cats in the room.", "reason": "主语two cats是复数，be动词要用are"},
+            {"wrong": "There is a book and two pens on the desk.", "correct": "There is a book and two pens on the desk.", "reason": "此处正确——就近原则，be动词取决于最近的第一个主语a book（单数），所以用is"}
+          ],
+          "tips": "there be表'存在有'，have表'拥有有'。判断方法：能说'在什么地方有'用there be，能说'谁拥有'用have。",
+          "relatedCategories": ["be动词三种形式", "主谓一致", "可数与不可数名词"]
+        },
+        {
+          "id": "gm_005",
+          "name": "there be的就近原则",
+          "level": "junior",
+          "plainLanguage": "当there be后面跟着多个东西时，be动词跟最近的那个走，这叫'就近原则'。比如'桌上有本书和两支笔'，最近的是a book（单数），所以用is。就像排队，只看第一个人的数量。",
+          "rules": [
+            "当有多个主语并列时，be动词与最近的那个主语保持一致",
+            "There is + 单数 + and + 复数",
+            "There are + 复数 + and + 单数",
+            "这个原则也适用于here开头的句子"
+          ],
+          "examples": [
+            {"en": "There is a book and two pens on the desk.", "cn": "桌上有一本书和两支笔。"},
+            {"en": "There are two pens and a book on the desk.", "cn": "桌上有两支笔和一本书。"},
+            {"en": "Here comes the bus.", "cn": "公交车来了。"},
+            {"en": "There is a man and three women waiting outside.", "cn": "外面有一个男人和三个女人在等。"},
+            {"en": "There are three women and a man waiting outside.", "cn": "外面有三个女人和一个男人在等。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "There are a book and two pens on the desk.", "correct": "There is a book and two pens on the desk.", "reason": "就近原则：最近的a book是单数，be动词用is"},
+            {"wrong": "There is two pens and a book on the desk.", "correct": "There are two pens and a book on the desk.", "reason": "就近原则：最近的two pens是复数，be动词用are"}
+          ],
+          "tips": "就近原则就是'谁离be动词最近就跟谁走'。把最近的名词数量记住就行。",
+          "relatedCategories": ["there be基本用法", "主谓一致", "be动词三种形式"]
+        }
+      ],
+      "主谓一致 (subject-verb agreement)": [
+        {
+          "id": "gm_006",
+          "name": "语法一致原则",
+          "level": "junior",
+          "plainLanguage": "语法一致就是主语是单数，动词就用单数形式；主语是复数，动词就用复数形式。这是最基本的规则——主语啥样，动词就啥样。",
+          "rules": [
+            "单数主语 + 单数动词",
+            "复数主语 + 复数动词",
+            "不可数名词作主语，动词用单数",
+            "each/every + 单数名词作主语，动词用单数"
+          ],
+          "examples": [
+            {"en": "The boy plays football every day.", "cn": "那个男孩每天踢足球。"},
+            {"en": "The boys play football every day.", "cn": "那些男孩每天踢足球。"},
+            {"en": "Water is important for life.", "cn": "水对生命很重要。"},
+            {"en": "Every student has a dictionary.", "cn": "每个学生都有一本字典。"},
+            {"en": "Each of the answers is correct.", "cn": "每个答案都是正确的。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "The water are clean.", "correct": "The water is clean.", "reason": "water是不可数名词，谓语动词用单数is"},
+            {"wrong": "Each student have a book.", "correct": "Each student has a book.", "reason": "each修饰的主语按单数处理，动词用has"}
+          ],
+          "tips": "语法一致最简单：单数主语配单数动词，复数主语配复数动词。不可数名词永远当单数。",
+          "relatedCategories": ["意义一致原则", "就近原则", "可数与不可数名词"]
+        },
+        {
+          "id": "gm_007",
+          "name": "意义一致原则",
+          "level": "junior",
+          "plainLanguage": "有时主语长得像复数但意思上是单数，或者长得像单数但意思上是复数。这时要看意思，不看形式。比如family当'一家人'讲时是复数，当'家庭'讲时是单数。",
+          "rules": [
+            "集体名词（family/team/class等）看成一个整体用单数，指成员用复数",
+            "表示时间/距离/金钱的复数名词看作一个整体，用单数",
+            "news/physics/mathematics等以-s结尾的词，实际是单数",
+            "people/police/cattle等词，永远用复数"
+          ],
+          "examples": [
+            {"en": "My family is very large.", "cn": "我的家庭很大。（看成一个整体）"},
+            {"en": "My family are watching TV.", "cn": "我的家人在看电视。（指成员）"},
+            {"en": "Ten years is a long time.", "cn": "十年是很长的时间。"},
+            {"en": "The news is exciting.", "cn": "这个消息很令人兴奋。"},
+            {"en": "The police are looking for the thief.", "cn": "警察正在寻找小偷。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "The news are good.", "correct": "The news is good.", "reason": "news虽然以s结尾，但实际是单数名词"},
+            {"wrong": "Three miles are a long way to walk.", "correct": "Three miles is a long way to walk.", "reason": "表示距离的复数看作一个整体，用单数"},
+            {"wrong": "The police is coming.", "correct": "The police are coming.", "reason": "police永远用复数"}
+          ],
+          "tips": "看意思不看形式：family整体单数、成员复数；news/math永远单数；people/police永远复数。",
+          "relatedCategories": ["语法一致原则", "就近原则", "可数与不可数名词"]
+        },
+        {
+          "id": "gm_008",
+          "name": "就近原则",
+          "level": "junior",
+          "plainLanguage": "当主语用or（或者）、nor（也不）、not only...but also（不仅...而且）、either...or（要么...要么）连接时，动词跟最近的主语走。谁离动词最近，就跟谁保持一致。",
+          "rules": [
+            "A or B + 动词（动词与B一致）",
+            "Either A or B + 动词（动词与B一致）",
+            "Neither A nor B + 动词（动词与B一致）",
+            "Not only A but also B + 动词（动词与B一致）"
+          ],
+          "examples": [
+            {"en": "You or he is wrong.", "cn": "你或者他错了。（跟he走，用is）"},
+            {"en": "He or I am responsible for it.", "cn": "他或者我对此负责。（跟I走，用am）"},
+            {"en": "Neither you nor he is right.", "cn": "你和他都不对。"},
+            {"en": "Either Tom or his brothers are coming.", "cn": "要么汤姆要么他兄弟们要来。"},
+            {"en": "Not only the teacher but also the students were happy.", "cn": "不仅老师而且学生们都很高兴。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "You or he are wrong.", "correct": "You or he is wrong.", "reason": "就近原则：he离动词最近，是单数，所以用is"},
+            {"wrong": "Neither Tom nor his brothers is coming.", "correct": "Neither Tom nor his brothers are coming.", "reason": "就近原则：his brothers离动词最近，是复数，所以用are"}
+          ],
+          "tips": "or/nor/either...or/neither...nor/not only...but also，找最近的那个主语，跟它走。",
+          "relatedCategories": ["语法一致原则", "意义一致原则", "there be就近原则"]
+        }
+      ],
+      "基本句型 (basic sentence patterns)": [
+        {
+          "id": "gm_009",
+          "name": "五大基本句型",
+          "level": "junior",
+          "plainLanguage": "英语句子就像搭积木，基本就五种搭法：1.主+谓（他跑了）；2.主+谓+宾（他打球）；3.主+谓+双宾（他给我一本书）；4.主+谓+宾+宾补（他叫我老师）；5.主+系+表（他是老师）。所有复杂句子都是这五种基本句型扩展来的。",
+          "rules": [
+            "S + V（主+谓）：The sun rises.",
+            "S + V + O（主+谓+宾）：I love you.",
+            "S + V + IO + DO（主+谓+间宾+直宾）：She gave me a book.",
+            "S + V + O + OC（主+谓+宾+宾补）：We call him Tom.",
+            "S + V + P（主+系+表）：She is beautiful."
+          ],
+          "examples": [
+            {"en": "The sun rises in the east.", "cn": "太阳从东方升起。（S+V）"},
+            {"en": "I love English.", "cn": "我喜欢英语。（S+V+O）"},
+            {"en": "She gave me a book.", "cn": "她给了我一本书。（S+V+IO+DO）"},
+            {"en": "We call him Tom.", "cn": "我们叫他汤姆。（S+V+O+OC）"},
+            {"en": "The food smells good.", "cn": "食物闻起来很好。（S+V+P）"}
+          ],
+          "commonMistakes": [
+            {"wrong": "She gave a book me.", "correct": "She gave me a book.", "reason": "双宾语中，人（间接宾语）在前，物（直接宾语）在后；若物在前需加to/for：She gave a book to me."},
+            {"wrong": "We call him to Tom.", "correct": "We call him Tom.", "reason": "宾补直接放在宾语后，不需要加介词"}
+          ],
+          "tips": "五大句型口诀：一主一谓最简单，主谓宾是三件套，双宾给人再给物，宾补补充说明宾，系表相连说明主。",
+          "relatedCategories": ["be动词", "简单句与并列句", "从句体系"]
+        },
+        {
+          "id": "gm_010",
+          "name": "简单句、并列句与复合句",
+          "level": "junior",
+          "plainLanguage": "简单句就是一套主谓结构的句子（比如'我爱英语'）；并列句是用and/but/or等把两个简单句连起来（比如'我爱英语但讨厌数学'）；复合句是句子里面套句子，用一个从句当成分（比如'我知道你喜欢英语'里的'你喜欢英语'是个从句）。",
+          "rules": [
+            "简单句：只有一套主谓结构",
+            "并列句：用并列连词（and/but/or/so/for等）连接两个或多个分句",
+            "复合句：包含一个主句和一个或多个从句",
+            "并列复合句：既有并列又有从属关系"
+          ],
+          "examples": [
+            {"en": "I like English.", "cn": "我喜欢英语。（简单句）"},
+            {"en": "I like English, but I don't like math.", "cn": "我喜欢英语，但我不喜欢数学。（并列句）"},
+            {"en": "I know that you like English.", "cn": "我知道你喜欢英语。（复合句）"},
+            {"en": "I like English, and I know that you like it too.", "cn": "我喜欢英语，而且我知道你也喜欢。（并列复合句）"},
+            {"en": "When it rains, I stay at home.", "cn": "下雨的时候，我待在家里。（复合句）"}
+          ],
+          "commonMistakes": [
+            {"wrong": "Because it was raining, so I stayed at home.", "correct": "Because it was raining, I stayed at home.", "reason": "英语中because和so不能同时使用，选一个即可"},
+            {"wrong": "Although he is tired, but he keeps working.", "correct": "Although he is tired, he keeps working.", "reason": "although和but不能同时使用，中文可以说'虽然...但是...'，英语只能用一个"}
+          ],
+          "tips": "中文'因为...所以...'/'虽然...但是...'在英语中只能保留一个连词！这是最容易犯的中式英语错误。",
+          "relatedCategories": ["五大基本句型", "从句体系", "连词"]
+        }
+      ]
+    },
+
+    "时态体系 (Tense System)": {
+      "一般现在时 (Simple Present)": [
+        {
+          "id": "gm_011",
+          "name": "一般现在时的基本用法",
+          "level": "junior",
+          "plainLanguage": "一般现在时就是描述'经常做的事、客观事实、当前状态'。比如'我每天上学'、'地球是圆的'、'他很高'。动词用原形，但第三人称单数（他/她/它）要加s。",
+          "rules": [
+            "表示经常性或习惯性的动作（常搭配always/usually/often/every day等）",
+            "表示客观真理和事实",
+            "表示现在的状态",
+            "第三人称单数作主语时，动词加s/es",
+            "否定：don't/doesn't + 动词原形；疑问：Do/Does + 主语 + 动词原形"
+          ],
+          "examples": [
+            {"en": "I go to school every day.", "cn": "我每天上学。"},
+            {"en": "The earth goes around the sun.", "cn": "地球绕着太阳转。"},
+            {"en": "She likes music.", "cn": "她喜欢音乐。"},
+            {"en": "He doesn't speak Chinese.", "cn": "他不会说中文。"},
+            {"en": "Do you often play basketball?", "cn": "你经常打篮球吗？"}
+          ],
+          "commonMistakes": [
+            {"wrong": "He go to school every day.", "correct": "He goes to school every day.", "reason": "he是第三人称单数，动词go要加es变成goes"},
+            {"wrong": "She doesn't likes music.", "correct": "She doesn't like music.", "reason": "doesn't后面用动词原形，不能再加s"},
+            {"wrong": "Do she like music?", "correct": "Does she like music?", "reason": "she是第三人称单数，疑问句用Does提问"}
+          ],
+          "tips": "一般现在时用原形，三单加s/es。否定加don't/doesn't，后面接原形！疑问用Do/Does。",
+          "relatedCategories": ["第三人称单数变化", "现在进行时", "主谓一致"]
+        },
+        {
+          "id": "gm_012",
+          "name": "第三人称单数变化规则",
+          "level": "junior",
+          "plainLanguage": "当主语是'他/她/它'或单个的人/物时，动词要加s或es。规则是：一般加s，以s/x/ch/sh/o结尾加es，辅音字母+y结尾把y变i加es。记住口诀就不难了。",
+          "rules": [
+            "一般情况：直接加s（play→plays, like→likes）",
+            "以s/x/sh/ch/o结尾：加es（go→goes, watch→watches, wash→washes, fix→fixes）",
+            "辅音字母+y结尾：变y为i加es（study→studies, carry→carries）",
+            "元音字母+y结尾：直接加s（play→plays, buy→buys）",
+            "特殊变化：have→has, be→is"
+          ],
+          "examples": [
+            {"en": "He plays the piano well.", "cn": "他钢琴弹得好。"},
+            {"en": "She watches TV every evening.", "cn": "她每天晚上看电视。"},
+            {"en": "Tom studies hard.", "cn": "汤姆努力学习。"},
+            {"en": "It goes fast.", "cn": "它跑得很快。"},
+            {"en": "My mother has a car.", "cn": "我妈妈有一辆车。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "He watchs TV every day.", "correct": "He watches TV every day.", "reason": "以ch结尾的动词，第三人称单数加es，不是加s"},
+            {"wrong": "She studys hard.", "correct": "She studies hard.", "reason": "辅音字母+y结尾，要把y变i再加es"},
+            {"wrong": "He have a new bike.", "correct": "He has a new bike.", "reason": "have的第三人称单数形式是has，不是haves"}
+          ],
+          "tips": "三单变化口诀：一般直接加s，s/x/ch/sh/o加es，辅音+y变i加es，have变has，be变is。",
+          "relatedCategories": ["一般现在时", "主谓一致"]
+        }
+      ],
+      "一般过去时 (Simple Past)": [
+        {
+          "id": "gm_013",
+          "name": "一般过去时的基本用法",
+          "level": "junior",
+          "plainLanguage": "一般过去时就是描述'过去发生的事'，现在已经结束了。比如'我昨天去了北京'、'他去年很胖'。动词要变成过去式，经常搭配yesterday/last week/ago等时间词。",
+          "rules": [
+            "表示过去某个时间发生的动作或存在的状态",
+            "常搭配的时间状语：yesterday, last week, ... ago, in 2010等",
+            "动词用过去式（规则动词加ed，不规则动词单独记）",
+            "否定：did not (didn't) + 动词原形",
+            "疑问：Did + 主语 + 动词原形"
+          ],
+          "examples": [
+            {"en": "I went to Beijing yesterday.", "cn": "我昨天去了北京。"},
+            {"en": "She was very happy last night.", "cn": "她昨晚很开心。"},
+            {"en": "They didn't watch TV last night.", "cn": "他们昨晚没有看电视。"},
+            {"en": "Did you finish your homework?", "cn": "你完成作业了吗？"},
+            {"en": "He lived in Shanghai three years ago.", "cn": "三年前他住在上海。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "I go to Beijing yesterday.", "correct": "I went to Beijing yesterday.", "reason": "有yesterday这个过去时间标志，动词要用过去式went"},
+            {"wrong": "She didn't went to school.", "correct": "She didn't go to school.", "reason": "didn't后面用动词原形go，不能用过去式went"},
+            {"wrong": "Did he finished his homework?", "correct": "Did he finish his homework?", "reason": "Did提问时，动词用原形finish，不能再加ed"}
+          ],
+          "tips": "过去时有过去式，否定加didn't接原形，疑问用Did接原形。记住：did一出，动词回原形！",
+          "relatedCategories": ["动词过去式变化规则", "过去进行时", "过去完成时"]
+        },
+        {
+          "id": "gm_014",
+          "name": "动词过去式规则与不规则变化",
+          "level": "junior",
+          "plainLanguage": "动词过去式分两种：规则和不规则。规则的就是加ed，比如play→played。但有很多常用动词是不规则的，得死记硬背，比如go→went, see→saw, eat→ate。这些不规则动词是考试必考的！",
+          "rules": [
+            "一般情况：直接加ed（work→worked, play→played）",
+            "以e结尾：只加d（like→liked, live→lived）",
+            "辅音+y结尾：变y为i加ed（study→studied）",
+            "重读闭音节结尾：双写末尾辅音字母加ed（stop→stopped, plan→planned）",
+            "不规则动词需单独记忆：go→went, see→saw, eat→ate, take→took, give→gave等"
+          ],
+          "examples": [
+            {"en": "They played soccer yesterday.", "cn": "他们昨天踢了足球。"},
+            {"en": "She liked the movie.", "cn": "她喜欢那部电影。"},
+            {"en": "He studied for the exam.", "cn": "他为考试做了准备。"},
+            {"en": "We stopped at the red light.", "cn": "我们在红灯前停了下来。"},
+            {"en": "I went to the park last Sunday.", "cn": "上周日我去了公园。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "He studyed hard yesterday.", "correct": "He studied hard yesterday.", "reason": "辅音字母+y结尾，y要变i加ed，不能直接加ed"},
+            {"wrong": "They stoped the car.", "correct": "They stopped the car.", "reason": "重读闭音节结尾，要双写末尾辅音p再加ed"},
+            {"wrong": "I goed to school yesterday.", "correct": "I went to school yesterday.", "reason": "go是不规则动词，过去式是went，不是goed"}
+          ],
+          "tips": "规则变化：加d/ed/双写+ed/变y为i+ed。不规则动词：背！背！背！常用的有go-went, see-saw, eat-ate, take-took, give-gave, get-got, come-came, buy-bought等。",
+          "relatedCategories": ["一般过去时", "过去完成时", "现在完成时"]
+        }
+      ],
+      "一般将来时 (Simple Future)": [
+        {
+          "id": "gm_015",
+          "name": "will与be going to的区别",
+          "level": "junior",
+          "plainLanguage": "两者都表示将来，但有区别：will是'临时起意'或'预测'，比如'我来帮你吧'；be going to是'计划好了'或'有迹象要发生'，比如'我打算明天去北京'、'看那乌云，要下雨了'。",
+          "rules": [
+            "will：表示临时决定、预测未来、意愿",
+            "be going to：表示已计划好的打算、根据目前迹象推测",
+            "will + 动词原形",
+            "be going to + 动词原形",
+            "be about to + 动词原形：表示马上就要发生的事"
+          ],
+          "examples": [
+            {"en": "I will help you with your homework.", "cn": "我来帮你做作业吧。（临时决定）"},
+            {"en": "I am going to visit my grandmother tomorrow.", "cn": "我打算明天去看奶奶。（计划好的）"},
+            {"en": "Look at the clouds! It is going to rain.", "cn": "看那些乌云！要下雨了。（有迹象）"},
+            {"en": "He will be twenty next year.", "cn": "他明年就二十岁了。（客观事实）"},
+            {"en": "The train is about to leave.", "cn": "火车马上就要开了。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "Look at the clouds! It will rain.", "correct": "Look at the clouds! It is going to rain.", "reason": "有明确迹象（乌云），要用be going to而不是will"},
+            {"wrong": "I will going to visit my uncle.", "correct": "I am going to visit my uncle.", "reason": "be going to结构中be动词不能遗漏，且will和be going to不能同时用"}
+          ],
+          "tips": "临时决定用will，计划打算用be going to，有迹象也用be going to，马上发生用be about to。",
+          "relatedCategories": ["一般现在时表将来", "过去将来时", "将来进行时"]
+        },
+        {
+          "id": "gm_016",
+          "name": "一般现在时和现在进行时表将来",
+          "level": "senior",
+          "plainLanguage": "一般现在时可以表示'按时间表要发生的事'（比如火车时刻表、航班）；现在进行时可以表示'已经安排好的近期计划'（比如'我明天要走'用I'm leaving tomorrow）。这不是一般将来时的替代，而是特殊用法。",
+          "rules": [
+            "一般现在时表将来：用于时刻表、日程表等固定安排",
+            "现在进行时表将来：表示已安排好的近期计划，常搭配come/go/leave/arrive等动词",
+            "be to + 动词原形：表示官方计划或命令",
+            "be about to + 动词原形：表示马上发生"
+          ],
+          "examples": [
+            {"en": "The train leaves at 8:00 tomorrow morning.", "cn": "火车明天早上八点开。（时刻表）"},
+            {"en": "I'm leaving for Shanghai tomorrow.", "cn": "我明天要去上海。（已安排好）"},
+            {"en": "The president is to visit Japan next month.", "cn": "总统将于下月访问日本。（官方计划）"},
+            {"en": "The concert is about to begin.", "cn": "音乐会马上就要开始了。"},
+            {"en": "We are flying to Paris next week.", "cn": "我们下周飞往巴黎。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "The train will leave at 8:00 according to the timetable.", "correct": "The train leaves at 8:00 according to the timetable.", "reason": "按时刻表发生的用一般现在时，不用will"},
+            {"wrong": "I leave for Shanghai tomorrow.", "correct": "I am leaving for Shanghai tomorrow.", "reason": "个人计划安排用现在进行时，不用一般现在时（除非是官方时刻表）"}
+          ],
+          "tips": "时刻表用一般现在时，个人计划用进行时。come/go/leave/arrive/fly这些'位移'动词最常这样用。",
+          "relatedCategories": ["will与be going to", "现在进行时", "一般现在时"]
+        }
+      ],
+      "现在进行时 (Present Continuous)": [
+        {
+          "id": "gm_017",
+          "name": "现在进行时的基本用法",
+          "level": "junior",
+          "plainLanguage": "现在进行时就是'正在做的事'。比如'我正在吃饭'。结构是be + 动词ing。be动词跟主语走（am/is/are），动词加ing。",
+          "rules": [
+            "结构：主语 + be(am/is/are) + 动词-ing",
+            "表示说话时正在进行的动作",
+            "表示现阶段正在进行但说话时不一定在做的动作",
+            "常搭配：now, right now, at the moment, look, listen等",
+            "否定：be + not + v-ing；疑问：Be + 主语 + v-ing"
+          ],
+          "examples": [
+            {"en": "I am reading a book now.", "cn": "我现在正在看书。"},
+            {"en": "She is cooking in the kitchen.", "cn": "她正在厨房做饭。"},
+            {"en": "They are playing football on the playground.", "cn": "他们正在操场上踢足球。"},
+            {"en": "Look! The bus is coming.", "cn": "看！公交车来了。"},
+            {"en": "He isn't sleeping right now.", "cn": "他现在没有在睡觉。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "I reading a book now.", "correct": "I am reading a book now.", "reason": "现在进行时必须有be动词，不能只有v-ing"},
+            {"wrong": "She is cook in the kitchen.", "correct": "She is cooking in the kitchen.", "reason": "be动词后要加v-ing形式，不能直接用动词原形"},
+            {"wrong": "He is swiming.", "correct": "He is swimming.", "reason": "swim是重读闭音节结尾，要双写m再加ing"}
+          ],
+          "tips": "现在进行时=be+动词ing。Look/Listen是信号词，看到它们就用进行时！",
+          "relatedCategories": ["一般现在时", "过去进行时", "动词ing变化规则"]
+        },
+        {
+          "id": "gm_018",
+          "name": "现在进行时与一般现在时的区别",
+          "level": "junior",
+          "plainLanguage": "一般现在时说'经常做的事'，现在进行时说'此刻正在做的事'。比如'我每天跑步'是一般现在时（I run every day），'我现在正在跑步'是现在进行时（I am running now）。",
+          "rules": [
+            "一般现在时：经常性、习惯性的动作，或客观事实",
+            "现在进行时：此时此刻正在进行的动作",
+            "一般现在时搭配：always, usually, often, every day",
+            "现在进行时搭配：now, at the moment, look, listen",
+            "某些动词一般不用进行时：know, like, want, believe, understand等状态动词"
+          ],
+          "examples": [
+            {"en": "I read books every day. (习惯)", "cn": "我每天看书。"},
+            {"en": "I am reading a book now. (正在进行)", "cn": "我现在正在看书。"},
+            {"en": "She usually drinks tea, but today she is drinking coffee.", "cn": "她通常喝茶，但今天在喝咖啡。"},
+            {"en": "The sun rises in the east. (事实)", "cn": "太阳从东方升起。"},
+            {"en": "I am understanding you now.", "cn": "（错误句子，understand不用进行时）"}
+          ],
+          "commonMistakes": [
+            {"wrong": "I am knowing the answer.", "correct": "I know the answer.", "reason": "know是状态动词，一般不用进行时"},
+            {"wrong": "She is liking the movie.", "correct": "She likes the movie.", "reason": "like是状态动词，不用进行时"}
+          ],
+          "tips": "状态动词（know/like/love/want/need/believe/understand/remember）一般不用进行时！记住：'知道、喜欢、想要'这些不是动作，是状态。",
+          "relatedCategories": ["一般现在时", "现在进行时", "动词ing变化"]
+        }
+      ],
+      "过去进行时 (Past Continuous)": [
+        {
+          "id": "gm_019",
+          "name": "过去进行时的基本用法",
+          "level": "junior",
+          "plainLanguage": "过去进行时就是'过去某个时刻正在做的事'。比如'昨天八点我正在吃饭'。结构是was/were + 动词ing。I/he/she/it用was，you/we/they用were。",
+          "rules": [
+            "结构：主语 + was/were + v-ing",
+            "表示过去某时刻正在进行的动作",
+            "常搭配：at 8:00 yesterday, at that time, at that moment, when/while",
+            "常用于描述过去某个动作发生时的背景",
+            "was用于I/he/she/it，were用于you/we/they"
+          ],
+          "examples": [
+            {"en": "I was having dinner at 7:00 yesterday.", "cn": "昨天七点我正在吃晚饭。"},
+            {"en": "She was watching TV when I came in.", "cn": "我进来时她正在看电视。"},
+            {"en": "They were playing football at that time.", "cn": "那时他们正在踢足球。"},
+            {"en": "What were you doing at 9:00 last night?", "cn": "昨晚九点你在干什么？"},
+            {"en": "While he was reading, the phone rang.", "cn": "他正在看书时电话响了。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "I were having dinner at 7:00 yesterday.", "correct": "I was having dinner at 7:00 yesterday.", "reason": "I搭配was，不能用were"},
+            {"wrong": "She was watch TV when I came in.", "correct": "She was watching TV when I came in.", "reason": "过去进行时结构是was/were + v-ing，不能只用动词原形"},
+            {"wrong": "They was playing football at that time.", "correct": "They were playing football at that time.", "reason": "they是复数，be动词用were不能用was"}
+          ],
+          "tips": "过去进行时=was/were+动词ing。I用was，they用were。常和when/while搭配，表示'正做某事时另一件事发生了'。",
+          "relatedCategories": ["现在进行时", "一般过去时", "when与while的区别"]
+        }
+      ],
+      "现在完成时 (Present Perfect)": [
+        {
+          "id": "gm_020",
+          "name": "现在完成时的基本用法",
+          "level": "junior",
+          "plainLanguage": "现在完成时就是'已经做了某事，对现在有影响'。比如'我已经吃完了'（现在不饿）。结构是have/has + 动词过去分词。它连接过去和现在——事情是过去做的，但影响延续到现在。",
+          "rules": [
+            "结构：主语 + have/has + 过去分词",
+            "表示过去发生的动作对现在造成的影响",
+            "表示过去开始的动作一直持续到现在",
+            "常搭配：already, yet, just, ever, never, recently, so far, since, for",
+            "否定：haven't/hasn't + 过去分词；疑问：Have/Has + 主语 + 过去分词"
+          ],
+          "examples": [
+            {"en": "I have finished my homework.", "cn": "我已经完成了作业。"},
+            {"en": "She has lived here for ten years.", "cn": "她在这里住了十年了。"},
+            {"en": "Have you ever been to Japan?", "cn": "你去过日本吗？"},
+            {"en": "He hasn't come yet.", "cn": "他还没来。"},
+            {"en": "I have just seen him.", "cn": "我刚看到他了。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "I have finished my homework yesterday.", "correct": "I finished my homework yesterday.", "reason": "有明确的过去时间yesterday，要用一般过去时，不能用现在完成时"},
+            {"wrong": "She has lived here since 3 years.", "correct": "She has lived here for 3 years.", "reason": "for+时间段，since+时间点；3 years是时间段，用for"},
+            {"wrong": "He have gone to the library.", "correct": "He has gone to the library.", "reason": "he是第三人称单数，用has不能用have"}
+          ],
+          "tips": "现在完成时=have/has+过去分词。'已经做了'有影响用完成时，有具体过去时间用过去时。since配时间点，for配时间段。",
+          "relatedCategories": ["一般过去时", "过去完成时", "have been to/gone to/in"]
+        },
+        {
+          "id": "gm_021",
+          "name": "have been to / have gone to / have been in的区别",
+          "level": "junior",
+          "plainLanguage": "have been to = 去过（已回来）；have gone to = 去了（还没回）；have been in = 在某地待了多久。比如'我去过北京'是I have been to Beijing；'他去了北京（还没回）'是He has gone to Beijing。",
+          "rules": [
+            "have/has been to + 地点：曾经去过某地（已回来）",
+            "have/has gone to + 地点：去了某地（还没回来）",
+            "have/has been in + 地点 + for/since：在某地住了多久",
+            "have been to可以搭配次数（twice, three times等）"
+          ],
+          "examples": [
+            {"en": "I have been to Shanghai twice.", "cn": "我去过上海两次。（已回来）"},
+            {"en": "He has gone to the library.", "cn": "他去了图书馆。（还没回来）"},
+            {"en": "She has been in Beijing for five years.", "cn": "她在北京住了五年了。"},
+            {"en": "Have you ever been to the Great Wall?", "cn": "你去过长城吗？"},
+            {"en": "Where has Tom gone?", "cn": "汤姆去哪儿了？"}
+          ],
+          "commonMistakes": [
+            {"wrong": "He has been to the library. He'll be back soon.", "correct": "He has gone to the library. He'll be back soon.", "reason": "他去了还没回来，要用has gone to"},
+            {"wrong": "I have gone to Japan twice.", "correct": "I have been to Japan twice.", "reason": "去过已经回来了，要用have been to"}
+          ],
+          "tips": "been to=去过已回；gone to=去了没回；been in=住了多久。看人还在不在就知道用哪个！",
+          "relatedCategories": ["现在完成时", "一般过去时"]
+        },
+        {
+          "id": "gm_022",
+          "name": "现在完成时与一般过去时的区别",
+          "level": "junior",
+          "plainLanguage": "一般过去时只管过去，现在完成时连接过去和现在。有具体过去时间（yesterday, last week）用一般过去时；没有具体时间或强调对现在的影响用现在完成时。比如'我昨天丢了钥匙'用过去时；'我把钥匙丢了（现在找不到）'用完成时。",
+          "rules": [
+            "一般过去时：有明确的过去时间状语",
+            "现在完成时：没有明确过去时间，或强调对现在的影响",
+            "有yesterday/last week/... ago/in 2010等，用一般过去时",
+            "有already/yet/just/ever/never/recently/so far等，用现在完成时",
+            "现在完成时不能和具体的过去时间连用"
+          ],
+          "examples": [
+            {"en": "I lost my keys yesterday. (一般过去时)", "cn": "我昨天丢了钥匙。"},
+            {"en": "I have lost my keys. I can't open the door now. (现在完成时)", "cn": "我把钥匙丢了，现在打不开门。"},
+            {"en": "Did you see him yesterday? - Yes, I did.", "cn": "你昨天看到他了吗？——是的。"},
+            {"en": "Have you seen him recently? - No, I haven't.", "cn": "你最近看到他了吗？——没有。"},
+            {"en": "She has written three books so far.", "cn": "到目前为止她已经写了三本书。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "I have seen him yesterday.", "correct": "I saw him yesterday.", "reason": "有明确的过去时间yesterday，必须用一般过去时saw"},
+            {"wrong": "Did you ever been to Paris?", "correct": "Have you ever been to Paris?", "reason": "ever用于现在完成时，不能用一般过去时的Did提问"}
+          ],
+          "tips": "有具体过去时间→一般过去时；没有具体时间/强调影响→现在完成时。看到already/yet/just/ever/never/so far就用现在完成时！",
+          "relatedCategories": ["一般过去时", "现在完成时", "过去完成时"]
+        }
+      ],
+      "过去完成时 (Past Perfect)": [
+        {
+          "id": "gm_023",
+          "name": "过去完成时的基本用法",
+          "level": "senior",
+          "plainLanguage": "过去完成时就是'过去的过去'。当你讲一个过去的事，想说明在这之前还发生了另一件事，那个更早的事就用过去完成时。比如'我到火车站时火车已经走了'——火车走在我到达之前，所以'走了'用过去完成时。",
+          "rules": [
+            "结构：had + 过去分词",
+            "表示在过去某个时间或动作之前已经完成的动作（过去的过去）",
+            "常搭配：by the time, before, after, when, by the end of等",
+            "否定：had not (hadn't) + 过去分词",
+            "必须有另一个过去的时间作参照"
+          ],
+          "examples": [
+            {"en": "The train had left when I arrived at the station.", "cn": "我到火车站时火车已经走了。"},
+            {"en": "She had finished her work before 6 o'clock.", "cn": "她在六点前就完成了工作。"},
+            {"en": "By the time we got there, the meeting had ended.", "cn": "我们到那儿时，会议已经结束了。"},
+            {"en": "He told me that he had seen the movie before.", "cn": "他告诉我他以前看过那部电影。"},
+            {"en": "I had never seen snow before I came to Harbin.", "cn": "来哈尔滨之前我从没见过雪。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "When I arrived, the train left already.", "correct": "When I arrived, the train had left.", "reason": "火车走在我到达之前，是'过去的过去'，要用过去完成时had left"},
+            {"wrong": "He had finished his homework yesterday.", "correct": "He finished his homework yesterday.", "reason": "有明确的过去时间yesterday且没有参照另一过去动作，用一般过去时即可"},
+            {"wrong": "She has left when I arrived.", "correct": "She had left when I arrived.", "reason": "参照的arrived是过去时，leave在它之前，要用过去完成时had left而不是现在完成时has left"}
+          ],
+          "tips": "过去完成时='过去的过去'。必须有两个过去动作，先发生的用had+过去分词，后发生的用一般过去时。",
+          "relatedCategories": ["一般过去时", "现在完成时", "过去将来时"]
+        }
+      ],
+      "现在完成进行时 (Present Perfect Continuous)": [
+        {
+          "id": "gm_024",
+          "name": "现在完成进行时的用法",
+          "level": "cet4",
+          "plainLanguage": "现在完成进行时就是'从过去开始一直做到现在，还在做'。比如'我等了一个小时了（还在等）'。结构是have/has been + 动词ing。强调动作的持续性和还在进行。",
+          "rules": [
+            "结构：have/has + been + v-ing",
+            "表示从过去某时开始一直持续到现在的动作（可能还在继续）",
+            "强调动作的持续性和过程",
+            "常搭配：for + 时间段, since + 时间点, all morning, all day等",
+            "不用进行时的状态动词用现在完成时替代"
+          ],
+          "examples": [
+            {"en": "I have been waiting for you for an hour.", "cn": "我等了你一个小时了。"},
+            {"en": "She has been learning English since she was ten.", "cn": "她从十岁起就一直在学英语。"},
+            {"en": "They have been working all morning.", "cn": "他们一上午都在工作。"},
+            {"en": "It has been raining for three days.", "cn": "雨已经下了三天了。"},
+            {"en": "How long have you been studying here?", "cn": "你在这里学习多久了？"}
+          ],
+          "commonMistakes": [
+            {"wrong": "I have waited for you for an hour.", "correct": "I have been waiting for you for an hour.", "reason": "强调一直在等（可能还在等），用现在完成进行时更合适。现在完成时强调结果，完成进行时强调过程"},
+            {"wrong": "She has been knowing him for years.", "correct": "She has known him for years.", "reason": "know是状态动词，不用进行时，包括完成进行时也不行"}
+          ],
+          "tips": "强调'一直在做还在做'用完成进行时（have been doing）。状态动词（know/like/love等）用完成时。",
+          "relatedCategories": ["现在完成时", "现在进行时"]
+        }
+      ],
+      "过去将来时 (Past Future)": [
+        {
+          "id": "gm_025",
+          "name": "过去将来时的基本用法",
+          "level": "senior",
+          "plainLanguage": "过去将来时就是'从过去某个时间点看，将要发生的事'。常出现在宾语从句里，比如'他说他第二天要来'——他说话时是过去，来的动作还没发生，所以用过去将来时。",
+          "rules": [
+            "结构：would + 动词原形",
+            "表示从过去某时间点看将要发生的动作",
+            "常用于宾语从句中，主句是过去时，从句表示将来的事",
+            "was/were going to + 动词原形也可表示过去将来",
+            "was/were about to + 动词原形：当时马上要发生的事"
+          ],
+          "examples": [
+            {"en": "He said he would come the next day.", "cn": "他说他第二天会来。"},
+            {"en": "I thought she would pass the exam.", "cn": "我以为她会通过考试。"},
+            {"en": "She was going to leave when the phone rang.", "cn": "她正要离开时电话响了。"},
+            {"en": "They told us they would arrive at 5 p.m.", "cn": "他们告诉我们他们下午五点到。"},
+            {"en": "He said he was going to buy a new car.", "cn": "他说他打算买辆新车。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "He said he will come the next day.", "correct": "He said he would come the next day.", "reason": "主句said是过去时，从句要用过去将来时would，不能直接用will（时态要呼应）"},
+            {"wrong": "I thought she will pass the exam.", "correct": "I thought she would pass the exam.", "reason": "thought是过去时，后面从句的将来时要降级为过去将来时would"}
+          ],
+          "tips": "过去将来时=would+原形。看到'said/thought/told'+将来的事，把will变成would！",
+          "relatedCategories": ["一般将来时", "一般过去时", "宾语从句时态一致"]
+        }
+      ]
+    },
+
+    "语态 (Voice)": {
+      "主动语态 (Active Voice)": [
+        {
+          "id": "gm_026",
+          "name": "主动语态的使用场景",
+          "level": "junior",
+          "plainLanguage": "主动语态就是'谁做了什么'，主语是动作的执行者。比如'我打破了杯子'——我是执行打破动作的人。日常说话大多用主动语态，更直接更自然。",
+          "rules": [
+            "结构：主语（动作执行者）+ 谓语动词 + 宾语（动作承受者）",
+            "主语是动作的发出者",
+            "更直接、更有力，日常交流首选",
+            "当不知道/不需要说出动作执行者时，换用被动语态"
+          ],
+          "examples": [
+            {"en": "I broke the window.", "cn": "我打破了窗户。"},
+            {"en": "Shakespeare wrote Hamlet.", "cn": "莎士比亚写了《哈姆雷特》。"},
+            {"en": "The teacher praised the student.", "cn": "老师表扬了那个学生。"},
+            {"en": "We will build a new bridge.", "cn": "我们将建一座新桥。"},
+            {"en": "People speak English all over the world.", "cn": "全世界的人都说英语。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "The window broke by me.", "correct": "I broke the window.", "reason": "主动语态中主语是动作执行者，应说I broke the window；如要用被动应说The window was broken by me."},
+            {"wrong": "Hamlet was wrote by Shakespeare.", "correct": "Shakespeare wrote Hamlet.", "reason": "主动语态动词不用过去分词，直接用过去式wrote"}
+          ],
+          "tips": "主动语态=主语做动作。强调'谁做的'用主动，强调'被怎么样了'用被动。",
+          "relatedCategories": ["被动语态基本构成", "各时态被动语态"]
+        }
+      ],
+      "被动语态 (Passive Voice)": [
+        {
+          "id": "gm_027",
+          "name": "被动语态的基本构成",
+          "level": "junior",
+          "plainLanguage": "被动语态就是'什么被怎么了'，主语是动作的承受者。比如'杯子被打破了'——杯子是被打破的对象。结构是be + 过去分词。不知道谁做的、或者不想说谁做的，就用被动。",
+          "rules": [
+            "结构：主语 + be + 过去分词（+ by + 动作执行者）",
+            "be动词的时态随句意变化：is/am/are, was/were, will be, have/has been等",
+            "by短语可选，用于指出动作执行者",
+            "不知道执行者或执行者不重要时用被动语态",
+            "及物动词才有被动语态"
+          ],
+          "examples": [
+            {"en": "The window was broken by Tom.", "cn": "窗户被汤姆打破了。"},
+            {"en": "English is spoken in many countries.", "cn": "很多国家说英语。"},
+            {"en": "The bridge was built in 1990.", "cn": "这座桥建于1990年。"},
+            {"en": "The letter was sent yesterday.", "cn": "信昨天被寄出了。"},
+            {"en": "This problem will be solved soon.", "cn": "这个问题很快就会被解决。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "The window was break by Tom.", "correct": "The window was broken by Tom.", "reason": "被动语态用be + 过去分词，break的过去分词是broken"},
+            {"wrong": "English is spoke in many countries.", "correct": "English is spoken in many countries.", "reason": "speak的过去分词是spoken，不是spoke"},
+            {"wrong": "The bridge built in 1990.", "correct": "The bridge was built in 1990.", "reason": "被动语态必须有be动词was/were，不能只有过去分词"}
+          ],
+          "tips": "被动=be+过去分词。be看时态，分词不能忘。by谁做的可以省略。",
+          "relatedCategories": ["主动语态", "各时态被动语态", "过去分词"]
+        },
+        {
+          "id": "gm_028",
+          "name": "各时态的被动语态",
+          "level": "senior",
+          "plainLanguage": "被动语态的be动词要跟着时态变。一般现在时用is/am/are+done，一般过去时用was/were+done，一般将来时用will be+done，现在完成时用have/has been+done。记住'be变时态，分词不变'。",
+          "rules": [
+            "一般现在时：is/am/are + done",
+            "一般过去时：was/were + done",
+            "一般将来时：will be + done",
+            "现在进行时：is/am/are being + done",
+            "现在完成时：have/has been + done",
+            "过去完成时：had been + done"
+          ],
+          "examples": [
+            {"en": "The room is cleaned every day.", "cn": "房间每天被打扫。（一般现在时被动）"},
+            {"en": "The car was repaired yesterday.", "cn": "车昨天被修了。（一般过去时被动）"},
+            {"en": "A new school will be built next year.", "cn": "明年将建一所新学校。（一般将来时被动）"},
+            {"en": "The house is being painted now.", "cn": "房子正在被粉刷。（现在进行时被动）"},
+            {"en": "The work has been finished.", "cn": "工作已经完成了。（现在完成时被动）"}
+          ],
+          "commonMistakes": [
+            {"wrong": "The room is clean every day.", "correct": "The room is cleaned every day.", "reason": "被动语态要用过去分词cleaned，clean是原形不是分词"},
+            {"wrong": "The house is painting now.", "correct": "The house is being painted now.", "reason": "房子被粉刷，要用被动进行时is being painted"},
+            {"wrong": "The work has finished.", "correct": "The work has been finished.", "reason": "工作是被完成的，要用被动语态has been finished"}
+          ],
+          "tips": "被动=be（随时态变）+ 过去分词（不变）。进行时多加being，完成时多加been。",
+          "relatedCategories": ["被动语态基本构成", "情态动词被动", "时态体系"]
+        },
+        {
+          "id": "gm_029",
+          "name": "带情态动词的被动语态",
+          "level": "senior",
+          "plainLanguage": "情态动词后面加被动很简单：情态动词 + be + 过去分词。比如'必须完成'是must be done，'可以做'是can be done。记住情态动词后面永远接动词原形，被动语态的原形就是be。",
+          "rules": [
+            "结构：情态动词（can/must/should/may等）+ be + 过去分词",
+            "情态动词后be动词用原形",
+            "否定：情态动词 + not + be + 过去分词",
+            "疑问：情态动词 + 主语 + be + 过去分词"
+          ],
+          "examples": [
+            {"en": "The work must be done today.", "cn": "这项工作必须今天完成。"},
+            {"en": "This problem can be solved easily.", "cn": "这个问题可以轻松解决。"},
+            {"en": "The rules should be followed by everyone.", "cn": "这些规则应该被所有人遵守。"},
+            {"en": "This book can't be taken out of the library.", "cn": "这本书不能带出图书馆。"},
+            {"en": "Must the report be handed in today?", "cn": "报告必须今天交吗？"}
+          ],
+          "commonMistakes": [
+            {"wrong": "The work must done today.", "correct": "The work must be done today.", "reason": "情态动词被动需要must + be + done，不能省略be动词"},
+            {"wrong": "This problem can be solve easily.", "correct": "This problem can be solved easily.", "reason": "被动语态要用过去分词solved，不是动词原形solve"},
+            {"wrong": "The book mustn't taken out.", "correct": "The book mustn't be taken out.", "reason": "情态动词否定被动也要有be动词"}
+          ],
+          "tips": "情态动词被动=情态动词+be+过去分词。be永远用原形，因为它跟在情态动词后面。",
+          "relatedCategories": ["被动语态基本构成", "情态动词", "各时态被动语态"]
+        },
+        {
+          "id": "gm_030",
+          "name": "双宾语和复合宾语的被动语态",
+          "level": "cet4",
+          "plainLanguage": "有些动词给两个宾语（给人+给物），变被动时可以选人当主语或选物当主语。选物当主语时，人前面要加to或for。比如'She gave me a book'变被动可以是'A book was given to me'。",
+          "rules": [
+            "双宾语动词（give/show/send/bring等）：间接宾语（人）提前直接做主语",
+            "直接宾语（物）提前做主语时，间接宾语前要加to（give类）或for（buy/cook类）",
+            "复合宾语（宾+宾补）变被动：原宾语做主语，宾补留原位",
+            "make/see/hear/let等使役动词变被动时，原省略的to要补回（如make sb do → sb be made to do）"
+          ],
+          "examples": [
+            {"en": "I was given a book. / A book was given to me.", "cn": "有人给了我一本书。"},
+            {"en": "She was bought a dress. / A dress was bought for her.", "cn": "有人给她买了条裙子。"},
+            {"en": "He was made to work overtime.", "cn": "他被要求加班。（主动语态是make him work overtime）"},
+            {"en": "The boy was seen to enter the building.", "cn": "有人看到男孩进入了大楼。"},
+            {"en": "We were called good students by the teacher.", "cn": "老师叫我们好学生。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "A book was given me.", "correct": "A book was given to me.", "reason": "直接宾语提前做主语时，间接宾语前要加to"},
+            {"wrong": "He was made work overtime.", "correct": "He was made to work overtime.", "reason": "make sb do变被动后要补回省略的to，变成be made to do"}
+          ],
+          "tips": "双宾语被动：人提前不用to，物提前人前面要加to/for。使役动词被动要补to！",
+          "relatedCategories": ["被动语态基本构成", "双宾语", "使役动词"]
+        }
+      ]
+    },
+
+    "从句 (Clauses)": {
+      "定语从句 (Attributive Clause)": [
+        {
+          "id": "gm_031",
+          "name": "关系代词that/which/who的用法",
+          "level": "senior",
+          "plainLanguage": "定语从句就是'用一个小句子来修饰一个名词'。比如'穿红衣服的女孩'在英语里就是'the girl who is wearing red'。who修饰人，which修饰物，that既可修饰人也可修饰物。它们在从句中作主语或宾语。",
+          "rules": [
+            "who：修饰人，在从句中作主语或宾语（作宾语可省略）",
+            "whom：修饰人，在从句中作宾语（口语中可省略或用who代替）",
+            "which：修饰物，在从句中作主语或宾语",
+            "that：修饰人或物，在从句中作主语或宾语",
+            "作宾语时关系代词可以省略"
+          ],
+          "examples": [
+            {"en": "The man who lives next door is a doctor.", "cn": "住在隔壁的那个男人是医生。"},
+            {"en": "The book which/that is on the table is mine.", "cn": "桌上那本书是我的。"},
+            {"en": "I know the girl (who/that) you met yesterday.", "cn": "我认识你昨天遇到的那个女孩。（作宾语可省略）"},
+            {"en": "This is the movie that/which everyone is talking about.", "cn": "这就是大家都在讨论的那部电影。"},
+            {"en": "The teacher who teaches us English is from America.", "cn": "教我们英语的那位老师来自美国。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "The man which lives next door is a doctor.", "correct": "The man who lives next door is a doctor.", "reason": "修饰人用who，不能用which"},
+            {"wrong": "The man who he lives next door is a doctor.", "correct": "The man who lives next door is a doctor.", "reason": "关系代词who在从句中作主语，后面不能再加he"}
+          ],
+          "tips": "who管人，which管物，that都能管。作宾语可以省。从句中不要重复主语/宾语！",
+          "relatedCategories": ["关系副词", "限制性与非限制性定语从句", "介词+关系代词"]
+        },
+        {
+          "id": "gm_032",
+          "name": "介词+关系代词",
+          "level": "senior",
+          "plainLanguage": "有时候关系代词前面可以加介词，比如'the room in which I live'（我住的房间）。人用whom，物用which。注意：加了介词后不能用that！口语中也可以把介词放到句末，用that/who/which或省略。",
+          "rules": [
+            "介词 + whom（修饰人）",
+            "介词 + which（修饰物）",
+            "介词+关系代词时不能用that",
+            "介词可移至从句末尾，此时关系代词可用that/who/which或省略",
+            "固定搭配中的介词不能提前（如look at, take care of中的介词不能移到which前面）"
+          ],
+          "examples": [
+            {"en": "The room in which I live is very small.", "cn": "我住的房间很小。"},
+            {"en": "The person to whom I spoke is our principal.", "cn": "和我说话的那个人是我们的校长。"},
+            {"en": "This is the book about which we were talking.", "cn": "这就是我们在讨论的那本书。"},
+            {"en": "The room (that) I live in is very small.", "cn": "我住的房间很小。（介词后移，可省略关系代词）"},
+            {"en": "He is the man from whom I learned a lot.", "cn": "他就是那个让我学到很多的人。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "The room in that I live is very small.", "correct": "The room in which I live is very small.", "reason": "介词后面不能用that，只能用which（物）或whom（人）"},
+            {"wrong": "The person to who I spoke is our principal.", "correct": "The person to whom I spoke is our principal.", "reason": "介词后修饰人用whom，不能用who"}
+          ],
+          "tips": "介词+which管物，介词+whom管人，千万别用that！固定搭配的介词不能提前。",
+          "relatedCategories": ["关系代词", "限制性与非限制性定语从句"]
+        },
+        {
+          "id": "gm_033",
+          "name": "关系副词when/where/why",
+          "level": "senior",
+          "plainLanguage": "when修饰时间（什么时候），where修饰地点（什么地方），why修饰原因（为什么）。它们等于'介词+which'：when=at/on/in which，where=in/at which，why=for which。",
+          "rules": [
+            "when：修饰表示时间的先行词，在从句中作时间状语（= 介词+which）",
+            "where：修饰表示地点的先行词，在从句中作地点状语（= 介词+which）",
+            "why：修饰表示原因的先行词（如reason），在从句中作原因状语（= for which）",
+            "关系副词不能作主语或宾语",
+            "关系副词=介词+which，可互换使用"
+          ],
+          "examples": [
+            {"en": "I still remember the day when I first met her.", "cn": "我还记得第一次见到她的那天。"},
+            {"en": "This is the city where I was born.", "cn": "这就是我出生的城市。"},
+            {"en": "That is the reason why he was late.", "cn": "那就是他迟到的原因。"},
+            {"en": "I'll never forget the day on which I graduated.", "cn": "我永远不会忘记毕业那天。"},
+            {"en": "This is the house where/in which Lu Xun once lived.", "cn": "这就是鲁迅曾经住过的房子。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "I still remember the day when I first met her there.", "correct": "I still remember the day when I first met her.", "reason": "when已经在从句中充当了时间状语，后面不能再用there等地点副词"},
+            {"wrong": "This is the city where I was born in.", "correct": "This is the city where I was born.", "reason": "where已经包含了in的含义，不能再加介词in"},
+            {"wrong": "This is the city which I was born.", "correct": "This is the city where I was born.", "reason": "从句I was born缺少地点状语，应该用where而不是which（which只作主语/宾语）"}
+          ],
+          "tips": "when管时间，where管地点，why管原因。它们都等于'介词+which'。从句里不能再重复介词！",
+          "relatedCategories": ["关系代词", "介词+关系代词", "状语从句"]
+        },
+        {
+          "id": "gm_034",
+          "name": "限制性与非限制性定语从句",
+          "level": "senior",
+          "plainLanguage": "限制性定语从句是'不可缺少的'——去掉后句子意思不明确，不用逗号隔开。非限制性是'补充说明的'——去掉也不影响主句意思，用逗号隔开，且不能用that。",
+          "rules": [
+            "限制性定语从句：不用逗号隔开，关系代词可用that，作宾语可省略",
+            "非限制性定语从句：用逗号隔开，不能用that，关系代词不可省略",
+            "非限制性定语从句只是对先行词补充说明，去掉不影响主句意思",
+            "修饰专有名词时通常用非限制性定语从句",
+            "非限制性定语从句的which可指代整个主句"
+          ],
+          "examples": [
+            {"en": "Students who work hard will pass the exam.", "cn": "努力学习的学生会通过考试。（限制性——指特定学生）"},
+            {"en": "My brother, who lives in Beijing, is a teacher.", "cn": "我哥哥，住在北京，是个老师。（非限制性——只有一个哥哥）"},
+            {"en": "He passed the exam, which made his parents happy.", "cn": "他通过了考试，这让他父母很高兴。（which指代整个主句）"},
+            {"en": "I love the book that you gave me.", "cn": "我喜欢你给我的那本书。（限制性）"},
+            {"en": "Paris, which is the capital of France, is a beautiful city.", "cn": "巴黎是法国的首都，是一座美丽的城市。（非限制性）"}
+          ],
+          "commonMistakes": [
+            {"wrong": "My brother, that lives in Beijing, is a teacher.", "correct": "My brother, who lives in Beijing, is a teacher.", "reason": "非限制性定语从句不能用that，只能用who/which"},
+            {"wrong": "Students, who work hard, will pass the exam.", "correct": "Students who work hard will pass the exam.", "reason": "这里需要限制性定语从句（不是所有学生都通过，只有努力的），不该用逗号隔开"}
+          ],
+          "tips": "有逗号=非限制=不用that；没逗号=限制性=可以用that。专有名词通常配非限制性。",
+          "relatedCategories": ["关系代词", "关系副词", "as引导的定语从句"]
+        },
+        {
+          "id": "gm_035",
+          "name": "as引导的定语从句",
+          "level": "cet4",
+          "plainLanguage": "as也可以引导定语从句，意思是'正如...一样'。它常用于固定搭配如as we know（正如我们所知）、as is known to all（众所周知）。as引导的非限制性定语从句可放在句首、句中或句末。",
+          "rules": [
+            "as引导非限制性定语从句，意为'正如...'",
+            "as可放在句首、句中或句末（比which灵活）",
+            "常见搭配：as we know, as is known to all, as has been mentioned等",
+            "as在从句中一般作主语或宾语",
+            "as与which引导非限制性从句的区别：as有'正如'的意思，which没有"
+          ],
+          "examples": [
+            {"en": "As we all know, the earth is round.", "cn": "众所周知，地球是圆的。"},
+            {"en": "He is from Australia, as is evident from his accent.", "cn": "他是澳大利亚人，这从他的口音很明显。"},
+            {"en": "As has been mentioned above, water is important.", "cn": "如上所述，水很重要。"},
+            {"en": "Taiwan is an inseparable part of China, as is known to all.", "cn": "众所周知，台湾是中国不可分割的一部分。"},
+            {"en": "She is very careful, as her work shows.", "cn": "她很细心，正如她的工作所显示的那样。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "Which we all know, the earth is round.", "correct": "As we all know, the earth is round.", "reason": "在句首引导非限制性定语从句时，只能用as，不能用which"},
+            {"wrong": "As is known to all that the earth is round.", "correct": "As is known to all, the earth is round.", "reason": "as引导的是定语从句，后面跟逗号；如果用that则是主语从句，结构不同"}
+          ],
+          "tips": "句首用as不用which（正如...）。固定搭配要背：as we know/as is known to all/as has been said。",
+          "relatedCategories": ["限制性与非限制性定语从句", "关系代词"]
+        }
+      ],
+      "名词性从句 (Noun Clause)": [
+        {
+          "id": "gm_036",
+          "name": "that引导的名词性从句",
+          "level": "senior",
+          "plainLanguage": "that引导名词性从句时，that只起连接作用，不充当句子成分，也没有实际意思。可以当主语从句、宾语从句、表语从句、同位语从句。注意：that在宾语从句中可省略，但在主语从句、表语从句、同位语从句中一般不省。",
+          "rules": [
+            "that在名词性从句中只起连接作用，不作成分，无实义",
+            "主语从句：That + 从句 + 谓语（that不可省）",
+            "宾语从句：动词 + that + 从句（口语中that可省）",
+            "表语从句：be + that + 从句（that不可省）",
+            "同位语从句：名词 + that + 从句（that不可省）"
+          ],
+          "examples": [
+            {"en": "That she survived the earthquake is a miracle.", "cn": "她在地震中幸存下来是个奇迹。（主语从句）"},
+            {"en": "I believe (that) you can do it.", "cn": "我相信你能做到。（宾语从句，that可省）"},
+            {"en": "The truth is that he lied to us.", "cn": "事实是他对我们撒了谎。（表语从句）"},
+            {"en": "The news that he won the prize excited everyone.", "cn": "他获奖的消息让所有人兴奋。（同位语从句）"},
+            {"en": "It is clear that he is innocent.", "cn": "很明显他是无辜的。（it作形式主语，that从句是真正主语）"}
+          ],
+          "commonMistakes": [
+            {"wrong": "That he is a good student is well known.", "correct": "That he is a good student is well known. / It is well known that he is a good student.", "reason": "原句语法正确，但更常用it作形式主语的结构：It is well known that..."},
+            {"wrong": "I believe that you are right and you will win.", "correct": "I believe that you are right and that you will win.", "reason": "第二个宾语从句前也应有that（引导两个并列宾语从句时，第二个that不能省略）"}
+          ],
+          "tips": "that只连接不作成分，宾语从句可省略，主语从句用it开头更地道。两个并列宾语从句，第二个that别忘加。",
+          "relatedCategories": ["whether/if引导的从句", "宾语从句时态一致", "同位语从句"]
+        },
+        {
+          "id": "gm_037",
+          "name": "whether与if的用法区别",
+          "level": "senior",
+          "plainLanguage": "whether和if都可以表示'是否'，但whether更全能——它可以用在所有名词性从句中，而if只能用在宾语从句中。记住'if不能放在句首'，所以主语从句、表语从句、同位语从句只能用whether。",
+          "rules": [
+            "whether可用于所有名词性从句（主语/宾语/表语/同位语）",
+            "if只能引导宾语从句，不能用于主语从句、表语从句、同位语从句",
+            "句首的宾语从句也只能用whether（不能用if）",
+            "whether后可加or not，if后一般不加or not（except 'whether or not'结构）",
+            "whether可接不定式（whether to do），if不能"
+          ],
+          "examples": [
+            {"en": "Whether he will come is still unknown.", "cn": "他是否会来还不知道。（主语从句，只能用whether）"},
+            {"en": "I don't know whether/if he will come.", "cn": "我不知道他会不会来。（宾语从句，两者都可）"},
+            {"en": "The question is whether we should go.", "cn": "问题是我们是否应该去。（表语从句，只能用whether）"},
+            {"en": "I wonder whether to go or to stay.", "cn": "我在想是去还是留。（whether + to do）"},
+            {"en": "The question whether he is guilty remains.", "cn": "他是否有罪这个问题仍未解决。（同位语从句，只能用whether）"}
+          ],
+          "commonMistakes": [
+            {"wrong": "If he will come is still unknown.", "correct": "Whether he will come is still unknown.", "reason": "主语从句不能用if，只能用whether"},
+            {"wrong": "The question is if we should go.", "correct": "The question is whether we should go.", "reason": "表语从句不能用if，只能用whether"},
+            {"wrong": "I don't know if to go or not.", "correct": "I don't know whether to go or not.", "reason": "whether后面可以接不定式，if不能"}
+          ],
+          "tips": "whether全场景通用，if只能做宾语从句。句首用whether，后面跟to do用whether，后面跟or not用whether。",
+          "relatedCategories": ["that引导的名词性从句", "疑问词引导的名词性从句"]
+        },
+        {
+          "id": "gm_038",
+          "name": "疑问词引导的名词性从句",
+          "level": "senior",
+          "plainLanguage": "who/what/when/where/why/how等疑问词都可以引导名词性从句。注意：在从句中要用陈述语序（主语+谓语），不能用疑问语序（谓语+主语）。比如'我不知道他是谁'是I don't know who he is，不是who is he。",
+          "rules": [
+            "疑问词（who/what/when/where/why/how等）引导名词性从句",
+            "从句必须用陈述语序：主语 + 谓语",
+            "疑问词在从句中充当成分（主语/宾语/表语/状语）",
+            "从句的时态要与主句呼应",
+            "疑问词的意思在从句中保留"
+          ],
+          "examples": [
+            {"en": "I don't know where he lives.", "cn": "我不知道他住哪里。（不是where does he live）"},
+            {"en": "What she said is true.", "cn": "她说的是真的。（主语从句）"},
+            {"en": "The question is how we can solve this problem.", "cn": "问题是我们如何解决这个问题。（表语从句）"},
+            {"en": "Can you tell me when the train arrives?", "cn": "你能告诉我火车什么时候到吗？（宾语从句，陈述语序）"},
+            {"en": "I wonder why he was late.", "cn": "我想知道他为什么迟到了。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "I don't know where does he live.", "correct": "I don't know where he lives.", "reason": "名词性从句要用陈述语序，不能用疑问语序does he live"},
+            {"wrong": "Can you tell me when will the train arrive?", "correct": "Can you tell me when the train will arrive?", "reason": "宾语从句要用陈述语序will the train arrive改成the train will arrive"}
+          ],
+          "tips": "名词性从句=陈述语序！疑问词放前面，后面跟主语+谓语。千万别用疑问语序！",
+          "relatedCategories": ["that引导的名词性从句", "宾语从句时态一致"]
+        },
+        {
+          "id": "gm_039",
+          "name": "宾语从句的时态一致",
+          "level": "senior",
+          "plainLanguage": "宾语从句的时态要跟着主句走：主句是现在时或将来时，从句该用什么用什么；主句是过去时，从句要变成对应的过去时态。但如果是客观真理，不管主句什么时态，从句都用一般现在时。",
+          "rules": [
+            "主句是现在时/将来时 → 从句时态根据实际情况定",
+            "主句是过去时 → 从句变成对应的过去时态",
+            "客观真理在从句中永远用一般现在时，不受主句影响",
+            "一般现在时 → 一般过去时；现在进行时 → 过去进行时",
+            "一般将来时(will) → 过去将来时(would)；现在完成时 → 过去完成时"
+          ],
+          "examples": [
+            {"en": "He says that he is busy.", "cn": "他说他很忙。（主句现在时，从句也现在时）"},
+            {"en": "He said that he was busy.", "cn": "他说他很忙。（主句过去时，从句变过去时）"},
+            {"en": "She told me she would come the next day.", "cn": "她告诉我她第二天会来。（will→would）"},
+            {"en": "The teacher told us that the earth is round.", "cn": "老师告诉我们地球是圆的。（客观真理，不受主句过去时影响）"},
+            {"en": "He said he had finished his homework.", "cn": "他说他已经完成了作业。（现在完成→过去完成）"}
+          ],
+          "commonMistakes": [
+            {"wrong": "He said that he is busy yesterday.", "correct": "He said that he was busy yesterday.", "reason": "主句said是过去时，从句也要用过去时was"},
+            {"wrong": "The teacher told us that the earth was round.", "correct": "The teacher told us that the earth is round.", "reason": "地球是圆的是客观真理，不受主句时态影响，用一般现在时is"}
+          ],
+          "tips": "主句过去时→从句退一步变过去时态。但客观真理永远是现在时！",
+          "relatedCategories": ["that引导的名词性从句", "疑问词引导的从句", "过去将来时"]
+        },
+        {
+          "id": "gm_040",
+          "name": "同位语从句",
+          "level": "cet4",
+          "plainLanguage": "同位语从句就是用一个从句来解释一个名词的具体内容。比如'他明天来的消息让我们高兴'中，'他明天来'是'消息'的内容。常跟在fact/news/idea/hope/question等名词后面，用that引导。",
+          "rules": [
+            "常跟在fact, news, idea, hope, question, truth, belief等抽象名词后",
+            "通常用that引导，that不充当成分但不可省略",
+            "也可用whether/when/where/why/how等引导",
+            "同位语从句解释名词的内容，定语从句修饰名词的特征",
+            "同位语从句中的that是连词，定语从句中的that是关系代词（作成分）"
+          ],
+          "examples": [
+            {"en": "The news that he won the prize excited everyone.", "cn": "他获奖的消息让大家兴奋。"},
+            {"en": "The fact that she passed the exam is true.", "cn": "她通过考试这个事实是真的。"},
+            {"en": "I have no idea when he will come back.", "cn": "我不知道他什么时候回来。"},
+            {"en": "The question whether we should accept the offer remains.", "cn": "我们是否应该接受这个提议的问题仍然存在。"},
+            {"en": "The belief that hard work pays off is widely shared.", "cn": "努力会有回报这一信念被广泛认同。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "The news that he told me is exciting.", "correct": "The news that he told me is exciting.", "reason": "注意：这里的that he told me是定语从句（that作told的宾语），不是同位语从句。同位语从句的that不作成分。"},
+            {"wrong": "The news he won the prize excited everyone.", "correct": "The news that he won the prize excited everyone.", "reason": "同位语从句的that不可省略"}
+          ],
+          "tips": "同位语从句=解释名词内容。that不省略、不作成分。和定语从句的区别：定语从句的that在从句中作主语或宾语。",
+          "relatedCategories": ["that引导的名词性从句", "定语从句", "whether/if"]
+        }
+      ],
+      "状语从句 (Adverbial Clause)": [
+        {
+          "id": "gm_041",
+          "name": "时间状语从句",
+          "level": "junior",
+          "plainLanguage": "时间状语从句就是告诉你'什么时候'的从句。用when（当...时）、while（当...期间）、as（一边...一边）、before（在...之前）、after（在...之后）、since（自从）、until（直到）、as soon as（一...就）等连接。",
+          "rules": [
+            "when：当...时（可接短暂性或延续性动作）",
+            "while：当...期间（接延续性动作，常用进行时）",
+            "as：一边...一边/随着",
+            "before：在...之前；after：在...之后",
+            "since：自从（主句现在完成时，从句一般过去时）",
+            "until/till：直到（not...until = 直到...才）",
+            "as soon as / the moment / directly：一...就"
+          ],
+          "examples": [
+            {"en": "When I arrived, he was reading.", "cn": "我到达时他正在看书。"},
+            {"en": "While she was cooking, I was cleaning.", "cn": "她做饭时我在打扫。"},
+            {"en": "I will call you as soon as I arrive.", "cn": "我一到就给你打电话。"},
+            {"en": "He didn't leave until the rain stopped.", "cn": "直到雨停了他才离开。"},
+            {"en": "It has been three years since I came here.", "cn": "自从我来这里已经三年了。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "While I arrived, he was reading.", "correct": "When I arrived, he was reading.", "reason": "while需要延续性动作，arrive是短暂性动作，应该用when"},
+            {"wrong": "I didn't go to bed until my mother came back.", "correct": "I didn't go to bed until my mother came back.", "reason": "此句正确。not...until表示'直到...才'"},
+            {"wrong": "I will call you as soon as I will arrive.", "correct": "I will call you as soon as I arrive.", "reason": "时间状语从句中用一般现在时表将来，不能直接用will arrive"}
+          ],
+          "tips": "主将从现：主句将来时，时间状语从句用一般现在时！while接延续性动作，when两者皆可。not...until='直到...才'。",
+          "relatedCategories": ["条件状语从句", "原因状语从句", "when与while区别"]
+        },
+        {
+          "id": "gm_042",
+          "name": "原因状语从句",
+          "level": "junior",
+          "plainLanguage": "原因状语从句就是说明'为什么'。用because（因为）、since（既然）、as（因为/由于）连接。because语气最强，可以回答why的提问；since和as语气弱，表示大家都知道的原因。",
+          "rules": [
+            "because：语气最强，可回答why提问，从句可放在主句前或后",
+            "since：表示大家都知道的原因，'既然'，从句一般在主句前",
+            "as：语气最弱，表示显然的原因",
+            "for：并列连词，不能放句首，表示补充说明原因",
+            "because of + 名词/名词短语（不是从句）"
+          ],
+          "examples": [
+            {"en": "I didn't go to school because I was sick.", "cn": "我没去上学因为我病了。"},
+            {"en": "Since you are here, let's start.", "cn": "既然你在这儿，我们开始吧。"},
+            {"en": "As it was getting dark, we hurried home.", "cn": "因为天快黑了，我们赶紧回家。"},
+            {"en": "He must be tired, for he worked all night.", "cn": "他一定很累，因为他工作了一整夜。"},
+            {"en": "She cried because of the sad movie.", "cn": "她因为那部悲伤的电影而哭了。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "Because I was sick, so I didn't go to school.", "correct": "Because I was sick, I didn't go to school.", "reason": "because和so不能同时使用，保留一个即可"},
+            {"wrong": "The reason is because he was late.", "correct": "The reason is that he was late.", "reason": "reason后面应该用that引导表语从句，不能用because（the reason is that是固定结构）"}
+          ],
+          "tips": "because和so不能同时用！中文'因为...所以...'英语只能选一个。the reason后面跟that不跟because。",
+          "relatedCategories": ["让步状语从句", "时间状语从句"]
+        },
+        {
+          "id": "gm_043",
+          "name": "条件状语从句",
+          "level": "junior",
+          "plainLanguage": "条件状语从句说'如果...就...'。用if（如果）、unless（如果不/除非）、as long as（只要）、in case（万一）等。最重要的规则：主句用将来时，从句用现在时表将来（主将从现）。",
+          "rules": [
+            "if：如果",
+            "unless = if not：除非/如果不",
+            "as long as：只要",
+            "in case：万一（以防）",
+            "主将从现：主句将来时，从句用一般现在时表将来",
+            "条件状语从句中不用will表将来"
+          ],
+          "examples": [
+            {"en": "If it rains tomorrow, I will stay at home.", "cn": "如果明天下雨，我就待在家里。"},
+            {"en": "You won't pass the exam unless you study hard.", "cn": "除非你努力学习，否则你不会通过考试。"},
+            {"en": "As long as you are happy, I am happy.", "cn": "只要你开心，我就开心。"},
+            {"en": "Take an umbrella in case it rains.", "cn": "带上伞以防下雨。"},
+            {"en": "If you heat ice, it melts.", "cn": "如果你加热冰，它就会融化。（客观真理）"}
+          ],
+          "commonMistakes": [
+            {"wrong": "If it will rain tomorrow, I will stay at home.", "correct": "If it rains tomorrow, I will stay at home.", "reason": "条件状语从句中用一般现在时表将来，不能用will"},
+            {"wrong": "Unless you don't study hard, you will fail.", "correct": "Unless you study hard, you will fail.", "reason": "unless本身已经含有否定意义（=if not），不需要再加否定词don't"}
+          ],
+          "tips": "条件从句=主将从现！主句will，从句用现在时。unless=if not，别再加否定！",
+          "relatedCategories": ["时间状语从句", "虚拟语气", "让步状语从句"]
+        },
+        {
+          "id": "gm_044",
+          "name": "让步状语从句",
+          "level": "senior",
+          "plainLanguage": "让步状语从句就是'虽然...但是...'或'尽管...'。用although/though（虽然）、even though（即使）、no matter what/how（无论什么/怎样）、while（虽然）等。记住英语中although和but不能同时用！",
+          "rules": [
+            "although/though：虽然（不能与but连用，可与yet连用）",
+            "even though/even if：即使",
+            "no matter + 疑问词 = 疑问词-ever：无论...",
+            "while：虽然（放句首）",
+            "as引导让步从句（倒装语序）：Tired as he was, he kept working."
+          ],
+          "examples": [
+            {"en": "Although it was raining, we went out.", "cn": "虽然在下雨，我们还是出去了。"},
+            {"en": "Even though she was tired, she kept working.", "cn": "即使很累，她还是继续工作。"},
+            {"en": "No matter what happens, I will support you.", "cn": "无论发生什么，我都支持你。"},
+            {"en": "However hard he tried, he couldn't pass.", "cn": "无论他多么努力，都没能通过。"},
+            {"en": "Child as he is, he knows a lot.", "cn": "虽然他还是个孩子，他知道很多。（as引导，倒装）"}
+          ],
+          "commonMistakes": [
+            {"wrong": "Although it was raining, but we went out.", "correct": "Although it was raining, we went out.", "reason": "although和but不能同时使用，中文可以说'虽然...但是...'，英语只能用一个"},
+            {"wrong": "No matter what you say it.", "correct": "No matter what you say.", "reason": "what在从句中作say的宾语，后面不能再加it"}
+          ],
+          "tips": "although/though和but不能同时出现！no matter+疑问词=疑问词-ever。as引导让步要倒装（名词/形容词/副词提前）。",
+          "relatedCategories": ["原因状语从句", "条件状语从句", "倒装句"]
+        },
+        {
+          "id": "gm_045",
+          "name": "目的与结果状语从句",
+          "level": "senior",
+          "plainLanguage": "目的状语从句说'为了...'，用so that（为了/以便）、in order that（为了）。结果状语从句说'如此...以至于...'，用so...that、such...that。记住so修饰形容词/副词，such修饰名词。",
+          "rules": [
+            "so that / in order that + 从句（目的，从句中常含can/could/may/might/will/would）",
+            "so + 形容词/副词 + that + 从句（结果）",
+            "such + (a/an) + 形容词 + 名词 + that + 从句（结果）",
+            "so + much/little/few/many + 名词 + that（特殊结构）",
+            "so that也可表结果（看语境），表目的时常有can/could等情态动词"
+          ],
+          "examples": [
+            {"en": "I got up early so that I could catch the bus.", "cn": "我早起是为了赶上公交车。（目的）"},
+            {"en": "He is so tall that he can reach the shelf.", "cn": "他如此高以至于能够到架子。（结果）"},
+            {"en": "It was such a good movie that I watched it twice.", "cn": "这电影太好了我看了两遍。（结果）"},
+            {"en": "She spoke loudly so that everyone could hear.", "cn": "她大声说话以便大家都能听到。（目的）"},
+            {"en": "There were so many people that we couldn't get in.", "cn": "人太多了我们进不去。（结果）"}
+          ],
+          "commonMistakes": [
+            {"wrong": "He is such tall that he can reach the shelf.", "correct": "He is so tall that he can reach the shelf.", "reason": "tall是形容词没有名词，要用so...that；such后必须接名词"},
+            {"wrong": "It was so good movie that I watched it twice.", "correct": "It was such a good movie that I watched it twice.", "reason": "good movie是名词短语，要用such a good movie"}
+          ],
+          "tips": "so+形容词/副词+that，such+(a/an)+形容词+名词+that。特殊情况：so many/much/few/little+名词+that。",
+          "relatedCategories": ["条件状语从句", "原因状语从句"]
+        },
+        {
+          "id": "gm_046",
+          "name": "方式与地点状语从句",
+          "level": "senior",
+          "plainLanguage": "方式状语从句说'像...一样/按照...方式'，用as（像）、as if/though（好像）、the way（以...方式）。地点状语从句说'在哪里'，用where（哪里）、wherever（无论哪里）。",
+          "rules": [
+            "as：按照...的方式/像...一样",
+            "as if / as though：好像（后面可用虚拟语气表示非真实情况）",
+            "the way (that)：以...方式",
+            "where：在...地方",
+            "wherever：无论在哪里"
+          ],
+          "examples": [
+            {"en": "Do as I tell you.", "cn": "按我说的做。"},
+            {"en": "He talks as if he knew everything.", "cn": "他说话好像什么都知道似的。"},
+            {"en": "Put the book where it was.", "cn": "把书放回原处。"},
+            {"en": "Wherever you go, I will follow you.", "cn": "无论你去哪里，我都跟着你。"},
+            {"en": "She cooks the way her mother does.", "cn": "她做饭的方式和她妈妈一样。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "Do like I tell you.", "correct": "Do as I tell you.", "reason": "引导方式状语从句用as，like是介词不引导从句（口语中可用，但不规范）"},
+            {"wrong": "He talks as if he knows everything.", "correct": "He talks as if he knew everything.", "reason": "as if后面如果表示非真实（他不可能什么都知道），要用虚拟语气knew"}
+          ],
+          "tips": "方式用as/as if，地点用where/wherever。as if后面表非真实要用虚拟！",
+          "relatedCategories": ["虚拟语气", "时间状语从句", "比较级"]
+        }
+      ]
+    },
+
+    "非谓语动词 (Non-finite Verbs)": {
+      "不定式 (Infinitive)": [
+        {
+          "id": "gm_047",
+          "name": "不定式作主语和宾语",
+          "level": "senior",
+          "plainLanguage": "不定式（to + 动词原形）可以当句子主语或宾语。比如'学英语很重要'就是To learn English is important。更常用it作形式主语：It is important to learn English。有些动词后只能接不定式作宾语，如want/decide/hope/plan等。",
+          "rules": [
+            "不定式作主语：To do sth is... 或 It is ... to do sth（更常用）",
+            "不定式作宾语：want/decide/hope/plan/expect/refuse/promise/agree + to do",
+            "不定式作宾语补足语：want/tell/ask/allow sb to do sth",
+            "It takes sb + 时间 + to do sth：花费某人多少时间做某事",
+            "It is + 形容词 + for sb to do sth / of sb to do sth"
+          ],
+          "examples": [
+            {"en": "To learn English well is important.", "cn": "学好英语很重要。"},
+            {"en": "It is important to learn English well.", "cn": "学好英语很重要。（it形式主语）"},
+            {"en": "I want to travel around the world.", "cn": "我想环游世界。"},
+            {"en": "It took me two hours to finish the work.", "cn": "我花了两小时完成工作。"},
+            {"en": "It is kind of you to help me.", "cn": "你真好，帮我。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "I want travel around the world.", "correct": "I want to travel around the world.", "reason": "want后面接不定式to travel，不能直接用动词原形"},
+            {"wrong": "It is important learn English well.", "correct": "It is important to learn English well.", "reason": "it形式主语后面要用to do不定式作真正主语"}
+          ],
+          "tips": "to do可以当主语和宾语。常用It is... to do结构。want/decide/hope/plan后必接to do。of sb用表示品质的形容词（kind/clever/foolish），for sb用其他。",
+          "relatedCategories": ["动名词作主语宾语", "不定式作定语", "不定式作状语"]
+        },
+        {
+          "id": "gm_048",
+          "name": "不定式作定语",
+          "level": "senior",
+          "plainLanguage": "不定式可以放在名词后面当定语，表示'要做的/需要做的'。比如'有很多事要做'是I have a lot of work to do。如果不定式是不及物动词，后面要加介词。",
+          "rules": [
+            "不定式放在名词/代词后作定语：名词 + to do",
+            "不定式与被修饰名词有动宾关系：I have a letter to write（write a letter）",
+            "不定式是不及物动词时需加介词：a room to live in",
+            "不定式与被修饰名词有主谓关系：the first man to arrive",
+            "用于序数词/最高级后：the best way to do it"
+          ],
+          "examples": [
+            {"en": "I have a lot of homework to do.", "cn": "我有很多作业要做。"},
+            {"en": "She is the first person to arrive.", "cn": "她是最早到的人。"},
+            {"en": "He needs a room to live in.", "cn": "他需要一个住的地方。"},
+            {"en": "Do you have anything to say?", "cn": "你有什么要说的吗？"},
+            {"en": "This is the best way to solve the problem.", "cn": "这是解决问题的最佳方法。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "He needs a room to live.", "correct": "He needs a room to live in.", "reason": "live是不及物动词，不能直接接room作宾语，需要加介词in"},
+            {"wrong": "I have a letter to write it.", "correct": "I have a letter to write.", "reason": "不定式to write已经和letter有动宾关系，不能再加宾语it"}
+          ],
+          "tips": "名词+to do作定语。不及物动词要加介词（live in, sit on, talk about）。不定式和名词有动宾关系时不再加宾语。",
+          "relatedCategories": ["不定式作主语宾语", "不定式作状语", "动名词"]
+        },
+        {
+          "id": "gm_049",
+          "name": "不定式作状语和补语",
+          "level": "senior",
+          "plainLanguage": "不定式可以当状语，表示目的（为了）、结果（以至于）、原因。也可以当宾语补足语，补充说明宾语要做什么，如tell sb to do sth。注意有些动词后省略to，如make sb do。",
+          "rules": [
+            "目的状语：to do / in order to do / so as to do（为了）",
+            "结果状语：too...to do（太...而不能）；enough to do（足够...可以）；only to do（结果却，表意外）",
+            "宾语补足语：tell/ask/want/allow sb to do sth",
+            "使役动词make/let/have sb do sth（省略to）→ 被动时补回to：be made to do",
+            "感官动词see/hear sb do sth（省略to，表全过程）→ 被动时补回to"
+          ],
+          "examples": [
+            {"en": "I got up early to catch the first bus.", "cn": "我早起为了赶上首班车。（目的）"},
+            {"en": "He is too young to go to school.", "cn": "他太小不能上学。（结果）"},
+            {"en": "She told me to wait here.", "cn": "她让我在这里等。（宾补）"},
+            {"en": "The boss made them work overtime.", "cn": "老板让他们加班。（省略to）"},
+            {"en": "He hurried to the station, only to find the train had left.", "cn": "他赶到车站，却发现火车已经走了。（结果，意外）"}
+          ],
+          "commonMistakes": [
+            {"wrong": "The boss made them to work overtime.", "correct": "The boss made them work overtime.", "reason": "使役动词make后接不带to的不定式，不能加to"},
+            {"wrong": "I told him wait here.", "correct": "I told him to wait here.", "reason": "tell后面接带to的不定式to wait，不能省略to"}
+          ],
+          "tips": "目的用to do/in order to do。too...to=太...不能。make/let/have省to，tell/ask/want不省to。被动时to要补回！",
+          "relatedCategories": ["不定式作主语宾语", "不定式作定语", "使役动词"]
+        },
+        {
+          "id": "gm_050",
+          "name": "不定式的时态和语态",
+          "level": "cet4",
+          "plainLanguage": "不定式也有时态变化：to do（一般），to be doing（进行），to have done（完成，表示动作发生在谓语之前）。被动形式是to be done（一般被动），to have been done（完成被动）。",
+          "rules": [
+            "一般式：to do（与谓语同时或之后发生）",
+            "进行式：to be doing（谓语发生时正在进行的动作）",
+            "完成式：to have done（在谓语之前已发生的动作）",
+            "被动一般式：to be done",
+            "被动完成式：to have been done"
+          ],
+          "examples": [
+            {"en": "He seems to know the answer.", "cn": "他似乎知道答案。（同时）"},
+            {"en": "He seems to be reading something.", "cn": "他似乎正在读什么。（进行）"},
+            {"en": "He is said to have written three books.", "cn": "据说他已经写了三本书。（完成，write发生在is said之前）"},
+            {"en": "The meeting to be held tomorrow is important.", "cn": "明天要开的会议很重要。（被动，将来）"},
+            {"en": "The project is reported to have been completed.", "cn": "据报道项目已完成。（被动完成）"}
+          ],
+          "commonMistakes": [
+            {"wrong": "He is said to write three books.", "correct": "He is said to have written three books.", "reason": "写书发生在is said之前，应该用完成式to have written"},
+            {"wrong": "The problem to solve is difficult.", "correct": "The problem to be solved is difficult.", "reason": "问题是'被'解决的，应该用被动式to be solved"}
+          ],
+          "tips": "to do=同时/之后，to be doing=正在进行，to have done=之前已完成。被动加be/been即可。",
+          "relatedCategories": ["不定式作主语宾语", "不定式作定语", "被动语态"]
+        }
+      ],
+      "动名词 (Gerund)": [
+        {
+          "id": "gm_051",
+          "name": "动名词的用法",
+          "level": "senior",
+          "plainLanguage": "动名词（动词+ing）可以当名词用——作主语、宾语、表语。有些动词后面只能接动名词不能接不定式，如enjoy/finish/practice/mind/suggest/avoid/consider等。介词后面也必须用动名词。",
+          "rules": [
+            "动名词作主语：Swimming is good for your health.",
+            "动名词作宾语：enjoy/finish/practice/mind/suggest/avoid/consider + doing",
+            "动名词作介词宾语：be good at doing, be interested in doing, look forward to doing",
+            "It's no use doing sth / There is no doing sth（固定句型）",
+            "动名词作表语：My hobby is reading."
+          ],
+          "examples": [
+            {"en": "Swimming is good for your health.", "cn": "游泳对你的健康有益。"},
+            {"en": "I enjoy reading novels.", "cn": "我喜欢读小说。"},
+            {"en": "She finished cleaning the room.", "cn": "她打扫完房间了。"},
+            {"en": "I'm looking forward to seeing you.", "cn": "我期待见到你。"},
+            {"en": "It's no use crying over spilt milk.", "cn": "覆水难收。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "I enjoy to read novels.", "correct": "I enjoy reading novels.", "reason": "enjoy后面只能接动名词doing，不能接不定式to do"},
+            {"wrong": "I'm looking forward to see you.", "correct": "I'm looking forward to seeing you.", "reason": "look forward to中的to是介词，后面要接动名词seeing，不是动词原形"},
+            {"wrong": "She finished to clean the room.", "correct": "She finished cleaning the room.", "reason": "finish后面只能接动名词cleaning，不能接不定式"}
+          ],
+          "tips": "只接doing的动词：enjoy/finish/practice/mind/suggest/avoid/consider/give up/can't help。介词后必接doing！look forward to doing不是to do！",
+          "relatedCategories": ["不定式作主语宾语", "动名词与不定式的区别", "分词"]
+        },
+        {
+          "id": "gm_052",
+          "name": "动名词与不定式的区别",
+          "level": "cet4",
+          "plainLanguage": "有些动词后面既可以接to do也可以接doing，但意思不同。比如remember to do（记得要做）vs remember doing（记得做过）；stop to do（停下来去做）vs stop doing（停止做）。还有一些动词接两者意思差不多，如like/love/start/begin。",
+          "rules": [
+            "remember to do: 记得要做（还没做）；remember doing: 记得做过（已发生）",
+            "forget to do: 忘了要做；forget doing: 忘了做过",
+            "stop to do: 停下来去做另一件事；stop doing: 停止正在做的事",
+            "try to do: 努力做；try doing: 试着做看看",
+            "mean to do: 打算做；mean doing: 意味着",
+            "regret to do: 遗憾要做；regret doing: 后悔做过"
+          ],
+          "examples": [
+            {"en": "Remember to lock the door.", "cn": "记得锁门。（还没锁）"},
+            {"en": "I remember locking the door.", "cn": "我记得锁了门。（已锁）"},
+            {"en": "He stopped to smoke.", "cn": "他停下来去抽烟。（去抽烟）"},
+            {"en": "He stopped smoking.", "cn": "他戒烟了。（不抽了）"},
+            {"en": "I regret to tell you that you failed.", "cn": "我很遗憾地告诉你你不及格。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "I remember to meet him before.", "correct": "I remember meeting him before.", "reason": "已经见过面了（已发生），应该用remember doing"},
+            {"wrong": "He stopped smoking to have a rest.", "correct": "He stopped to have a rest.", "reason": "停下来休息=stop to do，不是stop doing"}
+          ],
+          "tips": "to do=还没做/去做；doing=已经做了/正在做。remember/forget/stop/try/mean/regret后接两者意思不同，一定要记住！",
+          "relatedCategories": ["动名词的用法", "不定式作主语宾语"]
+        }
+      ],
+      "分词 (Participle)": [
+        {
+          "id": "gm_053",
+          "name": "现在分词的用法",
+          "level": "senior",
+          "plainLanguage": "现在分词（动词+ing）可以当形容词用，表示'主动的/正在进行的'。比如'an exciting match'（令人兴奋的比赛），'the girl reading a book'（正在看书的女孩）。它表示主动和进行。",
+          "rules": [
+            "现在分词表示主动和进行",
+            "作定语：a boring movie（令人无聊的电影），the boy standing there",
+            "作表语：The news is exciting.（令人兴奋的）",
+            "作宾补：I saw him crossing the street.（看到他正在过马路）",
+            "作状语：Walking in the park, I met a friend.（=When I was walking...）"
+          ],
+          "examples": [
+            {"en": "The exciting news made everyone happy.", "cn": "令人兴奋的消息让大家开心。"},
+            {"en": "The girl reading a book is my sister.", "cn": "正在看书的女孩是我妹妹。"},
+            {"en": "The movie is boring.", "cn": "这部电影很无聊。"},
+            {"en": "I saw him crossing the street.", "cn": "我看到他正在过马路。"},
+            {"en": "Hearing the news, she burst into tears.", "cn": "听到消息，她大哭起来。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "The excited news made everyone happy.", "correct": "The exciting news made everyone happy.", "reason": "消息是令人兴奋的（主动），用exciting；excited是'感到兴奋的'，修饰人"},
+            {"wrong": "The girl reads a book is my sister.", "correct": "The girl reading a book is my sister.", "reason": "作定语修饰girl应该用现在分词reading，不能用动词reads"}
+          ],
+          "tips": "现在分词=主动+进行。-ing修饰物（令人...的），-ed修饰人（感到...的）。如exciting movie vs excited audience。",
+          "relatedCategories": ["过去分词", "动名词与现在分词区别", "分词作状语"]
+        },
+        {
+          "id": "gm_054",
+          "name": "过去分词的用法",
+          "level": "senior",
+          "plainLanguage": "过去分词（动词的过去分词形式）也可以当形容词用，但表示'被动的/完成的'。比如'a broken window'（被打碎的窗户），'the excited people'（兴奋的人们）。和现在分词的区别是：现在分词主动进行，过去分词被动完成。",
+          "rules": [
+            "过去分词表示被动和完成",
+            "作定语：a broken cup（打碎的杯子），the language spoken here",
+            "作表语：He is interested in science.（感到感兴趣的）",
+            "作宾补：I had my hair cut.（让头发被剪）",
+            "作状语：Given more time, I could do better.（=If I were given...）"
+          ],
+          "examples": [
+            {"en": "The broken glass is on the floor.", "cn": "碎玻璃在地上。"},
+            {"en": "He was surprised at the result.", "cn": "他对结果感到惊讶。"},
+            {"en": "I had my bike repaired.", "cn": "我让人修了我的自行车。"},
+            {"en": "Written in English, the book is easy to read.", "cn": "这本书用英语写的，容易读。"},
+            {"en": "The excited children ran to the playground.", "cn": "兴奋的孩子们跑到操场上。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "The boring people left the theater.", "correct": "The bored people left the theater.", "reason": "人感到无聊用bored，不是boring；boring修饰令人无聊的事物"},
+            {"wrong": "I had my bike repair.", "correct": "I had my bike repaired.", "reason": "have sth done结构中，过去分词表示被动（让某事被做），用repaired不是repair"}
+          ],
+          "tips": "过去分词=被动+完成。-ing修饰物（令人...），-ed修饰人（感到...）。have sth done=让某事被别人做。",
+          "relatedCategories": ["现在分词", "被动语态", "分词作状语"]
+        },
+        {
+          "id": "gm_055",
+          "name": "分词作状语",
+          "level": "cet4",
+          "plainLanguage": "分词可以当状语，表示时间、原因、条件、让步等。现在分词表主动，过去分词表被动。比如'走在街上，我遇到了朋友'是Walking in the street, I met a friend（主动走路用walking）。'被给予更多时间，我能做得更好'用Given more time（被动用given）。",
+          "rules": [
+            "现在分词作状语：逻辑主语与主句主语一致且为主动关系",
+            "过去分词作状语：逻辑主语与主句主语一致且为被动关系",
+            "完成式：Having done sth, ...（先发生的动作）",
+            "分词作状语时其逻辑主语必须与主句主语一致",
+            "否定形式：Not having done / Not doing"
+          ],
+          "examples": [
+            {"en": "Walking along the street, I met an old friend.", "cn": "走在街上，我遇到了老朋友。"},
+            {"en": "Given more time, I could do it better.", "cn": "多给些时间，我能做得更好。"},
+            {"en": "Having finished his homework, he went out to play.", "cn": "做完作业后，他出去玩了。"},
+            {"en": "Not knowing what to do, he asked for help.", "cn": "不知道该怎么办，他求助了。"},
+            {"en": "Praised by the teacher, the student was very happy.", "cn": "被老师表扬，那个学生很开心。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "Walking along the street, an old friend met me.", "correct": "Walking along the street, I met an old friend.", "reason": "walking的逻辑主语应该和主句主语一致，是I在走而不是an old friend在走"},
+            {"wrong": "Having finished his homework, it was time to play.", "correct": "Having finished his homework, he went out to play.", "reason": "having finished的逻辑主语是he不是it，主句主语必须和分词逻辑主语一致"}
+          ],
+          "tips": "分词作状语，逻辑主语=主句主语！主动用doing，被动用done。先发生的用having done。否定加not在前。",
+          "relatedCategories": ["现在分词", "过去分词", "独立主格"]
+        },
+        {
+          "id": "gm_056",
+          "name": "独立主格结构",
+          "level": "cet6",
+          "plainLanguage": "独立主格就是'自带主语的分词结构'。普通分词作状语和主句共用主语，但独立主格有自己的主语。比如'The weather being fine, we went out'中weather是独立主格自己的主语。它不是完整的句子，只是补充说明。",
+          "rules": [
+            "结构：名词/代词 + 分词（现在分词或过去分词）",
+            "独立主格有自己的逻辑主语，与主句主语不同",
+            "可表时间、原因、条件、伴随等",
+            "名词 + doing（主动关系）/ 名词 + done（被动关系）",
+            "也可用名词 + 形容词/副词/介词短语/不定式"
+          ],
+          "examples": [
+            {"en": "The weather being fine, we went out for a picnic.", "cn": "天气好，我们出去野餐了。"},
+            {"en": "His homework finished, he went out to play.", "cn": "作业做完了，他出去玩了。"},
+            {"en": "The meeting over, everyone went home.", "cn": "会议结束了，大家都回家了。"},
+            {"en": "There being no bus, we had to walk home.", "cn": "没有公交车了，我们只好走路回家。"},
+            {"en": "He lay on the grass, his hands crossed behind his head.", "cn": "他躺在草地上，双手交叉在脑后。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "Weather being fine, we went out for a picnic.", "correct": "The weather being fine, we went out for a picnic.", "reason": "独立主格中的名词需要有冠词等限定词，应是The weather being fine"},
+            {"wrong": "His homework finished, he went out to play.", "correct": "His homework finished, he went out to play.", "reason": "此句正确。homework和finish是被动关系，用过去分词finished"},
+            {"wrong": "There is no bus, we had to walk home.", "correct": "There being no bus, we had to walk home.", "reason": "两句之间没有连词连接，应改为独立主格结构There being no bus"}
+          ],
+          "tips": "独立主格=自己的主语+分词/形容词/副词。和分词作状语的区别：分词作状语和主句共用主语，独立主格有自己的主语。",
+          "relatedCategories": ["分词作状语", "现在分词", "过去分词"]
+        }
+      ]
+    },
+
+    "虚拟语气 (Subjunctive Mood)": {
+      "if条件虚拟 (if Subjunctive)": [
+        {
+          "id": "gm_057",
+          "name": "与现在事实相反的虚拟语气",
+          "level": "senior",
+          "plainLanguage": "当我们说一个和现在不一样的假设时，就用虚拟语气。比如'如果我是你，我就不会那么做'——我不是你，所以用虚拟。结构是：if + 一般过去时（be动词全用were），主句用would/should/could/might + 动词原形。",
+          "rules": [
+            "从句：一般过去时（be动词一律用were，不分人称）",
+            "主句：would/should/could/might + 动词原形",
+            "表示与现在事实相反的假设",
+            "if从句中如果有were/had/should，可省略if，将were/had/should提至主语前（倒装）",
+            "if从句的were在口语中第一/三人称单数也可用was，但正式场合用were"
+          ],
+          "examples": [
+            {"en": "If I were you, I would not do that.", "cn": "如果我是你，我就不会那样做。"},
+            {"en": "If he had time, he would help us.", "cn": "如果他有时间，他会帮我们。"},
+            {"en": "If I were a bird, I could fly.", "cn": "如果我是一只鸟，我就能飞。"},
+            {"en": "If she knew the truth, she would be angry.", "cn": "如果她知道真相，她会生气的。"},
+            {"en": "Were I you, I would study harder. (省略if倒装)", "cn": "如果我是你，我会更努力学习。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "If I am you, I would not do that.", "correct": "If I were you, I would not do that.", "reason": "与现在事实相反的虚拟语气，if从句用一般过去时，be动词用were不能用am或is"},
+            {"wrong": "If I were you, I will not do that.", "correct": "If I were you, I would not do that.", "reason": "主句也要用虚拟语气，用would而不是will"}
+          ],
+          "tips": "现在虚拟：if+过去时（were全用），主句would+原形。'如果我是你'就是If I were you，记住were不变。",
+          "relatedCategories": ["与过去事实相反的虚拟", "与将来事实相反的虚拟", "条件状语从句"]
+        },
+        {
+          "id": "gm_058",
+          "name": "与过去事实相反的虚拟语气",
+          "level": "senior",
+          "plainLanguage": "当我们后悔过去没做的事时用这个。比如'如果我当时学了，就能通过了'——当时没学，是假设。结构是：if + 过去完成时（had done），主句用would/should/could/might + have + 过去分词。",
+          "rules": [
+            "从句：过去完成时（had + 过去分词）",
+            "主句：would/should/could/might + have + 过去分词",
+            "表示与过去事实相反的假设",
+            "省略if的倒装：Had + 主语 + 过去分词, 主句...",
+            "主句的would have done表示对过去的虚拟推测"
+          ],
+          "examples": [
+            {"en": "If I had studied harder, I would have passed the exam.", "cn": "如果我当时更努力学习，就能通过考试了。"},
+            {"en": "If he had known the truth, he would have told us.", "cn": "如果他当时知道真相，他会告诉我们的。"},
+            {"en": "If she had taken the medicine, she would have gotten better.", "cn": "如果她当时吃了药，就会好起来的。"},
+            {"en": "Had I known it earlier, I would have helped you.", "cn": "如果我早点知道，我就会帮你了。（倒装）"},
+            {"en": "If it had not rained, we would have gone out.", "cn": "如果不下雨，我们就出去了。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "If I studied harder, I would have passed the exam.", "correct": "If I had studied harder, I would have passed the exam.", "reason": "与过去事实相反的虚拟语气，if从句要用过去完成时had studied，不是一般过去时studied"},
+            {"wrong": "If I had studied harder, I would pass the exam.", "correct": "If I had studied harder, I would have passed the exam.", "reason": "主句也要用对应的过去虚拟形式would have passed，不能用would pass"}
+          ],
+          "tips": "过去虚拟：if+had done，主句would have done。两个都用过去完成相关形式！Had开头可省if。",
+          "relatedCategories": ["与现在事实相反的虚拟", "与将来事实相反的虚拟", "过去完成时"]
+        },
+        {
+          "id": "gm_059",
+          "name": "与将来事实相反的虚拟语气",
+          "level": "senior",
+          "plainLanguage": "当我们预测将来不太可能发生的事时用这个。结构是：if + 一般过去时/should do/were to do，主句用would/should/could/might + 动词原形。三种从句形式中，were to do最不可能，should do可能性稍大。",
+          "rules": [
+            "从句形式一：一般过去时（如rained）",
+            "从句形式二：should + 动词原形（如should rain）",
+            "从句形式三：were to + 动词原形（如were to rain）",
+            "主句：would/should/could/might + 动词原形",
+            "should do形式也可用于第一人称条件句（表万一）"
+          ],
+          "examples": [
+            {"en": "If it rained tomorrow, the match would be canceled.", "cn": "如果明天下雨，比赛就会取消。"},
+            {"en": "If it should rain tomorrow, we would stay at home.", "cn": "万一明天下雨，我们就待在家。"},
+            {"en": "If the sun were to rise in the west, I would not change my mind.", "cn": "就算太阳从西边升起，我也不会改变主意。"},
+            {"en": "If you were to fail, what would you do?", "cn": "万一你失败了，你会怎么办？"},
+            {"en": "Should it rain tomorrow, we would cancel the trip.", "cn": "万一天下雨，我们就取消旅行。（倒装）"}
+          ],
+          "commonMistakes": [
+            {"wrong": "If it will rain tomorrow, the match would be canceled.", "correct": "If it rained tomorrow, the match would be canceled.", "reason": "与将来虚拟的if从句不能用will，要用一般过去时rained/should rain/were to rain"},
+            {"wrong": "If it were to rain tomorrow, the match is canceled.", "correct": "If it were to rain tomorrow, the match would be canceled.", "reason": "主句要用虚拟语气would be canceled，不能用一般现在时is canceled"}
+          ],
+          "tips": "将来虚拟从句三选一：过去时/should do/were to do，主句永远would+原形。should开头可省if。",
+          "relatedCategories": ["与现在事实相反的虚拟", "与过去事实相反的虚拟", "条件状语从句"]
+        },
+        {
+          "id": "gm_060",
+          "name": "混合条件句（错综时间虚拟）",
+          "level": "cet4",
+          "plainLanguage": "有时候if从句和主句的时间不一样，比如从句说过去的事，主句说现在的影响。这时各自按自己的时间用对应虚拟形式。比如'如果我当时学了，现在就不会这么惨了'——从句过去虚拟，主句现在虚拟。",
+          "rules": [
+            "从句和主句时间不一致时，各自用对应时态的虚拟形式",
+            "从句过去 + 主句现在：if + had done, would + do",
+            "从句现在 + 主句过去：if + did/were, would have done",
+            "必须根据上下文判断各自的虚拟时间",
+            "判断方法：看从句和主句分别描述什么时间的事"
+          ],
+          "examples": [
+            {"en": "If I had studied medicine, I would be a doctor now.", "cn": "如果我当初学医，现在就是医生了。（从句过去，主句现在）"},
+            {"en": "If he were rich, he would have bought the house last year.", "cn": "如果他有钱，去年就买那房子了。（从句现在，主句过去）"},
+            {"en": "If I were you, I would have accepted the offer yesterday.", "cn": "如果我是你，昨天就接受那个提议了。"},
+            {"en": "Had she been more careful, she would not make mistakes now.", "cn": "如果她当初更仔细，现在就不会犯错了。"},
+            {"en": "If you had told me earlier, I would know what to do now.", "cn": "如果你早点告诉我，我现在就知道该怎么办了。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "If I had studied medicine, I would have been a doctor now.", "correct": "If I had studied medicine, I would be a doctor now.", "reason": "主句描述现在（now），应该用现在虚拟would be，不能用过去虚拟would have been"},
+            {"wrong": "If he were rich, he would buy the house last year.", "correct": "If he were rich, he would have bought the house last year.", "reason": "主句描述过去（last year），应该用过去虚拟would have bought，不能用would buy"}
+          ],
+          "tips": "混合条件句=从句和主句各用各的虚拟时态！看时间状语判断是过去还是现在。",
+          "relatedCategories": ["与现在事实相反的虚拟", "与过去事实相反的虚拟", "与将来事实相反的虚拟"]
+        }
+      ],
+      "其他虚拟 (Other Subjunctive)": [
+        {
+          "id": "gm_061",
+          "name": "wish后的虚拟语气",
+          "level": "senior",
+          "plainLanguage": "wish表示'真希望...就好了'，后面要用虚拟语气。对现在的愿望用过去时（be用were），对过去的愿望用过去完成时（had done），对将来的愿望用would/could + 动词原形。",
+          "rules": [
+            "wish + 过去时（were）：对现在的愿望",
+            "wish + 过去完成时（had done）：对过去的愿望/遗憾",
+            "wish + would/could do：对将来的愿望",
+            "wish和hope的区别：wish表示不太可能实现的愿望，hope表示有可能实现的希望",
+            "If only + 虚拟语气 = wish + 虚拟语气（但更强烈）"
+          ],
+          "examples": [
+            {"en": "I wish I were taller.", "cn": "真希望我能高点。（现在）"},
+            {"en": "I wish I had studied harder.", "cn": "真希望我当时更努力。（过去）"},
+            {"en": "I wish it would stop raining.", "cn": "希望雨能停。（将来）"},
+            {"en": "She wishes she could fly.", "cn": "她希望自己能飞。"},
+            {"en": "If only I had listened to your advice!", "cn": "要是我听了你的建议就好了！"}
+          ],
+          "commonMistakes": [
+            {"wrong": "I wish I am taller.", "correct": "I wish I were taller.", "reason": "wish后用虚拟语气，be动词用were，不能用现在时am"},
+            {"wrong": "I wish I would have studied harder.", "correct": "I wish I had studied harder.", "reason": "对过去的遗憾用had done，不能用would have done"},
+            {"wrong": "I hope I were taller.", "correct": "I wish I were taller.", "reason": "hope后不接虚拟语气，不太可能实现的愿望用wish"}
+          ],
+          "tips": "wish+过去时=对现在，wish+had done=对过去，wish+would do=对将来。hope不接虚拟！If only=wish但更强烈。",
+          "relatedCategories": ["与现在事实相反的虚拟", "与过去事实相反的虚拟", "would rather"]
+        },
+        {
+          "id": "gm_062",
+          "name": "suggest等动词后的虚拟语气",
+          "level": "cet4",
+          "plainLanguage": "有些动词表示'建议/命令/要求'时，后面的宾语从句用虚拟语气：(should) + 动词原形。should可以省略。这些动词有：suggest/advise/insist/demand/require/order/propose等。",
+          "rules": [
+            "suggest/advise/insist/demand/require/order/propose + that + (should) + 动词原形",
+            "should可以省略，只剩动词原形",
+            "It is suggested/advised/required that + (should) + 动词原形",
+            "It is important/necessary/essential that + (should) + 动词原形",
+            "suggestion/advice/order/requirement等名词后的表语/同位语从句也用虚拟语气"
+          ],
+          "examples": [
+            {"en": "The doctor suggested that he (should) stop smoking.", "cn": "医生建议他戒烟。"},
+            {"en": "I insist that he (should) be present.", "cn": "我坚持要求他出席。"},
+            {"en": "It is required that everyone (should) wear a seat belt.", "cn": "要求每个人都系安全带。"},
+            {"en": "It is important that we (should) learn English well.", "cn": "学好英语很重要。"},
+            {"en": "My suggestion is that we (should) leave early.", "cn": "我的建议是我们早点出发。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "The doctor suggested that he stops smoking.", "correct": "The doctor suggested that he (should) stop smoking.", "reason": "suggest后的宾语从句用虚拟语气(should) + 动词原形stop，不能用第三人称单数stops"},
+            {"wrong": "It is important that we learn English well.", "correct": "It is important that we (should) learn English well.", "reason": "此句正确。learn是原形，符合虚拟语气要求。should可省略。"},
+            {"wrong": "I insist that he is present.", "correct": "I insist that he (should) be present.", "reason": "insist后的宾语从句用虚拟语气(should) be，不能用is"}
+          ],
+          "tips": "建议命令要求类动词后的从句：(should)+原形！should可省。记住这些词：一坚持insist、二命令order/command、四建议suggest/advise/propose/recommend、五要求demand/require/request/desire/urge。",
+          "relatedCategories": ["宾语从句时态一致", "that引导的名词性从句"]
+        },
+        {
+          "id": "gm_063",
+          "name": "would rather的虚拟语气",
+          "level": "cet4",
+          "plainLanguage": "would rather表示'宁愿'，后面可以接虚拟语气。对现在/将来的虚拟用过去时，对过去的虚拟用过去完成时。比如'我宁愿你昨天没来'用I would rather you hadn't come yesterday。",
+          "rules": [
+            "would rather + 动词原形：表示自己宁愿做某事",
+            "would rather + 主语 + 过去时：表示对现在/将来的虚拟",
+            "would rather + 主语 + 过去完成时：表示对过去的虚拟",
+            "would rather do A than do B：宁愿做A不愿做B",
+            "would rather后面的从句主语和主句主语不同时用虚拟语气"
+          ],
+          "examples": [
+            {"en": "I would rather stay at home.", "cn": "我宁愿待在家。"},
+            {"en": "I would rather you didn't smoke.", "cn": "我宁愿你不抽烟。（现在/将来）"},
+            {"en": "I would rather you hadn't told her the truth.", "cn": "我宁愿你当时没告诉她真相。（过去）"},
+            {"en": "I would rather walk than take a bus.", "cn": "我宁愿走路也不坐公交。"},
+            {"en": "She would rather not talk about it.", "cn": "她宁愿不谈这件事。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "I would rather you don't smoke.", "correct": "I would rather you didn't smoke.", "reason": "would rather后接虚拟语气，对现在用过去时didn't，不能用现在时don't"},
+            {"wrong": "I would rather you hadn't come tomorrow.", "correct": "I would rather you didn't come tomorrow.", "reason": "tomorrow是将来时间，对将来用过去时didn't come，不能用过去完成时hadn't come"}
+          ],
+          "tips": "would rather+别人做：现在/将来用过去时，过去用过去完成时。would rather do A than do B=宁愿做A不做B。",
+          "relatedCategories": ["wish后的虚拟语气", "与过去事实相反的虚拟"]
+        },
+        {
+          "id": "gm_064",
+          "name": "as if/though的虚拟语气",
+          "level": "cet4",
+          "plainLanguage": "as if/though表示'好像'，当后面说的情况不太真实时用虚拟语气。对现在用过去时（be用were），对过去用过去完成时。如果可能是真实的，就不用虚拟。",
+          "rules": [
+            "as if/though + 过去时（were）：表示与现在事实不符",
+            "as if/though + 过去完成时（had done）：表示与过去事实不符",
+            "如果后面情况可能是真实的，用陈述语气（不用虚拟）",
+            "It looks as if it is going to rain.（可能真的要下雨）",
+            "He talks as if he were the boss.（他不是老板，虚拟）"
+          ],
+          "examples": [
+            {"en": "He talks as if he knew everything.", "cn": "他说话好像什么都知道。（现在虚拟）"},
+            {"en": "She looks as if she were sick.", "cn": "她看起来好像生病了。（现在虚拟）"},
+            {"en": "He talked as if he had seen a ghost.", "cn": "他说话好像见了鬼一样。（过去虚拟）"},
+            {"en": "It looks as if it is going to rain.", "cn": "看起来好像要下雨了。（可能真的下雨，用陈述语气）"},
+            {"en": "The child acts as though he were an adult.", "cn": "那孩子表现得好像大人一样。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "He talks as if he knows everything.", "correct": "He talks as if he knew everything.", "reason": "他不可能什么都知道，表示与现在不符要用虚拟knew"},
+            {"wrong": "It looks as if it were going to rain.", "correct": "It looks as if it is going to rain.", "reason": "可能真的要下雨（真实情况），不需要用虚拟语气，用一般现在时is going"}
+          ],
+          "tips": "as if后虚拟与否取决于真假：不太可能=虚拟（were/had done），可能真实=陈述（is/was）。be动词用were。",
+          "relatedCategories": ["方式状语从句", "wish后的虚拟语气", "与现在事实相反的虚拟"]
+        },
+        {
+          "id": "gm_065",
+          "name": "It is (high) time的虚拟语气",
+          "level": "cet4",
+          "plainLanguage": "It is time that...表示'该做某事了'，后面的从句用虚拟语气，动词用过去时。加high表示'早该做'了，语气更强。比如'该走了'是It is time we left。",
+          "rules": [
+            "It is (high/about) time that + 主语 + 过去时",
+            "表示'该做某事了'（但实际上还没做）",
+            "be动词用were",
+            "也可以用It is time for sb to do sth（不定式，不用虚拟）",
+            "high time比time语气更强烈，表示'早就该...了'"
+          ],
+          "examples": [
+            {"en": "It is time we went home.", "cn": "我们该回家了。"},
+            {"en": "It is high time that you stopped complaining.", "cn": "你早该停止抱怨了。"},
+            {"en": "It is about time we left.", "cn": "我们差不多该走了。"},
+            {"en": "It is time for us to go.", "cn": "我们该走了。（不定式结构）"},
+            {"en": "It is high time that the problem were solved.", "cn": "这个问题早该解决了。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "It is time we go home.", "correct": "It is time we went home.", "reason": "It is time后用虚拟语气，动词用过去时went，不能用现在时go"},
+            {"wrong": "It is high time you stop complaining.", "correct": "It is high time you stopped complaining.", "reason": "It is high time后用虚拟语气，动词用过去时stopped"}
+          ],
+          "tips": "It is (high) time + 过去时='该做...了'。也可以用It is time for sb to do sth（更简单）。high=早就该。",
+          "relatedCategories": ["would rather的虚拟", "wish后的虚拟语气"]
+        }
+      ]
+    },
+
+    "特殊句式 (Special Structures)": {
+      "倒装句 (Inversion)": [
+        {
+          "id": "gm_066",
+          "name": "完全倒装",
+          "level": "senior",
+          "plainLanguage": "完全倒装就是把整个谓语提到主语前面。常用于表示方位的副词（here/there/up/down等）或介词短语放在句首时。比如'公交车来了'是Here comes the bus（不是The bus comes here）。",
+          "rules": [
+            "结构：副词/介词短语 + 谓语（全提） + 主语",
+            "常见触发词：here, there, up, down, in, out, away等方位副词",
+            "介词短语放句首也可触发完全倒装",
+            "主语必须是名词才能完全倒装（主语是代词则不倒装）",
+            "此时常用一般现在时或一般过去时"
+          ],
+          "examples": [
+            {"en": "Here comes the bus.", "cn": "公交车来了。"},
+            {"en": "There goes the bell.", "cn": "铃响了。"},
+            {"en": "Out rushed the children.", "cn": "孩子们冲了出来。"},
+            {"en": "In front of the house stands a tall tree.", "cn": "房前有一棵大树。"},
+            {"en": "Away flew the bird.", "cn": "鸟飞走了。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "Here the bus comes.", "correct": "Here comes the bus.", "reason": "here在句首，主语the bus是名词，需要完全倒装为Here comes the bus"},
+            {"wrong": "Here comes he.", "correct": "Here he comes.", "reason": "主语是代词he时不倒装，用Here he comes"},
+            {"wrong": "Out the children rushed.", "correct": "Out rushed the children.", "reason": "out在句首，主语the children是名词，需要完全倒装为Out rushed the children"}
+          ],
+          "tips": "完全倒装=谓语全提主语前。名词主语才倒装，代词主语不倒装！Here comes the bus. But: Here he comes.",
+          "relatedCategories": ["部分倒装", "there be句型", "so/neither倒装"]
+        },
+        {
+          "id": "gm_067",
+          "name": "部分倒装",
+          "level": "senior",
+          "plainLanguage": "部分倒装就是只把助动词/情态动词/be动词提到主语前面。常见触发条件：否定词放句首（never/hardly/not only等）、only+状语放句首、so/neither/nor放句首表示'也/也不'。",
+          "rules": [
+            "否定副词放句首：Never/Hardly/Seldom/Little/Not only + 助动词 + 主语 + ...",
+            "only + 状语放句首：Only then/Only by/Only when + 助动词 + 主语 + ...",
+            "so/neither/nor放句首：So/Neither/Nor + 助动词 + 主语",
+            "Not until放句首：Not until + ... + 助动词 + 主语 + ...",
+            "No sooner...than / Hardly...when：No sooner/Hardly + had + 主语 + 过去分词"
+          ],
+          "examples": [
+            {"en": "Never have I seen such a beautiful place.", "cn": "我从没见过这么美的地方。"},
+            {"en": "Only then did he realize his mistake.", "cn": "直到那时他才意识到自己的错误。"},
+            {"en": "Not only does he study hard, but he also helps others.", "cn": "他不仅努力学习，还帮助别人。"},
+            {"en": "Hardly had he sat down when the phone rang.", "cn": "他刚坐下电话就响了。"},
+            {"en": "Not until midnight did he finish his work.", "cn": "直到午夜他才完成工作。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "Never I have seen such a beautiful place.", "correct": "Never have I seen such a beautiful place.", "reason": "否定词Never放句首要部分倒装，把have提到主语I前面"},
+            {"wrong": "Only then he realized his mistake.", "correct": "Only then did he realize his mistake.", "reason": "Only + then放句首要部分倒装，用did提问的形式"},
+            {"wrong": "Not only he studies hard, but he also helps others.", "correct": "Not only does he study hard, but he also helps others.", "reason": "Not only放句首要部分倒装，用does + study（原形）"}
+          ],
+          "tips": "否定词/only放句首=部分倒装！把助动词/be/情态动词提前。Not only...but also前后要平衡。",
+          "relatedCategories": ["完全倒装", "so/neither倒装", "否定句"]
+        }
+      ],
+      "强调句 (Cleft Sentence)": [
+        {
+          "id": "gm_068",
+          "name": "强调句的结构",
+          "level": "senior",
+          "plainLanguage": "强调句就是'就是...才...'。结构是It is/was + 被强调部分 + that/who + 其他部分。可以强调主语、宾语、时间状语、地点状语等。比如'我就是昨天在公园遇到他的'用It was yesterday that I met him in the park。",
+          "rules": [
+            "结构：It is/was + 被强调部分 + that/who + 句子其他部分",
+            "强调人可用who，强调物用that",
+            "可以强调主语、宾语、状语",
+            "不能强调谓语动词（谓语用do/does/did强调）",
+            "判断方法：去掉It is/was和that后，句子仍完整=强调句",
+            "not...until的强调：It is/was not until...that..."
+          ],
+          "examples": [
+            {"en": "It was John who/that broke the window.", "cn": "就是约翰打破了窗户。（强调主语）"},
+            {"en": "It was the window that John broke.", "cn": "约翰打破的就是窗户。（强调宾语）"},
+            {"en": "It was yesterday that I met him.", "cn": "我就是在昨天遇到他的。（强调时间状语）"},
+            {"en": "It was in the park that I met him.", "cn": "我就是在公园遇到他的。（强调地点状语）"},
+            {"en": "It was not until midnight that he came back.", "cn": "直到午夜他才回来。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "It was yesterday when I met him.", "correct": "It was yesterday that I met him.", "reason": "强调句用that连接，不能用when（when是定语从句/时间状语从句的引导词）"},
+            {"wrong": "It was he who broke the window, isn't it?", "correct": "It was he who broke the window, wasn't it?", "reason": "反义疑问句要跟主句时态一致，It was用wasn't it"},
+            {"wrong": "It is I who am wrong.", "correct": "It is I who am wrong.", "reason": "此句正确。强调主语I时，从句谓语与I保持一致用am"}
+          ],
+          "tips": "强调句=It is/was + 强调部分 + that + 其他。去掉It is/was...that后句子仍通顺=是强调句！强调谓语用do/does/did。",
+          "relatedCategories": ["倒装句", "not until结构", "定语从句"]
+        }
+      ],
+      "省略句 (Ellipsis)": [
+        {
+          "id": "gm_069",
+          "name": "省略句的用法",
+          "level": "senior",
+          "plainLanguage": "省略句就是在不引起误解的情况下省掉一些词，使语言更简洁。常见省略：主谓省略（如'想要吗？'Want some?）、不定式省略to（如'你想去吗？''I'd love to'）、状语从句省略主语和be动词。",
+          "rules": [
+            "并列句省略：相同的主语/谓语/宾语可省略",
+            "状语从句省略：When/While/If/Though + 主语 + be可省略主语和be",
+            "不定式省略：保留to省略后面的动词",
+            "日常口语省略：Got it? = Have you got it?",
+            "答语省略：Are you ready? - Yes, I am (ready)."
+          ],
+          "examples": [
+            {"en": "While (I was) walking in the park, I met a friend.", "cn": "在公园散步时我遇到了朋友。"},
+            {"en": "If (it is) necessary, we will ask for help.", "cn": "如果有必要，我们会求助。"},
+            {"en": "- Would you like to come? - I'd love to (come).", "cn": "——你想来吗？——我很想来。"},
+            {"en": "She likes apples, and I (like apples) too.", "cn": "她喜欢苹果，我也是。"},
+            {"en": "Though (he was) tired, he kept working.", "cn": "虽然累了，他还是继续工作。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "While walking in the park, a friend was met by me.", "correct": "While walking in the park, I met a friend.", "reason": "省略状语从句时，walking的逻辑主语必须和主句主语一致。应该是I在走，不是a friend被遇到"},
+            {"wrong": "If necessary, we will ask for help.", "correct": "If necessary, we will ask for help.", "reason": "此句正确。If (it is) necessary是常见的省略结构"},
+            {"wrong": "- Would you like to come? - I'd love.", "correct": "- Would you like to come? - I'd love to.", "reason": "省略动词时必须保留不定式符号to，即I'd love to (come)"}
+          ],
+          "tips": "省略的原则：不引起歧义。状语从句省略主语+be要保证逻辑主语一致。不定式省略保留to。Got it? = 懂了吗？",
+          "relatedCategories": ["状语从句", "不定式", "并列句"]
+        }
+      ],
+      "其他特殊句式 (Other Special Structures)": [
+        {
+          "id": "gm_070",
+          "name": "反义疑问句",
+          "level": "junior",
+          "plainLanguage": "反义疑问句就是'是吧/不是吗'的提问方式。规则是'前肯后否，前否后肯'——前面肯定后面否定，前面否定后面肯定。比如'你是学生，不是吗？'是You are a student, aren't you?",
+          "rules": [
+            "前肯后否，前否后肯",
+            "疑问部分的动词和主句一致，人称代词和主句主语一致",
+            "句中有not/never/hardly/seldom等否定词时，后面用肯定",
+            "Let's...后面用shall we?；Let us...后面用will you?",
+            "祈使句后面用will you?；I think/believe + 宾语从句，疑问部分跟从句"
+          ],
+          "examples": [
+            {"en": "You are a student, aren't you?", "cn": "你是学生，不是吗？"},
+            {"en": "He doesn't like coffee, does he?", "cn": "他不喜欢咖啡，是吗？"},
+            {"en": "She has never been to Paris, has she?", "cn": "她从没去过巴黎，是吗？"},
+            {"en": "Let's go, shall we?", "cn": "我们走吧，好吗？"},
+            {"en": "I think he is right, isn't he?", "cn": "我认为他是对的，不是吗？（跟从句）"}
+          ],
+          "commonMistakes": [
+            {"wrong": "He is a teacher, isn't he? - Yes, he is.", "correct": "He is a teacher, isn't he? - Yes, he is.", "reason": "此句正确。中文'是的'表示同意前面的陈述，英文回答Yes后接肯定，No后接否定"},
+            {"wrong": "There is a book on the desk, isn't it?", "correct": "There is a book on the desk, isn't there?", "reason": "there be句型的反义疑问句用isn't there/aren't there"},
+            {"wrong": "Let's go, will you?", "correct": "Let's go, shall we?", "reason": "Let's包含说话人和听话人，用shall we；Let us（不含听话人）用will you"}
+          ],
+          "tips": "前肯后否，前否后肯。Let's用shall we，Let us/祈使用will you。I think后的反义疑问跟从句主语。",
+          "relatedCategories": ["一般疑问句", "be动词否定疑问", "there be句型"]
+        },
+        {
+          "id": "gm_071",
+          "name": "感叹句",
+          "level": "junior",
+          "plainLanguage": "感叹句就是表达强烈感情的句子。有两种形式：What + 名词短语！和How + 形容词/副词！比如'多美的花啊'是What beautiful flowers they are！'多快啊'是How fast he runs！",
+          "rules": [
+            "What + (a/an) + 形容词 + 名词 + (主语 + 谓语)!",
+            "How + 形容词/副词 + (主语 + 谓语)!",
+            "What修饰名词，How修饰形容词或副词",
+            "What a/an + 单数可数名词；What + 不可数/复数名词（不加a/an）",
+            "感叹句末尾用感叹号，主语和谓语可以省略"
+          ],
+          "examples": [
+            {"en": "What a beautiful day it is!", "cn": "多美的一天啊！"},
+            {"en": "What beautiful flowers they are!", "cn": "多美的花啊！"},
+            {"en": "What bad weather it is!", "cn": "多糟糕的天气啊！"},
+            {"en": "How fast he runs!", "cn": "他跑得多快啊！"},
+            {"en": "How clever the girl is!", "cn": "那女孩多聪明啊！"}
+          ],
+          "commonMistakes": [
+            {"wrong": "How a beautiful day it is!", "correct": "What a beautiful day it is!", "reason": "后面有名词day，应该用What修饰，不能用How"},
+            {"wrong": "What fast he runs!", "correct": "How fast he runs!", "reason": "fast是副词，应该用How修饰，不能用What"},
+            {"wrong": "What a bad weather it is!", "correct": "What bad weather it is!", "reason": "weather是不可数名词，不能用a，直接What bad weather"}
+          ],
+          "tips": "有名词用What，有形容词/副词无名词用How。不可数名词和复数名词不加a/an。What a + 单数可数名词！",
+          "relatedCategories": ["形容词与副词", "可数与不可数名词"]
+        },
+        {
+          "id": "gm_072",
+          "name": "so/neither倒装句",
+          "level": "junior",
+          "plainLanguage": "so + 助动词 + 主语表示'也'（用于肯定句），neither/nor + 助动词 + 主语表示'也不'（用于否定句）。比如'我也是'是So am I，'我也不'是Neither do I。",
+          "rules": [
+            "So + 助动词/be/情态动词 + 主语：表示'...也这样'（肯定）",
+            "Neither/Nor + 助动词/be/情态动词 + 主语：表示'...也不这样'（否定）",
+            "助动词要与前面的句子保持时态一致",
+            "so it is/was with sb：用于混合情况（前面有不同类型的动词）",
+            "So + 主语 + 助动词：表示'确实如此'（不倒装，表赞同）"
+          ],
+          "examples": [
+            {"en": "He likes English. - So do I.", "cn": "他喜欢英语。——我也是。"},
+            {"en": "She can swim. - So can her brother.", "cn": "她会游泳。——她弟弟也会。"},
+            {"en": "He doesn't like coffee. - Neither do I.", "cn": "他不喜欢咖啡。——我也不喜欢。"},
+            {"en": "He is a teacher. - So am I.", "cn": "他是老师。——我也是。"},
+            {"en": "He likes English, and so do I.", "cn": "他喜欢英语，我也是。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "He likes English. - So I do.", "correct": "He likes English. - So do I.", "reason": "表示'也'要用倒装So do I（助动词+主语）；So I do表示'我确实如此'，意思不同"},
+            {"wrong": "He doesn't like coffee. - So don't I.", "correct": "He doesn't like coffee. - Neither do I.", "reason": "否定句的'也不'用Neither/Nor，不能用So don't"},
+            {"wrong": "He likes English and so likes I.", "correct": "He likes English, and so do I.", "reason": "so后要用助动词do + 主语I，不能用动词likes直接接I"}
+          ],
+          "tips": "肯定用So+助动词+主语，否定用Neither/Nor+助动词+主语。So do I=我也这样；So I do=我确实如此（不倒装）。",
+          "relatedCategories": ["部分倒装", "助动词"]
+        }
+      ]
+    },
+
+    "词法 (Word Formation)": {
+      "名词 (Noun)": [
+        {
+          "id": "gm_073",
+          "name": "可数与不可数名词",
+          "level": "junior",
+          "plainLanguage": "可数名词就是可以数的名词，有单数和复数形式，比如apples/books。不可数名词就是不能数的名词，没有复数形式，比如water/money/information。不可数名词要表示数量需要用a piece of / a glass of等量词。",
+          "rules": [
+            "可数名词：有单数和复数形式，可用a/an修饰",
+            "不可数名词：只有单数形式，不能用a/an修饰",
+            "不可数名词表数量：a piece of / a glass of / a cup of + 不可数名词",
+            "some/any/few/little：可数用few/a few，不可数用little/a little",
+            "many + 可数复数；much + 不可数"
+          ],
+          "examples": [
+            {"en": "I have two books and three pens.", "cn": "我有两本书和三支笔。"},
+            {"en": "There is some water in the glass.", "cn": "杯子里有一些水。"},
+            {"en": "I need a piece of paper.", "cn": "我需要一张纸。"},
+            {"en": "She has much money.", "cn": "她有很多钱。"},
+            {"en": "There are a few apples in the basket.", "cn": "篮子里有几个苹果。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "I have two waters.", "correct": "I have two glasses of water.", "reason": "water是不可数名词，不能直接加s，要用量词two glasses of water"},
+            {"wrong": "I need a paper.", "correct": "I need a piece of paper.", "reason": "当paper表示'纸'时是不可数的，要用a piece of paper；a paper表示'一份报纸/论文'是可数的"},
+            {"wrong": "She has many money.", "correct": "She has much money.", "reason": "money是不可数名词，用much不用many"}
+          ],
+          "tips": "可数加s用many/few，不可数不加s用much/little。不可数表数量要用量词（a piece of / a cup of）。常见不可数：water/money/milk/information/advice/furniture。",
+          "relatedCategories": ["名词复数变化规则", "there be句型", "量词"]
+        },
+        {
+          "id": "gm_074",
+          "name": "名词复数变化规则",
+          "level": "junior",
+          "plainLanguage": "可数名词变复数有规则变化和不规则变化两种。规则变化一般加s，以s/x/sh/ch/o结尾加es，辅音+y结尾把y变i加es，f/fe结尾变ves。不规则变化需要单独记。",
+          "rules": [
+            "一般加s：book→books, student→students",
+            "以s/x/sh/ch/o结尾加es：box→boxes, watch→watches, hero→heroes, tomato→tomatoes",
+            "辅音+y结尾变y为i加es：city→cities, baby→babies",
+            "f/fe结尾变ves：leaf→leaves, knife→knives, wolf→wolves",
+            "不规则：man→men, woman→women, child→children, foot→feet, tooth→teeth, mouse→mice, sheep→sheep（不变）"
+          ],
+          "examples": [
+            {"en": "There are many books on the shelf.", "cn": "书架上有许多书。"},
+            {"en": "I can see three boxes over there.", "cn": "我能看到那边有三个箱子。"},
+            {"en": "The cities are very crowded.", "cn": "这些城市很拥挤。"},
+            {"en": "He collected some leaves in autumn.", "cn": "他在秋天收集了一些树叶。"},
+            {"en": "Three children are playing in the park.", "cn": "三个孩子在公园玩。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "I can see three boxs.", "correct": "I can see three boxes.", "reason": "以x结尾的名词复数要加es，不是直接加s"},
+            {"wrong": "There are many sheeps.", "correct": "There are many sheep.", "reason": "sheep是不规则变化，单复数同形，不加s"},
+            {"wrong": "The citys are very crowded.", "correct": "The cities are very crowded.", "reason": "辅音字母+y结尾，y要变i再加es"}
+          ],
+          "tips": "s/x/sh/ch/o加es，y变i加es，f/fe变ves。不规则：man-men, child-children, foot-feet, tooth-teeth, sheep-sheep。photo和piano特殊（只加s）。",
+          "relatedCategories": ["可数与不可数名词", "主谓一致", "名词所有格"]
+        },
+        {
+          "id": "gm_075",
+          "name": "名词所有格",
+          "level": "junior",
+          "plainLanguage": "名词所有格表示'某人的/某物的'。有生命的名词加's（Tom's book），复数名词以s结尾的只加'（the students' room）。无生命的名词用of结构（the door of the room）。",
+          "rules": [
+            "有生命名词单数 + 's：Tom's book, the dog's tail",
+            "有生命名词复数以s结尾 + '：the students' room, the teachers' office",
+            "有生命名词复数不以s结尾 + 's：children's toys, men's clothes",
+            "无生命名词用of：the leg of the table, the title of the book",
+            "表示时间/距离/价值等也可用's：today's news, a week's holiday"
+          ],
+          "examples": [
+            {"en": "This is Tom's book.", "cn": "这是汤姆的书。"},
+            {"en": "The students' room is clean.", "cn": "学生们的房间很干净。"},
+            {"en": "These are children's toys.", "cn": "这些是孩子们的玩具。"},
+            {"en": "The leg of the table is broken.", "cn": "桌腿坏了。"},
+            {"en": "It's today's news.", "cn": "这是今天的新闻。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "These are Tom's and Jerry books.", "correct": "These are Tom and Jerry's books.", "reason": "两人共有的东西，所有格只加在最后一个名词后：Tom and Jerry's（共有的书）"},
+            {"wrong": "The leg's table is broken.", "correct": "The leg of the table is broken.", "reason": "无生命名词不用's所有格，用of结构"},
+            {"wrong": "The students's room is clean.", "correct": "The students' room is clean.", "reason": "复数名词以s结尾，只加'不加's"}
+          ],
+          "tips": "有生命加's（复数s结尾只加'），无生命用of。两人共有的只加最后一个名词后面。时间距离也可用's。",
+          "relatedCategories": ["名词复数变化规则", "物主代词", "冠词"]
+        }
+      ],
+      "代词 (Pronoun)": [
+        {
+          "id": "gm_076",
+          "name": "人称代词与物主代词",
+          "level": "junior",
+          "plainLanguage": "人称代词就是'我你他她它我们你们他们'（I/you/he/she/it/we/they），分主格（作主语）和宾格（作宾语）。物主代词表示'某人的'，分形容词性（my/your等，后面接名词）和名词性（mine/yours等，后面不接名词）。",
+          "rules": [
+            "主格：I, you, he, she, it, we, they（作主语）",
+            "宾格：me, you, him, her, it, us, them（作宾语）",
+            "形容词性物主代词：my, your, his, her, its, our, their（后面接名词）",
+            "名词性物主代词：mine, yours, his, hers, its, ours, theirs（后面不接名词）",
+            "主格作主语，宾格作宾语/介词宾语"
+          ],
+          "examples": [
+            {"en": "I love her.", "cn": "我爱她。（I主格，her宾格）"},
+            {"en": "This is my book.", "cn": "这是我的书。（my+book）"},
+            {"en": "This book is mine.", "cn": "这本书是我的。（mine后面不加名词）"},
+            {"en": "He gave it to me.", "cn": "他把它给了我。（me作介词宾语）"},
+            {"en": "Our school is bigger than theirs.", "cn": "我们学校比他们的大。（our+school，theirs=their school）"}
+          ],
+          "commonMistakes": [
+            {"wrong": "Me and him are friends.", "correct": "He and I are friends.", "reason": "作主语要用主格He and I，不能用宾格me and him"},
+            {"wrong": "This is my. / This is mine book.", "correct": "This is mine. / This is my book.", "reason": "名词性物主代词mine后面不接名词；形容词性物主代词my后面必须接名词"},
+            {"wrong": "Her is my friend.", "correct": "She is my friend.", "reason": "作主语要用主格She，不能用宾格her"}
+          ],
+          "tips": "主格做主语，宾格做宾语。my/your后接名词，mine/yours后不接名词。记住'我的书'=my book='the book is mine'。",
+          "relatedCategories": ["反身代词", "名词所有格", "不定代词"]
+        },
+        {
+          "id": "gm_077",
+          "name": "反身代词",
+          "level": "junior",
+          "plainLanguage": "反身代词就是'我自己/你自己/他自己'等（myself/yourself/himself等），表示动作回到主语自己身上。比如'我伤了我自己'是I hurt myself。也用于强调'亲自'。",
+          "rules": [
+            "myself, yourself, himself, herself, itself, ourselves, yourselves, themselves",
+            "表示动作回到主语自己：I hurt myself.",
+            "强调'亲自'：I myself did it. / I did it myself.",
+            "by oneself = alone（独自）：I did it by myself.",
+            "常见搭配：enjoy oneself（玩得开心）, help oneself to（自取）, teach oneself（自学）"
+          ],
+          "examples": [
+            {"en": "I hurt myself while playing.", "cn": "我玩的时候伤到了自己。"},
+            {"en": "She taught herself English.", "cn": "她自学英语。"},
+            {"en": "Help yourselves to some food.", "cn": "你们自己拿些吃的。"},
+            {"en": "I can do it by myself.", "cn": "我能自己做。"},
+            {"en": "Did you enjoy yourselves at the party?", "cn": "你们在派对上玩得开心吗？"}
+          ],
+          "commonMistakes": [
+            {"wrong": "He hurt hisself.", "correct": "He hurt himself.", "reason": "he的反身代词是himself，不是hisself"},
+            {"wrong": "We enjoyed ourself at the party.", "correct": "We enjoyed ourselves at the party.", "reason": "we的反身代词是ourselves（复数），不是ourself"},
+            {"wrong": "The girl is too young to dress herselves.", "correct": "The girl is too young to dress herself.", "reason": "the girl是单数第三人称，反身代词用herself"}
+          ],
+          "tips": "反身代词=形容词性物主代词+self/selves。I→myself, he→himself, they→themselves。常见搭配：enjoy oneself/help oneself to/teach oneself/by oneself。",
+          "relatedCategories": ["人称代词与物主代词", "不定代词"]
+        },
+        {
+          "id": "gm_078",
+          "name": "不定代词",
+          "level": "junior",
+          "plainLanguage": "不定代词就是不指明特定的人或物的代词，如some/any/every/no系列。some用于肯定句，any用于否定和疑问句。every/each/all都表示'每个'但用法不同。不定代词作主语时谓语用单数。",
+          "rules": [
+            "some/someone/something：用于肯定句（疑问句中表请求/邀请也可用some）",
+            "any/anyone/anything：用于否定句和疑问句",
+            "every + 单数名词，强调整体；each + 单数名词，强调个体",
+            "no one/nobody/nothing：表示'没有人/没有东西'",
+            "复合不定代词（someone/anything等）作主语时谓语用单数",
+            "修饰复合不定代词的形容词要后置：something important"
+          ],
+          "examples": [
+            {"en": "There is something wrong with my phone.", "cn": "我的手机出了点问题。"},
+            {"en": "Is there anything I can do for you?", "cn": "我能为你做些什么吗？"},
+            {"en": "Nobody is perfect.", "cn": "没有人是完美的。"},
+            {"en": "I have something important to tell you.", "cn": "我有重要的事要告诉你。"},
+            {"en": "Everyone is here.", "cn": "大家都到了。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "Is there something I can do for you?", "correct": "Is there anything I can do for you?", "reason": "疑问句通常用anything，不用something（除非表请求/邀请）"},
+            {"wrong": "Everyone are here.", "correct": "Everyone is here.", "reason": "复合不定代词everyone作主语，谓语动词用单数is"},
+            {"wrong": "I have important something to tell you.", "correct": "I have something important to tell you.", "reason": "修饰复合不定代词的形容词要后置，放在something后面"}
+          ],
+          "tips": "some用于肯定，any用于否定/疑问。不定代词做主语=单数！形容词修饰不定代词要放后面：something important不是important something。",
+          "relatedCategories": ["人称代词与物主代词", "可数与不可数名词", "主谓一致"]
+        }
+      ],
+      "形容词与副词 (Adjective & Adverb)": [
+        {
+          "id": "gm_079",
+          "name": "比较级和最高级",
+          "level": "junior",
+          "plainLanguage": "比较级表示'更...'（taller=更高），最高级表示'最...'（tallest=最高）。规则变化加er/est，长的词用more/most。不规则变化需单独记（good→better→best）。",
+          "rules": [
+            "单音节/部分双音节词：+er / +est（tall→taller→tallest）",
+            "以e结尾：+r / +st（large→larger→largest）",
+            "辅音+y结尾：变y为i+er/est（happy→happier→happiest）",
+            "重读闭音节：双写末尾辅音+er/est（big→bigger→biggest）",
+            "多音节词：more/most + 原级（beautiful→more beautiful→most beautiful）",
+            "不规则：good/well→better→best, bad/ill→worse→worst, many/much→more→most, little→less→least, far→farther/further→farthest/furthest"
+          ],
+          "examples": [
+            {"en": "Tom is taller than Mike.", "cn": "汤姆比迈克高。"},
+            {"en": "She is the most beautiful girl in our class.", "cn": "她是我们班最漂亮的女孩。"},
+            {"en": "This book is more interesting than that one.", "cn": "这本书比那本有趣。"},
+            {"en": "He is the best student in the class.", "cn": "他是班里最好的学生。"},
+            {"en": "My room is bigger than yours.", "cn": "我的房间比你的大。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "He is more tall than me.", "correct": "He is taller than me.", "reason": "tall是单音节词，比较级加er，不用more"},
+            {"wrong": "She is the most beautiful in our class.", "correct": "She is the most beautiful girl in our class.", "reason": "最高级后面要加名词或用the most beautiful one，不能只用the most beautiful"},
+            {"wrong": "He is gooder than me.", "correct": "He is better than me.", "reason": "good的比较级是不规则变化better，不是gooder"}
+          ],
+          "tips": "短词加er/est，长词用more/most。不规则必背：good-better-best, bad-worse-worst, many/much-more-most, little-less-least, far-farther-furthest。",
+          "relatedCategories": ["形容词与副词的区别", "程度副词"]
+        },
+        {
+          "id": "gm_080",
+          "name": "形容词与副词的区别",
+          "level": "junior",
+          "plainLanguage": "形容词修饰名词（放在名词前或be动词后），描述'什么样的'。副词修饰动词、形容词或其他副词，描述'怎么做的/多...'。很多副词是形容词+ly（quick→quickly），但也有不改的（good→well）。",
+          "rules": [
+            "形容词：修饰名词，作定语或表语",
+            "副词：修饰动词、形容词、副词，作状语",
+            "形容词+ly→副词（quick→quickly, careful→carefully）",
+            "例外：good（形容词）→well（副词），fast既是形容词也是副词",
+            "感官动词后用形容词：look/sound/smell/taste/feel + 形容词"
+          ],
+          "examples": [
+            {"en": "She is a careful driver.", "cn": "她是个小心的司机。（careful修饰名词driver）"},
+            {"en": "She drives carefully.", "cn": "她开车很小心。（carefully修饰动词drives）"},
+            {"en": "The food tastes good.", "cn": "这食物味道好。（taste后用形容词good）"},
+            {"en": "He runs fast.", "cn": "他跑得快。（fast既是形容词也是副词）"},
+            {"en": "The song sounds beautiful.", "cn": "这首歌听起来很美。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "She drives careful.", "correct": "She drives carefully.", "reason": "修饰动词drives要用副词carefully，不能用形容词careful"},
+            {"wrong": "The food tastes well.", "correct": "The food tastes good.", "reason": "taste是感官动词，后面用形容词good，不用副词well"},
+            {"wrong": "He is a good singer and sings good.", "correct": "He is a good singer and sings well.", "reason": "修饰动词sings用副词well，不用形容词good"}
+          ],
+          "tips": "形容词修饰名词（a careful driver），副词修饰动词（drives carefully）。good是形容词，well是副词。感官动词（look/sound/taste/smell/feel）后用形容词！",
+          "relatedCategories": ["比较级和最高级", "程度副词", "be动词"]
+        }
+      ],
+      "冠词 (Article)": [
+        {
+          "id": "gm_081",
+          "name": "不定冠词a/an",
+          "level": "junior",
+          "plainLanguage": "a和an表示'一个'，用在单数可数名词前面。a用在辅音音素开头的词前（a book, a university），an用在元音音素开头的词前（an apple, an hour）。关键看发音不是看字母！",
+          "rules": [
+            "a + 辅音音素开头的词：a book, a car, a university（u发/ju:/）",
+            "an + 元音音素开头的词：an apple, an egg, an hour（h不发音）",
+            "a/an用在单数可数名词前，表'一个'或泛指",
+            "第一次提到某物用a/an",
+            "固定搭配：have a look, in a hurry, a lot of"
+          ],
+          "examples": [
+            {"en": "I have a book.", "cn": "我有一本书。"},
+            {"en": "She is an English teacher.", "cn": "她是一位英语老师。"},
+            {"en": "He waited for an hour.", "cn": "他等了一个小时。"},
+            {"en": "It is a university student.", "cn": "那是个大学生。"},
+            {"en": "There is an apple on the table.", "cn": "桌上有个苹果。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "I have an book.", "correct": "I have a book.", "reason": "book以辅音音素开头，用a不用an"},
+            {"wrong": "He waited for a hour.", "correct": "He waited for an hour.", "reason": "hour的h不发音，以元音音素开头，用an"},
+            {"wrong": "She is a honest girl.", "correct": "She is an honest girl.", "reason": "honest的h不发音，以元音音素开头，用an"}
+          ],
+          "tips": "a/an看发音不看字母！元音音素用an（apple/hour/honest），辅音音素用a（book/university/useful）。h开头的词看h是否发音。",
+          "relatedCategories": ["定冠词the", "零冠词", "可数与不可数名词"]
+        },
+        {
+          "id": "gm_082",
+          "name": "定冠词the",
+          "level": "junior",
+          "plainLanguage": "the表示'这个/那个/这些/那些'，用于特指。常见用法：再次提到的事物、双方都知道的、世上独一无二的（the sun）、乐器前（play the piano）、序数词/最高级前。",
+          "rules": [
+            "特指：再次提到或双方都知道的（the book we read yesterday）",
+            "独一无二的事物：the sun, the moon, the sky",
+            "乐器名称前：play the piano, play the guitar",
+            "序数词/最高级前：the first, the best",
+            "the + 形容词表示一类人：the rich, the poor, the blind",
+            "某些专有名词：the United States, the Pacific Ocean"
+          ],
+          "examples": [
+            {"en": "I have a book. The book is interesting.", "cn": "我有本书。那本书很有趣。（再次提到用the）"},
+            {"en": "The sun rises in the east.", "cn": "太阳从东方升起。"},
+            {"en": "She plays the piano well.", "cn": "她钢琴弹得好。"},
+            {"en": "He is the best student in our class.", "cn": "他是我们班最好的学生。"},
+            {"en": "The rich should help the poor.", "cn": "富人应该帮助穷人。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "I have a book. A book is interesting.", "correct": "I have a book. The book is interesting.", "reason": "第二次提到用定冠词the，表示特指那本书"},
+            {"wrong": "She plays piano well.", "correct": "She plays the piano well.", "reason": "乐器名称前要加the：play the piano"},
+            {"wrong": "He is best student in our class.", "correct": "He is the best student in our class.", "reason": "最高级前要加the：the best student"}
+          ],
+          "tips": "the=特指/独一无二/乐器/最高级/序数词。the+形容词=一类人（the rich=富人）。第一次提到用a/an，再次提到用the。",
+          "relatedCategories": ["不定冠词a/an", "零冠词", "比较级和最高级"]
+        },
+        {
+          "id": "gm_083",
+          "name": "零冠词（不用冠词的情况）",
+          "level": "junior",
+          "plainLanguage": "有些情况下不用任何冠词，这叫零冠词。比如：泛指复数名词/不可数名词、三餐/球类运动/学科名前、专有名词前、节假日/月份/星期前。",
+          "rules": [
+            "泛指复数名词/不可数名词：Books are my friends. Water is important.",
+            "三餐前：have breakfast/lunch/dinner",
+            "球类运动/棋类前：play basketball, play chess",
+            "学科/语言前：study English, learn math",
+            "节假日/月份/星期前：on Monday, in January, at Christmas",
+            "称呼/头衔/独一个人头衔前：President Lincoln, Mom"
+          ],
+          "examples": [
+            {"en": "Books are my best friends.", "cn": "书是我最好的朋友。（泛指复数，不用the）"},
+            {"en": "I have breakfast at 7.", "cn": "我七点吃早饭。"},
+            {"en": "He plays basketball after school.", "cn": "他放学后打篮球。"},
+            {"en": "We study English on Monday.", "cn": "我们星期一学英语。"},
+            {"en": "President Lincoln was great.", "cn": "林肯总统很伟大。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "The books are my best friends.", "correct": "Books are my best friends.", "reason": "泛指'书'（不是特定的书），不用the，直接用复数名词"},
+            {"wrong": "He plays the basketball after school.", "correct": "He plays basketball after school.", "reason": "球类运动前不用the"},
+            {"wrong": "I have the breakfast at 7.", "correct": "I have breakfast at 7.", "reason": "三餐前不用the"}
+          ],
+          "tips": "零冠词=泛指复数/不可数、三餐、球类、学科、节假日、月份星期。乐器用the，球类不用the！play the piano vs play basketball。",
+          "relatedCategories": ["不定冠词a/an", "定冠词the", "可数与不可数名词"]
+        }
+      ],
+      "介词 (Preposition)": [
+        {
+          "id": "gm_084",
+          "name": "时间介词in/on/at",
+          "level": "junior",
+          "plainLanguage": "in用于较大的时间（年/月/季节/上午下午）、on用于具体的某天或某天的某时段、at用于具体的时间点。口诀：大用in，小用at，具体某天用on。",
+          "rules": [
+            "in + 较大时间段：in 2024, in May, in spring, in the morning",
+            "on + 具体某天/某天某时段：on Monday, on May 1st, on Sunday morning",
+            "at + 具体时间点：at 8 o'clock, at noon, at night, at midnight",
+            "in + 时间段 = ...之后：in two days（两天后）",
+            "固定搭配：in time（及时）, on time（准时）, at the same time（同时）"
+          ],
+          "examples": [
+            {"en": "I was born in 2000.", "cn": "我2000年出生。"},
+            {"en": "We will meet on Monday.", "cn": "我们星期一见面。"},
+            {"en": "The class starts at 8 o'clock.", "cn": "课八点开始。"},
+            {"en": "It's cold in winter.", "cn": "冬天很冷。"},
+            {"en": "He arrived on time.", "cn": "他准时到了。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "I was born on 2000.", "correct": "I was born in 2000.", "reason": "年份用in，不用on"},
+            {"wrong": "We will meet in Monday.", "correct": "We will meet on Monday.", "reason": "星期几用on，不用in"},
+            {"wrong": "The class starts in 8 o'clock.", "correct": "The class starts at 8 o'clock.", "reason": "具体时间点用at，不用in"}
+          ],
+          "tips": "大用in（年/月/季节），小用at（几点几分），具体某天用on。特殊：at night, in the morning, on Sunday morning。",
+          "relatedCategories": ["地点介词in/on/at", "时间状语从句"]
+        },
+        {
+          "id": "gm_085",
+          "name": "地点介词in/on/at",
+          "level": "junior",
+          "plainLanguage": "地点也用in/on/at，但含义不同：in表示在...里面（大地方如城市国家），on表示在...上面（接触表面），at表示在某个点（具体的地址或小地点）。",
+          "rules": [
+            "in + 大地方/空间内：in China, in Beijing, in the room, in the box",
+            "on + 表面上：on the table, on the wall, on the floor",
+            "at + 具体的点/地址：at the bus stop, at school, at home, at 123 Main Street",
+            "above/over：在...上方（不接触）；below/under：在...下方",
+            "between/among：between两者之间，among三者或以上之间"
+          ],
+          "examples": [
+            {"en": "I live in Beijing.", "cn": "我住在北京。"},
+            {"en": "The book is on the table.", "cn": "书在桌上。"},
+            {"en": "Meet me at the bus stop.", "cn": "在公交站见我。"},
+            {"en": "The picture is on the wall.", "cn": "画在墙上。"},
+            {"en": "She is at school.", "cn": "她在学校。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "I live at Beijing.", "correct": "I live in Beijing.", "reason": "大城市用in，不用at"},
+            {"wrong": "The book is in the table.", "correct": "The book is on the table.", "reason": "在桌面上用on，不用in（in是里面）"},
+            {"wrong": "Meet me in the bus stop.", "correct": "Meet me at the bus stop.", "reason": "公交站是一个具体的地点，用at"}
+          ],
+          "tips": "大地方用in（城市/国家/房间），表面上用on，具体地点用at（车站/学校/家）。in the room, on the desk, at school。",
+          "relatedCategories": ["时间介词in/on/at", "介词搭配"]
+        }
+      ],
+      "连词 (Conjunction)": [
+        {
+          "id": "gm_086",
+          "name": "并列连词与从属连词",
+          "level": "junior",
+          "plainLanguage": "连词分两种：并列连词连接平等的词/短语/句子（and/but/or/so等），从属连词引导从句（because/if/when/although等）。选择哪个连词取决于两句话之间的关系。",
+          "rules": [
+            "并列连词：and（和）, but（但是）, or（或者）, so（所以）, for（因为）, yet（然而）",
+            "关联连词：both...and, either...or, neither...nor, not only...but also",
+            "从属连词：because, since, as（原因）；when, while, before, after, until, since（时间）；if, unless（条件）；although, though（让步）",
+            "because和so不能同时用，although和but不能同时用",
+            "either...or, neither...nor, not only...but also遵循就近原则"
+          ],
+          "examples": [
+            {"en": "I like English and math.", "cn": "我喜欢英语和数学。（并列）"},
+            {"en": "He is poor but happy.", "cn": "他穷但快乐。（转折）"},
+            {"en": "I was tired, so I went to bed early.", "cn": "我累了，所以早睡了。（因果）"},
+            {"en": "Either you or he is wrong.", "cn": "要么你错了要么他错了。（选择）"},
+            {"en": "I didn't go out because it was raining.", "cn": "我没出去因为下雨。（从属）"}
+          ],
+          "commonMistakes": [
+            {"wrong": "Because it was raining, so I didn't go out.", "correct": "Because it was raining, I didn't go out.", "reason": "because和so不能同时用，保留一个"},
+            {"wrong": "Although he is tired, but he keeps working.", "correct": "Although he is tired, he keeps working.", "reason": "although和but不能同时用"},
+            {"wrong": "Neither you or he is wrong.", "correct": "Neither you nor he is wrong.", "reason": "neither配nor，either配or，不能混用"}
+          ],
+          "tips": "并列连词=and/but/or/so/for/yet。从属连词=because/when/if/although。中文'因为...所以...'/'虽然...但是...'英语只用一个连词！",
+          "relatedCategories": ["状语从句", "主谓一致", "简单句与并列句"]
+        }
+      ]
+    },
+
+    "固定搭配与惯用法 (Collocations & Idioms)": {
+      "动词搭配 (Verb Collocations)": [
+        {
+          "id": "gm_087",
+          "name": "make与do的搭配",
+          "level": "junior",
+          "plainLanguage": "make和do都有'做'的意思，但搭配不同。make通常指'制造/创造'某物（make a cake/a plan/a mistake），do指'执行/完成'某个活动（do homework/housework/sports）。",
+          "rules": [
+            "make：制造/创造 → make a cake, make a plan, make money, make a mistake, make a decision",
+            "do：执行/完成 → do homework, do housework, do sports, do one's best, do business",
+            "make the bed（铺床）, make friends（交朋友）",
+            "do the dishes（洗碗）, do one's hair（做头发）",
+            "固定区分：make progress（进步），make a difference（有影响）"
+          ],
+          "examples": [
+            {"en": "She made a delicious cake.", "cn": "她做了一个美味的蛋糕。"},
+            {"en": "I need to do my homework.", "cn": "我需要做作业。"},
+            {"en": "He made a lot of money last year.", "cn": "他去年赚了很多钱。"},
+            {"en": "We should do our best.", "cn": "我们应该尽力。"},
+            {"en": "She made a mistake in the exam.", "cn": "她在考试中犯了个错误。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "I need to make my homework.", "correct": "I need to do my homework.", "reason": "homework用do搭配：do homework，不用make"},
+            {"wrong": "She did a delicious cake.", "correct": "She made a delicious cake.", "reason": "做蛋糕是制造/创造，用make a cake"},
+            {"wrong": "He made a lot of progress.", "correct": "He made a lot of progress.", "reason": "此句正确。make progress是固定搭配，用make"}
+          ],
+          "tips": "make=制造创造（蛋糕/计划/钱/错误/决定/进步）；do=执行完成（作业/家务/运动/尽力/生意）。记住固定搭配是最快的方法！",
+          "relatedCategories": ["take与get的搭配", "介词搭配"]
+        },
+        {
+          "id": "gm_088",
+          "name": "take与get的搭配",
+          "level": "junior",
+          "plainLanguage": "take和get有很多固定搭配。take表示'拿走/花费/接受'（take a bus/take medicine/take time），get表示'得到/变得/到达'（get a letter/get angry/get to school）。",
+          "rules": [
+            "take：take a bus（坐公交）, take medicine（吃药）, take time（花时间）, take a photo（拍照）, take an exam（参加考试）",
+            "get：get a letter（收到信）, get angry（变生气）, get to school（到学校）, get up（起床）, get ready（准备好）",
+            "take it easy（别紧张）, take care of（照顾）",
+            "get along with（相处）, get rid of（摆脱）",
+            "take place（发生/举行）, take part in（参加）"
+          ],
+          "examples": [
+            {"en": "I take the bus to school every day.", "cn": "我每天坐公交上学。"},
+            {"en": "It takes me an hour to get there.", "cn": "到那里要花我一小时。"},
+            {"en": "She got angry at the news.", "cn": "她听到消息生气了。"},
+            {"en": "Please take care of yourself.", "cn": "请照顾好自己。"},
+            {"en": "He got a letter from his friend.", "cn": "他收到了朋友的信。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "I get the bus to school.", "correct": "I take the bus to school.", "reason": "坐公交用take a bus，不用get"},
+            {"wrong": "It gets me an hour to get there.", "correct": "It takes me an hour to get there.", "reason": "花费时间用It takes sb...，不用gets"}
+          ],
+          "tips": "take=拿走/花费/坐（车）/吃药/拍照；get=得到/变得/到达/起床。It takes sb time to do sth=花某人时间做某事。",
+          "relatedCategories": ["make与do的搭配", "短语动词"]
+        }
+      ],
+      "介词搭配 (Preposition Collocations)": [
+        {
+          "id": "gm_089",
+          "name": "常见介词固定搭配",
+          "level": "cet4",
+          "plainLanguage": "英语中很多动词/形容词和特定介词搭配，需要死记。比如be good at（擅长）、be interested in（对...感兴趣）、look forward to（期待）、be proud of（为...骄傲）等。",
+          "rules": [
+            "be + 形容词 + 介词：be good at, be interested in, be afraid of, be proud of, be famous for",
+            "动词 + 介词：look for（寻找）, look after（照顾）, depend on（依赖）, belong to（属于）, suffer from（遭受）",
+            "名词 + 介词：reason for, answer to, key to, solution to, interest in",
+            "介词后必须接名词/代词/动名词（doing）",
+            "固定搭配中的介词不能用其他介词替换"
+          ],
+          "examples": [
+            {"en": "She is good at math.", "cn": "她擅长数学。"},
+            {"en": "I'm interested in reading.", "cn": "我对阅读感兴趣。"},
+            {"en": "We are looking forward to seeing you.", "cn": "我们期待见到你。"},
+            {"en": "He is proud of his son.", "cn": "他为儿子骄傲。"},
+            {"en": "The key to success is hard work.", "cn": "成功的关键是努力。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "She is good in math.", "correct": "She is good at math.", "reason": "be good at是固定搭配，用at不用in"},
+            {"wrong": "I'm looking forward to see you.", "correct": "I'm looking forward to seeing you.", "reason": "look forward to中的to是介词，后接动名词seeing"},
+            {"wrong": "He is proud for his son.", "correct": "He is proud of his son.", "reason": "be proud of是固定搭配，用of不用for"}
+          ],
+          "tips": "介词搭配必须死记！常见：good at, interested in, afraid of, proud of, famous for, look for, depend on, key to, reason for。介词后接doing！",
+          "relatedCategories": ["时间介词", "地点介词", "动名词"]
+        }
+      ],
+      "短语动词 (Phrasal Verbs)": [
+        {
+          "id": "gm_090",
+          "name": "get短语动词",
+          "level": "junior",
+          "plainLanguage": "get加上不同的介词/副词就有不同的意思：get up=起床，get on=上车/进展，get off=下车，get over=克服，get along with=相处。这些必须记！",
+          "rules": [
+            "get up：起床",
+            "get on：上车（公交/火车）；进展",
+            "get off：下车",
+            "get over：克服/恢复",
+            "get along with：与...相处",
+            "get rid of：摆脱/除掉",
+            "get in：进入/到达",
+            "get away：逃跑"
+          ],
+          "examples": [
+            {"en": "I get up at 6 every morning.", "cn": "我每天早上六点起床。"},
+            {"en": "Get on the bus quickly.", "cn": "快上公交车。"},
+            {"en": "Get off at the next stop.", "cn": "下一站下车。"},
+            {"en": "She can't get over the shock.", "cn": "她无法从震惊中恢复。"},
+            {"en": "I get along well with my classmates.", "cn": "我和同学相处融洽。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "I get on the bus at 6 every morning.", "correct": "I get up at 6 every morning.", "reason": "起床用get up，不是get on（get on是上车）"},
+            {"wrong": "I get well along with my classmates.", "correct": "I get along well with my classmates.", "reason": "get along with是固定搭配，well放在along后面"}
+          ],
+          "tips": "get up=起床，get on/off=上车/下车，get over=克服，get along with=相处。搭配不同意思完全不同，必须记！",
+          "relatedCategories": ["take短语动词", "put短语动词", "look短语动词"]
+        },
+        {
+          "id": "gm_091",
+          "name": "take短语动词",
+          "level": "junior",
+          "plainLanguage": "take加上不同的介词/副词也有不同意思：take off=起飞/脱下，take after=长得像，take up=开始从事，take over=接管，take down=记下。",
+          "rules": [
+            "take off：起飞/脱下（衣服）",
+            "take after：长得像（父母/祖辈）",
+            "take up：开始从事/占据（时间/空间）",
+            "take over：接管/接手",
+            "take down：记下/拿下",
+            "take place：发生/举行",
+            "take part in：参加"
+          ],
+          "examples": [
+            {"en": "The plane took off on time.", "cn": "飞机准时起飞了。"},
+            {"en": "She takes after her mother.", "cn": "她长得像她妈妈。"},
+            {"en": "I decided to take up tennis.", "cn": "我决定开始打网球。"},
+            {"en": "The meeting will take place tomorrow.", "cn": "会议明天举行。"},
+            {"en": "He took down the notes carefully.", "cn": "他仔细记笔记。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "The plane took up on time.", "correct": "The plane took off on time.", "reason": "起飞用take off，不是take up（take up=开始从事）"},
+            {"wrong": "She takes off her mother.", "correct": "She takes after her mother.", "reason": "长得像用take after，不是take off（take off=起飞/脱衣服）"}
+          ],
+          "tips": "take off=起飞/脱衣，take after=像，take up=从事/占据，take over=接管，take place=发生。相似短语意思差别大！",
+          "relatedCategories": ["get短语动词", "put短语动词", "look短语动词"]
+        },
+        {
+          "id": "gm_092",
+          "name": "put短语动词",
+          "level": "junior",
+          "plainLanguage": "put加上不同介词/副词：put on=穿上/上演，put off=推迟，put up=搭建/举起/张贴，put down=放下/写下，put away=收起来。",
+          "rules": [
+            "put on：穿上/戴上/上演",
+            "put off：推迟/延期",
+            "put up：搭建/举起/张贴/留宿",
+            "put down：放下/写下",
+            "put away：把...收起来",
+            "put out：扑灭/伸出",
+            "put up with：忍受/容忍"
+          ],
+          "examples": [
+            {"en": "Put on your coat. It's cold.", "cn": "穿上外套。冷。"},
+            {"en": "The meeting was put off.", "cn": "会议被推迟了。"},
+            {"en": "They put up a tent in the garden.", "cn": "他们在花园搭了帐篷。"},
+            {"en": "Put down your pen and listen.", "cn": "放下笔听我说。"},
+            {"en": "I can't put up with this noise.", "cn": "我无法忍受这噪音。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "Put off your coat. It's cold.", "correct": "Put on your coat. It's cold.", "reason": "穿上衣服用put on，不是put off（put off=推迟）"},
+            {"wrong": "The meeting was put on.", "correct": "The meeting was put off.", "reason": "推迟会议用put off，不是put on（put on=穿上/上演）"}
+          ],
+          "tips": "put on=穿上，put off=推迟，put up=搭/举/贴，put down=放下/写下，put away=收起，put up with=忍受。",
+          "relatedCategories": ["get短语动词", "take短语动词", "look短语动词"]
+        },
+        {
+          "id": "gm_093",
+          "name": "look短语动词",
+          "level": "junior",
+          "plainLanguage": "look加上不同介词/副词：look for=寻找，look after=照顾，look at=看，look up=查阅/抬头看，look forward to=期待，look out=小心/当心，look into=调查。",
+          "rules": [
+            "look for：寻找（还没找到）",
+            "look after：照顾/照料",
+            "look at：看...",
+            "look up：查阅（字典）/抬头看",
+            "look forward to：期待（后接doing）",
+            "look out：小心/当心",
+            "look into：调查/研究",
+            "look down upon/on：看不起",
+            "look up to：仰慕/尊敬"
+          ],
+          "examples": [
+            {"en": "I'm looking for my keys.", "cn": "我在找钥匙。"},
+            {"en": "She looks after her grandmother.", "cn": "她照顾奶奶。"},
+            {"en": "Look up the word in the dictionary.", "cn": "在字典里查这个单词。"},
+            {"en": "I'm looking forward to seeing you.", "cn": "我期待见到你。"},
+            {"en": "Look out! There's a car coming.", "cn": "小心！有车来了。"}
+          ],
+          "commonMistakes": [
+            {"wrong": "I'm looking after my keys.", "correct": "I'm looking for my keys.", "reason": "找钥匙用look for，不是look after（look after=照顾）"},
+            {"wrong": "I'm looking forward to see you.", "correct": "I'm looking forward to seeing you.", "reason": "look forward to中的to是介词，后接动名词seeing"}
+          ],
+          "tips": "look for=找，look after=照顾，look up=查阅，look forward to=期待（接doing），look out=小心，look into=调查。",
+          "relatedCategories": ["get短语动词", "take短语动词", "put短语动词", "动名词"]
+        }
+      ]
+    }
+  }
+}

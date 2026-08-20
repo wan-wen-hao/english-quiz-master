@@ -1941,6 +1941,417 @@
       color: var(--accent);
     }
 
+    /* ===== 知识图谱树杈式布局 ===== */
+    .grammar-tree {
+      margin-bottom: 20px;
+    }
+
+    .grammar-branch {
+      margin-bottom: 6px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+    }
+
+    .grammar-branch-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 16px;
+      background: linear-gradient(135deg, rgba(163,113,247,0.06), rgba(88,166,255,0.06));
+      cursor: pointer;
+      user-select: none;
+      transition: background 0.2s ease;
+    }
+
+    .grammar-branch-header:hover {
+      background: linear-gradient(135deg, rgba(163,113,247,0.12), rgba(88,166,255,0.12));
+    }
+
+    .grammar-branch.expanded > .grammar-branch-header {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .grammar-toggle-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 20px;
+      height: 20px;
+      font-size: 0.7rem;
+      color: var(--accent2);
+      transition: transform 0.25s ease;
+      flex-shrink: 0;
+    }
+
+    .grammar-branch.expanded > .grammar-branch-header .grammar-toggle-icon {
+      transform: rotate(90deg);
+    }
+
+    .grammar-branch-name {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .grammar-branch-count {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      margin-left: auto;
+      background: var(--bg-tertiary);
+      padding: 2px 10px;
+      border-radius: 12px;
+    }
+
+    .grammar-branch-children {
+      display: none;
+      padding: 6px 0 6px 20px;
+    }
+
+    .grammar-branch.expanded > .grammar-branch-children {
+      display: block;
+    }
+
+    .grammar-sub-branch {
+      margin-bottom: 4px;
+      border-left: 2px solid var(--border);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      overflow: hidden;
+      transition: border-color 0.2s ease;
+    }
+
+    .grammar-sub-branch:hover {
+      border-left-color: var(--accent2);
+    }
+
+    .grammar-sub-branch.expanded {
+      border-left-color: var(--accent2);
+    }
+
+    .grammar-sub-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      cursor: pointer;
+      user-select: none;
+      transition: background 0.15s ease;
+    }
+
+    .grammar-sub-header:hover {
+      background: var(--bg-tertiary);
+    }
+
+    .grammar-sub-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 16px;
+      height: 16px;
+      font-size: 0.65rem;
+      color: var(--text-muted);
+      transition: transform 0.25s ease;
+      flex-shrink: 0;
+    }
+
+    .grammar-sub-branch.expanded > .grammar-sub-header .grammar-sub-icon {
+      transform: rotate(90deg);
+      color: var(--accent2);
+    }
+
+    .grammar-sub-name {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .grammar-sub-count {
+      font-size: 0.72rem;
+      color: var(--text-dim);
+      margin-left: auto;
+    }
+
+    /* 语法知识点详情卡片 */
+    .grammar-detail-container {
+      display: none;
+      padding: 4px 14px 10px 22px;
+    }
+
+    .grammar-sub-branch.expanded > .grammar-detail-container {
+      display: block;
+    }
+
+    .grammar-point-card {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 16px;
+      margin-bottom: 10px;
+    }
+
+    .grammar-point-name {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--accent2);
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .grammar-level-tag {
+      font-size: 0.68rem;
+      padding: 2px 8px;
+      border-radius: 10px;
+      background: var(--accent-dim);
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .grammar-plain {
+      font-size: 0.88rem;
+      color: var(--text);
+      line-height: 1.7;
+      margin-bottom: 12px;
+      padding: 10px 14px;
+      background: var(--bg-tertiary);
+      border-radius: 6px;
+      border-left: 3px solid var(--accent);
+    }
+
+    .grammar-section-label {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 6px;
+      margin-top: 10px;
+    }
+
+    .grammar-rules {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 10px 0;
+    }
+
+    .grammar-rules li {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      padding: 4px 0 4px 20px;
+      position: relative;
+    }
+
+    .grammar-rules li::before {
+      content: '◆';
+      position: absolute;
+      left: 4px;
+      color: var(--accent2);
+      font-size: 0.7rem;
+    }
+
+    .grammar-examples {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin-bottom: 10px;
+    }
+
+    .grammar-example {
+      font-size: 0.85rem;
+      background: var(--bg-tertiary);
+      padding: 6px 12px;
+      border-radius: 4px;
+      border-left: 2px solid var(--correct);
+    }
+
+    .grammar-example .ge-en {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    .grammar-example .ge-cn {
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      margin-top: 2px;
+    }
+
+    .grammar-mistakes {
+      margin-bottom: 10px;
+    }
+
+    .grammar-mistake {
+      font-size: 0.82rem;
+      padding: 6px 12px;
+      background: rgba(248,81,73,0.06);
+      border-radius: 4px;
+      border-left: 2px solid var(--wrong);
+      margin-bottom: 4px;
+    }
+
+    .grammar-mistake .gm-wrong {
+      color: var(--wrong);
+      text-decoration: line-through;
+    }
+
+    .grammar-mistake .gm-correct {
+      color: var(--correct);
+      font-weight: 600;
+    }
+
+    .grammar-mistake .gm-reason {
+      color: var(--text-muted);
+      font-size: 0.78rem;
+      margin-top: 2px;
+    }
+
+    .grammar-tips {
+      font-size: 0.82rem;
+      color: var(--warning);
+      padding: 8px 12px;
+      background: rgba(210,153,34,0.06);
+      border-radius: 6px;
+      border-left: 3px solid var(--warning);
+      margin-bottom: 10px;
+    }
+
+    .grammar-practice-btn {
+      background: var(--accent-dim);
+      color: var(--accent);
+      border: 1px solid var(--accent);
+      border-radius: 16px;
+      padding: 6px 16px;
+      font-size: 0.82rem;
+      cursor: pointer;
+      font-family: inherit;
+      transition: all 0.2s ease;
+    }
+
+    .grammar-practice-btn:hover {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    /* ===== 学习模式 ===== */
+    .learn-mode-section {
+      background: linear-gradient(135deg, rgba(163,113,247,0.06), rgba(88,166,255,0.06));
+      border: 1px solid rgba(163,113,247,0.2);
+      border-radius: var(--radius-sm);
+      padding: 14px 18px;
+      margin-bottom: 16px;
+    }
+
+    .learn-mode-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--accent2);
+      margin-bottom: 6px;
+    }
+
+    .learn-mode-desc {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+    }
+
+    .learn-category-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .learn-category-btn {
+      background: var(--bg-tertiary);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 5px 14px;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      cursor: pointer;
+      font-family: inherit;
+      transition: all 0.2s ease;
+    }
+
+    .learn-category-btn:hover {
+      border-color: var(--accent2);
+      color: var(--accent2);
+    }
+
+    .learn-category-btn.active {
+      border-color: var(--accent2);
+      background: rgba(163,113,247,0.1);
+      color: var(--accent2);
+      font-weight: 600;
+    }
+
+    /* 阅读理解推荐入口 */
+    .beginner-recommend {
+      background: linear-gradient(135deg, rgba(63,185,80,0.08), rgba(88,166,255,0.08));
+      border: 1px solid rgba(63,185,80,0.2);
+      border-radius: var(--radius-sm);
+      padding: 12px 16px;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .beginner-recommend-icon {
+      font-size: 1.3rem;
+    }
+
+    .beginner-recommend-text {
+      flex: 1;
+    }
+
+    .beginner-recommend-title {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--correct);
+    }
+
+    .beginner-recommend-desc {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    /* ===== 术语词典弹窗 ===== */
+    .term-tooltip {
+      position: relative;
+      cursor: help;
+      text-decoration: underline;
+      text-decoration-style: dotted;
+      text-underline-offset: 2px;
+      color: var(--accent);
+    }
+
+    .term-popup {
+      position: fixed;
+      z-index: 1000;
+      max-width: 320px;
+      background: var(--bg-secondary);
+      border: 1px solid var(--accent);
+      border-radius: var(--radius-sm);
+      padding: 14px 16px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+      display: none;
+      font-size: 0.85rem;
+      line-height: 1.6;
+    }
+
+    .term-popup.show {
+      display: block;
+    }
+
+    .term-popup-title {
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 4px;
+    }
+
+    .term-popup-desc {
+      color: var(--text-muted);
+    }
+
     /* ===== 随机抽题模式 ===== */
     .random-mode-section {
       background: linear-gradient(135deg, rgba(88, 166, 255, 0.08), rgba(163, 113, 247, 0.08));
@@ -2082,12 +2493,23 @@
     <!-- Tab 栏 -->
     <div class="tab-bar" id="tab-bar">
       <button class="tab-btn active" data-tab="start">答题练习</button>
+      <button class="tab-btn" data-tab="grammar">知识图谱</button>
       <button class="tab-btn" data-tab="review">错题本</button>
       <button class="tab-btn" data-tab="vocab">词汇复习</button>
     </div>
 
     <!-- 开始屏幕 -->
     <section id="start-screen" class="screen card">
+      <!-- 零基础推荐入口 -->
+      <div class="beginner-recommend">
+        <span class="beginner-recommend-icon">🌱</span>
+        <div class="beginner-recommend-text">
+          <div class="beginner-recommend-title">零基础？从这里开始！</div>
+          <div class="beginner-recommend-desc">先去「知识图谱」学语法点，再做「阅读理解」题（有中文翻译），最后逐步过渡到选择题</div>
+        </div>
+        <button class="grammar-practice-btn" onclick="switchTab('grammar')" style="white-space:nowrap;">🗺️ 去学语法</button>
+      </div>
+
       <div class="section-title">
         <span class="num">1</span> 选择难度等级
       </div>
@@ -2097,10 +2519,20 @@
       <div class="section-title">
         <span class="num">2</span> 选择题型
       </div>
-      <p class="section-desc">可以只练某一题型，也可以全部混合</p>
+      <p class="section-desc">可以只练某一题型，也可以全部混合。零基础推荐选「阅读理解」</p>
       <div class="type-grid" id="type-grid"><!-- 动态生成 --></div>
 
       <button class="start-btn" id="start-quiz-btn">开始答题</button>
+
+      <!-- 学习模式入口 -->
+      <div class="level-divider"><span>或者</span></div>
+      <div class="learn-mode-section">
+        <div class="learn-mode-title">📚 学习模式（先学后练）</div>
+        <div class="learn-mode-desc">先在知识图谱中学语法点，学完直接做对应练习。点击下方按钮进入知识图谱</div>
+        <div class="learn-category-grid">
+          <button class="learn-category-btn" onclick="switchTab('grammar')">🗺️ 进入知识图谱</button>
+        </div>
+      </div>
 
       <!-- 统一挑战模式（随机抽题 + 综合测评合并） -->
       <div class="level-divider"><span>挑战 / 测评</span></div>
@@ -2183,9 +2615,14 @@
       <div id="vocab-body"><!-- 动态生成词汇复习 --></div>
     </section>
 
+    <!-- 知识图谱屏幕 -->
+    <section id="grammar-screen" class="screen card hidden">
+      <div id="grammar-body"><!-- 动态生成知识图谱 --></div>
+    </section>
+
     <!-- 页脚 -->
     <footer class="app-footer">
-      v5.0 · 词汇树杈式分类(1537词) · 400题题库 · 统一挑战+测评模式 · 错题本 · 上下翻页 · 特殊词汇单独表格 · 语法/词汇/翻译三卡反馈
+      v6.0 · 语法知识图谱(93知识点) · 词汇树杈式分类(1537词) · 400题题库 · 学习模式+按知识点答题 · 错题本 · 术语词典 · 语法/词汇/翻译三卡反馈
     </footer>
   </div>
 
@@ -2195,6 +2632,7 @@
     /* ===== 配置 ===== */
     const QUIZ_BANK_URL = "data/quiz-bank.json";
     const VOCAB_URL = "data/vocabulary.json";
+    const GRAMMAR_MAP_URL = "data/grammar-map.json";
     const STORAGE_KEY = "eqm_best_scores_v1";
     const WRONG_BANK_KEY = "eqm_wrong_bank_v1";
 
@@ -2230,6 +2668,8 @@
       examStartTime: 0,     // 测评开始时间
       examTimer: null,      // 计时器
       vocabDB: null,        // 词汇分类数据库
+      grammarDB: null,      // 语法知识图谱数据库
+      learnCategory: null,  // 学习模式选中的语法分类
     };
 
     /* ===== DOM 引用 ===== */
@@ -2239,12 +2679,14 @@
     const resultsScreen = $("results-screen");
     const reviewScreen = $("review-screen");
     const vocabScreen = $("vocab-screen");
+    const grammarScreen = $("grammar-screen");
     const levelGrid = $("level-grid");
     const typeGrid = $("type-grid");
     const quizBody = $("quiz-body");
     const resultsBody = $("results-body");
     const reviewBody = $("review-body");
     const vocabBody = $("vocab-body");
+    const grammarBody = $("grammar-body");
     const quizNavBtns = $("quiz-nav-btns");
     const questionNavBar = $("question-nav-bar");
 
@@ -2296,7 +2738,9 @@
       vocab.forEach((v) => {
         const f = vocabFields(v);
         html += '<span class="vocab-item">';
-        if (f.word) html += "<b>" + escapeHtml(f.word) + "</b> ";
+        if (f.word) {
+          html += "<b class=\"vocab-link\" onclick=\"jumpToVocab('" + escapeHtml(f.word.toLowerCase()) + "')\" title=\"点击在词汇表中查看\" style=\"cursor:pointer;text-decoration:underline;text-decoration-style:dotted;text-underline-offset:2px;\">" + escapeHtml(f.word) + "</b> ";
+        }
         if (f.pos) html += "<i>" + escapeHtml(f.pos) + "</i> ";
         if (f.meaning) html += escapeHtml(f.meaning);
         html += "</span>";
@@ -2305,14 +2749,40 @@
       return html;
     }
 
+    // 跳转到词汇表并搜索单词
+    function jumpToVocab(word) {
+      switchTab('vocab');
+      setTimeout(() => {
+        const searchInput = $('vocab-search');
+        if (searchInput) {
+          searchInput.value = word;
+          searchInput.dispatchEvent(new Event('input', { bubbles: true }));
+        }
+      }, 300);
+    }
+
     // 语法解析卡
     function renderGrammarCard(item) {
       const kp = item.knowledgePoint;
       const exp = item.explanation;
       if (!kp && !exp) return "";
       let html = '<div class="grammar-card"><h4>语法解析</h4>';
-      if (kp) html += '<p class="knowledge-point">知识点：' + escapeHtml(kp) + "</p>";
+      if (kp) {
+        // 给知识点中的术语添加tooltip
+        let kpHtml = escapeHtml(kp);
+        Object.keys(TERM_DICTIONARY).forEach((term) => {
+          if (kp.includes(term)) {
+            const escaped = escapeHtml(term);
+            kpHtml = kpHtml.replace(escaped, '<span class="term-tooltip" onclick="showTermPopup(\'' + escaped + '\', event)" title="点击查看解释">' + escaped + '</span>');
+          }
+        });
+        html += '<p class="knowledge-point">知识点：' + kpHtml + "</p>";
+      }
       if (exp) html += '<p class="explanation">' + escapeHtml(exp) + "</p>";
+      // 添加跳转知识图谱按钮
+      if (kp) {
+        html += '<button class="grammar-practice-btn" style="margin-top:8px;" onclick="switchTab(\'grammar\')">📚 在知识图谱中查看更多</button>';
+      }
       html += "</div>";
       return html;
     }
@@ -2528,6 +2998,60 @@
       }
     }
 
+    /* ===== 加载语法知识图谱 ===== */
+    const TERM_DICTIONARY = {
+      "be动词": "am/is/are这三个词的总称，英语里最基础的'是'，不同的人称搭配不同的形式",
+      "第三人称单数": "他(he)、她(she)、它(it)或单个具体的人/物作主语时，动词要加s/es",
+      "主谓一致": "主语和动词要在人称和数量上保持一致，比如I用am不能用are",
+      "一般现在时": "表示经常发生的动作或状态，比如'他每天去上班'",
+      "一般过去时": "表示过去发生的事情，动词要变成过去式，比如go变成went",
+      "现在进行时": "表示此刻正在进行的动作，结构是be+动词ing",
+      "现在完成时": "表示过去发生但对现在有影响的动作，结构是have/has+动词过去分词",
+      "过去完成时": "表示在过去某个时间点之前已经完成的动作，'过去的过去'",
+      "there be句型": "表示'某处有某物'，如There is a book on the desk桌上有本书",
+      "介词": "表示位置、时间等关系的词，如in/on/at/under/between",
+      "定语从句": "用who/which/that引导的从句，修饰前面的名词，如'the man who lives next door隔壁那个人'",
+      "名词性从句": "整个句子当名词用，可以作主语、宾语等",
+      "状语从句": "整个句子当状语用，表示时间、原因、条件等",
+      "非谓语动词": "不定式(to do)、动名词(doing)、分词(doing/done)的统称，不随主语变化",
+      "虚拟语气": "表示假设、愿望等非真实情况，动词要用特殊形式",
+      "倒装句": "把助动词或be动词放到主语前面，如'Never have I seen such a thing'",
+      "强调句": "用It is...that...结构强调某一部分，如'It was Tom that broke the window'",
+      "被动语态": "主语是动作的承受者而非执行者，如'The book was written by him书是被他写的'",
+      "情态动词": "can/must/should/may等表示能力、必须、应该等意义的动词",
+      "冠词": "a/an/the，放在名词前表示泛指或特指",
+      "可数名词": "可以数的名词，有单数和复数形式，如a book→two books",
+      "不可数名词": "不能直接数的名词，没有复数形式，如water, information",
+      "代词": "代替名词的词，如I/you/he/she/it/we/they",
+      "反身代词": "myself/yourself/himself等，表示'自己'",
+      "比较级": "形容词/副词的比较形式，如bigger, more beautiful",
+      "最高级": "形容词/副词的最高形式，如biggest, most beautiful",
+      "连词": "连接词与词、句与句的词，如and/but/because/if",
+      "及物动词": "后面必须接宾语的动词，如I love you中的love",
+      "不及物动词": "后面不需要接宾语的动词，如He runs",
+      "独立主格": "带自己主语的非谓语结构，如Weather permitting, we'll go outing",
+      "省略句": "省去不影响理解的成分，如'(Are you) Ready?'",
+      "反义疑问句": "句尾加的简短问句，如'You are a teacher, aren't you?'",
+      "感叹句": "用What或How开头的表达强烈感情的句子",
+    };
+
+    async function loadGrammarMap() {
+      try {
+        const res = await fetch(GRAMMAR_MAP_URL, { cache: "no-cache" });
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        const data = await res.json();
+        state.grammarDB = data;
+        if (!grammarScreen.classList.contains("hidden")) {
+          renderGrammarScreen();
+        }
+      } catch (err) {
+        state.grammarDB = null;
+        if (!grammarScreen.classList.contains("hidden")) {
+          grammarBody.innerHTML = '<div class="review-empty-state"><div class="icon">⚠️</div><p>知识图谱加载失败</p><p style="font-size:0.8rem;color:var(--text-dim);margin-top:8px;">' + escapeHtml(err.message) + '</p><button class="home-btn" onclick="loadGrammarMap()" style="margin-top:12px;">重试</button></div>';
+        }
+      }
+    }
+
     async function loadQuizBank() {
       try {
         const res = await fetch(QUIZ_BANK_URL, { cache: "no-cache" });
@@ -2536,8 +3060,9 @@
         if (!data || !data.levels) throw new Error("题库格式错误");
         state.quizBank = data;
         renderStartScreen();
-        // 并行加载词汇库
+        // 并行加载词汇库和语法图谱
         loadVocabDB();
+        loadGrammarMap();
       } catch (err) {
         levelGrid.innerHTML = "";
         const grid = document.querySelector("#start-screen");
@@ -2556,6 +3081,14 @@
       const levels = state.quizBank.levels;
       levelGrid.innerHTML = "";
 
+      // 去术语化的等级描述
+      const plainDesc = {
+        junior: "从零开始：am/is/are怎么用、每天发生的事怎么说、a和the怎么放",
+        senior: "进阶提升：定语从句(修饰名词的句子)、虚拟语气(假设的情况)、非谓语动词",
+        cet4: "大学四级：复杂句型分析、倒装和强调句、从句综合运用",
+        cet6: "大学六级：高级语法结构、独立主格、学术写作句式",
+      };
+
       Object.entries(levels).forEach(([key, level]) => {
         const flatCount = buildFlatList(level.questions || []).length;
         const count = flatCount || level.questions.length;
@@ -2564,13 +3097,14 @@
           ? `<span class="best-badge">最佳 ${best.accuracy}%</span>`
           : "";
 
+        const desc = plainDesc[key] || level.description || "";
         const btn = document.createElement("button");
         btn.className = "level-btn";
         btn.dataset.level = key;
         btn.innerHTML =
           bestHtml +
           '<div class="level-name">' + level.name + "</div>" +
-          '<div class="level-desc">' + level.description + "</div>" +
+          '<div class="level-desc">' + desc + "</div>" +
           '<div class="level-count">' + count + " 题</div>";
 
         btn.addEventListener("click", () => selectLevel(key));
@@ -2589,7 +3123,7 @@
         { key: "truefalse", label: "判断题" },
         { key: "fillblank", label: "填空题" },
         { key: "qa", label: "问答题" },
-        { key: "passage", label: "阅读理解" },
+        { key: "passage", label: "📖 阅读理解" },
       ];
       types.forEach((t) => {
         const btn = document.createElement("button");
@@ -3596,6 +4130,7 @@
       resultsScreen.classList.add("hidden");
       reviewScreen.classList.add("hidden");
       vocabScreen.classList.add("hidden");
+      grammarScreen.classList.add("hidden");
       // 显示目标屏幕
       if (tabName === "start") {
         startScreen.classList.remove("hidden");
@@ -3603,6 +4138,12 @@
         void startScreen.offsetWidth;
         startScreen.style.animation = "";
         renderStartScreen();
+      } else if (tabName === "grammar") {
+        grammarScreen.classList.remove("hidden");
+        grammarScreen.style.animation = "none";
+        void grammarScreen.offsetWidth;
+        grammarScreen.style.animation = "";
+        renderGrammarScreen();
       } else if (tabName === "review") {
         reviewScreen.classList.remove("hidden");
         reviewScreen.style.animation = "none";
@@ -3888,6 +4429,310 @@
       const sub = document.getElementById('vocab-sub-' + ci + '-' + si);
       if (sub) sub.classList.toggle('expanded');
     }
+
+    /* ===== 知识图谱渲染（树杈式） ===== */
+    function renderGrammarScreen() {
+      if (!state.grammarDB) {
+        grammarBody.innerHTML = '<div class="review-empty-state"><div class="icon">⏳</div><p>知识图谱加载中…</p><p style="font-size:0.8rem;color:var(--text-dim);margin-top:8px;">正在从服务器获取语法知识数据</p></div>';
+        loadGrammarMap();
+        return;
+      }
+
+      const cats = state.grammarDB.categories || {};
+      let totalPoints = 0;
+      Object.values(cats).forEach((subs) => {
+        Object.values(subs).forEach((points) => totalPoints += points.length);
+      });
+
+      let html = '<div class="review-header"><h2>🗺️ 语法知识图谱</h2>';
+      html += '<span class="count-badge" style="background:var(--accent-dim);color:var(--accent);border:1px solid var(--accent);">' + totalPoints + ' 个知识点</span>';
+      html += '</div>';
+
+      // 说明
+      html += '<p style="font-size:0.82rem;color:var(--text-muted);margin-bottom:14px;line-height:1.6;">点击展开大类→小类→具体语法点。每个语法点包含<b style="color:var(--accent);">通俗解释</b>、<b style="color:var(--accent);">规则</b>、<b style="color:var(--accent);">例句</b>、<b style="color:var(--accent);">常见错误</b>和<b style="color:var(--accent);">记忆技巧</b>。</p>';
+
+      // 搜索框
+      html += '<input type="text" class="vocab-search" id="grammar-search" placeholder="搜索语法知识点…" autocomplete="off" />';
+
+      // 展开全部/折叠全部
+      html += '<div class="vocab-tree-actions">';
+      html += '<button class="vocab-tree-action-btn" id="grammar-expand-all">📂 展开全部</button>';
+      html += '<button class="vocab-tree-action-btn" id="grammar-collapse-all">📁 折叠全部</button>';
+      html += '</div>';
+
+      // 树杈式分支
+      html += '<div class="grammar-tree" id="grammar-tree">';
+      Object.entries(cats).forEach(([catName, subCats], ci) => {
+        let catTotal = 0;
+        Object.values(subCats).forEach((p) => catTotal += p.length);
+
+        // 一级分支
+        html += '<div class="grammar-branch" id="grammar-branch-' + ci + '">';
+        html += '<div class="grammar-branch-header" onclick="toggleGrammarBranch(' + ci + ')">';
+        html += '<span class="grammar-toggle-icon">▶</span>';
+        html += '<span class="grammar-branch-name">' + escapeHtml(catName) + '</span>';
+        html += '<span class="grammar-branch-count">' + catTotal + ' 个知识点</span>';
+        html += '</div>';
+
+        // 二级分支容器
+        html += '<div class="grammar-branch-children">';
+        Object.entries(subCats).forEach(([subName, points], si) => {
+          // 二级分支
+          html += '<div class="grammar-sub-branch" id="grammar-sub-' + ci + '-' + si + '">';
+          html += '<div class="grammar-sub-header" onclick="toggleGrammarSub(' + ci + ', ' + si + ')">';
+          html += '<span class="grammar-sub-icon">▶</span>';
+          html += '<span class="grammar-sub-name">' + escapeHtml(subName) + '</span>';
+          html += '<span class="grammar-sub-count">' + points.length + ' 个</span>';
+          html += '</div>';
+
+          // 详情容器
+          html += '<div class="grammar-detail-container">';
+          points.forEach((pt, pi) => {
+            html += renderGrammarPointCard(pt, ci, si, pi);
+          });
+          html += '</div>';
+
+          html += '</div>'; // 二级分支结束
+        });
+        html += '</div>'; // 二级分支容器结束
+        html += '</div>'; // 一级分支结束
+      });
+      html += '</div>'; // 树结束
+
+      // 返回按钮
+      html += '<div class="result-actions" style="margin-top:20px;">';
+      html += '<button class="home-btn" id="grammar-home-btn">返回首页</button>';
+      html += '</div>';
+
+      grammarBody.innerHTML = html;
+      bindGrammarEvents();
+    }
+
+    // 渲染单个语法知识点卡片
+    function renderGrammarPointCard(pt, ci, si, pi) {
+      let html = '<div class="grammar-point-card">';
+      html += '<div class="grammar-point-name">' + escapeHtml(pt.name);
+      html += '<span class="grammar-level-tag">' + escapeHtml(pt.level || '') + '</span>';
+      html += '</div>';
+
+      // 通俗解释
+      if (pt.plainLanguage) {
+        html += '<div class="grammar-plain">💬 ' + escapeHtml(pt.plainLanguage) + '</div>';
+      }
+
+      // 规则
+      if (pt.rules && pt.rules.length > 0) {
+        html += '<div class="grammar-section-label">📐 规则</div>';
+        html += '<ul class="grammar-rules">';
+        pt.rules.forEach((r) => {
+          html += '<li>' + escapeHtml(r) + '</li>';
+        });
+        html += '</ul>';
+      }
+
+      // 例句
+      if (pt.examples && pt.examples.length > 0) {
+        html += '<div class="grammar-section-label">✅ 例句</div>';
+        html += '<div class="grammar-examples">';
+        pt.examples.forEach((ex) => {
+          html += '<div class="grammar-example">';
+          html += '<div class="ge-en">' + escapeHtml(ex.en) + '</div>';
+          html += '<div class="ge-cn">' + escapeHtml(ex.cn) + '</div>';
+          html += '</div>';
+        });
+        html += '</div>';
+      }
+
+      // 常见错误
+      if (pt.commonMistakes && pt.commonMistakes.length > 0) {
+        html += '<div class="grammar-section-label">❌ 常见错误</div>';
+        html += '<div class="grammar-mistakes">';
+        pt.commonMistakes.forEach((m) => {
+          html += '<div class="grammar-mistake">';
+          html += '<span class="gm-wrong">' + escapeHtml(m.wrong) + '</span> → ';
+          html += '<span class="gm-correct">' + escapeHtml(m.correct) + '</span>';
+          html += '<div class="gm-reason">' + escapeHtml(m.reason) + '</div>';
+          html += '</div>';
+        });
+        html += '</div>';
+      }
+
+      // 记忆技巧
+      if (pt.tips) {
+        html += '<div class="grammar-section-label">💡 记忆技巧</div>';
+        html += '<div class="grammar-tips">' + escapeHtml(pt.tips) + '</div>';
+      }
+
+      // 练习按钮
+      html += '<button class="grammar-practice-btn" onclick="startPracticeByCategory(\'' + escapeHtml(pt.name) + '\', \'' + escapeHtml(pt.level || 'junior') + '\')">✏️ 做相关练习</button>';
+
+      html += '</div>';
+      return html;
+    }
+
+    // 知识图谱展开/折叠
+    function toggleGrammarBranch(ci) {
+      const branch = document.getElementById('grammar-branch-' + ci);
+      if (branch) branch.classList.toggle('expanded');
+    }
+
+    function toggleGrammarSub(ci, si) {
+      const sub = document.getElementById('grammar-sub-' + ci + '-' + si);
+      if (sub) sub.classList.toggle('expanded');
+    }
+
+    // 按知识点分类做练习
+    function startPracticeByCategory(categoryName, level) {
+      if (!state.quizBank) return;
+
+      // 搜索匹配该语法分类的题目
+      let pool = [];
+      const levelKey = level && level !== 'all' ? level : null;
+
+      Object.entries(state.quizBank.levels).forEach(([key, levelData]) => {
+        if (levelKey && key !== levelKey) return;
+        (levelData.questions || []).forEach((q) => {
+          if (q.category && (q.category.includes(categoryName) || categoryName.includes(q.category))) {
+            pool.push({ ...q, _levelKey: key, _levelName: levelData.name });
+          }
+        });
+      });
+
+      if (pool.length === 0) {
+        // 如果没找到完全匹配的，尝试模糊匹配
+        Object.entries(state.quizBank.levels).forEach(([key, levelData]) => {
+          if (levelKey && key !== levelKey) return;
+          (levelData.questions || []).forEach((q) => {
+            const cat = (q.category || '').toLowerCase();
+            const name = categoryName.toLowerCase();
+            if (cat.includes(name) || name.includes(cat) || cat.split('').some(c => name.includes(c) && c.length > 2)) {
+              pool.push({ ...q, _levelKey: key, _levelName: levelData.name });
+            }
+          });
+        });
+      }
+
+      if (pool.length === 0) {
+        alert('暂无"' + categoryName + '"分类的题目，请尝试其他知识点');
+        return;
+      }
+
+      const selected = pool.slice(0, Math.min(20, pool.length));
+      state.selectedLevel = levelKey || "random";
+      state.isRandomMode = false;
+      state.isExamMode = false;
+      state.questions = selected;
+      state.flatItems = buildFlatList(selected);
+      state.currentIndex = 0;
+      state.score = 0;
+      state.answered = false;
+      state.userAnswers = [];
+      state.startTime = Date.now();
+
+      // 切换屏幕
+      startScreen.classList.add("hidden");
+      grammarScreen.classList.add("hidden");
+      resultsScreen.classList.add("hidden");
+      reviewScreen.classList.add("hidden");
+      vocabScreen.classList.add("hidden");
+      quizScreen.classList.remove("hidden");
+      quizScreen.style.animation = "none";
+      void quizScreen.offsetWidth;
+      quizScreen.style.animation = "";
+      quizNavBtns.style.display = "none";
+
+      $("quiz-level-tag").textContent = "📚 " + categoryName + " · " + selected.length + " 题";
+      renderQuestion();
+      renderNavBar();
+    }
+
+    // 绑定知识图谱事件
+    function bindGrammarEvents() {
+      const searchInput = $('grammar-search');
+      if (searchInput) {
+        searchInput.addEventListener('input', () => {
+          const query = searchInput.value.trim().toLowerCase();
+          if (query) {
+            grammarBody.querySelectorAll('.grammar-branch').forEach((b) => b.classList.add('expanded'));
+            grammarBody.querySelectorAll('.grammar-sub-branch').forEach((b) => b.classList.add('expanded'));
+            grammarBody.querySelectorAll('.grammar-point-card').forEach((card) => {
+              const text = card.textContent.toLowerCase();
+              card.style.display = text.includes(query) ? '' : 'none';
+            });
+            grammarBody.querySelectorAll('.grammar-detail-container').forEach((container) => {
+              const visible = container.querySelectorAll('.grammar-point-card:not([style*="display: none"])');
+              container.parentElement.style.display = visible.length > 0 ? '' : 'none';
+            });
+            grammarBody.querySelectorAll('.grammar-branch').forEach((branch) => {
+              const visible = branch.querySelectorAll('.grammar-point-card:not([style*="display: none"])');
+              branch.style.display = visible.length > 0 ? '' : 'none';
+            });
+          } else {
+            grammarBody.querySelectorAll('.grammar-point-card').forEach((c) => c.style.display = '');
+            grammarBody.querySelectorAll('.grammar-sub-branch').forEach((b) => {
+              b.style.display = '';
+              b.classList.remove('expanded');
+            });
+            grammarBody.querySelectorAll('.grammar-branch').forEach((b) => {
+              b.style.display = '';
+              b.classList.remove('expanded');
+            });
+          }
+        });
+      }
+
+      const expandAllBtn = $('grammar-expand-all');
+      if (expandAllBtn) {
+        expandAllBtn.addEventListener('click', () => {
+          grammarBody.querySelectorAll('.grammar-branch').forEach((b) => b.classList.add('expanded'));
+          grammarBody.querySelectorAll('.grammar-sub-branch').forEach((b) => b.classList.add('expanded'));
+        });
+      }
+
+      const collapseAllBtn = $('grammar-collapse-all');
+      if (collapseAllBtn) {
+        collapseAllBtn.addEventListener('click', () => {
+          grammarBody.querySelectorAll('.grammar-branch').forEach((b) => b.classList.remove('expanded'));
+          grammarBody.querySelectorAll('.grammar-sub-branch').forEach((b) => b.classList.remove('expanded'));
+        });
+      }
+
+      const homeBtn = $('grammar-home-btn');
+      if (homeBtn) {
+        homeBtn.addEventListener('click', () => switchTab('start'));
+      }
+    }
+
+    // 术语词典弹窗
+    function showTermPopup(term, event) {
+      const popup = $('term-popup') || createTermPopup();
+      const desc = TERM_DICTIONARY[term] || '暂无此术语解释';
+      popup.innerHTML = '<div class="term-popup-title">' + escapeHtml(term) + '</div><div class="term-popup-desc">' + escapeHtml(desc) + '</div>';
+      popup.classList.add('show');
+      // 定位
+      const rect = event.target.getBoundingClientRect();
+      const popupX = rect.left;
+      const popupY = rect.bottom + 6;
+      popup.style.left = Math.min(popupX, window.innerWidth - 340) + 'px';
+      popup.style.top = popupY + 'px';
+    }
+
+    function createTermPopup() {
+      const div = document.createElement('div');
+      div.id = 'term-popup';
+      div.className = 'term-popup';
+      document.body.appendChild(div);
+      div.addEventListener('click', () => div.classList.remove('show'));
+      return div;
+    }
+
+    // 点击页面其他地方关闭弹窗
+    document.addEventListener('click', (e) => {
+      const popup = $('term-popup');
+      if (popup && popup.classList.contains('show') && !e.target.classList.contains('term-tooltip')) {
+        popup.classList.remove('show');
+      }
+    });
 
     // 回退：从题库提取词汇（旧逻辑简化版）
     function renderVocabFromBank() {
