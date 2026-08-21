@@ -1,0 +1,1483 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>使用指南 - 英语答题大师</title>
+  <meta name="description" content="英语答题大师使用指南：电脑端、手机端使用方法，GitHub更新步骤，常见问题解答" />
+  <style>
+    /* ===== CSS 变量 - 清新渐变主题 ===== */
+    :root {
+      --bg: #f8fafc;
+      --bg-card: #ffffff;
+      --bg-secondary: #f1f5f9;
+      --border: #e2e8f0;
+      --border-light: #cbd5e1;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --text-dim: #94a3b8;
+      --accent: #6366f1;
+      --accent-2: #8b5cf6;
+      --accent-3: #06b6d4;
+      --accent-gradient: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #06b6d4 100%);
+      --accent-soft: rgba(99, 102, 241, 0.1);
+      --correct: #10b981;
+      --correct-bg: rgba(16, 185, 129, 0.1);
+      --warning: #f59e0b;
+      --warning-bg: rgba(245, 158, 11, 0.1);
+      --wrong: #ef4444;
+      --wrong-bg: rgba(239, 68, 68, 0.1);
+      --radius: 16px;
+      --radius-sm: 10px;
+      --shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+      --shadow-lg: 0 10px 40px rgba(99, 102, 241, 0.15);
+      --font: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", "PingFang SC",
+        "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 16px;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* 背景装饰 */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 400px;
+      background: linear-gradient(180deg, rgba(99, 102, 241, 0.08) 0%, rgba(6, 182, 212, 0.04) 50%, transparent 100%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 24px 16px 60px;
+    }
+
+    /* ===== 顶部标题 ===== */
+    .header {
+      text-align: center;
+      margin-bottom: 32px;
+      padding: 20px 0;
+    }
+
+    .header-icon {
+      font-size: 3.5rem;
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    .header-title {
+      font-size: 1.8rem;
+      font-weight: 800;
+      background: var(--accent-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 8px;
+      letter-spacing: 0.5px;
+    }
+
+    .header-subtitle {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    /* ===== 目录 ===== */
+    .toc-card {
+      background: var(--bg-card);
+      border-radius: var(--radius);
+      padding: 24px;
+      margin-bottom: 28px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+    }
+
+    .toc-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--text);
+    }
+
+    .toc-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .toc-list li a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 14px;
+      background: var(--bg-secondary);
+      border-radius: var(--radius-sm);
+      color: var(--text);
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: all 0.2s ease;
+      border: 1px solid transparent;
+    }
+
+    .toc-list li a:hover {
+      background: var(--accent-soft);
+      border-color: rgba(99, 102, 241, 0.2);
+      color: var(--accent);
+      transform: translateX(4px);
+    }
+
+    .toc-list li a .toc-emoji {
+      font-size: 1.1rem;
+      width: 28px;
+      text-align: center;
+    }
+
+    /* ===== 章节卡片 ===== */
+    .section-card {
+      background: var(--bg-card);
+      border-radius: var(--radius);
+      padding: 28px 24px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+    }
+
+    .section-title {
+      font-size: 1.35rem;
+      font-weight: 800;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--text);
+      padding-bottom: 14px;
+      border-bottom: 2px solid var(--accent-soft);
+    }
+
+    .section-title .title-icon {
+      font-size: 1.5rem;
+    }
+
+    .section-title .title-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      background: var(--accent-gradient);
+      color: #fff;
+      border-radius: 50%;
+      font-size: 0.9rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    /* ===== 子标题 ===== */
+    .sub-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin: 24px 0 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--text);
+    }
+
+    .sub-title:first-child {
+      margin-top: 0;
+    }
+
+    .sub-title .sub-icon {
+      font-size: 1.15rem;
+    }
+
+    /* ===== 步骤列表 ===== */
+    .steps {
+      list-style: none;
+      counter-reset: step-counter;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin: 16px 0;
+    }
+
+    .step-item {
+      counter-increment: step-counter;
+      display: flex;
+      gap: 14px;
+      padding: 16px;
+      background: var(--bg-secondary);
+      border-radius: var(--radius-sm);
+      border-left: 4px solid var(--accent);
+      transition: all 0.2s ease;
+    }
+
+    .step-item:hover {
+      background: var(--accent-soft);
+      border-left-color: var(--accent-2);
+    }
+
+    .step-number {
+      flex-shrink: 0;
+      width: 32px;
+      height: 32px;
+      background: var(--accent-gradient);
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+
+    .step-content {
+      flex: 1;
+    }
+
+    .step-content p {
+      color: var(--text);
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    .step-content strong {
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .step-content .step-emphasis {
+      display: inline-block;
+      background: var(--accent-soft);
+      color: var(--accent);
+      padding: 2px 8px;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      margin: 2px 0;
+    }
+
+    /* ===== 提示框 ===== */
+    .tip-box {
+      padding: 16px 18px;
+      border-radius: var(--radius-sm);
+      margin: 16px 0;
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+
+    .tip-box.info {
+      background: var(--accent-soft);
+      border: 1px solid rgba(99, 102, 241, 0.2);
+    }
+
+    .tip-box.warning {
+      background: var(--warning-bg);
+      border: 1px solid rgba(245, 158, 11, 0.3);
+    }
+
+    .tip-box.success {
+      background: var(--correct-bg);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+    }
+
+    .tip-box.error {
+      background: var(--wrong-bg);
+      border: 1px solid rgba(239, 68, 68, 0.3);
+    }
+
+    .tip-icon {
+      font-size: 1.3rem;
+      flex-shrink: 0;
+    }
+
+    .tip-content {
+      flex: 1;
+      font-size: 0.9rem;
+      line-height: 1.7;
+    }
+
+    .tip-content strong {
+      font-weight: 700;
+    }
+
+    .tip-box.info .tip-content strong { color: var(--accent); }
+    .tip-box.warning .tip-content strong { color: var(--warning); }
+    .tip-box.success .tip-content strong { color: var(--correct); }
+    .tip-box.error .tip-content strong { color: var(--wrong); }
+
+    /* ===== FAQ ===== */
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .faq-item {
+      background: var(--bg-secondary);
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      border: 1px solid var(--border);
+      transition: all 0.2s ease;
+    }
+
+    .faq-item:hover {
+      border-color: rgba(99, 102, 241, 0.3);
+    }
+
+    .faq-q {
+      padding: 16px 18px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--text);
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .faq-q .q-icon {
+      color: var(--accent);
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+
+    .faq-a {
+      padding: 0 18px 16px 42px;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    .faq-a strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    /* ===== 文件列表 ===== */
+    .file-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin: 14px 0;
+    }
+
+    .file-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 16px;
+      background: var(--bg-secondary);
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border);
+      transition: all 0.2s ease;
+    }
+
+    .file-item:hover {
+      border-color: rgba(99, 102, 241, 0.3);
+      background: var(--accent-soft);
+    }
+
+    .file-icon {
+      font-size: 1.4rem;
+      flex-shrink: 0;
+      width: 36px;
+      text-align: center;
+    }
+
+    .file-info {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .file-name {
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--text);
+      margin-bottom: 2px;
+    }
+
+    .file-desc {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    .file-tag {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 10px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      flex-shrink: 0;
+    }
+
+    .file-tag.required {
+      background: var(--correct-bg);
+      color: var(--correct);
+    }
+
+    .file-tag.optional {
+      background: var(--warning-bg);
+      color: var(--warning);
+    }
+
+    /* ===== 对比表格 ===== */
+    .compare-table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      margin: 16px 0;
+      font-size: 0.9rem;
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+
+    .compare-table th {
+      background: var(--accent-gradient);
+      color: #fff;
+      padding: 12px 16px;
+      text-align: left;
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+
+    .compare-table td {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border);
+      color: var(--text);
+      background: var(--bg-card);
+    }
+
+    .compare-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .compare-table tr:nth-child(even) td {
+      background: var(--bg-secondary);
+    }
+
+    .compare-table .check {
+      color: var(--correct);
+      font-weight: 700;
+    }
+
+    .compare-table .cross {
+      color: var(--wrong);
+      font-weight: 700;
+    }
+
+    /* ===== 普通段落 ===== */
+    .section-card p {
+      font-size: 0.95rem;
+      color: var(--text);
+      margin-bottom: 12px;
+      line-height: 1.8;
+    }
+
+    .section-card ul,
+    .section-card ol {
+      padding-left: 24px;
+      margin: 12px 0;
+    }
+
+    .section-card li {
+      font-size: 0.92rem;
+      margin-bottom: 8px;
+      line-height: 1.7;
+    }
+
+    .section-card strong {
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    /* ===== 分隔线 ===== */
+    .divider {
+      height: 1px;
+      background: var(--border);
+      margin: 24px 0;
+    }
+
+    /* ===== 底部 ===== */
+    .footer {
+      text-align: center;
+      color: var(--text-dim);
+      font-size: 0.8rem;
+      padding: 24px 0;
+      margin-top: 20px;
+    }
+
+    .footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .back-top {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      width: 44px;
+      height: 44px;
+      background: var(--accent-gradient);
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      box-shadow: var(--shadow-lg);
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      z-index: 100;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .back-top.show {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .back-top:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 30px rgba(99, 102, 241, 0.3);
+    }
+
+    /* ===== 手机端优化 ===== */
+    @media (max-width: 600px) {
+      html {
+        font-size: 15px;
+      }
+
+      .container {
+        padding: 16px 12px 60px;
+      }
+
+      .header {
+        margin-bottom: 24px;
+        padding: 10px 0;
+      }
+
+      .header-icon {
+        font-size: 3rem;
+      }
+
+      .header-title {
+        font-size: 1.5rem;
+      }
+
+      .header-subtitle {
+        font-size: 0.88rem;
+      }
+
+      .toc-card {
+        padding: 18px;
+        margin-bottom: 20px;
+      }
+
+      .toc-title {
+        font-size: 1rem;
+      }
+
+      .toc-list li a {
+        padding: 12px 14px;
+        font-size: 0.92rem;
+        min-height: 44px;
+        align-items: center;
+      }
+
+      .section-card {
+        padding: 22px 18px;
+        margin-bottom: 18px;
+      }
+
+      .section-title {
+        font-size: 1.2rem;
+        margin-bottom: 18px;
+        padding-bottom: 12px;
+      }
+
+      .section-title .title-num {
+        width: 28px;
+        height: 28px;
+        font-size: 0.85rem;
+      }
+
+      .sub-title {
+        font-size: 1.05rem;
+        margin: 20px 0 12px;
+      }
+
+      .step-item {
+        padding: 14px;
+        gap: 12px;
+      }
+
+      .step-number {
+        width: 28px;
+        height: 28px;
+        font-size: 0.85rem;
+      }
+
+      .step-content p {
+        font-size: 0.92rem;
+      }
+
+      .tip-box {
+        padding: 14px;
+        gap: 10px;
+      }
+
+      .tip-icon {
+        font-size: 1.2rem;
+      }
+
+      .tip-content {
+        font-size: 0.88rem;
+      }
+
+      .faq-q {
+        padding: 14px;
+        font-size: 0.92rem;
+        min-height: 48px;
+        align-items: center;
+      }
+
+      .faq-a {
+        padding: 0 14px 14px 38px;
+        font-size: 0.88rem;
+      }
+
+      .file-item {
+        padding: 12px 14px;
+        min-height: 52px;
+      }
+
+      .file-icon {
+        font-size: 1.3rem;
+        width: 32px;
+      }
+
+      .file-name {
+        font-size: 0.92rem;
+      }
+
+      .file-desc {
+        font-size: 0.8rem;
+      }
+
+      .compare-table {
+        font-size: 0.82rem;
+      }
+
+      .compare-table th,
+      .compare-table td {
+        padding: 10px 12px;
+      }
+
+      .back-top {
+        bottom: 16px;
+        right: 16px;
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 360px) {
+      html {
+        font-size: 14px;
+      }
+
+      .section-title {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- 顶部标题 -->
+    <header class="header">
+      <span class="header-icon">📚</span>
+      <h1 class="header-title">英语答题大师 使用指南</h1>
+      <p class="header-subtitle">从入门到精通，手把手教你使用</p>
+    </header>
+
+    <!-- 目录 -->
+    <nav class="toc-card">
+      <h2 class="toc-title">📑 快速导航</h2>
+      <ul class="toc-list">
+        <li><a href="#computer"><span class="toc-emoji">💻</span>电脑端使用方法</a></li>
+        <li><a href="#mobile"><span class="toc-emoji">📱</span>手机端使用方法（重点）</a></li>
+        <li><a href="#github"><span class="toc-emoji">🐙</span>GitHub 更新步骤</a></li>
+        <li><a href="#faq"><span class="toc-emoji">❓</span>常见问题 FAQ</a></li>
+        <li><a href="#files"><span class="toc-emoji">📁</span>文件说明</a></li>
+      </ul>
+    </nav>
+
+    <!-- 1. 电脑端使用方法 -->
+    <section class="section-card" id="computer">
+      <h2 class="section-title">
+        <span class="title-num">1</span>
+        <span class="title-icon">💻</span>
+        电脑端使用方法
+      </h2>
+
+      <h3 class="sub-title">
+        <span class="sub-icon">🖱️</span>
+        方法一：直接双击 HTML 文件打开
+      </h3>
+      <ol class="steps">
+        <li class="step-item">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <p>找到下载好的 <strong>english-quiz-master</strong> 文件夹</p>
+          </div>
+        </li>
+        <li class="step-item">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <p>双击打开文件夹中的 <span class="step-emphasis">index.html</span> 文件</p>
+          </div>
+        </li>
+        <li class="step-item">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <p>系统会用默认浏览器打开，就可以开始使用啦！</p>
+          </div>
+        </li>
+      </ol>
+
+      <div class="tip-box info">
+        <span class="tip-icon">💡</span>
+        <div class="tip-content">
+          <strong>推荐浏览器：</strong>Chrome、Edge、Safari、Firefox 都可以，建议使用最新版本获得最佳体验。
+        </div>
+      </div>
+
+      <h3 class="sub-title">
+        <span class="sub-icon">🌐</span>
+        方法二：GitHub Pages 在线使用
+      </h3>
+      <ol class="steps">
+        <li class="step-item">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <p>打开浏览器，访问你的 GitHub Pages 地址</p>
+            <p style="font-size:0.85rem;color:var(--text-muted);margin-top:4px;">（格式通常是：<code>https://你的用户名.github.io/仓库名/</code>）</p>
+          </div>
+        </li>
+        <li class="step-item">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <p>直接在线使用，数据保存在浏览器本地</p>
+          </div>
+        </li>
+      </ol>
+
+      <h3 class="sub-title">
+        <span class="sub-icon">💾</span>
+        数据保存说明
+      </h3>
+      <div class="tip-box success">
+        <span class="tip-icon">✅</span>
+        <div class="tip-content">
+          <strong>你的错题和进度数据都保存在浏览器的本地存储（localStorage）中。</strong><br>
+          • 只要不清除浏览器数据，就不会丢失<br>
+          • 换浏览器、换电脑、换手机 = 数据不通用<br>
+          • 建议定期备份重要数据
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. 手机端使用方法 -->
+    <section class="section-card" id="mobile">
+      <h2 class="section-title">
+        <span class="title-num">2</span>
+        <span class="title-icon">📱</span>
+        手机端使用方法（重点！）
+      </h2>
+
+      <div class="tip-box warning">
+        <span class="tip-icon">⚠️</span>
+        <div class="tip-content">
+          <strong>重要提醒：</strong>手机上如果直接打开多文件版可能因为安全限制加载失败，<strong>强烈建议使用单文件版</strong>，完全离线可用！
+        </div>
+      </div>
+
+      <h3 class="sub-title">
+        <span class="sub-icon">📲</span>
+        方法一：单文件版直接用（最推荐）
+      </h3>
+      <p style="font-size:0.9rem;color:var(--text-muted);margin-bottom:14px;">
+        单文件版把所有内容都打包在一个 HTML 文件里，传到手机上就能用，完全离线！
+      </p>
+
+      <h4 style="font-size:1rem;font-weight:700;margin:18px 0 10px;display:flex;align-items:center;gap:8px;">
+        <span>📤</span> 第一步：把文件传到手机上
+      </h4>
+      <ol class="steps">
+        <li class="step-item">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <p>在电脑上下载好 <strong>单文件版</strong> 的 HTML 文件</p>
+          </div>
+        </li>
+        <li class="step-item">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <p>用以下任意一种方式传到手机：</p>
+            <p style="font-size:0.88rem;margin-top:6px;">
+              • 📧 发邮件给自己，手机上收邮件下载<br>
+              • 💬 微信/QQ 文件传输助手发送<br>
+              • ☁️ 上传到网盘（百度云/阿里云等），手机端下载<br>
+              • 🔌 用数据线连接电脑和手机传输
+            </p>
+          </div>
+        </li>
+        <li class="step-item">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <p>把文件保存到手机上你能找到的位置</p>
+          </div>
+        </li>
+      </ol>
+
+      <h4 style="font-size:1rem;font-weight:700;margin:18px 0 10px;display:flex;align-items:center;gap:8px;">
+        <span>📖</span> 第二步：用浏览器打开
+      </h4>
+      <ol class="steps">
+        <li class="step-item">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <p>在手机的「文件」应用里找到刚才下载的 HTML 文件</p>
+          </div>
+        </li>
+        <li class="step-item">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <p>点击文件，选择<strong>用浏览器打开</strong></p>
+            <p style="font-size:0.88rem;color:var(--text-muted);margin-top:4px;">推荐使用：Chrome、Safari、Edge</p>
+          </div>
+        </li>
+        <li class="step-item">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <p>打开后就可以开始答题啦！🎉</p>
+          </div>
+        </li>
+      </ol>
+
+      <h4 style="font-size:1rem;font-weight:700;margin:18px 0 10px;display:flex;align-items:center;gap:8px;">
+        <span>🏠</span> 第三步：添加到主屏幕（像 APP 一样用）
+      </h4>
+      <p style="font-size:0.9rem;color:var(--text-muted);margin-bottom:12px;">
+        添加到主屏幕后，点击图标就能直接打开，跟 APP 一模一样！
+      </p>
+
+      <div class="tip-box info">
+        <span class="tip-icon">🍎</span>
+        <div class="tip-content">
+          <strong>iOS（iPhone / iPad）操作步骤：</strong>
+        </div>
+      </div>
+      <ol class="steps">
+        <li class="step-item">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <p>用 <strong>Safari 浏览器</strong> 打开 HTML 文件</p>
+          </div>
+        </li>
+        <li class="step-item">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <p>点击屏幕底部中间的 <span class="step-emphasis">分享按钮</span>（方框带向上箭头的图标 ⬆️）</p>
+          </div>
+        </li>
+        <li class="step-item">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <p>往下滑动，找到并点击 <span class="step-emphasis">「添加到主屏幕」</span></p>
+          </div>
+        </li>
+        <li class="step-item">
+          <div class="step-number">4</div>
+          <div class="step-content">
+            <p>可以改个名字（比如「英语答题」），然后点击右上角的 <strong>「添加」</strong></p>
+          </div>
+        </li>
+        <li class="step-item">
+          <div class="step-number">5</div>
+          <div class="step-content">
+            <p>回到手机桌面，你会看到一个新图标！点击就能直接打开使用 ✨</p>
+          </div>
+        </li>
+      </ol>
+
+      <div class="tip-box info" style="margin-top:20px;">
+        <span class="tip-icon">🤖</span>
+        <div class="tip-content">
+          <strong>Android（安卓）操作步骤：</strong>
+        </div>
+      </div>
+      <ol class="steps">
+        <li class="step-item">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <p>用 <strong>Chrome 浏览器</strong> 打开 HTML 文件</p>
+          </div>
+        </li>
+        <li class="step-item">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <p>点击右上角的 <span class="step-emphasis">三个点 ⋮</span> 菜单按钮</p>
+          </div>
+        </li>
+        <li class="step-item">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <p>找到并点击 <span class="step-emphasis">「添加到主屏幕」</span> 或 <span class="step-emphasis">「安装应用」</span></p>
+          </div>
+        </li>
+        <li class="step-item">
+          <div class="step-number">4</div>
+          <div class="step-content">
+            <p>点击「添加」或「安装」确认</p>
+          </div>
+        </li>
+        <li class="step-item">
+          <div class="step-number">5</div>
+          <div class="step-content">
+            <p>回到手机桌面，找到新图标点击就能打开啦！🎉</p>
+          </div>
+        </li>
+      </ol>
+
+      <div class="tip-box success">
+        <span class="tip-icon">✨</span>
+        <div class="tip-content">
+          <strong>添加到主屏幕的好处：</strong><br>
+          • 全屏显示，没有浏览器地址栏，更像原生 APP<br>
+          • 点击图标秒开，不用每次找文件<br>
+          • 支持离线使用（单文件版）
+        </div>
+      </div>
+
+      <h3 class="sub-title">
+        <span class="sub-icon">🌍</span>
+        方法二：GitHub Pages 在线用
+      </h3>
+      <p style="font-size:0.9rem;color:var(--text-muted);margin-bottom:14px;">
+        如果你把代码部署到了 GitHub Pages，可以直接用手机浏览器访问。
+      </p>
+      <ol class="steps">
+        <li class="step-item">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <p>用手机浏览器打开你的 GitHub Pages 网址</p>
+          </div>
+        </li>
+        <li class="step-item">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <p>按照上面 <strong>「添加到主屏幕」</strong> 的步骤操作</p>
+          </div>
+        </li>
+        <li class="step-item">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <p>以后从桌面点击图标就能直接访问！</p>
+          </div>
+        </li>
+      </ol>
+
+      <div class="tip-box warning">
+        <span class="tip-icon">📶</span>
+        <div class="tip-content">
+          <strong>注意：</strong>GitHub Pages 在线版需要联网才能使用，但答题数据仍然保存在手机本地。
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. GitHub 更新步骤 -->
+    <section class="section-card" id="github">
+      <h2 class="section-title">
+        <span class="title-num">3</span>
+        <span class="title-icon">🐙</span>
+        GitHub 更新步骤（超详细）
+      </h2>
+
+      <p style="font-size:0.95rem;">
+        当题库或功能有更新时，按照下面的步骤上传到 GitHub，GitHub Pages 就会自动更新。
+      </p>
+
+      <h3 class="sub-title">
+        <span class="sub-icon">📤</span>
+        方法一：直接上传文件（最简单，适合新手）
+      </h3>
+
+      <ol class="steps">
+        <li class="step-item">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <p>打开浏览器，访问你的 <strong>GitHub 仓库页面</strong></p>
+            <p style="font-size:0.85rem;color:var(--text-muted);margin-top:4px;">
+              地址格式：<code>https://github.com/你的用户名/仓库名</code>
+            </p>
+          </div>
+        </li>
+        <li class="step-item">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <p>点击页面上的 <span class="step-emphasis">Add file</span> 按钮，选择 <span class="step-emphasis">Upload files</span></p>
+            <p style="font-size:0.85rem;color:var(--text-muted);margin-top:4px;">
+              （Add file 在绿色的 Code 按钮右边）
+            </p>
+          </div>
+        </li>
+        <li class="step-item">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <p>把新文件<strong>拖拽</strong>到上传区域，或者点击 <strong>choose your files</strong> 选择文件</p>
+            <div class="tip-box warning" style="margin-top:10px;margin-bottom:4px;">
+              <span class="tip-icon">⚠️</span>
+              <div class="tip-content" style="font-size:0.85rem;">
+                <strong>注意文件路径要对！</strong>比如 index.html 要直接放在根目录，data 文件夹里的文件要上传到 data 文件夹中。如果路径不对，页面会加载失败。
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="step-item">
+          <div class="step-number">4</div>
+          <div class="step-content">
+            <p>在页面下方的 <strong>Commit changes</strong> 区域：</p>
+            <p style="font-size:0.9rem;margin-top:6px;">
+              • 在第一个输入框填写提交说明，比如 <code>更新题库</code> 或 <code>v8.0 更新</code><br>
+              • 确认选中 <span class="step-emphasis">Commit directly to the main branch</span><br>
+              • 点击绿色的 <strong>Commit changes</strong> 按钮
+            </p>
+          </div>
+        </li>
+        <li class="step-item">
+          <div class="step-number">5</div>
+          <div class="step-content">
+            <p>等待 <strong>2-5 分钟</strong>，GitHub Pages 就会自动更新</p>
+            <p style="font-size:0.85rem;color:var(--text-muted);margin-top:4px;">
+              （GitHub Pages 部署需要一点时间，不是即时的）
+            </p>
+          </div>
+        </li>
+        <li class="step-item">
+          <div class="step-number">6</div>
+          <div class="step-content">
+            <p>确认更新成功：</p>
+            <p style="font-size:0.9rem;margin-top:6px;">
+              • 打开你的 GitHub Pages 页面<br>
+              • 按 <strong>Ctrl + F5</strong>（Windows）或 <strong>Cmd + Shift + R</strong>（Mac）强制刷新<br>
+              • 手机上：在浏览器设置里清除缓存，或用无痕模式打开验证
+            </p>
+          </div>
+        </li>
+      </ol>
+
+      <h3 class="sub-title">
+        <span class="sub-icon">📋</span>
+        需要上传的文件清单
+      </h3>
+      <div class="file-list">
+        <div class="file-item">
+          <span class="file-icon">📄</span>
+          <div class="file-info">
+            <div class="file-name">index.html</div>
+            <div class="file-desc">主页面文件，必须上传</div>
+          </div>
+          <span class="file-tag required">必需</span>
+        </div>
+        <div class="file-item">
+          <span class="file-icon">📁</span>
+          <div class="file-info">
+            <div class="file-name">data/quiz-bank.json</div>
+            <div class="file-desc">题库数据，更新题库时上传</div>
+          </div>
+          <span class="file-tag required">必需</span>
+        </div>
+        <div class="file-item">
+          <span class="file-icon">📁</span>
+          <div class="file-info">
+            <div class="file-name">data/vocabulary.json</div>
+            <div class="file-desc">词汇数据，更新词汇时上传</div>
+          </div>
+          <span class="file-tag optional">可选</span>
+        </div>
+        <div class="file-item">
+          <span class="file-icon">📁</span>
+          <div class="file-info">
+            <div class="file-name">data/grammar-map.json</div>
+            <div class="file-desc">语法知识图谱数据</div>
+          </div>
+          <span class="file-tag optional">可选</span>
+        </div>
+        <div class="file-item">
+          <span class="file-icon">📁</span>
+          <div class="file-info">
+            <div class="file-name">data/grammar-quiz.json</div>
+            <div class="file-desc">语法专属练习题数据</div>
+          </div>
+          <span class="file-tag optional">可选</span>
+        </div>
+        <div class="file-item">
+          <span class="file-icon">📁</span>
+          <div class="file-info">
+            <div class="file-name">data/grammar-ref-tables.json</div>
+            <div class="file-desc">语法速查表数据</div>
+          </div>
+          <span class="file-tag optional">可选</span>
+        </div>
+      </div>
+
+      <div class="tip-box info">
+        <span class="tip-icon">💡</span>
+        <div class="tip-content">
+          <strong>小技巧：</strong>如果只是更新题库，只需要上传 <code>index.html</code> 和 <code>data/quiz-bank.json</code> 就够了，其他文件不用动。
+        </div>
+      </div>
+
+      <h3 class="sub-title">
+        <span class="sub-icon">❓</span>
+        常见问题：为什么更新了还是旧版本？
+      </h3>
+      <div class="tip-box warning">
+        <span class="tip-icon">🔄</span>
+        <div class="tip-content">
+          <strong>这是浏览器缓存的问题！</strong><br>
+          浏览器为了加快加载速度，会把网页文件保存在本地。即使服务器更新了，浏览器可能还在用旧的缓存文件。
+        </div>
+      </div>
+      <p style="margin-top:12px;"><strong>解决方法：</strong></p>
+      <ol class="steps">
+        <li class="step-item">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <p><strong>电脑端：</strong>按 <span class="step-emphasis">Ctrl + F5</span>（Windows）或 <span class="step-emphasis">Cmd + Shift + R</span>（Mac）强制刷新</p>
+          </div>
+        </li>
+        <li class="step-item">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <p><strong>手机端：</strong>在浏览器设置里清除缓存，或用<strong>无痕模式 / 隐身模式</strong>打开验证</p>
+          </div>
+        </li>
+        <li class="step-item">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <p>如果还是旧版本，可能是 GitHub Pages 还没部署完成，再多等几分钟再试</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- 4. 常见问题 FAQ -->
+    <section class="section-card" id="faq">
+      <h2 class="section-title">
+        <span class="title-num">4</span>
+        <span class="title-icon">❓</span>
+        常见问题 FAQ
+      </h2>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-q">
+            <span class="q-icon">Q:</span>
+            <span>手机上打开白屏/加载不出来怎么办？</span>
+          </div>
+          <div class="faq-a">
+            <strong>用单文件版！</strong>多文件版（有 data 文件夹的版本）直接在手机上打开会因为浏览器安全限制导致 JSON 文件加载失败。单文件版把所有数据都打包在一个 HTML 里，完全离线可用，不会有这个问题。
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">
+            <span class="q-icon">Q:</span>
+            <span>错题和进度会丢吗？</span>
+          </div>
+          <div class="faq-a">
+            数据保存在<strong>浏览器的本地存储（localStorage）</strong>里，只要不清除浏览器数据就不会丢。但是：<br>
+            • 换浏览器 = 数据不通用<br>
+            • 换手机/电脑 = 数据不通用<br>
+            • 卸载浏览器或清除数据 = 数据会丢失<br>
+            <br>
+            <strong>建议：</strong>重要的错题可以截图保存。
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">
+            <span class="q-icon">Q:</span>
+            <span>怎么把进度从电脑传到手机？</span>
+          </div>
+          <div class="faq-a">
+            目前还<strong>不支持云同步</strong>功能，进度和错题数据只能在当前浏览器中使用。后续版本可能会加入导出/导入功能。
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">
+            <span class="q-icon">Q:</span>
+            <span>需要联网吗？</span>
+          </div>
+          <div class="faq-a">
+            <strong>单文件版完全离线，不用网！</strong>下载后传到手机上，随时随地都能刷题。<br>
+            GitHub Pages 在线版需要联网才能访问。
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">
+            <span class="q-icon">Q:</span>
+            <span>iOS 上怎么添加到主屏幕？</span>
+          </div>
+          <div class="faq-a">
+            <strong>Safari 打开 → 分享按钮（底部中间 ⬆️）→ 添加到主屏幕 → 添加</strong><br>
+            注意：必须用 Safari 浏览器，Chrome 等第三方浏览器在 iOS 上不支持「添加到主屏幕」的 PWA 功能。
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">
+            <span class="q-icon">Q:</span>
+            <span>Android 上怎么添加到主屏幕？</span>
+          </div>
+          <div class="faq-a">
+            <strong>Chrome 打开 → 右上角三个点 ⋮ → 添加到主屏幕 / 安装应用 → 添加</strong><br>
+            不同品牌的手机菜单名称可能略有不同，一般叫「添加到主屏幕」「安装应用」或「添加到桌面」。
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">
+            <span class="q-icon">Q:</span>
+            <span>单文件版和多文件版有什么区别？</span>
+          </div>
+          <div class="faq-a">
+            <strong>单文件版：</strong>所有内容都在一个 HTML 文件里，文件较大但使用简单，适合手机端和本地使用，完全离线。<br>
+            <strong>多文件版：</strong>数据分开放在 data 文件夹里，结构清晰方便修改，适合部署到 GitHub Pages 或本地服务器。<br>
+            <br>
+            功能完全一样，只是打包方式不同。
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">
+            <span class="q-icon">Q:</span>
+            <span>怎么删除错题？</span>
+          </div>
+          <div class="faq-a">
+            打开「错题本」页面，点击右上角的 <strong>「清空错题本」</strong> 按钮可以清除所有错题。目前暂不支持删除单条错题。
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. 文件说明 -->
+    <section class="section-card" id="files">
+      <h2 class="section-title">
+        <span class="title-num">5</span>
+        <span class="title-icon">📁</span>
+        文件说明
+      </h2>
+
+      <h3 class="sub-title">
+        <span class="sub-icon">📂</span>
+        各个文件的作用
+      </h3>
+      <div class="file-list">
+        <div class="file-item">
+          <span class="file-icon">📄</span>
+          <div class="file-info">
+            <div class="file-name">index.html</div>
+            <div class="file-desc">主程序文件，包含所有页面、样式和逻辑</div>
+          </div>
+        </div>
+        <div class="file-item">
+          <span class="file-icon">📁</span>
+          <div class="file-info">
+            <div class="file-name">data/quiz-bank.json</div>
+            <div class="file-desc">主题库数据（选择题、判断题、填空题、问答题、阅读理解）</div>
+          </div>
+        </div>
+        <div class="file-item">
+          <span class="file-icon">📁</span>
+          <div class="file-info">
+            <div class="file-name">data/vocabulary.json</div>
+            <div class="file-desc">词汇数据，按树状结构分类（名词、动词、形容词等）</div>
+          </div>
+        </div>
+        <div class="file-item">
+          <span class="file-icon">📁</span>
+          <div class="file-info">
+            <div class="file-name">data/grammar-map.json</div>
+            <div class="file-desc">语法知识图谱数据，包含各级语法知识点分类</div>
+          </div>
+        </div>
+        <div class="file-item">
+          <span class="file-icon">📁</span>
+          <div class="file-info">
+            <div class="file-name">data/grammar-quiz.json</div>
+            <div class="file-desc">语法专属练习题数据（学习模式使用）</div>
+          </div>
+        </div>
+        <div class="file-item">
+          <span class="file-icon">📁</span>
+          <div class="file-info">
+            <div class="file-name">data/grammar-ref-tables.json</div>
+            <div class="file-desc">语法速查表数据（16章语法表格）</div>
+          </div>
+        </div>
+        <div class="file-item">
+          <span class="file-icon">📁</span>
+          <div class="file-info">
+            <div class="file-name">docs/usage-guide.html</div>
+            <div class="file-desc">使用指南（就是你现在看的这个页面）</div>
+          </div>
+        </div>
+        <div class="file-item">
+          <span class="file-icon">📄</span>
+          <div class="file-info">
+            <div class="file-name">README.md</div>
+            <div class="file-desc">项目说明文档</div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="sub-title">
+        <span class="sub-icon">⚖️</span>
+        单文件版 vs 多文件版
+      </h3>
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th>对比项</th>
+            <th>单文件版</th>
+            <th>多文件版</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>文件数量</td>
+            <td>只有 1 个 HTML 文件</td>
+            <td>1 个 HTML + data 文件夹</td>
+          </tr>
+          <tr>
+            <td>手机直接打开</td>
+            <td class="check">✓ 完美支持</td>
+            <td class="cross">✗ 会加载失败</td>
+          </tr>
+          <tr>
+            <td>离线使用</td>
+            <td class="check">✓ 完全离线</td>
+            <td class="check">✓ 本地服务器可用</td>
+          </tr>
+          <tr>
+            <td>GitHub Pages 部署</td>
+            <td class="check">✓ 可以</td>
+            <td class="check">✓ 推荐</td>
+          </tr>
+          <tr>
+            <td>修改数据方便度</td>
+            <td class="cross">✗ 较麻烦</td>
+            <td class="check">✓ 分开编辑很方便</td>
+          </tr>
+          <tr>
+            <td>功能完整度</td>
+            <td class="check">✓ 完全一样</td>
+            <td class="check">✓ 完全一样</td>
+          </tr>
+          <tr>
+            <td>适合场景</td>
+            <td>手机使用、分享给朋友</td>
+            <td>开发维护、GitHub 部署</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="tip-box success">
+        <span class="tip-icon">🎯</span>
+        <div class="tip-content">
+          <strong>总结：</strong>自己用手机刷题选单文件版，部署到 GitHub 选多文件版。功能完全一样，只是打包方式不同。
+        </div>
+      </div>
+    </section>
+
+    <!-- 底部 -->
+    <div class="footer">
+      <p>英语答题大师 · 使用指南</p>
+      <p style="margin-top:6px;">有问题？看看上面的 FAQ，90% 的问题都能找到答案 😊</p>
+    </div>
+  </div>
+
+  <!-- 返回顶部按钮 -->
+  <a href="#" class="back-top" id="backTop" aria-label="返回顶部">↑</a>
+
+  <script>
+    // 返回顶部按钮显示/隐藏
+    const backTopBtn = document.getElementById('backTop');
+
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 300) {
+        backTopBtn.classList.add('show');
+      } else {
+        backTopBtn.classList.remove('show');
+      }
+    });
+
+    // 平滑滚动到锚点
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

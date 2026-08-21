@@ -2,7 +2,11 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="theme-color" content="#0d1117" />
+  <meta name="mobile-web-app-capable" content="yes" />
   <title>英语答题大师 - English Quiz Master</title>
   <meta name="description" content="初中到六级英语词汇语法在线答题练习，驾考风格界面" />
   <style>
@@ -213,6 +217,20 @@
       border-color: var(--accent);
       background: var(--accent-dim);
       box-shadow: 0 0 0 1px var(--accent);
+    }
+
+    /* 考研级别特殊紫色主题 */
+    .level-btn[data-level="postgraduate"] {
+      border-color: rgba(139, 92, 246, 0.4);
+    }
+    .level-btn[data-level="postgraduate"]:hover {
+      border-color: #8b5cf6;
+      box-shadow: 0 4px 12px rgba(139, 92, 246, 0.2);
+    }
+    .level-btn[data-level="postgraduate"].active {
+      border-color: #8b5cf6;
+      background: rgba(139, 92, 246, 0.12);
+      box-shadow: 0 0 0 1px #8b5cf6;
     }
 
     .level-btn .level-name {
@@ -2230,6 +2248,320 @@
       color: #fff;
     }
 
+    /* ===== 语法速查屏幕 ===== */
+    .quickref-layout {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+
+    .quickref-sidebar {
+      flex-shrink: 0;
+      width: 200px;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 12px;
+      position: sticky;
+      top: 16px;
+      max-height: calc(100vh - 120px);
+      overflow-y: auto;
+    }
+
+    .quickref-sidebar-title {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 10px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .quickref-chapter-list {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .quickref-chapter-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      padding: 8px 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-size: 0.82rem;
+      line-height: 1.4;
+    }
+
+    .quickref-chapter-item:hover {
+      background: var(--bg-tertiary);
+      color: var(--accent);
+    }
+
+    .quickref-chapter-item.active {
+      background: rgba(163, 113, 247, 0.12);
+      color: #a371f7;
+      font-weight: 600;
+      border-left: 3px solid #a371f7;
+      padding-left: 7px;
+    }
+
+    .quickref-chapter-name {
+      flex: 1;
+    }
+
+    .quickref-chapter-count {
+      font-size: 0.7rem;
+      color: var(--text-dim);
+      background: var(--bg-tertiary);
+      padding: 1px 7px;
+      border-radius: 10px;
+      flex-shrink: 0;
+    }
+
+    .quickref-chapter-item.active .quickref-chapter-count {
+      background: rgba(163, 113, 247, 0.15);
+      color: #a371f7;
+    }
+
+    .quickref-content {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .quickref-content-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--border);
+    }
+
+    .quickref-section {
+      margin-bottom: 18px;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+    }
+
+    .quickref-section-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 14px;
+      background: linear-gradient(135deg, rgba(163,113,247,0.06), rgba(88,166,255,0.06));
+      border-bottom: 1px solid var(--border);
+      font-size: 0.92rem;
+      font-weight: 600;
+    }
+
+    .quickref-section-icon {
+      font-size: 1rem;
+    }
+
+    .quickref-section-name {
+      flex: 1;
+      color: var(--text);
+    }
+
+    .quickref-section-count {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      background: var(--bg-tertiary);
+      padding: 2px 10px;
+      border-radius: 12px;
+    }
+
+    /* 速查表格 */
+    .quickref-table-wrap {
+      overflow-x: auto;
+      padding: 0;
+    }
+
+    .quickref-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.82rem;
+      line-height: 1.5;
+    }
+
+    .quickref-table thead th {
+      background: linear-gradient(135deg, rgba(88,166,255,0.15), rgba(163,113,247,0.15));
+      color: var(--text);
+      font-weight: 700;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid var(--accent);
+      white-space: nowrap;
+    }
+
+    .quickref-table tbody td {
+      padding: 9px 12px;
+      border-bottom: 1px solid var(--border);
+      color: var(--text-muted);
+      vertical-align: top;
+    }
+
+    .quickref-table tbody tr:nth-child(even) {
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    .quickref-table tbody tr:hover {
+      background: var(--bg-tertiary);
+    }
+
+    .quickref-table tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* 速查练习 */
+    .quickref-practice-list {
+      padding: 8px;
+    }
+
+    .quickref-practice-item {
+      margin-bottom: 6px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    .quickref-practice-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .quickref-practice-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      padding: 10px 12px;
+      cursor: pointer;
+      user-select: none;
+      transition: background 0.15s ease;
+    }
+
+    .quickref-practice-header:hover {
+      background: var(--bg-tertiary);
+    }
+
+    .quickref-practice-toggle {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 16px;
+      height: 16px;
+      font-size: 0.6rem;
+      color: var(--text-muted);
+      transition: transform 0.25s ease;
+      flex-shrink: 0;
+      margin-top: 3px;
+    }
+
+    .quickref-practice-item.expanded > .quickref-practice-header .quickref-practice-toggle {
+      transform: rotate(90deg);
+      color: var(--accent2);
+    }
+
+    .quickref-practice-q {
+      flex: 1;
+      font-size: 0.85rem;
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    .quickref-practice-body {
+      display: none;
+      padding: 0 14px 12px 36px;
+      border-top: 1px solid var(--border);
+      padding-top: 10px;
+    }
+
+    .quickref-practice-item.expanded > .quickref-practice-body {
+      display: block;
+    }
+
+    .quickref-choices {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      margin-bottom: 10px;
+    }
+
+    .quickref-choice {
+      font-size: 0.82rem;
+      padding: 6px 10px;
+      background: var(--bg-tertiary);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      color: var(--text-muted);
+    }
+
+    .quickref-choice.correct {
+      background: var(--correct-bg);
+      border-color: var(--correct-border);
+      color: var(--correct);
+      font-weight: 600;
+    }
+
+    .quickref-answer {
+      background: var(--bg-tertiary);
+      border-radius: 6px;
+      padding: 10px 12px;
+    }
+
+    .quickref-answer-label {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+
+    .quickref-answer-text {
+      color: var(--correct);
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+
+    .quickref-explanation {
+      font-size: 0.8rem;
+      color: var(--text);
+      line-height: 1.6;
+      margin-top: 6px;
+      padding-top: 6px;
+      border-top: 1px solid var(--border);
+    }
+
+    .quickref-knowledge {
+      font-size: 0.75rem;
+      color: var(--accent);
+      margin-top: 6px;
+    }
+
+    /* 速查屏幕响应式 */
+    @media (max-width: 640px) {
+      .quickref-layout {
+        flex-direction: column;
+      }
+      .quickref-sidebar {
+        width: 100%;
+        position: static;
+        max-height: none;
+      }
+      .quickref-chapter-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 6px;
+      }
+      .quickref-chapter-item {
+        flex: 1 1 calc(50% - 6px);
+        min-width: 0;
+      }
+    }
+
     /* ===== 学习模式 ===== */
     .learn-mode-section {
       background: linear-gradient(135deg, rgba(163,113,247,0.06), rgba(88,166,255,0.06));
@@ -2408,6 +2740,21 @@
       font-weight: 700;
     }
 
+    /* 挑战模式考研按钮紫色主题 */
+    .random-count-btn[data-challenge-level="postgraduate"] {
+      color: rgba(139, 92, 246, 0.8);
+      border-color: rgba(139, 92, 246, 0.3);
+    }
+    .random-count-btn[data-challenge-level="postgraduate"]:hover {
+      border-color: #8b5cf6;
+      color: #8b5cf6;
+    }
+    .random-count-btn[data-challenge-level="postgraduate"].active {
+      border-color: #8b5cf6;
+      background: rgba(139, 92, 246, 0.12);
+      color: #8b5cf6;
+    }
+
     .random-start-btn {
       width: 100%;
       background: linear-gradient(135deg, var(--accent2), #6f7bff);
@@ -2453,29 +2800,544 @@
       font-weight: 600;
     }
 
+    /* ===== 触摸反馈（:active 状态） ===== */
+    .level-btn:active,
+    .type-btn:active,
+    .start-btn:active,
+    .tab-btn:active,
+    .choice:active,
+    .tf-btn:active,
+    .submit-btn:active,
+    .next-btn:active,
+    .self-btn:active,
+    .restart-btn:active,
+    .home-btn:active,
+    .nav-btn:active:not(:disabled),
+    .qn-dot:active,
+    .filter-btn:active,
+    .clear-btn:active,
+    .random-count-btn:active,
+    .random-start-btn:active,
+    .vocab-tree-action-btn:active,
+    .grammar-practice-btn:active,
+    .vocab-branch-header:active,
+    .vocab-sub-header:active,
+    .grammar-branch-header:active,
+    .grammar-sub-header:active,
+    .quickref-chapter-item:active,
+    .quickref-practice-header:active,
+    .learn-category-btn:active {
+      transform: scale(0.97);
+      opacity: 0.85;
+      transition: all 0.1s ease;
+    }
+
+    .start-btn:active,
+    .restart-btn:active,
+    .random-start-btn:active,
+    .nav-btn.primary:active:not(:disabled) {
+      transform: translateY(0) scale(0.98);
+      box-shadow: 0 2px 8px rgba(88, 166, 255, 0.2);
+    }
+
+    /* ===== 添加到主屏幕提示横幅 ===== */
+    .pwa-banner {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(135deg, rgba(88, 166, 255, 0.15), rgba(163, 113, 247, 0.15));
+      border-top: 1px solid var(--border);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      padding: 12px 16px;
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      animation: slideUp 0.4s ease;
+      padding-bottom: calc(12px + env(safe-area-inset-bottom));
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(100%); }
+      to { transform: translateY(0); }
+    }
+
+    .pwa-banner-icon {
+      font-size: 2rem;
+      flex-shrink: 0;
+    }
+
+    .pwa-banner-content {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .pwa-banner-title {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 2px;
+    }
+
+    .pwa-banner-desc {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    .pwa-banner-close {
+      background: none;
+      border: none;
+      color: var(--text-dim);
+      font-size: 1.2rem;
+      cursor: pointer;
+      padding: 8px;
+      line-height: 1;
+      flex-shrink: 0;
+    }
+
+    .pwa-banner-close:active {
+      color: var(--text);
+    }
+
+    /* 底部留白给 PWA 横幅 */
+    .app-container {
+      padding-bottom: calc(60px + env(safe-area-inset-bottom));
+    }
+
+    .pwa-banner-hidden .app-container {
+      padding-bottom: calc(24px + env(safe-area-inset-bottom));
+    }
+
+    /* ===== 移动端响应式优化 ===== */
     @media (max-width: 600px) {
-      .vocab-table,
-      .vocab-special-table {
+      html {
+        font-size: 15px;
+      }
+
+      .app-container {
+        padding: 16px 12px 80px;
+      }
+
+      .app-header {
+        margin-bottom: 20px;
+      }
+
+      .app-header .logo {
+        font-size: 1.4rem;
+      }
+
+      .app-header .subtitle {
+        font-size: 0.82rem;
+      }
+
+      /* Tab 栏优化 - 增大点击区域 */
+      .tab-bar {
+        gap: 4px;
+        margin-bottom: 18px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+      }
+
+      .tab-bar::-webkit-scrollbar {
+        display: none;
+      }
+
+      .tab-btn {
+        padding: 12px 14px;
+        font-size: 0.9rem;
+        min-height: 44px;
+        white-space: nowrap;
+        flex-shrink: 0;
+      }
+
+      /* 开始屏幕 */
+      #start-screen {
+        padding: 24px 18px;
+      }
+
+      .level-grid {
+        gap: 10px;
+      }
+
+      .level-btn {
+        padding: 14px 12px;
+        min-height: 72px;
+      }
+
+      .level-btn .level-name {
+        font-size: 1.05rem;
+      }
+
+      .level-btn .level-desc {
+        font-size: 0.75rem;
+      }
+
+      .type-btn {
+        padding: 10px 16px;
+        min-height: 40px;
+        font-size: 0.85rem;
+      }
+
+      .start-btn {
+        padding: 16px;
+        font-size: 1.05rem;
+        min-height: 52px;
+      }
+
+      /* 答题区域优化 */
+      .quiz-topbar {
+        gap: 8px;
+        margin-bottom: 10px;
+      }
+
+      .quiz-stats {
+        gap: 10px;
         font-size: 0.8rem;
       }
-      .vocab-table thead th,
-      .vocab-special-table thead th {
-        padding: 6px 8px;
+
+      .progress-bar-wrap {
+        height: 8px;
+        margin-bottom: 14px;
       }
-      .vocab-table tbody td,
-      .vocab-special-table tbody td {
-        padding: 4px 8px;
+
+      .question-card {
+        padding: 20px 16px;
+        margin-bottom: 14px;
       }
+
+      .question-text {
+        font-size: 1.1rem;
+        line-height: 1.6;
+      }
+
+      .question-cn {
+        font-size: 0.88rem;
+      }
+
+      /* 选项按钮 - 确保足够大便于点击 */
+      .choices {
+        gap: 10px;
+      }
+
+      .choice {
+        padding: 14px 16px;
+        min-height: 52px;
+        font-size: 0.95rem;
+        gap: 12px;
+      }
+
+      .choice .choice-letter {
+        min-width: 34px;
+        height: 34px;
+        font-size: 0.85rem;
+      }
+
+      .tf-btn {
+        padding: 16px;
+        min-height: 56px;
+        font-size: 1.05rem;
+      }
+
+      /* 输入框优化 */
+      .text-input, .textarea-input {
+        padding: 14px 16px;
+        min-height: 48px;
+        font-size: 1rem;
+      }
+
+      .textarea-input {
+        min-height: 100px;
+      }
+
+      .submit-btn {
+        padding: 14px 28px;
+        min-height: 48px;
+        font-size: 1rem;
+      }
+
+      .next-btn {
+        padding: 16px;
+        min-height: 52px;
+        font-size: 1rem;
+      }
+
+      /* 自评按钮 */
+      .self-btn {
+        padding: 14px 10px;
+        min-height: 48px;
+        font-size: 0.95rem;
+      }
+
+      /* 题目导航圆点 - 增大便于点击 */
+      .question-nav-bar {
+        padding: 8px 10px;
+        gap: 6px;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .qn-dot {
+        width: 36px;
+        height: 36px;
+        font-size: 0.75rem;
+      }
+
+      /* 导航按钮 */
       .nav-btns {
         flex-direction: column;
+        gap: 10px;
       }
-      .question-nav-bar {
-        padding: 6px 8px;
+
+      .nav-btn {
+        padding: 14px 20px;
+        min-height: 48px;
+        font-size: 0.95rem;
       }
+
+      /* 结果屏幕 */
+      #results-screen {
+        padding: 28px 20px;
+      }
+
+      .result-emoji {
+        font-size: 2.5rem;
+      }
+
+      .result-title {
+        font-size: 1.4rem;
+      }
+
+      .result-summary {
+        gap: 8px;
+      }
+
+      .summary-card {
+        padding: 14px 6px;
+      }
+
+      .summary-card .sum-value {
+        font-size: 1.4rem;
+      }
+
+      .summary-card .sum-label {
+        font-size: 0.72rem;
+      }
+
+      .result-actions {
+        flex-direction: column;
+      }
+
+      .restart-btn,
+      .home-btn {
+        width: 100%;
+        padding: 14px 20px;
+        min-height: 52px;
+        font-size: 1rem;
+      }
+
+      /* 错题本 */
+      #review-screen {
+        padding: 20px 16px;
+      }
+
+      .review-card {
+        padding: 14px 16px;
+      }
+
+      .clear-btn {
+        padding: 10px 16px;
+        min-height: 40px;
+      }
+
+      .filter-btn {
+        padding: 8px 14px;
+        min-height: 36px;
+      }
+
+      /* 词汇屏幕 */
+      #vocab-screen {
+        padding: 20px 16px;
+      }
+
+      .vocab-search {
+        padding: 12px 16px;
+        min-height: 48px;
+        font-size: 0.95rem;
+      }
+
+      /* 词汇树和语法树 - 增大折叠按钮 */
+      .vocab-branch-header,
+      .grammar-branch-header {
+        padding: 14px 16px;
+        min-height: 52px;
+      }
+
+      .vocab-toggle-icon,
+      .grammar-toggle-icon {
+        width: 28px;
+        height: 28px;
+        font-size: 0.8rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .vocab-branch-name,
+      .grammar-branch-name {
+        font-size: 1rem;
+      }
+
+      .vocab-sub-header,
+      .grammar-sub-header {
+        padding: 12px 14px;
+        min-height: 44px;
+      }
+
+      .vocab-sub-icon,
+      .grammar-sub-icon {
+        width: 22px;
+        height: 22px;
+        font-size: 0.7rem;
+      }
+
+      .vocab-sub-name,
+      .grammar-sub-name {
+        font-size: 0.9rem;
+      }
+
+      /* 词汇表格横向滚动 */
+      .vocab-table-container {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .vocab-table,
+      .vocab-special-table {
+        font-size: 0.82rem;
+        min-width: 500px;
+      }
+
+      .vocab-table thead th,
+      .vocab-special-table thead th {
+        padding: 10px 12px;
+        white-space: nowrap;
+      }
+
+      .vocab-table tbody td,
+      .vocab-special-table tbody td {
+        padding: 8px 12px;
+      }
+
+      /* 展开全部按钮 */
+      .vocab-tree-action-btn {
+        padding: 8px 16px;
+        min-height: 38px;
+        font-size: 0.82rem;
+      }
+
+      /* 语法知识图谱 */
+      #grammar-screen {
+        padding: 20px 16px;
+      }
+
+      .grammar-point-card {
+        padding: 14px;
+      }
+
+      .grammar-practice-btn {
+        padding: 8px 16px;
+        min-height: 38px;
+        font-size: 0.85rem;
+      }
+
+      /* 语法速查页面 */
+      .quickref-sidebar {
+        padding: 10px;
+      }
+
+      .quickref-chapter-item {
+        padding: 10px 12px;
+        min-height: 44px;
+        font-size: 0.85rem;
+      }
+
+      .quickref-section-header {
+        padding: 12px 14px;
+        min-height: 44px;
+      }
+
+      .quickref-practice-header {
+        padding: 12px;
+        min-height: 44px;
+      }
+
+      .quickref-practice-toggle {
+        width: 22px;
+        height: 22px;
+        font-size: 0.7rem;
+      }
+
+      /* 挑战模式按钮 */
+      .random-count-btn {
+        padding: 8px 16px;
+        min-height: 38px;
+        font-size: 0.85rem;
+      }
+
+      .random-start-btn {
+        padding: 14px;
+        min-height: 52px;
+        font-size: 1rem;
+      }
+
+      .learn-category-btn {
+        padding: 8px 14px;
+        min-height: 36px;
+      }
+
+      /* 学习模式区块 */
+      .learn-mode-section {
+        padding: 14px 16px;
+      }
+
+      .random-mode-section {
+        padding: 16px 18px;
+      }
+
+      /* 反馈区域 */
+      .feedback {
+        padding: 14px 16px;
+      }
+
+      /* 页脚 */
+      .app-footer {
+        font-size: 0.7rem;
+        padding: 16px 12px 80px;
+        line-height: 1.5;
+      }
+    }
+
+    /* ===== 小屏幕优化（360px 以下） ===== */
+    @media (max-width: 360px) {
+      html {
+        font-size: 14px;
+      }
+
+      .level-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .tab-btn {
+        padding: 10px 12px;
+        font-size: 0.85rem;
+      }
+
       .qn-dot {
-        width: 26px;
-        height: 26px;
-        font-size: 0.65rem;
+        width: 32px;
+        height: 32px;
       }
     }
   </style>
@@ -2492,10 +3354,11 @@
 
     <!-- Tab 栏 -->
     <div class="tab-bar" id="tab-bar">
-      <button class="tab-btn active" data-tab="start">答题练习</button>
+      <button class="tab-btn active" data-tab="start">练习</button>
       <button class="tab-btn" data-tab="grammar">知识图谱</button>
+      <button class="tab-btn" data-tab="quickref">语法速查</button>
       <button class="tab-btn" data-tab="review">错题本</button>
-      <button class="tab-btn" data-tab="vocab">词汇复习</button>
+      <button class="tab-btn" data-tab="vocab">词汇</button>
     </div>
 
     <!-- 开始屏幕 -->
@@ -2524,49 +3387,66 @@
 
       <button class="start-btn" id="start-quiz-btn">开始答题</button>
 
-      <!-- 学习模式入口 -->
-      <div class="level-divider"><span>或者</span></div>
-      <div class="learn-mode-section">
-        <div class="learn-mode-title">📚 学习模式（先学后练）</div>
-        <div class="learn-mode-desc">选择语法大类→小类→知识点，学完直接做对应练习。121个语法点，每个3道专属题</div>
-        
-        <!-- 语法大类选择 -->
-        <div style="font-size:0.78rem;font-weight:600;color:var(--text-muted);margin-bottom:6px;margin-top:8px;">选择语法大类</div>
-        <div class="learn-category-grid" id="learn-cat-grid">
-          <button class="learn-category-btn" onclick="switchTab('grammar')">🗺️ 进入知识图谱</button>
-        </div>
-      </div>
-
-      <!-- 统一挑战模式（随机抽题 + 综合测评合并） -->
+      <!-- 统一挑战模式（随机抽题 + 综合测评 + 学习模式 合并） -->
       <div class="level-divider"><span>挑战 / 测评</span></div>
       <div class="random-mode-section" style="background:linear-gradient(135deg,rgba(88,166,255,0.06),rgba(63,185,80,0.06));border-color:rgba(88,166,255,0.2);">
         <div class="random-mode-title">🎯 挑战与测评</div>
         <div class="random-mode-desc">选择等级和题量，开启限时测评获得弱点分析报告</div>
 
-        <!-- 等级选择 -->
-        <div style="font-size:0.78rem;font-weight:600;color:var(--text-muted);margin-bottom:6px;">选择等级</div>
-        <div class="random-count-selector" id="challenge-level-selector">
-          <button class="random-count-btn" data-challenge-level="junior">初中</button>
-          <button class="random-count-btn" data-challenge-level="senior">高中</button>
-          <button class="random-count-btn" data-challenge-level="cet4">四级</button>
-          <button class="random-count-btn" data-challenge-level="cet6">六级</button>
-          <button class="random-count-btn active" data-challenge-level="all">混合</button>
+        <!-- 学习路径选择 -->
+        <div style="font-size:0.78rem;font-weight:600;color:var(--text-muted);margin-bottom:6px;">学习路径</div>
+        <div class="random-count-selector" id="challenge-path-selector">
+          <button class="random-count-btn active" data-challenge-path="free">🎯 自由挑战</button>
+          <button class="random-count-btn" data-challenge-path="learn">📚 学习模式</button>
         </div>
 
-        <!-- 题量选择 -->
-        <div style="font-size:0.78rem;font-weight:600;color:var(--text-muted);margin-bottom:6px;margin-top:8px;">选择题量</div>
-        <div class="random-count-selector" id="challenge-count-selector">
-          <button class="random-count-btn" data-count="20">20 题</button>
-          <button class="random-count-btn active" data-count="50">50 题</button>
-          <button class="random-count-btn" data-count="100">100 题</button>
-          <button class="random-count-btn" data-count="0">全部</button>
+        <!-- 等级选择（自由挑战显示） -->
+        <div id="challenge-free-options">
+          <div style="font-size:0.78rem;font-weight:600;color:var(--text-muted);margin-bottom:6px;margin-top:8px;">选择等级</div>
+          <div class="random-count-selector" id="challenge-level-selector">
+            <button class="random-count-btn" data-challenge-level="junior">初中</button>
+            <button class="random-count-btn" data-challenge-level="senior">高中</button>
+            <button class="random-count-btn" data-challenge-level="cet4">四级</button>
+            <button class="random-count-btn" data-challenge-level="cet6">六级</button>
+            <button class="random-count-btn" data-challenge-level="postgraduate">考研</button>
+            <button class="random-count-btn active" data-challenge-level="all">混合</button>
+          </div>
+
+          <!-- 题量选择 -->
+          <div style="font-size:0.78rem;font-weight:600;color:var(--text-muted);margin-bottom:6px;margin-top:8px;">选择题量</div>
+          <div class="random-count-selector" id="challenge-count-selector">
+            <button class="random-count-btn" data-count="20">20 题</button>
+            <button class="random-count-btn active" data-count="50">50 题</button>
+            <button class="random-count-btn" data-count="100">100 题</button>
+            <button class="random-count-btn" data-count="0">全部</button>
+          </div>
+
+          <!-- 模式切换 -->
+          <div style="font-size:0.78rem;font-weight:600;color:var(--text-muted);margin-bottom:6px;margin-top:8px;">测评模式</div>
+          <div class="random-count-selector" id="challenge-mode-selector">
+            <button class="random-count-btn active" data-challenge-mode="random">🎲 随机挑战</button>
+            <button class="random-count-btn" data-challenge-mode="exam">📊 综合测评</button>
+          </div>
         </div>
 
-        <!-- 模式切换 -->
-        <div style="font-size:0.78rem;font-weight:600;color:var(--text-muted);margin-bottom:6px;margin-top:8px;">测评模式</div>
-        <div class="random-count-selector" id="challenge-mode-selector">
-          <button class="random-count-btn active" data-challenge-mode="random">🎲 随机挑战</button>
-          <button class="random-count-btn" data-challenge-mode="exam">📊 综合测评</button>
+        <!-- 学习模式选项 -->
+        <div id="challenge-learn-options" style="display:none;">
+          <div style="font-size:0.78rem;font-weight:600;color:var(--text-muted);margin-bottom:6px;margin-top:8px;">选择语法大类</div>
+          <div class="random-count-selector" id="challenge-learn-cat">
+            <button class="random-count-btn" disabled style="opacity:0.5;">加载中…</button>
+          </div>
+
+          <div style="font-size:0.78rem;font-weight:600;color:var(--text-muted);margin-bottom:6px;margin-top:8px;">选择子分类</div>
+          <div class="random-count-selector" id="challenge-learn-sub">
+            <button class="random-count-btn" disabled style="opacity:0.5;">请先选择大类</button>
+          </div>
+
+          <div style="font-size:0.78rem;font-weight:600;color:var(--text-muted);margin-bottom:6px;margin-top:8px;">选择知识点</div>
+          <div class="random-count-selector" id="challenge-learn-point">
+            <button class="random-count-btn" disabled style="opacity:0.5;">请先选择子分类</button>
+          </div>
+
+          <div style="font-size:0.78rem;color:var(--text-dim);margin-top:8px;">💡 学习模式将做该知识点的所有专属练习题</div>
         </div>
 
         <button class="random-start-btn" id="challenge-start-btn">🎯 开始挑战</button>
@@ -2623,9 +3503,24 @@
       <div id="grammar-body"><!-- 动态生成知识图谱 --></div>
     </section>
 
+    <!-- 语法速查屏幕 -->
+    <section id="quickref-screen" class="screen card hidden">
+      <div id="quickref-body"><!-- 动态生成语法速查表 --></div>
+    </section>
+
+    <!-- 添加到主屏幕提示横幅 -->
+    <div class="pwa-banner" id="pwa-banner">
+      <span class="pwa-banner-icon">📱</span>
+      <div class="pwa-banner-content">
+        <div class="pwa-banner-title">添加到主屏幕</div>
+        <div class="pwa-banner-desc">像APP一样使用，离线也能学英语</div>
+      </div>
+      <button class="pwa-banner-close" id="pwa-banner-close" aria-label="关闭">×</button>
+    </div>
+
     <!-- 页脚 -->
     <footer class="app-footer">
-      v6.1 · 语法知识图谱(121知识点) · 语法专属练习(363题) · 词汇树杈式分类(1537词) · 400题题库 · 学习模式+按知识点答题 · 错题本 · 术语词典 · 语法/词汇/翻译三卡反馈
+      v8.0 · 语法知识图谱(121知识点) · 语法速查表(16章) · 语法专属练习(363题) · 词汇树杈式分类(1537词) · 565题题库(含考研级) · 学习模式+按知识点答题 · 错题本 · 术语词典 · 语法/词汇/翻译三卡反馈
     </footer>
   </div>
 
@@ -2637,6 +3532,7 @@
     const VOCAB_URL = "data/vocabulary.json";
     const GRAMMAR_MAP_URL = "data/grammar-map.json";
     const GRAMMAR_QUIZ_URL = "data/grammar-quiz.json";
+    const GRAMMAR_REF_URL = "data/grammar-ref-tables.json";
     const STORAGE_KEY = "eqm_best_scores_v1";
     const WRONG_BANK_KEY = "eqm_wrong_bank_v1";
 
@@ -2662,11 +3558,12 @@
       startTime: 0,         // 开始时间
       bestScores: {},       // 历史最佳成绩
       wrongBank: [],        // 持久化错题本（跨会话保存）
-      reviewFilter: "all",  // 错题本筛选：all/junior/senior/cet4/cet6
+      reviewFilter: "all",  // 错题本筛选：all/junior/senior/cet4/cet6/postgraduate
       // 统一挑战模式
       challengeLevel: "all", // 挑战等级
       challengeCount: 50,   // 挑战题量
       challengeMode: "random", // 挑战模式：random=随机挑战, exam=综合测评
+      challengePath: "free", // 学习路径：free=自由挑战, learn=学习模式
       isRandomMode: false,  // 是否为随机模式
       isExamMode: false,    // 是否为测评模式
       examStartTime: 0,     // 测评开始时间
@@ -2674,7 +3571,11 @@
       vocabDB: null,        // 词汇分类数据库
       grammarDB: null,      // 语法知识图谱数据库
       grammarQuizDB: null,   // 语法专属练习题数据库
-      learnCategory: null,  // 学习模式选中的语法分类
+      grammarRefDB: null,    // 语法速查表数据库
+      learnCategory: null,  // 学习模式选中的语法大类
+      learnSubCategory: null, // 学习模式选中的语法子分类
+      learnPoint: null,     // 学习模式选中的知识点
+      learnPointId: null,   // 学习模式选中的知识点ID
     };
 
     /* ===== DOM 引用 ===== */
@@ -2685,6 +3586,8 @@
     const reviewScreen = $("review-screen");
     const vocabScreen = $("vocab-screen");
     const grammarScreen = $("grammar-screen");
+    const quickrefScreen = $("quickref-screen");
+    const quickrefBody = $("quickref-body");
     const levelGrid = $("level-grid");
     const typeGrid = $("type-grid");
     const quizBody = $("quiz-body");
@@ -3074,6 +3977,23 @@
       }
     }
 
+    async function loadGrammarRef() {
+      try {
+        const res = await fetch(GRAMMAR_REF_URL, { cache: "no-cache" });
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        const data = await res.json();
+        state.grammarRefDB = data;
+        if (!quickrefScreen.classList.contains("hidden")) {
+          renderQuickRefScreen();
+        }
+      } catch (err) {
+        state.grammarRefDB = null;
+        if (!quickrefScreen.classList.contains("hidden")) {
+          quickrefBody.innerHTML = '<div class="review-empty-state"><div class="icon">⚠️</div><p>语法速查表加载失败</p><p style="font-size:0.8rem;color:var(--text-dim);margin-top:8px;">' + escapeHtml(err.message) + '</p><button class="home-btn" onclick="loadGrammarRef()" style="margin-top:12px;">重试</button></div>';
+        }
+      }
+    }
+
     async function loadQuizBank() {
       try {
         const res = await fetch(QUIZ_BANK_URL, { cache: "no-cache" });
@@ -3086,6 +4006,7 @@
         loadVocabDB();
         loadGrammarMap();
         loadGrammarQuizDB();
+        loadGrammarRef();
       } catch (err) {
         levelGrid.innerHTML = "";
         const grid = document.querySelector("#start-screen");
@@ -3110,6 +4031,7 @@
         senior: "进阶提升：定语从句(修饰名词的句子)、虚拟语气(假设的情况)、非谓语动词",
         cet4: "大学四级：复杂句型分析、倒装和强调句、从句综合运用",
         cet6: "大学六级：高级语法结构、独立主格、学术写作句式",
+        postgraduate: "考研英语：核心语法+词汇，长难句分析、熟词僻义、翻译技巧",
       };
 
       Object.entries(levels).forEach(([key, level]) => {
@@ -3161,33 +4083,143 @@
       renderLearnCategories();
     }
 
-    // 渲染学习模式的语法大类选择
+    // 渲染学习模式的语法大类选择（首页旧入口 + 挑战模式学习路径）
     function renderLearnCategories() {
       const grid = $("learn-cat-grid");
-      if (!grid || !state.grammarDB) return;
+      const challengeCat = $("challenge-learn-cat");
+      if (!state.grammarDB) return;
 
       const cats = state.grammarDB.categories || {};
-      grid.innerHTML = "";
 
-      Object.keys(cats).forEach((catName) => {
-        const btn = document.createElement("button");
-        btn.className = "learn-category-btn";
-        // 提取大类中文名
-        const shortName = catName.split(' ')[0] || catName;
-        btn.textContent = shortName;
-        btn.addEventListener("click", () => {
-          switchTab('grammar');
-          // 滚动到对应大类（延迟执行确保渲染完成）
-          setTimeout(() => {
-            const branchIndex = Object.keys(cats).indexOf(catName);
-            const branch = document.getElementById('grammar-branch-' + branchIndex);
-            if (branch) {
-              branch.classList.add('expanded');
-              branch.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
-          }, 400);
+      // 旧首页入口（兼容保留）
+      if (grid) {
+        grid.innerHTML = "";
+        Object.keys(cats).forEach((catName) => {
+          const btn = document.createElement("button");
+          btn.className = "learn-category-btn";
+          const shortName = catName.split(' ')[0] || catName;
+          btn.textContent = shortName;
+          btn.addEventListener("click", () => {
+            switchTab('grammar');
+            setTimeout(() => {
+              const branchIndex = Object.keys(cats).indexOf(catName);
+              const branch = document.getElementById('grammar-branch-' + branchIndex);
+              if (branch) {
+                branch.classList.add('expanded');
+                branch.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              }
+            }, 400);
+          });
+          grid.appendChild(btn);
         });
-        grid.appendChild(btn);
+      }
+
+      // 挑战模式 - 学习路径的大类选择
+      if (challengeCat) {
+        challengeCat.innerHTML = "";
+        Object.keys(cats).forEach((catName) => {
+          const btn = document.createElement("button");
+          btn.className = "random-count-btn";
+          btn.dataset.learnCat = catName;
+          const shortName = catName.split(' ')[0] || catName;
+          btn.textContent = shortName;
+          btn.addEventListener("click", () => {
+            selectLearnCategory(catName);
+          });
+          challengeCat.appendChild(btn);
+        });
+      }
+    }
+
+    // 选择学习模式语法大类
+    function selectLearnCategory(catName) {
+      state.learnCategory = catName;
+      state.learnSubCategory = null;
+      state.learnPoint = null;
+      state.learnPointId = null;
+
+      // 更新大类按钮样式
+      document.querySelectorAll('[data-learn-cat]').forEach((b) => {
+        b.classList.toggle("active", b.dataset.learnCat === catName);
+      });
+
+      // 渲染子分类
+      renderLearnSubCategories(catName);
+
+      // 清空知识点
+      const pointSel = $("challenge-learn-point");
+      if (pointSel) {
+        pointSel.innerHTML = '<button class="random-count-btn" disabled style="opacity:0.5;">请先选择子分类</button>';
+      }
+    }
+
+    // 渲染学习模式子分类
+    function renderLearnSubCategories(catName) {
+      const subSel = $("challenge-learn-sub");
+      if (!subSel || !state.grammarDB) return;
+
+      const cats = state.grammarDB.categories || {};
+      const subCats = cats[catName] || {};
+      subSel.innerHTML = "";
+
+      Object.keys(subCats).forEach((subName) => {
+        const btn = document.createElement("button");
+        btn.className = "random-count-btn";
+        btn.dataset.learnSub = subName;
+        const pointCount = (subCats[subName] || []).length;
+        btn.textContent = subName + " (" + pointCount + ")";
+        btn.addEventListener("click", () => {
+          selectLearnSubCategory(catName, subName);
+        });
+        subSel.appendChild(btn);
+      });
+    }
+
+    // 选择学习模式子分类
+    function selectLearnSubCategory(catName, subName) {
+      state.learnSubCategory = subName;
+      state.learnPoint = null;
+      state.learnPointId = null;
+
+      // 更新子分类按钮样式
+      document.querySelectorAll('[data-learn-sub]').forEach((b) => {
+        b.classList.toggle("active", b.dataset.learnSub === subName);
+      });
+
+      // 渲染知识点
+      renderLearnPoints(catName, subName);
+    }
+
+    // 渲染学习模式知识点
+    function renderLearnPoints(catName, subName) {
+      const pointSel = $("challenge-learn-point");
+      if (!pointSel || !state.grammarDB) return;
+
+      const cats = state.grammarDB.categories || {};
+      const subCats = cats[catName] || {};
+      const points = subCats[subName] || [];
+      pointSel.innerHTML = "";
+
+      points.forEach((pt) => {
+        const btn = document.createElement("button");
+        btn.className = "random-count-btn";
+        btn.dataset.learnPoint = pt.id || pt.name;
+        btn.textContent = pt.name;
+        btn.addEventListener("click", () => {
+          selectLearnPoint(pt);
+        });
+        pointSel.appendChild(btn);
+      });
+    }
+
+    // 选择学习模式知识点
+    function selectLearnPoint(point) {
+      state.learnPoint = point.name;
+      state.learnPointId = point.id || null;
+
+      // 更新知识点按钮样式
+      document.querySelectorAll('[data-learn-point]').forEach((b) => {
+        b.classList.toggle("active", b.dataset.learnPoint === (point.id || point.name));
       });
     }
 
@@ -3207,6 +4239,80 @@
 
     /* ===== 统一挑战模式（随机挑战 + 综合测评合并） ===== */
     function startChallenge() {
+      const path = state.challengePath || "free";
+
+      // 学习模式
+      if (path === "learn") {
+        if (!state.learnPoint) {
+          alert("请先选择一个语法知识点！");
+          return;
+        }
+
+        let selected = [];
+        const pointName = state.learnPoint;
+        const pointId = state.learnPointId;
+
+        // 优先从专属练习题库加载
+        if (pointId && state.grammarQuizDB && state.grammarQuizDB.quizzes[pointId]) {
+          const gq = state.grammarQuizDB.quizzes[pointId];
+          selected = (gq.questions || []).map((q) => ({
+            ...q,
+            _levelKey: gq.level || "junior",
+            _levelName: gq.grammarName || pointName
+          }));
+        }
+
+        // 如果专属题库没有，从主题库搜索
+        if (selected.length === 0) {
+          let pool = [];
+          Object.entries(state.quizBank.levels).forEach(([key, levelData]) => {
+            (levelData.questions || []).forEach((q) => {
+              const cat = (q.category || '').toLowerCase();
+              const name = pointName.toLowerCase();
+              if (cat.includes(name) || name.includes(cat)) {
+                pool.push({ ...q, _levelKey: key, _levelName: levelData.name });
+              }
+            });
+          });
+          selected = pool;
+        }
+
+        if (selected.length === 0) {
+          alert('暂无"' + pointName + '"的练习题，请尝试其他知识点');
+          return;
+        }
+
+        // 设置状态
+        state.selectedLevel = "learn";
+        state.isRandomMode = false;
+        state.isExamMode = false;
+        state.questions = selected;
+        state.flatItems = buildFlatList(selected);
+        state.currentIndex = 0;
+        state.score = 0;
+        state.answered = false;
+        state.userAnswers = [];
+        state.startTime = Date.now();
+
+        // 切换屏幕
+        startScreen.classList.add("hidden");
+        resultsScreen.classList.add("hidden");
+        reviewScreen.classList.add("hidden");
+        vocabScreen.classList.add("hidden");
+        grammarScreen.classList.add("hidden");
+        quizScreen.classList.remove("hidden");
+        quizScreen.style.animation = "none";
+        void quizScreen.offsetWidth;
+        quizScreen.style.animation = "";
+        quizNavBtns.style.display = "none";
+
+        $("quiz-level-tag").textContent = "📚 " + pointName + " · 专属练习 · " + selected.length + " 题";
+        renderQuestion();
+        renderNavBar();
+        return;
+      }
+
+      // 自由挑战模式
       const level = state.challengeLevel || "all";
       const mode = state.challengeMode || "random";
       const isExam = mode === "exam";
@@ -4187,6 +5293,7 @@
       reviewScreen.classList.add("hidden");
       vocabScreen.classList.add("hidden");
       grammarScreen.classList.add("hidden");
+      quickrefScreen.classList.add("hidden");
       // 显示目标屏幕
       if (tabName === "start") {
         startScreen.classList.remove("hidden");
@@ -4212,6 +5319,12 @@
         void vocabScreen.offsetWidth;
         vocabScreen.style.animation = "";
         renderVocabScreen();
+      } else if (tabName === "quickref") {
+        quickrefScreen.classList.remove("hidden");
+        quickrefScreen.style.animation = "none";
+        void quickrefScreen.offsetWidth;
+        quickrefScreen.style.animation = "";
+        renderQuickRefScreen();
       }
     }
 
@@ -4237,6 +5350,7 @@
         { key: "senior", label: "高中" },
         { key: "cet4", label: "四级" },
         { key: "cet6", label: "六级" },
+        { key: "postgraduate", label: "考研" },
       ];
       html += '<div class="review-filter">';
       levels.forEach((l) => {
@@ -4775,6 +5889,172 @@
       }
     }
 
+    /* ===== 语法速查屏幕 ===== */
+    function renderQuickRefScreen() {
+      if (!state.grammarRefDB) {
+        quickrefBody.innerHTML = '<div class="review-empty-state"><div class="icon">⏳</div><p>语法速查表加载中…</p><p style="font-size:0.8rem;color:var(--text-dim);margin-top:8px;">正在从服务器获取语法速查数据</p></div>';
+        loadGrammarRef();
+        return;
+      }
+
+      const meta = state.grammarRefDB.meta || {};
+      const chapters = state.grammarRefDB.chapters || {};
+      const chapterKeys = Object.keys(chapters);
+      const activeChapter = state.quickrefActiveChapter || chapterKeys[0];
+      const activeChapterData = chapters[activeChapter] || {};
+      const sections = activeChapterData.sections || [];
+
+      let html = '';
+
+      // 顶部标题
+      html += '<div class="review-header"><h2>📋 ' + escapeHtml(meta.title || '语法速查表') + '</h2>';
+      html += '<span class="count-badge" style="background:rgba(163,113,247,0.12);color:#a371f7;border:1px solid rgba(163,113,247,0.4);">' + (meta.totalChapters || chapterKeys.length) + ' 章 · ' + (meta.totalSections || '') + ' 表</span>';
+      html += '</div>';
+
+      // 简介
+      if (meta.description || meta.feature) {
+        html += '<p style="font-size:0.82rem;color:var(--text-muted);margin-bottom:14px;line-height:1.6;">';
+        if (meta.description) html += escapeHtml(meta.description);
+        if (meta.feature) html += '<br><b style="color:var(--accent2);">' + escapeHtml(meta.feature) + '</b>';
+        html += '</p>';
+      }
+
+      // 主体：左侧章节目录 + 右侧内容
+      html += '<div class="quickref-layout">';
+
+      // 左侧章节目录
+      html += '<div class="quickref-sidebar">';
+      html += '<div class="quickref-sidebar-title">📚 章节目录</div>';
+      html += '<div class="quickref-chapter-list">';
+      chapterKeys.forEach((chKey, ci) => {
+        const ch = chapters[chKey];
+        const secCount = (ch.sections || []).length;
+        const isActive = chKey === activeChapter;
+        html += '<div class="quickref-chapter-item' + (isActive ? ' active' : '') + '" onclick="selectQuickRefChapter(\'' + ci + '\')">';
+        html += '<span class="quickref-chapter-name">' + escapeHtml(chKey) + '</span>';
+        html += '<span class="quickref-chapter-count">' + secCount + ' 节</span>';
+        html += '</div>';
+      });
+      html += '</div></div>';
+
+      // 右侧内容区
+      html += '<div class="quickref-content">';
+      html += '<h3 class="quickref-content-title">' + escapeHtml(activeChapter) + '</h3>';
+
+      sections.forEach((sec, si) => {
+        html += '<div class="quickref-section">';
+        html += '<div class="quickref-section-header">';
+        html += '<span class="quickref-section-icon">' + (sec.type === 'table' ? '📊' : '✏️') + '</span>';
+        html += '<span class="quickref-section-name">' + escapeHtml(sec.name) + '</span>';
+        if (sec.type === 'practice') {
+          html += '<span class="quickref-section-count">' + (sec.questions ? sec.questions.length : 0) + ' 题</span>';
+        }
+        html += '</div>';
+
+        if (sec.type === 'table') {
+          html += renderQuickRefTable(sec);
+        } else if (sec.type === 'practice') {
+          html += renderQuickRefPractice(sec, si);
+        }
+
+        html += '</div>';
+      });
+
+      html += '</div></div>'; // quickref-content / quickref-layout
+
+      // 返回按钮
+      html += '<div class="result-actions" style="margin-top:20px;">';
+      html += '<button class="home-btn" onclick="switchTab(\'start\')">返回首页</button>';
+      html += '</div>';
+
+      quickrefBody.innerHTML = html;
+    }
+
+    // 渲染速查表表格
+    function renderQuickRefTable(sec) {
+      const headers = sec.headers || [];
+      const rows = sec.rows || [];
+      if (headers.length === 0 && rows.length === 0) return '';
+
+      let html = '<div class="quickref-table-wrap">';
+      html += '<table class="quickref-table">';
+      html += '<thead><tr>';
+      headers.forEach((h) => {
+        html += '<th>' + escapeHtml(h) + '</th>';
+      });
+      html += '</tr></thead>';
+      html += '<tbody>';
+      rows.forEach((row, ri) => {
+        html += '<tr>';
+        row.forEach((cell) => {
+          html += '<td>' + escapeHtml(cell) + '</td>';
+        });
+        html += '</tr>';
+      });
+      html += '</tbody></table></div>';
+      return html;
+    }
+
+    // 渲染速查表练习（手风琴效果）
+    function renderQuickRefPractice(sec, si) {
+      const questions = sec.questions || [];
+      if (questions.length === 0) return '';
+
+      let html = '<div class="quickref-practice-list">';
+      questions.forEach((q, qi) => {
+        html += '<div class="quickref-practice-item" id="qr-practice-' + si + '-' + qi + '">';
+        html += '<div class="quickref-practice-header" onclick="toggleQuickRefPractice(' + si + ', ' + qi + ')">';
+        html += '<span class="quickref-practice-toggle">▶</span>';
+        html += '<span class="quickref-practice-q">' + escapeHtml(q.questionCn || q.question || '') + '</span>';
+        html += '</div>';
+        html += '<div class="quickref-practice-body">';
+
+        // 题目类型
+        const typeLabel = TYPE_LABELS[q.type] || q.type || '题目';
+        html += '<div style="font-size:0.75rem;color:var(--text-dim);margin-bottom:6px;">题型：' + escapeHtml(typeLabel) + '</div>';
+
+        // 选项
+        if (q.choices && q.choices.length > 0) {
+          html += '<div class="quickref-choices">';
+          q.choices.forEach((c) => {
+            const isCorrect = c.charAt(0) === q.answer;
+            html += '<div class="quickref-choice' + (isCorrect ? ' correct' : '') + '">' + escapeHtml(c) + '</div>';
+          });
+          html += '</div>';
+        }
+
+        // 答案与解析
+        html += '<div class="quickref-answer">';
+        html += '<div class="quickref-answer-label">正确答案：<span class="quickref-answer-text">' + escapeHtml(q.answer) + '</span></div>';
+        if (q.explanation) {
+          html += '<div class="quickref-explanation">💡 ' + escapeHtml(q.explanation) + '</div>';
+        }
+        if (q.knowledgePoint) {
+          html += '<div class="quickref-knowledge">📌 考点：' + escapeHtml(q.knowledgePoint) + '</div>';
+        }
+        html += '</div>';
+
+        html += '</div></div>'; // practice-body / practice-item
+      });
+      html += '</div>';
+      return html;
+    }
+
+    // 选择语法速查章节
+    function selectQuickRefChapter(index) {
+      const chapterKeys = Object.keys(state.grammarRefDB.chapters || {});
+      const chKey = chapterKeys[parseInt(index, 10)];
+      if (!chKey) return;
+      state.quickrefActiveChapter = chKey;
+      renderQuickRefScreen();
+    }
+
+    // 切换练习题展开/折叠
+    function toggleQuickRefPractice(si, qi) {
+      const item = document.getElementById('qr-practice-' + si + '-' + qi);
+      if (item) item.classList.toggle('expanded');
+    }
+
     // 术语词典弹窗
     function showTermPopup(term, event) {
       const popup = $('term-popup') || createTermPopup();
@@ -4907,6 +6187,30 @@
       btn.addEventListener("click", () => switchTab(btn.dataset.tab));
     });
 
+    // 挑战模式：学习路径选择（自由挑战/学习模式）
+    document.querySelectorAll('[data-challenge-path]').forEach((btn) => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll('[data-challenge-path]').forEach((b) =>
+          b.classList.toggle("active", b === btn)
+        );
+        state.challengePath = btn.dataset.challengePath;
+        // 切换显示对应选项
+        const freeOptions = $("challenge-free-options");
+        const learnOptions = $("challenge-learn-options");
+        if (state.challengePath === "learn") {
+          if (freeOptions) freeOptions.style.display = "none";
+          if (learnOptions) learnOptions.style.display = "block";
+          // 如果语法数据已加载，渲染大类选择
+          if (state.grammarDB) {
+            renderLearnCategories();
+          }
+        } else {
+          if (freeOptions) freeOptions.style.display = "block";
+          if (learnOptions) learnOptions.style.display = "none";
+        }
+      });
+    });
+
     // 挑战模式：等级选择
     document.querySelectorAll('[data-challenge-level]').forEach((btn) => {
       btn.addEventListener("click", () => {
@@ -4939,6 +6243,42 @@
 
     // 挑战开始按钮
     $("challenge-start-btn").addEventListener("click", startChallenge);
+
+    /* ===== PWA 添加到主屏幕提示 ===== */
+    (function initPwaBanner() {
+      const PWA_BANNER_KEY = "eqm_pwa_banner_dismissed";
+      const banner = $("pwa-banner");
+      const closeBtn = $("pwa-banner-close");
+
+      // 检查是否已关闭过
+      if (localStorage.getItem(PWA_BANNER_KEY) === "1") {
+        banner.style.display = "none";
+        document.body.classList.add("pwa-banner-hidden");
+        return;
+      }
+
+      // 检查是否为移动设备
+      const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+      if (!isMobile) {
+        banner.style.display = "none";
+        document.body.classList.add("pwa-banner-hidden");
+        return;
+      }
+
+      // 检查是否已安装为 PWA
+      if (window.matchMedia('(display-mode: standalone)').matches) {
+        banner.style.display = "none";
+        document.body.classList.add("pwa-banner-hidden");
+        return;
+      }
+
+      // 关闭按钮
+      closeBtn.addEventListener("click", function() {
+        banner.style.display = "none";
+        document.body.classList.add("pwa-banner-hidden");
+        localStorage.setItem(PWA_BANNER_KEY, "1");
+      });
+    })();
   </script>
 </body>
 </html>

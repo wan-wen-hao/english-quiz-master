@@ -1,8 +1,8 @@
 {
   "meta": {
     "title": "语法专属练习题库",
-    "version": "1.0.0",
-    "description": "为知识图谱中每个语法点定制的专属练习题"
+    "version": "2.0.0",
+    "description": "为知识图谱中每个语法点定制的专属练习题，覆盖从零基础到考研全部语法点"
   },
   "quizzes": {
     "gm_001": {
@@ -10600,6 +10600,2538 @@
             }
           ],
           "sentenceTranslation": "覆水难收，后悔无用。"
+        }
+      ]
+    },
+    "gm_122": {
+      "grammarName": "定语从句的嵌套结构（多层定语从句）",
+      "level": "postgraduate",
+      "questions": [
+        {
+          "id": "gq_122_01",
+          "type": "choice",
+          "category": "定语从句的嵌套结构",
+          "question": "The book ___ you bought ___ was written by a famous author is very inspiring.",
+          "questionCn": "你买的那本由一位著名作家写的书非常鼓舞人心。",
+          "choices": [
+            "A. which; /",
+            "B. that; which",
+            "C. /; /",
+            "D. which; what"
+          ],
+          "answer": "B",
+          "explanation": "这是一个双层定语从句。第一层：that you bought修饰the book，that在从句中作bought的宾语；第二层：which was written by a famous author也修饰the book，which在从句中作主语。注意：两个定语从句并列修饰同一个先行词，不是嵌套关系，但形式上连续出现两个关系代词容易混淆。选项A的第二个空不填会导致句子缺主语；选项D的what不能引导定语从句。",
+          "knowledgePoint": "多层定语从句的识别：两个定语从句修饰同一先行词",
+          "vocabulary": [
+            {
+              "word": "inspiring",
+              "pos": "adj.",
+              "meaning": "鼓舞人心的"
+            },
+            {
+              "word": "author",
+              "pos": "n.",
+              "meaning": "作家，作者"
+            }
+          ],
+          "sentenceTranslation": "你买的那本由一位著名作家写的书非常鼓舞人心。"
+        },
+        {
+          "id": "gq_122_02",
+          "type": "choice",
+          "category": "定语从句的嵌套结构",
+          "question": "There is a technique ___ has been developed in recent years ___ makes rapid progress possible.",
+          "questionCn": "近年来发展起来的一项技术使得快速进步成为可能。",
+          "choices": [
+            "A. which; /",
+            "B. that; which",
+            "C. /; that",
+            "D. what; which"
+          ],
+          "answer": "B",
+          "explanation": "这是分隔式定语从句与嵌套的结合。先行词是a technique，第一层定语从句that has been developed in recent years修饰technique（that作主语），第二层定语从句which makes rapid progress possible也修饰technique（which作主语）。两个从句被时间状语in recent years隔开。第一个that不能省略（作主语），第二个which也不能省略（作主语）。",
+          "knowledgePoint": "分隔式多层定语从句：先行词与第二层从句被其他成分隔开",
+          "vocabulary": [
+            {
+              "word": "technique",
+              "pos": "n.",
+              "meaning": "技术，技巧"
+            },
+            {
+              "word": "rapid",
+              "pos": "adj.",
+              "meaning": "迅速的"
+            }
+          ],
+          "sentenceTranslation": "近年来发展起来的一项技术使得快速进步成为可能。"
+        },
+        {
+          "id": "gq_122_03",
+          "type": "truefalse",
+          "category": "定语从句的嵌套结构",
+          "question": "判断句子正误：The scientist who we met yesterday had discovered a new element that could revolutionize the whole industry.",
+          "questionCn": "判断句子正误：我们昨天遇到的那位科学家发现了一种可能彻底改变整个行业的新元素。",
+          "choices": [
+            "A. 正确",
+            "B. 错误"
+          ],
+          "answer": "A",
+          "explanation": "句子完全正确。这是一个包含两个定语从句的复合句：第一个定语从句who we met yesterday修饰the scientist（who作met的宾语，也可用whom或省略）；第二个定语从句that could revolutionize the whole industry修饰a new element（that作主语）。主句是The scientist had discovered a new element。两个定语从句分别修饰不同的先行词，不存在嵌套关系。",
+          "knowledgePoint": "并列定语从句：两个定语从句分别修饰不同的先行词",
+          "vocabulary": [
+            {
+              "word": "revolutionize",
+              "pos": "v.",
+              "meaning": "彻底改变，使革命化"
+            },
+            {
+              "word": "element",
+              "pos": "n.",
+              "meaning": "元素"
+            }
+          ],
+          "sentenceTranslation": "我们昨天遇到的那位科学家发现了一种可能彻底改变整个行业的新元素。"
+        }
+      ]
+    },
+    "gm_123": {
+      "grammarName": "介词+关系代词的高级用法",
+      "level": "postgraduate",
+      "questions": [
+        {
+          "id": "gq_123_01",
+          "type": "choice",
+          "category": "介词+关系代词的高级用法",
+          "question": "The speed ___ light travels is about 300,000 kilometers per second.",
+          "questionCn": "光传播的速度约为每秒30万公里。",
+          "choices": [
+            "A. in which",
+            "B. at which",
+            "C. by which",
+            "D. with which"
+          ],
+          "answer": "B",
+          "explanation": "\"以...速度\"的固定搭配是at the speed of，因此介词用at。at which = at the speed，which指代the speed。介词的选择取决于先行词的习惯搭配：speed与at搭配。选项A(in which)常用于表示地点或方式；选项C(by which)常用于表示方式或手段；选项D(with which)常用于表示工具。",
+          "knowledgePoint": "介词+which的介词选择：根据先行词的固定搭配",
+          "vocabulary": [
+            {
+              "word": "speed",
+              "pos": "n.",
+              "meaning": "速度"
+            },
+            {
+              "word": "kilometer",
+              "pos": "n.",
+              "meaning": "千米，公里"
+            }
+          ],
+          "sentenceTranslation": "光传播的速度约为每秒30万公里。"
+        },
+        {
+          "id": "gq_123_02",
+          "type": "choice",
+          "category": "介词+关系代词的高级用法",
+          "question": "There are more than 50 students in our class, most ___ are from the south.",
+          "questionCn": "我们班有50多个学生，其中大部分来自南方。",
+          "choices": [
+            "A. of whom",
+            "B. of which",
+            "C. in whom",
+            "D. among which"
+          ],
+          "answer": "A",
+          "explanation": "表示整体中的部分时，用\"部分词+of+关系代词\"结构。先行词是students（指人），所以用whom不用which。most of whom = most of the students。常见的部分词有：some, most, many, much, all, both, none, half, one, two等。选项B的which指物，不能指人；选项C的介词in搭配错误；选项D的among和which都不对。",
+          "knowledgePoint": "部分与整体结构：most/some/all + of + whom/which",
+          "vocabulary": [
+            {
+              "word": "south",
+              "pos": "n.",
+              "meaning": "南方，南部"
+            }
+          ],
+          "sentenceTranslation": "我们班有50多个学生，其中大部分来自南方。"
+        },
+        {
+          "id": "gq_123_03",
+          "type": "truefalse",
+          "category": "介词+关系代词的高级用法",
+          "question": "判断句子正误：The house in that I used to live has been pulled down.",
+          "questionCn": "判断句子正误：我过去住的那所房子已经被拆除了。",
+          "choices": [
+            "A. 正确",
+            "B. 错误"
+          ],
+          "answer": "B",
+          "explanation": "句子错误。介词后面只能用which（指物）或whom（指人），不能用that。正确的说法应该是The house in which I used to live has been pulled down. 或者The house that I used to live in has been pulled down.（that在从句中作in的宾语时，介词不能提前，只能放在句末）。",
+          "knowledgePoint": "介词+关系代词的限制：介词后不能用that",
+          "vocabulary": [
+            {
+              "word": "pull down",
+              "pos": "phr.",
+              "meaning": "拆除，拆毁"
+            }
+          ],
+          "sentenceTranslation": "我过去住的那所房子已经被拆除了。"
+        }
+      ]
+    },
+    "gm_124": {
+      "grammarName": "非限定性定语从句的特殊用法（as引导、which指代整句）",
+      "level": "postgraduate",
+      "questions": [
+        {
+          "id": "gq_124_01",
+          "type": "choice",
+          "category": "非限定性定语从句的特殊用法",
+          "question": "___ is known to all, China is a developing country with a long history.",
+          "questionCn": "众所周知，中国是一个有着悠久历史的发展中国家。",
+          "choices": [
+            "A. Which",
+            "B. As",
+            "C. That",
+            "D. It"
+          ],
+          "answer": "B",
+          "explanation": "as引导非限定性定语从句时，可以放在句首，意为\"正如/正像\"，as指代后面整个主句的内容。which引导非限定性定语从句只能放在主句之后。that不能引导非限定性定语从句。如果用It，则需要用主语从句结构：It is known to all that China is...。as is known to all是固定搭配，意为\"众所周知\"。",
+          "knowledgePoint": "as引导非限定性定语从句可放句首，意为\"正如\"",
+          "vocabulary": [
+            {
+              "word": "developing",
+              "pos": "adj.",
+              "meaning": "发展中的"
+            },
+            {
+              "word": "history",
+              "pos": "n.",
+              "meaning": "历史"
+            }
+          ],
+          "sentenceTranslation": "众所周知，中国是一个有着悠久历史的发展中国家。"
+        },
+        {
+          "id": "gq_124_02",
+          "type": "choice",
+          "category": "非限定性定语从句的特殊用法",
+          "question": "He changed his mind at the last minute, ___ made all of us very angry.",
+          "questionCn": "他在最后一刻改变了主意，这让我们所有人都非常生气。",
+          "choices": [
+            "A. that",
+            "B. which",
+            "C. as",
+            "D. what"
+          ],
+          "answer": "B",
+          "explanation": "which引导非限定性定语从句，指代前面整个句子的内容，意为\"这一点/这件事\"。which指代整句时只能放在主句之后。that不能引导非限定性定语从句。as虽然也可以指代整句，但as有\"正如\"的含义，通常表示已知的、意料之中的事，而这里\"改变主意让人生气\"是一种结果，不是\"正如\"的关系。what不能引导定语从句。",
+          "knowledgePoint": "which指代整个主句：位于主句之后，表示\"这一点\"",
+          "vocabulary": [
+            {
+              "word": "mind",
+              "pos": "n.",
+              "meaning": "主意，想法"
+            },
+            {
+              "word": "angry",
+              "pos": "adj.",
+              "meaning": "生气的，愤怒的"
+            }
+          ],
+          "sentenceTranslation": "他在最后一刻改变了主意，这让我们所有人都非常生气。"
+        },
+        {
+          "id": "gq_124_03",
+          "type": "truefalse",
+          "category": "非限定性定语从句的特殊用法",
+          "question": "判断句子正误：As we all know it, the earth moves around the sun.",
+          "questionCn": "判断句子正误：我们都知道，地球绕着太阳转。",
+          "choices": [
+            "A. 正确",
+            "B. 错误"
+          ],
+          "answer": "B",
+          "explanation": "句子错误。as在定语从句中充当know的宾语，指代后面整个主句的内容，因此不能再加it作宾语。正确的句子是As we all know, the earth moves around the sun. 类似的常见错误还有：As is known to all, it...（多了it）。记住：as在从句中已经充当成分了，不能再重复。",
+          "knowledgePoint": "as在从句中充当成分，不能再加it作宾语",
+          "vocabulary": [
+            {
+              "word": "earth",
+              "pos": "n.",
+              "meaning": "地球"
+            }
+          ],
+          "sentenceTranslation": "我们都知道，地球绕着太阳转。"
+        }
+      ]
+    },
+    "gm_125": {
+      "grammarName": "分隔式定语从句（先行词与从句被其他成分隔开）",
+      "level": "postgraduate",
+      "questions": [
+        {
+          "id": "gq_125_01",
+          "type": "choice",
+          "category": "分隔式定语从句",
+          "question": "The days are gone ___ we suffered so much from poverty.",
+          "questionCn": "我们因贫困而遭受苦难的日子已经过去了。",
+          "choices": [
+            "A. that",
+            "B. which",
+            "C. when",
+            "D. where"
+          ],
+          "answer": "C",
+          "explanation": "这是一个分隔式定语从句。先行词是the days，定语从句when we suffered so much from poverty修饰the days，但被谓语are gone隔开了。先行词the days表示时间，且从句中不缺主语或宾语，所以用关系副词when（=during which）。分隔的原因是主语太长、谓语太短，为了保持句子平衡而把谓语提前。",
+          "knowledgePoint": "分隔式定语从句：先行词与从句被谓语隔开",
+          "vocabulary": [
+            {
+              "word": "suffer",
+              "pos": "v.",
+              "meaning": "遭受，受苦"
+            },
+            {
+              "word": "poverty",
+              "pos": "n.",
+              "meaning": "贫困，贫穷"
+            }
+          ],
+          "sentenceTranslation": "我们因贫困而遭受苦难的日子已经过去了。"
+        },
+        {
+          "id": "gq_125_02",
+          "type": "choice",
+          "category": "分隔式定语从句",
+          "question": "He has found a new use for the old machine ___ nobody else has ever thought of.",
+          "questionCn": "他为这台旧机器找到了一个别人从未想到过的新用途。",
+          "choices": [
+            "A. that",
+            "B. who",
+            "C. whom",
+            "D. /（不填）"
+          ],
+          "answer": "A",
+          "explanation": "这是分隔式定语从句。先行词是a new use（不是the old machine），定语从句that nobody else has ever thought of修饰a new use。先行词和定语从句被介词短语for the old machine隔开。that在从句中作thought of的宾语，可以省略。但选项D（不填）虽然语法上也对，最佳答案是A，因为that在这里明确引导定语从句，避免了歧义（如果省略，可能误以为修饰machine）。",
+          "knowledgePoint": "分隔式定语从句：先行词与从句被介词短语隔开",
+          "vocabulary": [
+            {
+              "word": "machine",
+              "pos": "n.",
+              "meaning": "机器"
+            }
+          ],
+          "sentenceTranslation": "他为这台旧机器找到了一个别人从未想到过的新用途。"
+        },
+        {
+          "id": "gq_125_03",
+          "type": "truefalse",
+          "category": "分隔式定语从句",
+          "question": "判断句子正误：A new teacher will come tomorrow who will teach us biology.",
+          "questionCn": "判断句子正误：明天将有一位新老师来教我们生物。",
+          "choices": [
+            "A. 正确",
+            "B. 错误"
+          ],
+          "answer": "A",
+          "explanation": "句子完全正确。这是一个典型的分隔式定语从句。先行词是a new teacher，定语从句who will teach us biology修饰a new teacher，但被谓语will come tomorrow隔开了。分隔的原因是如果把定语从句紧跟在teacher后面（A new teacher who will teach us biology will come tomorrow.），主语太长显得头重脚轻，所以把短谓语提前，使句子更平衡。",
+          "knowledgePoint": "分隔式定语从句的判断：找先行词要往前找最近的\"合理\"名词",
+          "vocabulary": [
+            {
+              "word": "biology",
+              "pos": "n.",
+              "meaning": "生物学"
+            }
+          ],
+          "sentenceTranslation": "明天将有一位新老师来教我们生物。"
+        }
+      ]
+    },
+    "gm_126": {
+      "grammarName": "名词性从句的嵌套与辨析",
+      "level": "postgraduate",
+      "questions": [
+        {
+          "id": "gq_126_01",
+          "type": "choice",
+          "category": "名词性从句的嵌套与辨析",
+          "question": "___ he said at the meeting is ___ he will resign from his position.",
+          "questionCn": "他在会上说的是他将辞去他的职位。",
+          "choices": [
+            "A. That; that",
+            "B. What; what",
+            "C. What; that",
+            "D. That; what"
+          ],
+          "answer": "C",
+          "explanation": "第一个空是主语从句，what在从句中作said的宾语（=the thing that），意为\"...的内容\"；第二个空是表语从句，that只起连接作用，不充当成分。主语从句+表语从句构成嵌套结构：What he said（主语从句）is that he will resign（表语从句）。that在名词性从句中不充当成分，what/which等在从句中充当成分（主/宾/表）。",
+          "knowledgePoint": "名词性从句嵌套：主语从句+表语从句，that不作成分，what作成分",
+          "vocabulary": [
+            {
+              "word": "resign",
+              "pos": "v.",
+              "meaning": "辞职"
+            },
+            {
+              "word": "position",
+              "pos": "n.",
+              "meaning": "职位"
+            }
+          ],
+          "sentenceTranslation": "他在会上说的是他将辞去他的职位。"
+        },
+        {
+          "id": "gq_126_02",
+          "type": "choice",
+          "category": "名词性从句的嵌套与辨析",
+          "question": "I believe that ___ you have devoted yourself to is certain to come true.",
+          "questionCn": "我相信你全身心投入的事情一定会实现。",
+          "choices": [
+            "A. that",
+            "B. what",
+            "C. which",
+            "D. whatever"
+          ],
+          "answer": "B",
+          "explanation": "这是一个嵌套结构：宾语从句（that引导）里面包含一个主语从句（what引导）。宾语从句的主语是what you have devoted yourself to，what在主语从句中作介词to的宾语。整句结构是：I believe [that [what you have devoted yourself to] is certain to come true]. that引导宾语从句时可以省略，但这里因为后面紧跟另一个从句，that最好保留以明确层次。",
+          "knowledgePoint": "名词性从句嵌套：宾语从句内含主语从句",
+          "vocabulary": [
+            {
+              "word": "devote",
+              "pos": "v.",
+              "meaning": "致力于，奉献"
+            },
+            {
+              "word": "certain",
+              "pos": "adj.",
+              "meaning": "肯定的，确定的"
+            }
+          ],
+          "sentenceTranslation": "我相信你全身心投入的事情一定会实现。"
+        },
+        {
+          "id": "gq_126_03",
+          "type": "truefalse",
+          "category": "名词性从句的嵌套与辨析",
+          "question": "判断句子正误：What he needs is that enough money to start the business.",
+          "questionCn": "判断句子正误：他需要的是足够的钱来创业。",
+          "choices": [
+            "A. 正确",
+            "B. 错误"
+          ],
+          "answer": "B",
+          "explanation": "句子错误。enough money to start the business是一个名词短语，不是从句，因此不需要that引导。正确的句子是What he needs is enough money to start the business. that只有在引导从句时才使用，如果表语是名词、形容词等，直接放在is后面即可。判断方法：看that后面有没有完整的句子（主语+谓语），如果没有就不是从句。",
+          "knowledgePoint": "表语从句与名词短语作表语的区别：只有从句才用that",
+          "vocabulary": [
+            {
+              "word": "business",
+              "pos": "n.",
+              "meaning": "生意，企业"
+            }
+          ],
+          "sentenceTranslation": "他需要的是足够的钱来创业。"
+        }
+      ]
+    },
+    "gm_127": {
+      "grammarName": "同位语从句与定语从句的区别",
+      "level": "postgraduate",
+      "questions": [
+        {
+          "id": "gq_127_01",
+          "type": "choice",
+          "category": "同位语从句与定语从句的区别",
+          "question": "The news ___ he told me yesterday is true.（定语从句）/ The news ___ he won the prize is true.（同位语从句）",
+          "questionCn": "他告诉我的消息是真的。/ 他获奖的消息是真的。",
+          "choices": [
+            "A. that; that",
+            "B. which; what",
+            "C. what; that",
+            "D. that; what"
+          ],
+          "answer": "A",
+          "explanation": "第一句是定语从句，that在从句中作told的宾语（修饰the news，消息≠他），that可以换成which或省略；第二句是同位语从句，that只起连接作用不充当成分（解释the news的内容，消息=他获奖）。区别方法：①加\"是\"法：消息是他获奖→通顺→同位语；消息是他告诉我的→不通顺→定语。②成分法：that在从句中是否充当成分（主/宾/表）。",
+          "knowledgePoint": "同位语从句与定语从句的本质区别：that是否充当成分",
+          "vocabulary": [
+            {
+              "word": "prize",
+              "pos": "n.",
+              "meaning": "奖品，奖项"
+            }
+          ],
+          "sentenceTranslation": "他告诉我的消息是真的。/ 他获奖的消息是真的。"
+        },
+        {
+          "id": "gq_127_02",
+          "type": "choice",
+          "category": "同位语从句与定语从句的区别",
+          "question": "The suggestion ___ the students put forward was accepted by the principal.",
+          "questionCn": "学生们提出的建议被校长接受了。",
+          "choices": [
+            "A. that（同位语从句）",
+            "B. that（定语从句）",
+            "C. what（同位语从句）",
+            "D. which（同位语从句）"
+          ],
+          "answer": "B",
+          "explanation": "这是定语从句，that在从句中作put forward的宾语（可以换成which或省略）。先行词the suggestion和从句的关系是\"学生提出的建议\"（修饰限定），不是\"建议的内容是学生提出\"（解释说明）。判断方法：把suggestion和从句用\"是\"连起来——\"建议是学生提出\"，语义不通（应该是建议是某个具体内容），所以是定语从句不是同位语从句。",
+          "knowledgePoint": "suggestion后可以是定语从句也可以是同位语从句，关键看that是否充当成分",
+          "vocabulary": [
+            {
+              "word": "put forward",
+              "pos": "phr.",
+              "meaning": "提出"
+            },
+            {
+              "word": "principal",
+              "pos": "n.",
+              "meaning": "校长"
+            }
+          ],
+          "sentenceTranslation": "学生们提出的建议被校长接受了。"
+        },
+        {
+          "id": "gq_127_03",
+          "type": "truefalse",
+          "category": "同位语从句与定语从句的区别",
+          "question": "判断句子正误：I have no idea that he will come back when.",
+          "questionCn": "判断句子正误：我不知道他什么时候回来。",
+          "choices": [
+            "A. 正确",
+            "B. 错误"
+          ],
+          "answer": "B",
+          "explanation": "句子错误。正确的句子是I have no idea when he will come back. 这是同位语从句，when引导同位语从句解释说明idea的内容。注意语序：同位语从句用陈述语序，即when + 主语 + 谓语。另外，have no idea后面接疑问词（what/when/where/how等）引导的同位语从句时，不用that。that引导同位语从句时从句是陈述句。",
+          "knowledgePoint": "同位语从句可以由疑问词引导，用陈述语序",
+          "vocabulary": [],
+          "sentenceTranslation": "我不知道他什么时候回来。"
+        }
+      ]
+    },
+    "gm_128": {
+      "grammarName": "状语从句的省略结构（when/while/if/though + 分词/形容词）",
+      "level": "postgraduate",
+      "questions": [
+        {
+          "id": "gq_128_01",
+          "type": "choice",
+          "category": "状语从句的省略结构",
+          "question": "When ___ about his secret, he refused to answer any question.",
+          "questionCn": "当被问及他的秘密时，他拒绝回答任何问题。",
+          "choices": [
+            "A. asking",
+            "B. asked",
+            "C. having asked",
+            "D. being asked"
+          ],
+          "answer": "B",
+          "explanation": "这是状语从句的省略结构。完整句子是When he was asked about his question, he refused to answer. 省略的条件是：①从句主语与主句主语一致（都是he）②从句谓语含有be动词（was）。省略后保留\"连词+过去分词\"，表示被动关系。他是\"被问到\"的，所以用过去分词asked。选项D(being asked)表示\"正在被问\"，不符合语境。",
+          "knowledgePoint": "状语从句省略：连词+过去分词表被动",
+          "vocabulary": [
+            {
+              "word": "refuse",
+              "pos": "v.",
+              "meaning": "拒绝"
+            },
+            {
+              "word": "secret",
+              "pos": "n.",
+              "meaning": "秘密"
+            }
+          ],
+          "sentenceTranslation": "当被问及他的秘密时，他拒绝回答任何问题。"
+        },
+        {
+          "id": "gq_128_02",
+          "type": "choice",
+          "category": "状语从句的省略结构",
+          "question": "___, the boy didn't make any sound.",
+          "questionCn": "虽然受伤了，但男孩没有发出任何声音。",
+          "choices": [
+            "A. Though wounded",
+            "B. Though wounding",
+            "C. Though he wounded",
+            "D. Wounded though he was"
+          ],
+          "answer": "A",
+          "explanation": "这是though引导的让步状语从句的省略结构。完整句子是Though he was wounded, the boy didn't make any sound. 省略了he was，保留Though wounded。wounded是过去分词，表示被动和状态（受伤的）。选项B(wounding)是主动，不对；选项C缺少was（wound是及物动词，应该是he was wounded）；选项D是as/though的倒装结构，虽然语法上也可以，但形式更复杂，不是省略结构的典型用法。",
+          "knowledgePoint": "状语从句省略的条件：主语一致+有be动词",
+          "vocabulary": [
+            {
+              "word": "wounded",
+              "pos": "adj.",
+              "meaning": "受伤的"
+            },
+            {
+              "word": "sound",
+              "pos": "n.",
+              "meaning": "声音"
+            }
+          ],
+          "sentenceTranslation": "虽然受伤了，但男孩没有发出任何声音。"
+        },
+        {
+          "id": "gq_128_03",
+          "type": "truefalse",
+          "category": "状语从句的省略结构",
+          "question": "判断句子正误：While cooking dinner, the phone rang loudly.",
+          "questionCn": "判断句子正误：做晚饭的时候，电话大声响了。",
+          "choices": [
+            "A. 正确",
+            "B. 错误"
+          ],
+          "answer": "B",
+          "explanation": "句子错误。这是一个典型的\"悬垂分词\"错误。状语从句省略后，分词的逻辑主语必须与主句主语一致。主句主语是the phone，但phone不能做饭（cooking dinner），逻辑主语不一致。正确的句子应该是While I was cooking dinner, the phone rang loudly.（不能省略，因为主语不一致）或者While cooking dinner, I heard the phone ring.（改主句主语为I）。",
+          "knowledgePoint": "状语从句省略的前提：逻辑主语必须一致，否则为悬垂错误",
+          "vocabulary": [
+            {
+              "word": "loudly",
+              "pos": "adv.",
+              "meaning": "大声地"
+            }
+          ],
+          "sentenceTranslation": "做晚饭的时候，电话大声响了。"
+        }
+      ]
+    },
+    "gm_129": {
+      "grammarName": "让步状语从句的倒装结构（as/though引导的倒装）",
+      "level": "postgraduate",
+      "questions": [
+        {
+          "id": "gq_129_01",
+          "type": "choice",
+          "category": "让步状语从句的倒装结构",
+          "question": "___ he is, he knows a great deal about advanced mathematics.",
+          "questionCn": "虽然他还是个孩子，但他懂很多高等数学知识。",
+          "choices": [
+            "A. Child as",
+            "B. A child as",
+            "C. As a child",
+            "D. Although child"
+          ],
+          "answer": "A",
+          "explanation": "as引导让步状语从句时必须倒装，结构为\"名词+as+主语+系动词\"。注意：单数可数名词作表语提前时，前面不加冠词a/an。Child as he is = Although he is a child。选项B多了冠词a；选项C是\"作为一个孩子\"的意思，不是让步；选项D although不能倒装，而且缺冠词。",
+          "knowledgePoint": "as让步倒装：名词提前时不加冠词",
+          "vocabulary": [
+            {
+              "word": "advanced",
+              "pos": "adj.",
+              "meaning": "高级的，高等的"
+            },
+            {
+              "word": "mathematics",
+              "pos": "n.",
+              "meaning": "数学"
+            }
+          ],
+          "sentenceTranslation": "虽然他还是个孩子，但他懂很多高等数学知识。"
+        },
+        {
+          "id": "gq_129_02",
+          "type": "choice",
+          "category": "让步状语从句的倒装结构",
+          "question": "Try ___ he might, he could not find a way to solve the complex problem.",
+          "questionCn": "无论他怎么努力，都找不到解决这个复杂问题的方法。",
+          "choices": [
+            "A. as",
+            "B. although",
+            "C. however",
+            "D. even"
+          ],
+          "answer": "A",
+          "explanation": "as引导让步状语从句时，动词原形可以提前，结构为\"动词原形+as+主语+助动词/情态动词\"。Try as he might = Although he might try。as必须倒装，though可倒可不倒，although不能倒装。选项B(although)不能倒装；选项C(however)后面要接形容词或副词；选项D(even)不能引导从句。",
+          "knowledgePoint": "as让步倒装：动词原形提前，后面接主语+助动词/情态动词",
+          "vocabulary": [
+            {
+              "word": "complex",
+              "pos": "adj.",
+              "meaning": "复杂的"
+            },
+            {
+              "word": "solve",
+              "pos": "v.",
+              "meaning": "解决"
+            }
+          ],
+          "sentenceTranslation": "无论他怎么努力，都找不到解决这个复杂问题的方法。"
+        },
+        {
+          "id": "gq_129_03",
+          "type": "truefalse",
+          "category": "让步状语从句的倒装结构",
+          "question": "判断句子正误：Hard as he worked, but he still couldn't pass the exam.",
+          "questionCn": "判断句子正误：尽管他学习很努力，但还是没通过考试。",
+          "choices": [
+            "A. 正确",
+            "B. 错误"
+          ],
+          "answer": "B",
+          "explanation": "句子错误。as/though引导的让步状语从句和but不能同时使用。as本身就有\"虽然/尽管\"的含义，相当于although/though，再加but就重复了。正确的句子是Hard as he worked, he still couldn't pass the exam. 记住：英语中\"虽然\"和\"但是\"不能同时用，只用一个就够了。",
+          "knowledgePoint": "as/though让步状语从句不能与but连用",
+          "vocabulary": [
+            {
+              "word": "pass",
+              "pos": "v.",
+              "meaning": "通过"
+            }
+          ],
+          "sentenceTranslation": "尽管他学习很努力，但还是没通过考试。"
+        }
+      ]
+    },
+    "gm_130": {
+      "grammarName": "非谓语动词的复合结构（with/without + 宾语 + 宾补）",
+      "level": "postgraduate",
+      "questions": [
+        {
+          "id": "gq_130_01",
+          "type": "choice",
+          "category": "非谓语动词的复合结构",
+          "question": "With the problem ___ at the meeting, the managers felt relieved.",
+          "questionCn": "问题在会上得到了解决，经理们感到松了一口气。",
+          "choices": [
+            "A. solving",
+            "B. solved",
+            "C. to solve",
+            "D. being solved"
+          ],
+          "answer": "B",
+          "explanation": "with复合结构中，宾语the problem和宾补之间是被动关系（问题被解决），而且动作已经完成（经理们感到松了口气说明问题已解决），所以用过去分词solved。选项A(solving)表示主动进行；选项C(to solve)表示将来要做；选项D(being solved)表示正在被解决。根据句意felt relieved可知问题已经解决了，故选B。",
+          "knowledgePoint": "with复合结构：过去分词作宾补表被动+完成",
+          "vocabulary": [
+            {
+              "word": "relieved",
+              "pos": "adj.",
+              "meaning": "感到宽慰的，松了口气的"
+            },
+            {
+              "word": "manager",
+              "pos": "n.",
+              "meaning": "经理"
+            }
+          ],
+          "sentenceTranslation": "问题在会上得到了解决，经理们感到松了一口气。"
+        },
+        {
+          "id": "gq_130_02",
+          "type": "choice",
+          "category": "非谓语动词的复合结构",
+          "question": "With a lot of difficult problems ___, the newly-elected president is having a hard time.",
+          "questionCn": "有很多难题要解决，新当选的总统日子不好过。",
+          "choices": [
+            "A. settled",
+            "B. settling",
+            "C. to settle",
+            "D. being settled"
+          ],
+          "answer": "C",
+          "explanation": "with复合结构中，不定式to settle作宾补表示\"将要解决\"的动作（动作尚未发生）。根据句意\"新当选的总统日子不好过\"说明难题还没解决，是将要面对的问题，所以用不定式。选项A(settled)表示已解决；选项B(settling)表示主动进行；选项D(being settled)表示正在被解决。",
+          "knowledgePoint": "with复合结构：不定式作宾补表将来/未做",
+          "vocabulary": [
+            {
+              "word": "newly-elected",
+              "pos": "adj.",
+              "meaning": "新当选的"
+            },
+            {
+              "word": "president",
+              "pos": "n.",
+              "meaning": "总统，主席"
+            }
+          ],
+          "sentenceTranslation": "有很多难题要解决，新当选的总统日子不好过。"
+        },
+        {
+          "id": "gq_130_03",
+          "type": "truefalse",
+          "category": "非谓语动词的复合结构",
+          "question": "判断句子正误：With the guide leading the way, the travelers had no difficulty finding the village.",
+          "questionCn": "判断句子正误：在向导的带领下，旅行者们毫不费力地找到了村庄。",
+          "choices": [
+            "A. 正确",
+            "B. 错误"
+          ],
+          "answer": "A",
+          "explanation": "句子完全正确。这是with复合结构作原因状语。the guide和leading the way是主动关系（向导带路），所以用现在分词leading。with + 宾语 + 现在分词表示主动进行的动作。整句相当于Because the guide led the way, the travelers had no difficulty finding the village.",
+          "knowledgePoint": "with复合结构：现在分词作宾补表主动+进行",
+          "vocabulary": [
+            {
+              "word": "guide",
+              "pos": "n.",
+              "meaning": "向导，导游"
+            },
+            {
+              "word": "traveler",
+              "pos": "n.",
+              "meaning": "旅行者"
+            }
+          ],
+          "sentenceTranslation": "在向导的带领下，旅行者们毫不费力地找到了村庄。"
+        }
+      ]
+    },
+    "gm_131": {
+      "grammarName": "独立主格结构（名词/代词 + 分词/不定式/形容词/介词短语）",
+      "level": "postgraduate",
+      "questions": [
+        {
+          "id": "gq_131_01",
+          "type": "choice",
+          "category": "独立主格结构",
+          "question": "Weather ___, we will go hiking in the mountains this weekend.",
+          "questionCn": "天气允许的话，这个周末我们将去山里徒步旅行。",
+          "choices": [
+            "A. permits",
+            "B. permitted",
+            "C. permitting",
+            "D. to permit"
+          ],
+          "answer": "C",
+          "explanation": "这是独立主格结构作条件状语。Weather permitting = If weather permits。weather和permit之间是主动关系（天气允许），所以用现在分词permitting。独立主格结构的逻辑主语是weather，与主句主语we不一致，所以不能用普通的分词作状语（普通分词的逻辑主语必须与主句主语一致）。选项A(permits)是谓语动词形式，会导致两个独立句子只用逗号连接的错误。",
+          "knowledgePoint": "独立主格结构：名词+现在分词（主动关系）作条件状语",
+          "vocabulary": [
+            {
+              "word": "hike",
+              "pos": "v.",
+              "meaning": "徒步旅行"
+            },
+            {
+              "word": "mountain",
+              "pos": "n.",
+              "meaning": "山"
+            }
+          ],
+          "sentenceTranslation": "天气允许的话，这个周末我们将去山里徒步旅行。"
+        },
+        {
+          "id": "gq_131_02",
+          "type": "choice",
+          "category": "独立主格结构",
+          "question": "All things ___, the plan is quite practical and feasible.",
+          "questionCn": "综合考虑，这个计划相当实际可行。",
+          "choices": [
+            "A. considering",
+            "B. considered",
+            "C. to consider",
+            "D. having considered"
+          ],
+          "answer": "B",
+          "explanation": "这是独立主格结构作条件/伴随状语。All things considered = If all things are considered / When all things are considered。things和consider之间是被动关系（事情被考虑），所以用过去分词considered。\"all things considered\"是固定搭配，意为\"综合考虑，从各方面来看\"。独立主格结构没有谓语动词，只有逻辑主语+分词/形容词等。",
+          "knowledgePoint": "独立主格结构：名词+过去分词（被动关系）",
+          "vocabulary": [
+            {
+              "word": "practical",
+              "pos": "adj.",
+              "meaning": "实际的"
+            },
+            {
+              "word": "feasible",
+              "pos": "adj.",
+              "meaning": "可行的"
+            }
+          ],
+          "sentenceTranslation": "综合考虑，这个计划相当实际可行。"
+        },
+        {
+          "id": "gq_131_03",
+          "type": "truefalse",
+          "category": "独立主格结构",
+          "question": "判断句子正误：He stood at the door, his hands in his pockets.",
+          "questionCn": "判断句子正误：他站在门口，双手插在口袋里。",
+          "choices": [
+            "A. 正确",
+            "B. 错误"
+          ],
+          "answer": "A",
+          "explanation": "句子完全正确。这是独立主格结构的一种形式：名词 + 介词短语。his hands in his pockets表示伴随状态，相当于and his hands were in his pockets。独立主格结构有自己的逻辑主语his hands，与主句主语he不一致，所以用独立主格而不是普通的分词作状语。也可以写成with his hands in his pockets（with复合结构）。",
+          "knowledgePoint": "独立主格结构：名词+介词短语表伴随状态",
+          "vocabulary": [
+            {
+              "word": "pocket",
+              "pos": "n.",
+              "meaning": "口袋"
+            }
+          ],
+          "sentenceTranslation": "他站在门口，双手插在口袋里。"
+        }
+      ]
+    },
+    "gm_132": {
+      "grammarName": "现在分词的完成式（having done）与被动式（being done）",
+      "level": "postgraduate",
+      "questions": [
+        {
+          "id": "gq_132_01",
+          "type": "choice",
+          "category": "现在分词的完成式与被动式",
+          "question": "___ his homework, Tom went out to play football with his friends.",
+          "questionCn": "做完作业后，汤姆出去和朋友们踢足球了。",
+          "choices": [
+            "A. Finishing",
+            "B. Having finished",
+            "C. Finished",
+            "D. Being finished"
+          ],
+          "answer": "B",
+          "explanation": "完成作业发生在出去玩之前，有明显的先后顺序，所以用现在分词的完成式having done，表示动作发生在主句谓语动词之前。Tom和finish之间是主动关系，所以用主动形式。选项A(Finishing)是一般式，表示动作与主句谓语同时发生，不符合\"先完成作业再出去玩\"的逻辑；选项C(Finished)是过去分词，表示被动；选项D(Being finished)是一般被动式。",
+          "knowledgePoint": "现在分词完成式：having done表动作先于谓语发生（主动）",
+          "vocabulary": [
+            {
+              "word": "football",
+              "pos": "n.",
+              "meaning": "足球"
+            }
+          ],
+          "sentenceTranslation": "做完作业后，汤姆出去和朋友们踢足球了。"
+        },
+        {
+          "id": "gq_132_02",
+          "type": "choice",
+          "category": "现在分词的完成式与被动式",
+          "question": "The temple ___ now in the ancient style will be open to tourists next year.",
+          "questionCn": "现在正在以古式风格建造的寺庙明年将对游客开放。",
+          "choices": [
+            "A. built",
+            "B. being built",
+            "C. having been built",
+            "D. to be built"
+          ],
+          "answer": "B",
+          "explanation": "根据时间状语now可知，寺庙正在被建造，所以用现在分词的被动式being built作定语，表示\"正在被...的\"。选项A(built)是过去分词，表示\"已经建成的\"（与now矛盾）；选项C(having been built)是完成被动式，一般不作定语；选项D(to be built)是不定式被动式，表示\"将要被建的\"（与now矛盾）。",
+          "knowledgePoint": "现在分词被动式：being done作定语表\"正在被...\"",
+          "vocabulary": [
+            {
+              "word": "temple",
+              "pos": "n.",
+              "meaning": "寺庙"
+            },
+            {
+              "word": "tourist",
+              "pos": "n.",
+              "meaning": "游客"
+            }
+          ],
+          "sentenceTranslation": "现在正在以古式风格建造的寺庙明年将对游客开放。"
+        },
+        {
+          "id": "gq_132_03",
+          "type": "truefalse",
+          "category": "现在分词的完成式与被动式",
+          "question": "判断句子正误：Having been criticized by the teacher, he felt very ashamed of his behavior.",
+          "questionCn": "判断句子正误：被老师批评后，他为自己的行为感到非常羞愧。",
+          "choices": [
+            "A. 正确",
+            "B. 错误"
+          ],
+          "answer": "A",
+          "explanation": "句子完全正确。having been criticized是现在分词的完成被动式，表示：①被动（他被批评）②动作发生在主句谓语之前（先被批评后感到羞愧）。相当于After he had been criticized by the teacher, he felt very ashamed...。现在分词完成被动式作状语，表示时间或原因。",
+          "knowledgePoint": "现在分词完成被动式：having been done表被动+先于谓语发生",
+          "vocabulary": [
+            {
+              "word": "criticize",
+              "pos": "v.",
+              "meaning": "批评"
+            },
+            {
+              "word": "ashamed",
+              "pos": "adj.",
+              "meaning": "羞愧的"
+            }
+          ],
+          "sentenceTranslation": "被老师批评后，他为自己的行为感到非常羞愧。"
+        }
+      ]
+    },
+    "gm_133": {
+      "grammarName": "过去分词作状语的逻辑主语一致性",
+      "level": "postgraduate",
+      "questions": [
+        {
+          "id": "gq_133_01",
+          "type": "choice",
+          "category": "过去分词作状语的逻辑主语一致性",
+          "question": "___ from the top of the mountain, the whole city looks like a beautiful painting.",
+          "questionCn": "从山顶上看，整个城市像一幅美丽的画。",
+          "choices": [
+            "A. Seeing",
+            "B. Seen",
+            "C. Having seen",
+            "D. To see"
+          ],
+          "answer": "B",
+          "explanation": "过去分词作状语时，其逻辑主语必须与主句主语一致。主句主语是the city，城市是\"被看\"的，所以用过去分词Seen表示被动。选项A(Seeing)是现在分词，表示主动，逻辑主语应该是人，但句子主语是city，不一致（悬垂错误）；选项C(Having seen)也是主动完成式，同样错误；选项D(To see)是不定式主动形式，也不对。",
+          "knowledgePoint": "过去分词作状语：逻辑主语=主句主语，被动关系",
+          "vocabulary": [
+            {
+              "word": "painting",
+              "pos": "n.",
+              "meaning": "画，绘画"
+            }
+          ],
+          "sentenceTranslation": "从山顶上看，整个城市像一幅美丽的画。"
+        },
+        {
+          "id": "gq_133_02",
+          "type": "choice",
+          "category": "过去分词作状语的逻辑主语一致性",
+          "question": "___ more time, I will be able to finish the task perfectly.",
+          "questionCn": "如果给我更多时间，我将能够完美地完成任务。",
+          "choices": [
+            "A. Giving",
+            "B. Given",
+            "C. Having given",
+            "D. To give"
+          ],
+          "answer": "B",
+          "explanation": "主句主语是I，我是\"被给予\"更多时间的，所以用过去分词Given表示被动。Given more time = If I am given more time。这是过去分词作条件状语。选项A(Giving)是主动，逻辑不对（我给别人时间？）；选项C(Having given)也是主动完成式；选项D(To give)不定式主动形式，表目的不对。",
+          "knowledgePoint": "过去分词作条件状语：被动关系，相当于if条件句的被动形式",
+          "vocabulary": [
+            {
+              "word": "task",
+              "pos": "n.",
+              "meaning": "任务"
+            },
+            {
+              "word": "perfectly",
+              "pos": "adv.",
+              "meaning": "完美地"
+            }
+          ],
+          "sentenceTranslation": "如果给我更多时间，我将能够完美地完成任务。"
+        },
+        {
+          "id": "gq_133_03",
+          "type": "truefalse",
+          "category": "过去分词作状语的逻辑主语一致性",
+          "question": "判断句子正误：Comparing with other students, Tom is more hard-working.",
+          "questionCn": "判断句子正误：和其他学生相比，汤姆更勤奋。",
+          "choices": [
+            "A. 正确",
+            "B. 错误"
+          ],
+          "answer": "B",
+          "explanation": "句子错误。compared with/to是固定搭配，作评述性状语，应该用过去分词compared而不是现在分词comparing。虽然从逻辑上看Tom是\"被比较\"的，但更重要的是，compared with是一个固定的介词短语结构，不遵循普通的逻辑主语一致规则。类似的\"评述性状语\"还有：judging from（根据...判断）、generally speaking（一般来说）、considering（考虑到）、talking of（说到）等，它们不需要逻辑主语一致。",
+          "knowledgePoint": "评述性状语的特殊情况：compared with, judging from等不遵循逻辑主语一致规则",
+          "vocabulary": [
+            {
+              "word": "hard-working",
+              "pos": "adj.",
+              "meaning": "勤奋的"
+            }
+          ],
+          "sentenceTranslation": "和其他学生相比，汤姆更勤奋。"
+        }
+      ]
+    },
+    "gm_134": {
+      "grammarName": "不定式的完成式/进行式/被动式",
+      "level": "postgraduate",
+      "questions": [
+        {
+          "id": "gq_134_01",
+          "type": "choice",
+          "category": "不定式的完成式/进行式/被动式",
+          "question": "He is said ___ a new book about environmental protection last year.",
+          "questionCn": "据说他去年写了一本关于环境保护的新书。",
+          "choices": [
+            "A. to write",
+            "B. to have written",
+            "C. to be writing",
+            "D. having written"
+          ],
+          "answer": "B",
+          "explanation": "写书发生在\"据说\"之前，所以用不定式的完成式to have written。He is said to have written = It is said that he wrote。不定式完成式表示动作发生在谓语动词之前。选项A(to write)是一般式，表示将来或同时发生；选项C(to be writing)是进行式，表示正在进行；选项D(having written)是现在分词完成式，不能用在is said后面。",
+          "knowledgePoint": "不定式完成式：to have done表动作先于谓语发生",
+          "vocabulary": [
+            {
+              "word": "environmental",
+              "pos": "adj.",
+              "meaning": "环境的"
+            },
+            {
+              "word": "protection",
+              "pos": "n.",
+              "meaning": "保护"
+            }
+          ],
+          "sentenceTranslation": "据说他去年写了一本关于环境保护的新书。"
+        },
+        {
+          "id": "gq_134_02",
+          "type": "choice",
+          "category": "不定式的完成式/进行式/被动式",
+          "question": "The project is reported ___ by the end of next month.",
+          "questionCn": "据报道，这个项目将在下个月底前完成。",
+          "choices": [
+            "A. to complete",
+            "B. to be completed",
+            "C. to have been completed",
+            "D. being completed"
+          ],
+          "answer": "B",
+          "explanation": "project和complete之间是被动关系，而且根据时间状语by the end of next month可知动作还未发生（将来），所以用不定式的一般被动式to be completed。选项A(to complete)是主动形式，不对；选项C(to have been completed)是完成被动式，表示已经完成，与将来时间不符；选项D(being completed)是现在分词被动式，不能用在is reported后面。",
+          "knowledgePoint": "不定式被动式：to be done表将来+被动",
+          "vocabulary": [
+            {
+              "word": "project",
+              "pos": "n.",
+              "meaning": "项目"
+            }
+          ],
+          "sentenceTranslation": "据报道，这个项目将在下个月底前完成。"
+        },
+        {
+          "id": "gq_134_03",
+          "type": "truefalse",
+          "category": "不定式的完成式/进行式/被动式",
+          "question": "判断句子正误：He pretended to be reading when his mother entered the room.",
+          "questionCn": "判断句子正误：妈妈进入房间时，他假装在看书。",
+          "choices": [
+            "A. 正确",
+            "B. 错误"
+          ],
+          "answer": "A",
+          "explanation": "句子完全正确。to be reading是不定式的进行式，表示动作正在进行。pretend to be doing sth.意为\"假装正在做某事\"，强调在某个时间点动作正在进行。pretend to do sth.是\"假装要做某事\"，pretend to have done sth.是\"假装已经做了某事\"。根据时间状语when his mother entered the room，强调当时正在进行的动作，所以用进行式最恰当。",
+          "knowledgePoint": "不定式进行式：to be doing表动作正在进行",
+          "vocabulary": [
+            {
+              "word": "pretend",
+              "pos": "v.",
+              "meaning": "假装"
+            },
+            {
+              "word": "enter",
+              "pos": "v.",
+              "meaning": "进入"
+            }
+          ],
+          "sentenceTranslation": "妈妈进入房间时，他假装在看书。"
+        }
+      ]
+    },
+    "gm_135": {
+      "grammarName": "动名词的复合结构（物主代词/名词所有格 + 动名词）",
+      "level": "postgraduate",
+      "questions": [
+        {
+          "id": "gq_135_01",
+          "type": "choice",
+          "category": "动名词的复合结构",
+          "question": "___ made his parents very disappointed.",
+          "questionCn": "他考试不及格让他的父母非常失望。",
+          "choices": [
+            "A. He failed the exam",
+            "B. His failing the exam",
+            "C. Him failing the exam",
+            "D. He failing the exam"
+          ],
+          "answer": "B",
+          "explanation": "这是动名词复合结构作主语。在句首作主语时，必须用物主代词（his）或名词所有格，不能用宾格或主格。His failing the exam = That he failed the exam。选项A是完整句子，不能直接作主语（需要that引导主语从句）；选项C用了宾格him，在句首作主语时不规范；选项D是主格+动名词，语法错误。",
+          "knowledgePoint": "动名词复合结构作主语：必须用物主代词或名词所有格",
+          "vocabulary": [
+            {
+              "word": "disappointed",
+              "pos": "adj.",
+              "meaning": "失望的"
+            }
+          ],
+          "sentenceTranslation": "他考试不及格让他的父母非常失望。"
+        },
+        {
+          "id": "gq_135_02",
+          "type": "choice",
+          "category": "动名词的复合结构",
+          "question": "I don't mind ___ the window. It's a bit hot in here.",
+          "questionCn": "我不介意你开窗。这里有点热。",
+          "choices": [
+            "A. you open",
+            "B. your opening",
+            "C. you to open",
+            "D. your to open"
+          ],
+          "answer": "B",
+          "explanation": "mind后面接动名词作宾语，不接不定式。your opening the window是动名词复合结构作mind的宾语。动名词复合结构作宾语时，口语中可以用宾格（you opening），但正式文体中用物主代词（your opening）更规范。选项A(you open)是从句结构，需要引导词；选项C(you to open)是不定式复合结构，mind后面不接不定式；选项D形式错误。",
+          "knowledgePoint": "动名词复合结构作宾语：可用物主代词（正式）或宾格（口语）",
+          "vocabulary": [
+            {
+              "word": "mind",
+              "pos": "v.",
+              "meaning": "介意"
+            }
+          ],
+          "sentenceTranslation": "我不介意你开窗。这里有点热。"
+        },
+        {
+          "id": "gq_135_03",
+          "type": "truefalse",
+          "category": "动名词的复合结构",
+          "question": "判断句子正误：The noise of the desks being opened and closed could be heard in the classroom.",
+          "questionCn": "判断句子正误：课桌被打开和关上的声音在教室里都能听到。",
+          "choices": [
+            "A. 正确",
+            "B. 错误"
+          ],
+          "answer": "A",
+          "explanation": "句子完全正确。the desks being opened and closed是动名词的复合结构作介词of的宾语。无生命的名词（desks）后面接动名词时，用普通格（不用所有格）。being opened and closed是动名词的被动式，表示\"被打开和关上\"。整句中The noise of...作主语，could be heard是谓语。",
+          "knowledgePoint": "无生命名词的动名词复合结构：用普通格（不用所有格）",
+          "vocabulary": [
+            {
+              "word": "noise",
+              "pos": "n.",
+              "meaning": "噪音，声响"
+            }
+          ],
+          "sentenceTranslation": "课桌被打开和关上的声音在教室里都能听到。"
+        }
+      ]
+    },
+    "gm_136": {
+      "grammarName": "倒装句的高级用法（全部倒装的多种情况 + 部分倒装的特殊结构）",
+      "level": "postgraduate",
+      "questions": [
+        {
+          "id": "gq_136_01",
+          "type": "choice",
+          "category": "倒装句的高级用法",
+          "question": "Under no circumstances ___ our principles for economic benefits.",
+          "questionCn": "在任何情况下我们都不应为了经济利益而放弃原则。",
+          "choices": [
+            "A. we should abandon",
+            "B. should we abandon",
+            "C. we abandon",
+            "D. abandon we"
+          ],
+          "answer": "B",
+          "explanation": "表示否定意义的介词短语under no circumstances（在任何情况下都不）放在句首时，句子要部分倒装，即把助动词/情态动词提到主语前面。正常语序是We should under no circumstances abandon...，倒装后变成Under no circumstances should we abandon...。常见的否定短语还有：by no means, in no way, on no account, at no time等。",
+          "knowledgePoint": "否定短语放句首的部分倒装：Under no circumstances + 情态动词/助动词 + 主语",
+          "vocabulary": [
+            {
+              "word": "circumstances",
+              "pos": "n.",
+              "meaning": "情况，环境"
+            },
+            {
+              "word": "abandon",
+              "pos": "v.",
+              "meaning": "放弃"
+            },
+            {
+              "word": "principle",
+              "pos": "n.",
+              "meaning": "原则"
+            }
+          ],
+          "sentenceTranslation": "在任何情况下我们都不应为了经济利益而放弃原则。"
+        },
+        {
+          "id": "gq_136_02",
+          "type": "choice",
+          "category": "倒装句的高级用法",
+          "question": "Not only ___ the exam, but also he got the highest score in his grade.",
+          "questionCn": "他不仅通过了考试，而且还取得了年级最高分。",
+          "choices": [
+            "A. he passed",
+            "B. passed he",
+            "C. did he pass",
+            "D. he did pass"
+          ],
+          "answer": "C",
+          "explanation": "not only...but also...连接两个分句时，not only放在句首，其所在的分句要部分倒装，but also后面的分句不倒装（前倒后不倒）。正常语序是He not only passed the exam, but also he got...，倒装后变成Not only did he pass the exam, but also he got...。因为是实义动词passed，所以用助动词did帮助倒装。",
+          "knowledgePoint": "Not only...but also...的倒装：前倒后不倒",
+          "vocabulary": [
+            {
+              "word": "score",
+              "pos": "n.",
+              "meaning": "分数"
+            },
+            {
+              "word": "grade",
+              "pos": "n.",
+              "meaning": "年级"
+            }
+          ],
+          "sentenceTranslation": "他不仅通过了考试，而且还取得了年级最高分。"
+        },
+        {
+          "id": "gq_136_03",
+          "type": "truefalse",
+          "category": "倒装句的高级用法",
+          "question": "判断句子正误：Present at the meeting were some world-famous scientists from various countries.",
+          "questionCn": "出席会议的是一些来自不同国家的世界著名科学家。",
+          "choices": [
+            "A. 正确",
+            "B. 错误"
+          ],
+          "answer": "A",
+          "explanation": "句子完全正确。这是表语提前引起的全部倒装。正常语序是Some world-famous scientists from various countries were present at the meeting. 因为主语太长，为了保持句子平衡，把表语present at the meeting提前，谓语were放在主语前面，形成全部倒装。当表语是形容词/介词短语/分词，且主语较长时，常使用这种倒装结构。",
+          "knowledgePoint": "表语提前的全部倒装：形容词/分词/介词短语 + be + 主语",
+          "vocabulary": [
+            {
+              "word": "various",
+              "pos": "adj.",
+              "meaning": "各种各样的"
+            }
+          ],
+          "sentenceTranslation": "出席会议的是一些来自不同国家的世界著名科学家。"
+        }
+      ]
+    },
+    "gm_137": {
+      "grammarName": "虚拟语气的高级用法（错综时间条件句、含蓄虚拟、would rather等）",
+      "level": "postgraduate",
+      "questions": [
+        {
+          "id": "gq_137_01",
+          "type": "choice",
+          "category": "虚拟语气的高级用法",
+          "question": "If you had taken my advice, you ___ in such a difficult situation now.",
+          "questionCn": "如果你当初听了我的建议，你现在就不会处于如此困难的境地了。",
+          "choices": [
+            "A. wouldn't have been",
+            "B. wouldn't be",
+            "C. won't be",
+            "D. hadn't been"
+          ],
+          "answer": "B",
+          "explanation": "这是错综时间条件句（混合虚拟）。从句是对过去的虚拟（had taken，过去完成时），主句是对现在的虚拟（now提示现在时间，would + 动词原形）。标准虚拟句三种基本形式是时间一致的，但错综时间条件句中从句和主句时间不一致，要根据各自的时间选用相应的虚拟形式。选项A是对过去的虚拟，与now不符。",
+          "knowledgePoint": "错综时间条件句：从句和主句时间不一致，各自选用相应虚拟形式",
+          "vocabulary": [
+            {
+              "word": "advice",
+              "pos": "n.",
+              "meaning": "建议"
+            },
+            {
+              "word": "situation",
+              "pos": "n.",
+              "meaning": "处境，情况"
+            }
+          ],
+          "sentenceTranslation": "如果你当初听了我的建议，你现在就不会处于如此困难的境地了。"
+        },
+        {
+          "id": "gq_137_02",
+          "type": "choice",
+          "category": "虚拟语气的高级用法",
+          "question": "But for the air crash, the famous scientist ___ a great contribution to the space program.",
+          "questionCn": "要不是那场空难，这位著名科学家本会对太空项目做出巨大贡献。",
+          "choices": [
+            "A. would make",
+            "B. would have made",
+            "C. had made",
+            "D. made"
+          ],
+          "answer": "B",
+          "explanation": "这是含蓄虚拟条件句。but for（要不是）暗示了虚拟条件，相当于if it had not been for the air crash。空难是过去发生的事，所以是对过去的虚拟，主句用would have done结构。含蓄虚拟的标志词还有：without, otherwise, or, but that等。识别含蓄虚拟的关键是看句意是否与事实相反。",
+          "knowledgePoint": "含蓄虚拟：but for/without/otherwise暗示虚拟条件",
+          "vocabulary": [
+            {
+              "word": "crash",
+              "pos": "n.",
+              "meaning": "坠毁，碰撞"
+            },
+            {
+              "word": "contribution",
+              "pos": "n.",
+              "meaning": "贡献"
+            },
+            {
+              "word": "space",
+              "pos": "n.",
+              "meaning": "太空"
+            }
+          ],
+          "sentenceTranslation": "要不是那场空难，这位著名科学家本会对太空项目做出巨大贡献。"
+        },
+        {
+          "id": "gq_137_03",
+          "type": "truefalse",
+          "category": "虚拟语气的高级用法",
+          "question": "判断句子正误：It's high time that we take immediate measures to protect the environment.",
+          "questionCn": "判断句子正误：我们是时候立即采取措施保护环境了。",
+          "choices": [
+            "A. 正确",
+            "B. 错误"
+          ],
+          "answer": "B",
+          "explanation": "句子错误。It's (high/about) time that...句型中，that从句要用虚拟语气，谓语动词用过去式（或should + 动词原形，should不能省略）。正确的句子是It's high time that we took immediate measures to protect the environment. 或It's high time that we should take...。这个句型表示\"该是做某事的时候了\"，含有\"晚了一点\"的意味。",
+          "knowledgePoint": "It's (high/about) time that从句用过去时或should+动词原形（should不省）",
+          "vocabulary": [
+            {
+              "word": "immediate",
+              "pos": "adj.",
+              "meaning": "立即的"
+            },
+            {
+              "word": "measure",
+              "pos": "n.",
+              "meaning": "措施"
+            },
+            {
+              "word": "protect",
+              "pos": "v.",
+              "meaning": "保护"
+            }
+          ],
+          "sentenceTranslation": "我们是时候立即采取措施保护环境了。"
+        }
+      ]
+    },
+    "gm_138": {
+      "grammarName": "强调句的变体（not...until强调、一般疑问句/特殊疑问句的强调形式）",
+      "level": "postgraduate",
+      "questions": [
+        {
+          "id": "gq_138_01",
+          "type": "choice",
+          "category": "强调句的变体",
+          "question": "It was not until midnight ___ back home after the long journey.",
+          "questionCn": "直到半夜他长途旅行后才回到家。",
+          "choices": [
+            "A. did he come",
+            "B. that he came",
+            "C. when he came",
+            "D. before he came"
+          ],
+          "answer": "B",
+          "explanation": "这是强调not...until句型的强调句。基本结构是It is/was not until + 时间/从句 + that + 主句（肯定形式）。that后面用陈述语序，不需要倒装。正常句子是He didn't come back home until midnight. 强调时间状语until midnight后变成It was not until midnight that he came back home. 注意：that不能换成when，强调句一律用that（指人可用who）。",
+          "knowledgePoint": "强调not...until句型：It is/was not until...that + 肯定句",
+          "vocabulary": [
+            {
+              "word": "midnight",
+              "pos": "n.",
+              "meaning": "午夜"
+            },
+            {
+              "word": "journey",
+              "pos": "n.",
+              "meaning": "旅行，旅程"
+            }
+          ],
+          "sentenceTranslation": "直到半夜他长途旅行后才回到家。"
+        },
+        {
+          "id": "gq_138_02",
+          "type": "choice",
+          "category": "强调句的变体",
+          "question": "___ was it ___ you found the lost key?",
+          "questionCn": "你到底是在哪里找到丢失的钥匙的？",
+          "choices": [
+            "A. Where; that",
+            "B. What; that",
+            "C. Where; where",
+            "D. What; which"
+          ],
+          "answer": "A",
+          "explanation": "这是特殊疑问句的强调句式。基本结构是：疑问词 + is/was it + that + 其他？被强调的部分是疑问词where（地点状语）。正常强调句是It was there that you found the lost key. 对地点状语提问就变成Where was it that you found the lost key? 判断方法：去掉it was和that后，句子变为Where did you find the lost key? 仍然完整（只是语序需要调整）。",
+          "knowledgePoint": "特殊疑问句的强调形式：疑问词 + is/was it + that + 陈述语序",
+          "vocabulary": [
+            {
+              "word": "lost",
+              "pos": "adj.",
+              "meaning": "丢失的"
+            }
+          ],
+          "sentenceTranslation": "你到底是在哪里找到丢失的钥匙的？"
+        },
+        {
+          "id": "gq_138_03",
+          "type": "truefalse",
+          "category": "强调句的变体",
+          "question": "判断句子正误：It was in the park where we met for the first time.",
+          "questionCn": "判断句子正误：我们第一次见面就是在那个公园里。",
+          "choices": [
+            "A. 正确",
+            "B. 错误"
+          ],
+          "answer": "B",
+          "explanation": "句子错误。这是强调句，被强调的部分是地点状语in the park。强调句中一律用that连接（指人时可用who），不能用where/when/why等关系副词。正确的句子是It was in the park that we met for the first time. 区分强调句和定语从句的方法：去掉It is/was和that/who后，如果剩余部分能组成完整的句子，就是强调句。去掉后：We met for the first time in the park. 句子完整，所以是强调句。",
+          "knowledgePoint": "强调句只用that/who，不用where/when/why等",
+          "vocabulary": [],
+          "sentenceTranslation": "我们第一次见面就是在那个公园里。"
+        }
+      ]
+    },
+    "gm_139": {
+      "grammarName": "插入语的识别与处理（插入语类型、位置、对句子结构的影响）",
+      "level": "postgraduate",
+      "questions": [
+        {
+          "id": "gq_139_01",
+          "type": "choice",
+          "category": "插入语的识别与处理",
+          "question": "The professor, ___ I think deserves the prize, will give a speech tomorrow.",
+          "questionCn": "那位教授——我认为他应该获奖——明天将发表演讲。",
+          "choices": [
+            "A. who",
+            "B. whom",
+            "C. that",
+            "D. /"
+          ],
+          "answer": "A",
+          "explanation": "I think是插入语，放在定语从句的主语和谓语之间。去掉插入语后，定语从句是who deserves the prize，who在从句中作主语，所以用主格who，不能用宾格whom。做这类题目的技巧是：先把插入语（I think, I believe, do you know等）去掉，再分析句子结构，就一目了然了。插入语不影响句子的语法关系。",
+          "knowledgePoint": "定语从句中的插入语：去掉插入语后再分析关系代词的格",
+          "vocabulary": [
+            {
+              "word": "deserve",
+              "pos": "v.",
+              "meaning": "应得，值得"
+            },
+            {
+              "word": "speech",
+              "pos": "n.",
+              "meaning": "演讲"
+            }
+          ],
+          "sentenceTranslation": "那位教授——我认为他应该获奖——明天将发表演讲。"
+        },
+        {
+          "id": "gq_139_02",
+          "type": "choice",
+          "category": "插入语的识别与处理",
+          "question": "The answer, in my opinion, ___ wrong. Let's check it again.",
+          "questionCn": "在我看来，这个答案是错的。我们再检查一下。",
+          "choices": [
+            "A. are",
+            "B. is",
+            "C. being",
+            "D. to be"
+          ],
+          "answer": "B",
+          "explanation": "in my opinion是插入语，不影响句子的主谓一致。真正的主语是the answer（单数），所以谓语动词用is。插入语的特征是：去掉后句子仍然完整通顺，而且通常用逗号与句子其他部分隔开。分析长难句时，先把插入语找出来跳过，先分析句子主干，再看插入语的修饰作用。",
+          "knowledgePoint": "插入语不影响主谓一致，谓语与真正的主语保持一致",
+          "vocabulary": [
+            {
+              "word": "check",
+              "pos": "v.",
+              "meaning": "检查"
+            }
+          ],
+          "sentenceTranslation": "在我看来，这个答案是错的。我们再检查一下。"
+        },
+        {
+          "id": "gq_139_03",
+          "type": "truefalse",
+          "category": "插入语的识别与处理",
+          "question": "判断句子正误：To tell you the truth, I don't agree with what you said at the meeting.",
+          "questionCn": "判断句子正误：说实话，我不同意你在会上说的话。",
+          "choices": [
+            "A. 正确",
+            "B. 错误"
+          ],
+          "answer": "A",
+          "explanation": "句子完全正确。To tell you the truth（说实话）是不定式短语作插入语，放在句首，用逗号隔开。常见的插入语类型有：①副词/短语（however, therefore, in fact）②句子（I think, I believe）③不定式短语（to be honest, to tell you the truth）④分词短语（generally speaking, judging from）。插入语是说话人的态度或补充说明，去掉后句子仍然完整。",
+          "knowledgePoint": "不定式短语作插入语：to tell you the truth, to be honest等",
+          "vocabulary": [
+            {
+              "word": "agree",
+              "pos": "v.",
+              "meaning": "同意"
+            }
+          ],
+          "sentenceTranslation": "说实话，我不同意你在会上说的话。"
+        }
+      ]
+    },
+    "gm_140": {
+      "grammarName": "并列结构的平行原则（and/or/but连接的成分必须形式一致）",
+      "level": "postgraduate",
+      "questions": [
+        {
+          "id": "gq_140_01",
+          "type": "choice",
+          "category": "并列结构的平行原则",
+          "question": "The teacher told the students to read the text carefully and ___ the exercises after class.",
+          "questionCn": "老师告诉学生们要仔细读课文，课后做练习。",
+          "choices": [
+            "A. do",
+            "B. to do",
+            "C. doing",
+            "D. did"
+          ],
+          "answer": "B",
+          "explanation": "and连接两个并列的不定式短语作宾语补足语：to read the text carefully和to do the exercises after class。并列的不定式中，第二个及以后的to通常可以省略，但为了明确并列关系，这里保留to更好。选项A(do)虽然省略to也可以，但选项B更符合平行原则。选项C(doing)和D(did)形式不对，不能和to read并列。",
+          "knowledgePoint": "不定式并列：and连接两个不定式，第二个to可省略",
+          "vocabulary": [
+            {
+              "word": "exercise",
+              "pos": "n.",
+              "meaning": "练习"
+            }
+          ],
+          "sentenceTranslation": "老师告诉学生们要仔细读课文，课后做练习。"
+        },
+        {
+          "id": "gq_140_02",
+          "type": "choice",
+          "category": "并列结构的平行原则",
+          "question": "The scientist's speech touched on many issues, ___ the problem of global warming.",
+          "questionCn": "找错并改正：The teacher asked us to read more books and writing more articles.",
+          "choices": [
+            "A. read → reading",
+            "B. writing → write",
+            "C. more → many",
+            "D. 没有错误"
+          ],
+          "answer": "B",
+          "explanation": "and连接两个并列的不定式作asked的宾补：to read more books和to write more articles。两个不定式并列时，形式必须一致。writing是动名词/现在分词，不能和不定式to read并列。正确的句子是The teacher asked us to read more books and (to) write more articles. 平行原则是考研英语中的重要考点，看到and/or/but就要检查前后形式是否一致。",
+          "knowledgePoint": "平行原则：and连接的成分必须形式一致（不定式和不定式并列）",
+          "vocabulary": [
+            {
+              "word": "article",
+              "pos": "n.",
+              "meaning": "文章"
+            }
+          ],
+          "sentenceTranslation": "老师要求我们多读书、多写文章。"
+        },
+        {
+          "id": "gq_140_03",
+          "type": "truefalse",
+          "category": "并列结构的平行原则",
+          "question": "判断句子正误：Collecting stamps, playing chess and fishing are his hobbies in his spare time.",
+          "questionCn": "判断句子正误：集邮、下棋和钓鱼是他业余时间的爱好。",
+          "choices": [
+            "A. 正确",
+            "B. 错误"
+          ],
+          "answer": "A",
+          "explanation": "句子完全正确。三个动名词短语Collecting stamps, playing chess和fishing并列作主语，形式一致（都是动名词），符合平行原则。并列结构中，三个或三个以上成分并列时，最后一个前面加and。平行原则要求：名词与名词并列，动词与动词并列，非谓语与非谓语并列，从句与从句并列。看到and/or/both...and/either...or等并列连词时，要检查前后形式是否一致。",
+          "knowledgePoint": "多个动名词并列作主语：形式必须一致",
+          "vocabulary": [
+            {
+              "word": "hobby",
+              "pos": "n.",
+              "meaning": "爱好"
+            },
+            {
+              "word": "stamp",
+              "pos": "n.",
+              "meaning": "邮票"
+            }
+          ],
+          "sentenceTranslation": "集邮、下棋和钓鱼是他业余时间的爱好。"
+        }
+      ]
+    },
+    "gm_141": {
+      "grammarName": "比较结构的高级用法（the more...the more、more A than B、no more than等）",
+      "level": "postgraduate",
+      "questions": [
+        {
+          "id": "gq_141_01",
+          "type": "choice",
+          "category": "比较结构的高级用法",
+          "question": "The more you explain, ___ I understand the problem.",
+          "questionCn": "你解释得越多，我对这个问题就越困惑。",
+          "choices": [
+            "A. the more",
+            "B. the less",
+            "C. the better",
+            "D. the worse"
+          ],
+          "answer": "B",
+          "explanation": "the + 比较级..., the + 比较级... 结构表示\"越...越...\"。前句是条件，后句是结果。根据句意\"你解释得越多，我就越不明白/越困惑\"，应该选the less（越少）。the less I understand = I understand less。选项A(the more)和句意相反（越解释越明白？不对）；选项C(the better)和D(the worse)不与understand搭配。",
+          "knowledgePoint": "the more...the more结构：越...越...，比较级放句首",
+          "vocabulary": [
+            {
+              "word": "explain",
+              "pos": "v.",
+              "meaning": "解释"
+            },
+            {
+              "word": "confused",
+              "pos": "adj.",
+              "meaning": "困惑的"
+            }
+          ],
+          "sentenceTranslation": "你解释得越多，我对这个问题就越困惑。"
+        },
+        {
+          "id": "gq_141_02",
+          "type": "choice",
+          "category": "比较结构的高级用法",
+          "question": "He is ___ brave than wise. That's why he often acts impulsively.",
+          "questionCn": "与其说他聪明，不如说他勇敢。那就是他经常冲动行事的原因。",
+          "choices": [
+            "A. more",
+            "B. less",
+            "C. no more",
+            "D. not more"
+          ],
+          "answer": "A",
+          "explanation": "more A than B 结构表示\"与其说B不如说A\"，肯定前者，否定后者。more brave than wise = 勇敢 > 聪明 = 有勇无谋。根据后半句\"他经常冲动行事\"可知他有勇无谋。选项B(less brave than wise) = more wise than brave = 与其说勇敢不如说聪明，和句意相反；选项C(no more...than)表示\"两者都不\"；选项D(not more...than)表示\"前者不如后者\"。",
+          "knowledgePoint": "more A than B：与其说B不如说A（肯定A，否定B）",
+          "vocabulary": [
+            {
+              "word": "impulsively",
+              "pos": "adv.",
+              "meaning": "冲动地"
+            },
+            {
+              "word": "brave",
+              "pos": "adj.",
+              "meaning": "勇敢的"
+            }
+          ],
+          "sentenceTranslation": "与其说他聪明，不如说他勇敢。那就是他经常冲动行事的原因。"
+        },
+        {
+          "id": "gq_141_03",
+          "type": "truefalse",
+          "category": "比较结构的高级用法",
+          "question": "判断句子正误：He is no more a writer than a painter. In fact, he knows nothing about art.",
+          "questionCn": "判断句子正误：他既不是作家也不是画家。事实上，他对艺术一窍不通。",
+          "choices": [
+            "A. 正确",
+            "B. 错误"
+          ],
+          "answer": "A",
+          "explanation": "句子完全正确。no more...than... 表示\"两者都不\"，即对比较的双方都给予否定。He is no more a writer than a painter. = He is neither a writer nor a painter. 他既不是作家也不是画家。注意区分：no more than（仅仅，只有=only）和no more...than...（两者都不）是不同的结构。根据后一句\"他对艺术一窍不通\"可知两者都否定，符合句意。",
+          "knowledgePoint": "no more...than...：两者都不（对比较双方都否定）",
+          "vocabulary": [
+            {
+              "word": "painter",
+              "pos": "n.",
+              "meaning": "画家"
+            }
+          ],
+          "sentenceTranslation": "他既不是作家也不是画家。事实上，他对艺术一窍不通。"
+        }
+      ]
+    },
+    "gm_142": {
+      "grammarName": "省略句的识别与还原（并列句省略、状语从句省略、比较句省略）",
+      "level": "postgraduate",
+      "questions": [
+        {
+          "id": "gq_142_01",
+          "type": "choice",
+          "category": "省略句的识别与还原",
+          "question": "I will go to Beijing for a meeting and ___.",
+          "questionCn": "我要去北京开会，我弟弟也要去。",
+          "choices": [
+            "A. so will my brother",
+            "B. so my brother will",
+            "C. so does my brother",
+            "D. my brother will so"
+          ],
+          "answer": "A",
+          "explanation": "so开头表示\"也\"时，句子要部分倒装。完整的句子是and my brother will go to Beijing for a meeting too. 为了避免重复，用so + 情态动词/助动词 + 主语的结构来代替。时态要和前句一致（will）。so + 主语 + 助动词表示\"确实如此\"（不倒装），例如：—Tom is a good student. —So he is.（他确实是）。",
+          "knowledgePoint": "并列句中的省略：so/nor/neither开头，部分倒装",
+          "vocabulary": [
+            {
+              "word": "meeting",
+              "pos": "n.",
+              "meaning": "会议"
+            }
+          ],
+          "sentenceTranslation": "我要去北京开会，我弟弟也要去。"
+        },
+        {
+          "id": "gq_142_02",
+          "type": "choice",
+          "category": "省略句的识别与还原",
+          "question": "When ___ about the secret, he kept silent and said nothing.",
+          "questionCn": "当被问到那个秘密时，他保持沉默什么也没说。（选择省略了的正确形式）",
+          "choices": [
+            "A. asking",
+            "B. asked",
+            "C. having asked",
+            "D. he asked"
+          ],
+          "answer": "B",
+          "explanation": "这是状语从句的省略。完整句子是When he was asked about the secret, he kept silent...。省略条件：①从句主语与主句主语一致（都是he）②从句有be动词（was）。省略后保留when + 过去分词asked，表示被动。选项A(asking)是主动，不对；选项C(having asked)也是主动完成式；选项D(he asked)是主动形式且没有be动词，不能省略。",
+          "knowledgePoint": "状语从句省略：连词+分词（主语一致+有be）",
+          "vocabulary": [
+            {
+              "word": "silent",
+              "pos": "adj.",
+              "meaning": "沉默的"
+            }
+          ],
+          "sentenceTranslation": "当被问到那个秘密时，他保持沉默什么也没说。"
+        },
+        {
+          "id": "gq_142_03",
+          "type": "truefalse",
+          "category": "省略句的识别与还原",
+          "question": "判断句子正误：He speaks English better than I speak.",
+          "questionCn": "判断句子正误：他英语说得比我好。",
+          "choices": [
+            "A. 正确",
+            "B. 错误"
+          ],
+          "answer": "B",
+          "explanation": "句子错误。比较状语从句中，省略的是与主句相同的部分，但不能改变句子结构。正确的句子是He speaks English better than I do. 或He speaks English better than me. 从句中用do代替speak English以避免重复。than I speak语法上不完整，因为speak是及物动词，后面需要宾语。比较句的省略原则：保留主语和助动词/情态动词/be动词，省略与主句相同的实义动词和宾语。",
+          "knowledgePoint": "比较句的省略：用do/does/did代替前面的实义动词",
+          "vocabulary": [],
+          "sentenceTranslation": "他英语说得比我好。"
+        }
+      ]
+    },
+    "gm_143": {
+      "grammarName": "分裂结构（谓语分裂、主语与谓语分裂、宾语与宾补分裂）",
+      "level": "postgraduate",
+      "questions": [
+        {
+          "id": "gq_143_01",
+          "type": "choice",
+          "category": "分裂结构",
+          "question": "The teacher together with some students ___ visiting the museum now.",
+          "questionCn": "老师和一些学生现在正在参观博物馆。",
+          "choices": [
+            "A. are",
+            "B. is",
+            "C. were",
+            "D. was"
+          ],
+          "answer": "B",
+          "explanation": "这是主谓分裂结构。主语是The teacher，together with some students是插入语（介词短语作伴随状语），放在主语和谓语之间，造成主谓分裂。主谓一致要看真正的主语the teacher（单数），所以谓语用is。类似的插入语还有：along with, as well as, like, rather than, but, except, besides, in addition to等，它们都不影响主谓一致。",
+          "knowledgePoint": "主谓分裂：插入语不影响主谓一致，谓语与真正主语一致",
+          "vocabulary": [
+            {
+              "word": "museum",
+              "pos": "n.",
+              "meaning": "博物馆"
+            }
+          ],
+          "sentenceTranslation": "老师和一些学生现在正在参观博物馆。"
+        },
+        {
+          "id": "gq_143_02",
+          "type": "choice",
+          "category": "分裂结构",
+          "question": "The plan that they proposed at the meeting ___ to be impractical.",
+          "questionCn": "他们在会上提出的计划被证明是不切实际的。",
+          "choices": [
+            "A. prove",
+            "B. proves",
+            "C. proving",
+            "D. to prove"
+          ],
+          "answer": "B",
+          "explanation": "这是主谓分裂结构。主语是The plan，that they proposed at the meeting是定语从句，放在主语和谓语之间，造成主谓分裂。真正的主语是The plan（单数），所以谓语动词用proves。分析分裂结构的方法：先找谓语动词（proves），再往前找真正的主语（跳过中间的定语从句/插入语等），最后验证主谓一致。",
+          "knowledgePoint": "主谓分裂：定语从句/同位语从句等隔开主语和谓语",
+          "vocabulary": [
+            {
+              "word": "propose",
+              "pos": "v.",
+              "meaning": "提出"
+            },
+            {
+              "word": "impractical",
+              "pos": "adj.",
+              "meaning": "不切实际的"
+            }
+          ],
+          "sentenceTranslation": "他们在会上提出的计划被证明是不切实际的。"
+        },
+        {
+          "id": "gq_143_03",
+          "type": "truefalse",
+          "category": "分裂结构",
+          "question": "判断句子正误：We consider very important that we should keep the balance of nature.",
+          "questionCn": "判断句子正误：我们认为保持自然平衡非常重要。",
+          "choices": [
+            "A. 正确",
+            "B. 错误"
+          ],
+          "answer": "B",
+          "explanation": "句子错误。这是宾补分裂的情况，但形式不对。当宾语是从句时，要用it作形式宾语，把真正的宾语从句放在宾补后面。正确的句子是We consider it very important that we should keep the balance of nature. it是形式宾语，very important是宾补，that从句是真正宾语。不能直接把that从句放在consider和important之间。形式宾语/形式主语是英语中避免头重脚轻的重要手段。",
+          "knowledgePoint": "宾补分裂：用it作形式宾语，真正宾语（从句/不定式）放后面",
+          "vocabulary": [
+            {
+              "word": "balance",
+              "pos": "n.",
+              "meaning": "平衡"
+            }
+          ],
+          "sentenceTranslation": "我们认为保持自然平衡非常重要。"
+        }
+      ]
+    },
+    "gm_144": {
+      "grammarName": "多重否定结构",
+      "level": "postgraduate",
+      "questions": [
+        {
+          "id": "gq_144_01",
+          "type": "choice",
+          "category": "多重否定结构",
+          "question": "You ___ too careful when you are driving on the highway.",
+          "questionCn": "在高速公路上开车时，你再怎么小心也不为过。",
+          "choices": [
+            "A. mustn't be",
+            "B. can't be",
+            "C. shouldn't be",
+            "D. may not be"
+          ],
+          "answer": "B",
+          "explanation": "cannot...too...是一个特殊的双重否定结构，形式上是否定的，但意义是肯定的，表示\"再...也不为过/越...越好\"。You can't be too careful = You should be as careful as possible。选项A(must not)表示禁止；选项C(should not)表示不应该；选项D(may not)表示可能不。这些都不是正确的固定搭配。",
+          "knowledgePoint": "cannot...too...：越...越好/再...也不为过（形式否定，意义肯定）",
+          "vocabulary": [
+            {
+              "word": "highway",
+              "pos": "n.",
+              "meaning": "高速公路"
+            }
+          ],
+          "sentenceTranslation": "在高速公路上开车时，你再怎么小心也不为过。"
+        },
+        {
+          "id": "gq_144_02",
+          "type": "choice",
+          "category": "多重否定结构",
+          "question": "There is no rule ___ has no exception. Every rule has its exceptions.",
+          "questionCn": "凡是规则都有例外。每条规则都有它的例外情况。",
+          "choices": [
+            "A. that",
+            "B. but",
+            "C. which",
+            "D. who"
+          ],
+          "answer": "B",
+          "explanation": "no...but是一个特殊的双重否定结构，but在这里相当于that...not/which...not。There is no rule but has no exception. = There is no rule that does not have an exception. = Every rule has exceptions. no...but结构表示\"没有...不...\"，即\"都...\"。but是关系代词，引导定语从句并在从句中作主语，本身含有否定意义。",
+          "knowledgePoint": "no...but结构：没有...不...（双重否定=肯定）",
+          "vocabulary": [
+            {
+              "word": "exception",
+              "pos": "n.",
+              "meaning": "例外"
+            }
+          ],
+          "sentenceTranslation": "凡是规则都有例外。每条规则都有它的例外情况。"
+        },
+        {
+          "id": "gq_144_03",
+          "type": "truefalse",
+          "category": "多重否定结构",
+          "question": "判断句子正误：He is nothing but a common worker, but he has made great achievements.",
+          "questionCn": "判断句子正误：他只不过是个普通工人，但他取得了巨大的成就。",
+          "choices": [
+            "A. 正确",
+            "B. 错误"
+          ],
+          "answer": "A",
+          "explanation": "句子完全正确。nothing but是固定搭配，意为\"只不过，仅仅\"（=only, merely），形式上有否定词nothing，但实际表达的是\"只是\"的意思。注意区分：anything but（根本不，绝不）和nothing but（只不过）。He is anything but a worker. = 他根本不是工人。He is nothing but a worker. = 他只不过是个工人。两个短语意思正好相反。",
+          "knowledgePoint": "nothing but：只不过，仅仅（=only）；anything but：根本不",
+          "vocabulary": [
+            {
+              "word": "achievement",
+              "pos": "n.",
+              "meaning": "成就"
+            },
+            {
+              "word": "common",
+              "pos": "adj.",
+              "meaning": "普通的"
+            }
+          ],
+          "sentenceTranslation": "他只不过是个普通工人，但他取得了巨大的成就。"
+        }
+      ]
+    },
+    "gm_145": {
+      "grammarName": "there be句型的变体与非谓语形式",
+      "level": "postgraduate",
+      "questions": [
+        {
+          "id": "gq_145_01",
+          "type": "choice",
+          "category": "there be句型的变体与非谓语形式",
+          "question": "There is no ___ the fact that the Internet has greatly changed our way of life.",
+          "questionCn": "不可否认，互联网极大地改变了我们的生活方式。",
+          "choices": [
+            "A. deny",
+            "B. denying",
+            "C. to deny",
+            "D. denied"
+          ],
+          "answer": "B",
+          "explanation": "There is no doing sth.是固定句型，意为\"不可能.../无法...\"。There is no denying that... = It is impossible to deny that... = 不可否认...。类似的结构还有：There is no doubt that...（毫无疑问）、There is no need to do...（没必要做...）、There is no point in doing...（做...没用）、There is no sense in doing...（做...没意义）。注意不同结构后面的搭配不同。",
+          "knowledgePoint": "There is no doing sth.：不可能/无法做某事",
+          "vocabulary": [
+            {
+              "word": "deny",
+              "pos": "v.",
+              "meaning": "否认"
+            },
+            {
+              "word": "Internet",
+              "pos": "n.",
+              "meaning": "互联网"
+            }
+          ],
+          "sentenceTranslation": "不可否认，互联网极大地改变了我们的生活方式。"
+        },
+        {
+          "id": "gq_145_02",
+          "type": "choice",
+          "category": "there be句型的变体与非谓语形式",
+          "question": "The students expect ___ more opportunities to practice their oral English.",
+          "questionCn": "学生们期望有更多练习英语口语的机会。",
+          "choices": [
+            "A. there to be",
+            "B. there being",
+            "C. there be",
+            "D. being"
+          ],
+          "answer": "A",
+          "explanation": "expect后面接不定式作宾语，所以用there to be（there be的不定式形式）。there to be和there being的区别：①作动词宾语时，用there to be（expect, want, intend, mean, like, prefer等）②作介词宾语时，一般用there being，但介词for后面用there to be ③作主语时，用there being。",
+          "knowledgePoint": "there be的非谓语形式：动词后用there to be，介词后用there being",
+          "vocabulary": [
+            {
+              "word": "opportunity",
+              "pos": "n.",
+              "meaning": "机会"
+            },
+            {
+              "word": "oral",
+              "pos": "adj.",
+              "meaning": "口头的"
+            }
+          ],
+          "sentenceTranslation": "学生们期望有更多练习英语口语的机会。"
+        },
+        {
+          "id": "gq_145_03",
+          "type": "truefalse",
+          "category": "there be句型的变体与非谓语形式",
+          "question": "判断句子正误：There being no buses, we had to walk home in the heavy rain.",
+          "questionCn": "判断句子正误：没有公交车了，我们只好冒着大雨走路回家。",
+          "choices": [
+            "A. 正确",
+            "B. 错误"
+          ],
+          "answer": "A",
+          "explanation": "句子完全正确。There being no buses是there be的动名词/分词形式，作原因状语（独立主格结构的一种）。There being no buses = Because there were no buses。there being作状语表示原因或条件，相当于状语从句。there to be不能作状语。也可以理解为独立主格结构：there + being + 名词。",
+          "knowledgePoint": "there being作状语：表示原因或条件，相当于状语从句",
+          "vocabulary": [
+            {
+              "word": "heavy",
+              "pos": "adj.",
+              "meaning": "沉重的，大的（雨）"
+            }
+          ],
+          "sentenceTranslation": "没有公交车了，我们只好冒着大雨走路回家。"
+        }
+      ]
+    },
+    "gm_146": {
+      "grammarName": "构词法大全（前缀/后缀/转化/合成/派生，快速猜词）",
+      "level": "postgraduate",
+      "questions": [
+        {
+          "id": "gq_146_01",
+          "type": "choice",
+          "category": "构词法大全",
+          "question": "The word \"international\" is formed by ___.",
+          "questionCn": "单词\"international\"是通过什么方式构成的？",
+          "choices": [
+            "A. 前缀inter- + 词根nation + 后缀-al",
+            "B. 前缀in- + 词根ternational",
+            "C. inter + national（合成法）",
+            "D. nation + al + inter（转化法）"
+          ],
+          "answer": "A",
+          "explanation": "international是典型的派生词（derivation），由前缀inter-（在...之间，相互）+ 词根nation（国家）+ 后缀-al（形容词后缀，...的）构成。派生法是英语中最常见的构词方式，通过在词根上加前缀（改变词义）或后缀（改变词性）来构成新词。常见前缀：un-, re-, pre-, dis-, im-, inter-, trans-, super-等。常见后缀：-tion, -ment, -ness, -able, -ful, -less, -ize等。",
+          "knowledgePoint": "派生法：前缀（改变词义）+ 词根 + 后缀（改变词性）",
+          "vocabulary": [
+            {
+              "word": "international",
+              "pos": "adj.",
+              "meaning": "国际的"
+            }
+          ],
+          "sentenceTranslation": "单词\"international\"是通过前缀inter- + 词根nation + 后缀-al构成的。"
+        },
+        {
+          "id": "gq_146_02",
+          "type": "choice",
+          "category": "构词法大全",
+          "question": "The word \"blackboard\" is formed by ___. \"Water\" as a verb \"to water the flowers\" is formed by ___.",
+          "questionCn": "\"blackboard\"是通过___构成的。\"water\"作动词\"浇花\"是通过___构成的。",
+          "choices": [
+            "A. 合成法；转化法",
+            "B. 派生法；合成法",
+            "C. 转化法；派生法",
+            "D. 合成法；派生法"
+          ],
+          "answer": "A",
+          "explanation": "blackboard（黑板）= black（黑的）+ board（木板），是合成法（compounding），即两个或多个词合成一个新词。water（水，名词→浇水，动词）是转化法（conversion），即一个词从一种词性转化为另一种词性，词义有联系。构词法四种主要方式：①派生法（derivation）②合成法（compounding）③转化法（conversion）④缩写法（abbreviation）。",
+          "knowledgePoint": "合成法：两个词拼一起；转化法：词性变词义相关",
+          "vocabulary": [
+            {
+              "word": "blackboard",
+              "pos": "n.",
+              "meaning": "黑板"
+            }
+          ],
+          "sentenceTranslation": "\"blackboard\"是合成法构成的，\"water\"作动词是转化法构成的。"
+        },
+        {
+          "id": "gq_146_03",
+          "type": "truefalse",
+          "category": "构词法大全",
+          "question": "判断：unhappy, impossible, irregular, illegal 四个词的否定前缀分别是un-, im-, ir-, il-，它们的用法是任意的，可以互换。",
+          "questionCn": "判断正误：unhappy, impossible, irregular, illegal 四个词的否定前缀用法是任意的，可以互换。",
+          "choices": [
+            "A. 正确",
+            "B. 错误"
+          ],
+          "answer": "B",
+          "explanation": "错误。否定前缀的使用有规律，不能任意互换：①un-最常用，可加在大多数形容词和副词前（unhappy, unusual）②im-用在p/b/m前（impossible, impatient, imbalance）③ir-用在r前（irregular, irresponsible）④il-用在l前（illegal, illiterate）⑤in-用在其他辅音前（inactive, incorrect）⑥dis-加在动词、名词前（disagree, discovery）⑦mis-表示\"错误\"（misunderstand, mistake）。掌握这些规律有助于快速猜词。",
+          "knowledgePoint": "否定前缀的规律：un-/in-/im-/il-/ir-/dis-/mis-各有使用条件",
+          "vocabulary": [
+            {
+              "word": "irregular",
+              "pos": "adj.",
+              "meaning": "不规则的"
+            },
+            {
+              "word": "illegal",
+              "pos": "adj.",
+              "meaning": "非法的"
+            }
+          ],
+          "sentenceTranslation": "否定前缀的使用有规律，不能任意互换。"
+        }
+      ]
+    },
+    "gm_147": {
+      "grammarName": "熟词僻义的规律与判断方法",
+      "level": "postgraduate",
+      "questions": [
+        {
+          "id": "gq_147_01",
+          "type": "choice",
+          "category": "熟词僻义的规律与判断方法",
+          "question": "The word \"address\" in \"It is important to address the problem of air pollution\" means ___.",
+          "questionCn": "在\"解决空气污染问题很重要\"这句话中，\"address\"的意思是？",
+          "choices": [
+            "A. 地址",
+            "B. 演讲",
+            "C. 解决，处理",
+            "D. 称呼"
+          ],
+          "answer": "C",
+          "explanation": "address在这里是动词，意为\"解决，处理\"（=deal with, tackle）。这是考研英语中常见的熟词僻义。address常见的意思有：n.地址 v.写地址；演讲；称呼；解决/处理。判断熟词僻义的方法：①先想最常见的意思 ②代入句子看通不通 ③不通就想相关的其他词性或含义 ④结合上下文验证。address作\"解决\"讲时，常搭配problem, issue, question等。",
+          "knowledgePoint": "熟词僻义：address v. 解决，处理（=deal with）",
+          "vocabulary": [
+            {
+              "word": "address",
+              "pos": "v.",
+              "meaning": "解决，处理"
+            },
+            {
+              "word": "pollution",
+              "pos": "n.",
+              "meaning": "污染"
+            }
+          ],
+          "sentenceTranslation": "解决空气污染问题很重要。"
+        },
+        {
+          "id": "gq_147_02",
+          "type": "choice",
+          "category": "熟词僻义的规律与判断方法",
+          "question": "The word \"game\" in \"The hunter was chasing game in the forest\" means ___.",
+          "questionCn": "在\"猎人在森林里追逐猎物\"这句话中，\"game\"的意思是？",
+          "choices": [
+            "A. 游戏",
+            "B. 比赛",
+            "C. 猎物，野味",
+            "D. 策略"
+          ],
+          "answer": "C",
+          "explanation": "game在这里是不可数名词，意为\"猎物，野味\"。这是典型的熟词僻义。常见的词义变化规律：①具体→抽象（head头→领导）②普通→专业（economy经济→节约）③词性转化（book书→预订）④本义→比喻义（heart心→核心）。game的常见义为\"游戏、比赛\"，僻义为\"猎物（不可数）\"和\"策略、手腕\"。",
+          "knowledgePoint": "熟词僻义：game n. 猎物，野味（不可数）",
+          "vocabulary": [
+            {
+              "word": "hunter",
+              "pos": "n.",
+              "meaning": "猎人"
+            },
+            {
+              "word": "chase",
+              "pos": "v.",
+              "meaning": "追逐"
+            },
+            {
+              "word": "forest",
+              "pos": "n.",
+              "meaning": "森林"
+            }
+          ],
+          "sentenceTranslation": "猎人在森林里追逐猎物。"
+        },
+        {
+          "id": "gq_147_03",
+          "type": "truefalse",
+          "category": "熟词僻义的规律与判断方法",
+          "question": "判断句子正误：\"The school of thought holds that economic development is more important than environmental protection.\" 中school的意思是\"学校\"。",
+          "questionCn": "判断正误：这句话中school的意思是\"学校\"。",
+          "choices": [
+            "A. 正确",
+            "B. 错误"
+          ],
+          "answer": "B",
+          "explanation": "错误。school在这里不是\"学校\"，而是\"学派，流派\"的意思。the school of thought = 思想流派，学派。这是考研英语阅读中的高频熟词僻义。类似的还有：school of fish（鱼群）。判断方法：根据上下文，\"思想学校\"说不通，所以school肯定不是\"学校\"的意思。结合of thought（思想），推断出\"学派\"的含义。",
+          "knowledgePoint": "熟词僻义：school n. 学派，流派（=school of thought）",
+          "vocabulary": [
+            {
+              "word": "school",
+              "pos": "n.",
+              "meaning": "学派，流派"
+            },
+            {
+              "word": "economic",
+              "pos": "adj.",
+              "meaning": "经济的"
+            }
+          ],
+          "sentenceTranslation": "该思想流派认为经济发展比环境保护更重要。"
+        }
+      ]
+    },
+    "gm_148": {
+      "grammarName": "倒装中的让步倒装与虚拟倒装",
+      "level": "postgraduate",
+      "questions": [
+        {
+          "id": "gq_148_01",
+          "type": "choice",
+          "category": "倒装中的让步倒装与虚拟倒装",
+          "question": "___ I you, I would accept the offer without hesitation.",
+          "questionCn": "如果我是你，我会毫不犹豫地接受这份工作。",
+          "choices": [
+            "A. Were",
+            "B. Was",
+            "C. If",
+            "D. Am"
+          ],
+          "answer": "A",
+          "explanation": "这是虚拟条件句省略if引起的倒装。正常语序是If I were you, I would accept...。当if从句中有were/had/should时，可以省略if，把were/had/should提到主语前面，形成部分倒装。虚拟语气中，be动词一律用were（不用was），所以选项B错误。选项C(If)放在这里结构不对（If I you...缺动词）。",
+          "knowledgePoint": "虚拟倒装：if从句省略if，were/had/should提到主语前",
+          "vocabulary": [
+            {
+              "word": "hesitation",
+              "pos": "n.",
+              "meaning": "犹豫"
+            },
+            {
+              "word": "accept",
+              "pos": "v.",
+              "meaning": "接受"
+            },
+            {
+              "word": "offer",
+              "pos": "n.",
+              "meaning": "工作机会，提议"
+            }
+          ],
+          "sentenceTranslation": "如果我是你，我会毫不犹豫地接受这份工作。"
+        },
+        {
+          "id": "gq_148_02",
+          "type": "choice",
+          "category": "倒装中的让步倒装与虚拟倒装",
+          "question": "___, he never gives up when faced with difficulties.",
+          "questionCn": "虽然他很累，但面对困难时他从不放弃。",
+          "choices": [
+            "A. Tired as he is",
+            "B. As he is tired",
+            "C. As tired he is",
+            "D. Although tired is he"
+          ],
+          "answer": "A",
+          "explanation": "as引导让步状语从句必须倒装，结构为\"形容词/名词/副词 + as + 主语 + 谓语\"。Tired as he is = Although/Though he is tired。as必须倒装，though可倒可不倒，although不能倒装。选项B(As he is tired)中as不倒装时表示\"因为\"，不是\"虽然\"；选项C形式错误（应该是Tired as he is）；选项D(although)不能倒装。",
+          "knowledgePoint": "让步倒装：as必须倒装，though可倒可不倒，although不能倒",
+          "vocabulary": [
+            {
+              "word": "give up",
+              "pos": "phr.",
+              "meaning": "放弃"
+            },
+            {
+              "word": "difficulty",
+              "pos": "n.",
+              "meaning": "困难"
+            }
+          ],
+          "sentenceTranslation": "虽然他很累，但面对困难时他从不放弃。"
+        },
+        {
+          "id": "gq_148_03",
+          "type": "truefalse",
+          "category": "倒装中的让步倒装与虚拟倒装",
+          "question": "判断句子正误：Had I known about the meeting, I would have attended it yesterday.",
+          "questionCn": "判断句子正误：如果我知道有这个会议，昨天我就参加了。",
+          "choices": [
+            "A. 正确",
+            "B. 错误"
+          ],
+          "answer": "A",
+          "explanation": "句子完全正确。这是虚拟条件句省略if的倒装结构。正常语序是If I had known about the meeting, I would have attended it yesterday. 因为从句中有had，所以可以省略if，把had提到主语I前面，变成Had I known...。这是对过去的虚拟：从句用had done，主句用would have done。虚拟倒装只能用于were/had/should三种情况。",
+          "knowledgePoint": "虚拟倒装：Had + 主语 + done = If + 主语 + had done",
+          "vocabulary": [
+            {
+              "word": "attend",
+              "pos": "v.",
+              "meaning": "参加，出席"
+            }
+          ],
+          "sentenceTranslation": "如果我知道有这个会议，昨天我就参加了。"
+        }
+      ]
+    },
+    "gm_149": {
+      "grammarName": "形式主语/形式宾语的复杂结构",
+      "level": "postgraduate",
+      "questions": [
+        {
+          "id": "gq_149_01",
+          "type": "choice",
+          "category": "形式主语/形式宾语的复杂结构",
+          "question": "___ is universally acknowledged that China has made remarkable progress in recent decades.",
+          "questionCn": "众所周知，中国在近几十年取得了显著的进步。",
+          "choices": [
+            "A. What",
+            "B. That",
+            "C. It",
+            "D. As"
+          ],
+          "answer": "C",
+          "explanation": "这是It作形式主语的句型。真正的主语是that引导的主语从句（that China has made remarkable progress...），因为主语太长，所以用it作形式主语放在句首，把真正的主语从句放在后面。It is universally acknowledged that... = That...is universally acknowledged = 众所周知...。选项A(What)引导主语从句时要在从句中充当成分；选项B(That)放句首引导主语从句可以，但句子变成That...is acknowledged也对，但不如形式主语结构常见；选项D(As)引导非限定性定语从句。",
+          "knowledgePoint": "形式主语：It + is + 过去分词/形容词/名词 + that从句",
+          "vocabulary": [
+            {
+              "word": "universally",
+              "pos": "adv.",
+              "meaning": "普遍地"
+            },
+            {
+              "word": "acknowledge",
+              "pos": "v.",
+              "meaning": "承认"
+            },
+            {
+              "word": "remarkable",
+              "pos": "adj.",
+              "meaning": "显著的，非凡的"
+            }
+          ],
+          "sentenceTranslation": "众所周知，中国在近几十年取得了显著的进步。"
+        },
+        {
+          "id": "gq_149_02",
+          "type": "choice",
+          "category": "形式主语/形式宾语的复杂结构",
+          "question": "We must make ___ clear to every student that cheating in exams is strictly forbidden.",
+          "questionCn": "我们必须让每个学生都清楚，考试作弊是严格禁止的。",
+          "choices": [
+            "A. that",
+            "B. this",
+            "C. it",
+            "D. /"
+          ],
+          "answer": "C",
+          "explanation": "这是it作形式宾语的结构。真正的宾语是that引导的宾语从句（that cheating in exams is strictly forbidden），因为宾语太长且有宾补clear，所以用it作形式宾语放在宾语位置，把真正的宾语从句放在宾补后面。结构为：主语 + 谓语 + it + 宾补 + 真正宾语（不定式/从句）。常见动词有：make, find, think, consider, feel, believe等。",
+          "knowledgePoint": "形式宾语：主语 + 谓语 + it + 宾补 + 真正宾语（不定式/从句）",
+          "vocabulary": [
+            {
+              "word": "cheat",
+              "pos": "v.",
+              "meaning": "作弊，欺骗"
+            },
+            {
+              "word": "forbidden",
+              "pos": "adj.",
+              "meaning": "被禁止的"
+            }
+          ],
+          "sentenceTranslation": "我们必须让每个学生都清楚，考试作弊是严格禁止的。"
+        },
+        {
+          "id": "gq_149_03",
+          "type": "truefalse",
+          "category": "形式主语/形式宾语的复杂结构",
+          "question": "判断句子正误：It is no use to complain about the bad weather; we have to find a way out.",
+          "questionCn": "抱怨坏天气是没用的，我们得想办法解决。",
+          "choices": [
+            "A. 正确",
+            "B. 错误"
+          ],
+          "answer": "B",
+          "explanation": "句子错误。It is no use/good后面接动名词doing，不接不定式to do。正确的句子是It is no use complaining about the bad weather; we have to find a way out. It作形式主语时，真正的主语可以是不定式、动名词或从句，但有一些固定搭配：①It is no use/good + doing ②It is + adj. + (for/of sb.) + to do ③It is + n. + to do/that从句。要注意不同结构的搭配。",
+          "knowledgePoint": "It is no use/good后面接动名词，不接不定式",
+          "vocabulary": [
+            {
+              "word": "complain",
+              "pos": "v.",
+              "meaning": "抱怨"
+            }
+          ],
+          "sentenceTranslation": "抱怨坏天气是没用的，我们得想办法解决。"
+        }
+      ]
+    },
+    "gm_150": {
+      "grammarName": "主谓一致的特殊情况（就近/就远/集合名词/数量词）",
+      "level": "postgraduate",
+      "questions": [
+        {
+          "id": "gq_150_01",
+          "type": "choice",
+          "category": "主谓一致的特殊情况",
+          "question": "Neither the teacher nor the students ___ satisfied with the result of the experiment.",
+          "questionCn": "老师和学生都对实验结果不满意。",
+          "choices": [
+            "A. is",
+            "B. are",
+            "C. has been",
+            "D. was"
+          ],
+          "answer": "B",
+          "explanation": "neither...nor...连接两个主语时，谓语动词遵循\"就近原则\"，即与最近的主语保持一致。最近的主语是the students（复数），所以谓语用are。就近原则的连词有：or, nor, either...or, neither...nor, not only...but also, not...but。就远原则的有：with, together with, as well as, but, except, rather than等。",
+          "knowledgePoint": "就近原则：neither...nor...谓语与最近的主语一致",
+          "vocabulary": [
+            {
+              "word": "satisfied",
+              "pos": "adj.",
+              "meaning": "满意的"
+            },
+            {
+              "word": "experiment",
+              "pos": "n.",
+              "meaning": "实验"
+            }
+          ],
+          "sentenceTranslation": "老师和学生都对实验结果不满意。"
+        },
+        {
+          "id": "gq_150_02",
+          "type": "choice",
+          "category": "主谓一致的特殊情况",
+          "question": "The whole class ___ heatedly discussing the problem that the teacher raised.",
+          "questionCn": "全班同学正在热烈讨论老师提出的问题。",
+          "choices": [
+            "A. is",
+            "B. are",
+            "C. has",
+            "D. have"
+          ],
+          "answer": "B",
+          "explanation": "class是集合名词。集合名词作主语时，强调整体用单数，强调成员用复数。根据句意\"热烈讨论\"可知强调的是班里的成员们（大家在讨论），所以谓语用复数are。常见的集合名词有：family, team, class, group, committee, audience, government, public, staff, crew等。判断方法：看句意——如果是整体动作/状态用单数，如果是成员各自的动作用复数。",
+          "knowledgePoint": "集合名词：强调整体用单数，强调成员用复数",
+          "vocabulary": [
+            {
+              "word": "heatedly",
+              "pos": "adv.",
+              "meaning": "热烈地"
+            },
+            {
+              "word": "raise",
+              "pos": "v.",
+              "meaning": "提出"
+            }
+          ],
+          "sentenceTranslation": "全班同学正在热烈讨论老师提出的问题。"
+        },
+        {
+          "id": "gq_150_03",
+          "type": "truefalse",
+          "category": "主谓一致的特殊情况",
+          "question": "判断句子正误：Three years are a long time for someone who is waiting for a promise.",
+          "questionCn": "判断句子正误：对于一个等待承诺的人来说，三年是一段很长的时间。",
+          "choices": [
+            "A. 正确",
+            "B. 错误"
+          ],
+          "answer": "B",
+          "explanation": "句子错误。表示时间、金钱、距离、重量、长度等的复数名词作主语时，如果表示整体概念，谓语动词用单数。Three years在这里被看作一个整体（三年时间），所以谓语应该用is而不是are。正确的句子是Three years is a long time for someone who is waiting for a promise. 类似的还有：Ten miles is a long distance. Five million dollars is a large sum of money.",
+          "knowledgePoint": "时间/金钱/距离/重量作主语：看作整体，谓语用单数",
+          "vocabulary": [
+            {
+              "word": "promise",
+              "pos": "n.",
+              "meaning": "承诺"
+            }
+          ],
+          "sentenceTranslation": "对于一个等待承诺的人来说，三年是一段很长的时间。"
+        }
+      ]
+    },
+    "gm_151": {
+      "grammarName": "反义疑问句的特殊情况",
+      "level": "postgraduate",
+      "questions": [
+        {
+          "id": "gq_151_01",
+          "type": "choice",
+          "category": "反义疑问句的特殊情况",
+          "question": "I don't think he can finish the task on time, ___?",
+          "questionCn": "我认为他不能按时完成任务，对吗？",
+          "choices": [
+            "A. do I",
+            "B. don't I",
+            "C. can he",
+            "d. can't he"
+          ],
+          "answer": "C",
+          "explanation": "I think/believe/suppose/imagine/expect + 宾语从句时，反义疑问句要与从句一致，而不是与主句一致。另外要注意否定转移：I don't think... = I think...not...，从句实际上是否定的，所以反义疑问用肯定形式。完整的逻辑是：I think (that) he can't finish the task on time, can he? 主句的否定转移到了从句，所以反义疑问用can he。",
+          "knowledgePoint": "I think/believe+宾语从句：反义疑问与从句一致，注意否定转移",
+          "vocabulary": [
+            {
+              "word": "task",
+              "pos": "n.",
+              "meaning": "任务"
+            }
+          ],
+          "sentenceTranslation": "我认为他不能按时完成任务，对吗？"
+        },
+        {
+          "id": "gq_151_02",
+          "type": "choice",
+          "category": "反义疑问句的特殊情况",
+          "question": "Let's go to the cinema this weekend, ___?",
+          "questionCn": "我们这周末去看电影吧，好吗？",
+          "choices": [
+            "A. will you",
+            "B. won't you",
+            "C. shall we",
+            "D. do we"
+          ],
+          "answer": "C",
+          "explanation": "以Let us开头的祈使句有两种情况：如果包括听话人在内（即建议双方一起做某事，常缩写为Let撇s），反义疑问句用shall we；如果不包括听话人（即请求对方允许我们做某事），反义疑问句用will you。口诀：包括对方用shall we，不包括对方用will you。其他祈使句的反义疑问：肯定祈使句用will you，否定祈使句用will you。",
+          "knowledgePoint": "祈使句反义疑问：Let's用shall we，Let us用will you",
+          "vocabulary": [
+            {
+              "word": "cinema",
+              "pos": "n.",
+              "meaning": "电影院"
+            }
+          ],
+          "sentenceTranslation": "我们这周末去看电影吧，好吗？"
+        },
+        {
+          "id": "gq_151_03",
+          "type": "truefalse",
+          "category": "反义疑问句的特殊情况",
+          "question": "判断句子正误：He looks unhappy today, doesn't he?",
+          "questionCn": "判断句子正误：他今天看起来不开心，是吗？",
+          "choices": [
+            "A. 正确",
+            "B. 错误"
+          ],
+          "answer": "A",
+          "explanation": "句子完全正确。含有否定前缀或后缀的词（如unhappy, impossible, careless, useless等），虽然意义上是否定的，但在语法上仍视为肯定句，所以反义疑问句用否定形式does he not。判断标准：看是否有否定词（not, no, never, hardly, seldom, little, few等），有否定词才视为否定句，而否定前缀/后缀不算否定词。如果句子是He is not happy today，反义疑问就是is he?",
+          "knowledgePoint": "否定前缀/后缀不算否定词，反义疑问仍用否定形式",
+          "vocabulary": [
+            {
+              "word": "unhappy",
+              "pos": "adj.",
+              "meaning": "不开心的"
+            }
+          ],
+          "sentenceTranslation": "他今天看起来不开心，是吗？"
         }
       ]
     }
